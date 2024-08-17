@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+Theme Name: Illumin
+Theme URI: https://parachutedesign.ca/
+Author: 
+Author URI: https://parachutedesign.ca/
+Description: 
+Version: 2022.12.23-01
+Text Domain: 
+*/
+
+
+@font-face { font-family: 'Graphik-Light'; src: url('./fonts/Graphik-Light.otf') format('opentype'), url('./fonts/Graphik-Regular.woff') format('woff'); font-style: normal; font-display: swap; }
+@font-face { font-family: 'Graphik-Regular'; src: url('./fonts/Graphik-Regular.otf') format('opentype'), url('./fonts/Graphik-Regular.woff') format('woff'); font-style: normal; font-display: swap; }
+@font-face { font-family: 'Graphik-Medium'; src: url('./fonts/Graphik-Regular.otf') format('opentype'), url('./fonts/Graphik-Regular.woff') format('woff'); font-style: normal; font-display: swap; }
+@font-face { font-family: 'Graphik-Semibold'; src: url('./fonts/Graphik-Semibold.ttf') format('truetype'), url('./fonts/Graphik-Semibold.woff') format('woff'); font-style: normal; font-display: swap; }
+@font-face { font-family: 'Graphik-Bold'; src: url('./fonts/Graphik-Bold.otf') format('opentype'), url('./fonts/Graphik-Bold.woff') format('woff'); font-style: normal; font-display: swap; }
+
+.f-300{font-family: 'Graphik-Light', sans-serif;}
+.f-400{font-family: 'Graphik-Regular', sans-serif;}
+.f-500{font-family: 'Graphik-Medium', sans-serif;}
+.f-700{font-family: 'Graphik-Bold', sans-serif;}

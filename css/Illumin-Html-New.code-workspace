@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../BV-Reality-Html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Illumin-Html-New"
+	}
+}

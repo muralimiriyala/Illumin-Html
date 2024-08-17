@@ -1,0 +1,115 @@
+
+.insights-banner-wrap{padding: 64px 0 0;}
+.insights-default-circle{right: 57px; top: calc(50% + 7px); transform: translateY(-50%); width: 583px; height: 583px; position: absolute; z-index: 1; background-image: url('images/mask-ring.svg'); background-repeat: no-repeat; background-size: contain;} 
+.insights-banner-desc{ flex-direction: column; height: 100%; }
+.insights-banner-category{gap: 16px; margin-bottom: 18px; font-size: 16px; line-height: 20px;}
+.category-list{gap: 8px; flex: 0 0 auto; width: auto;}
+.banner-category-icon{width: 16px;}
+.banner-category-icon img{width: 100%;}
+.banner-category-text{flex: 1; gap: 20px; }
+.banner-category-text span{top: 2px; position: relative;}
+.banner-category-text a{color: var(--black);}
+.banner-category-text a:hover{color: var(--illumin-blue);}
+span.category_date{position: relative; top: 2px; padding-left: 16px;}
+span.category_date::before{width: 1px; height: 18px; top: 0; left: 0; content: ""; display: block; background-color: var(--illumin-blue); position: absolute;}  
+.insights-def-pos{margin-top: auto; padding-left: 35px;}
+.insights-def-avatar{gap: 16px;}
+.insights-def-thumb{width: 80px;}
+.insights-def-text{flex: 1;}
+.insights-def-text span{display: block; color: var(--illumin-blue); font-size: 1rem; line-height: 1.5;}
+.insights-avatar-dots{width: 80px; height: 80px; top: 0; right: 32px; opacity: 0.15; background-image: url('images/pattern-circle-md.svg'); background-repeat: no-repeat; background-position: center left; background-size: cover; border-radius: 50%; position: absolute; z-index: -1;}
+
+.insights-default-article > p:nth-child(1) span{font-size: 24px; line-height: 32px; color: var(--illumin-blue);}
+.table_of_content{padding: 24px; margin-bottom: 32px; background-color: var(--light-purple);}
+hr.blue{margin: 0 0 20px; background-color: var(--illumin-blue); height: 2px;}
+hr.half{width: 64px;}
+.table_of_content #ez-toc-container{margin: 0; padding: 0; border: none; box-shadow: none; background-color: transparent;} 
+.table_of_content p.ez-toc-title{font-size: 24px; line-height: 28px; margin-bottom: 16px; font-family: 'Graphik-Bold', sans-serif;}
+.table_of_content p.ez-toc-title::after{ margin: 16px 0 9px; height: 2px; width: 100%; content: ""; background-color: var(--purple-color); display: block; }
+.table_of_content ol{margin-bottom: 0;}
+.table_of_content #ez-toc-container ul{margin: 10px 0 0 26px; overflow: inherit;}
+.table_of_content #ez-toc-container ul li{overflow: inherit; margin-bottom: 4px;}
+.table_of_content #ez-toc-container ul li::before{display: none;}
+.table_of_content #ez-toc-container ul li a{color: var(--black); text-decoration: none; line-height: normal;}
+.table_of_content #ez-toc-container ul li a:hover{color: var(--illumin-blue);}
+.table_of_content #ez-toc-container ul li a::before{top: 3px; left: -26px; position: absolute; font-size: 1rem; line-height: 1.5; color: var(--purple-color); font-family: Graphik-Bold,sans-serif; }
+.table_of_content #ez-toc-container ul ul{margin-left: 35px;}
+.table_of_content #ez-toc-container ul ul li a::before{left: -35px; top: 2px;}
+.table_of_content #ez-toc-container ul ul ul{margin-left: 50px;}
+.table_of_content #ez-toc-container ul ul ul li a{font-size: 1rem;}
+.table_of_content #ez-toc-container ul ul ul li a::before{left: -50px; top: -2px;}
+.event_details{padding: 24px; margin-bottom: 32px; background-color: var(--tin-color);}
+.event_details_list{gap: 8px; margin-bottom: 4px;}
+.event_details_icon{width: 21px;}
+.event_details_icon img{width: 100%;}
+.event_details_time{flex: 1;}
+.event_details_text{margin-top: 20px;}
+.text_module_main{padding: 24px; margin-bottom: 32px; background-color: var(--light-purple);}
+.text_module_thumb{margin-bottom: 20px;}
+.text_module_dots{margin-top: auto;}
+
+.default-thumb-main{margin-bottom: 64px;}
+.block-quote{padding: 56px 54px; margin: 64px 0 64px; background-color: var(--black); color: var(--white); overflow: hidden; z-index: 1;}
+.quote-name:not(span){font-size: 1rem; line-height: 20px; color: var(--sky-blue);}
+.quote-name span{margin-bottom: 8px; font-size: 20px; line-height: 24px; color: var(--white); display: block;}
+.quote-image{width: 128px;}
+.quote-glow-bg{ width: 616px; height: 616px; right: 0px; top: 0px; background-color: var(--illumin-blue); opacity: 0.25; filter: blur(104px); -webkit-filter: blur(104px); position: absolute; z-index: -1;}
+.block-quote blockquote{color: var(--white); letter-spacing: -0.02rem;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .quote-author{gap: 20px; margin-bottom: 33px;}
+    .quote-name:not(span){gap: 20px; flex: 1; }
+    .quote-avatar{width: 64px;}
+    .quote-prof{width: calc(100% - 84px);}
+    .insights-banner-text h1{font-size: 40px; line-height: 48px;}
+}
+@media only screen and (min-width: 1024px){
+    .insights-banner-main{gap: 64px; flex-direction: row-reverse;}
+    .insights-banner-text{flex: 0 0 480px; padding-top: 104px;}
+    .insights-banner-image{flex: 0 0 calc(100% - 544px); max-width: 756px; padding-right: 20px; position: relative;}
+    .insights-default-dots{top: -64px; right: -60px; content: ""; background-image: url('images/pattern-md.svg'); background-repeat: no-repeat; background-size: cover; width: 157px; height: 111px; display: block; position: absolute; opacity: 0.15;}
+    .insights-default-article > p:nth-child(1){margin-bottom: 64px;}
+    
+    .insights-default-main{padding: 80px 0 0; gap: 128px; flex-direction: row-reverse;}
+    .insights-default-aside{width: 335px; display: flex; flex-direction: column;}
+    .insights-default-article{width: calc(100% - 463px); padding-bottom: 80px;}
+    .icons-block-default{padding: 40px 0 80px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .insights-default-circle{width: 483px; height: 483px; right: 37px;}
+    .insights-banner-image{padding-right: 0;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .insights-banner-main{display: block;}
+    .insights-banner-text{padding-top: 64px;}
+    .text_module_dots { max-width: 335px; height: 120px; margin-bottom: 32px; }
+    .insights-default-main{display: block; padding: 80px 0;}
+    .icons-block-default{padding: 40px 0 80px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .insights-banner-wrap{padding: 42px 0 0;}
+    .insights-banner-main{display: block;}
+    .insights-banner-image{height: 192px;}
+    .insights-default-circle{width: 228px; height: 228px; top: 50%; right: 52px; background-image: url('images/mask-ring-mobile.svg');}
+    .insights-banner-text{padding-top: 55px;}
+    .insights-banner-text h1{font-size: 28px; line-height: 32px;}
+    .insights-def-pos { margin-top: 20px; }
+    .text_module_dots{height: 80px;}
+
+    .insights-default-main{display: block; padding: 64px 0;}
+    .insights-default-aside{padding-bottom: 40px;}
+    .insights-default-article > p:nth-child(1){margin-bottom: 63px;}
+    .insights-default-article > p:nth-child(1) span{font-size: 20px; line-height: 28px;}
+
+    .block-quote{padding: 32px;}
+    .quote-author{display: block; margin-bottom: 24px;}
+    .quote-avatar{width: 64px; margin-bottom: 20px;}
+    .quote-name{display: block;}
+    .icons-block-default{padding: 30px 0 64px;}
+}
+@media only screen and (max-width: 370px) and (min-width: 200px){
+    .insights-def-avatar{display: block;}
+    .insights-def-text{padding-top: 20px;}
+}

@@ -1,0 +1,40 @@
+
+
+
+
+.perks-team-main{padding: 80px 0 128px;}
+.perks-team-title h2{font-size: 32px; line-height: 40px;}
+.perks-team-list h3{color: var(--sky-blue);}
+.perks-team-icon img{width: 100%;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .perks-team-title{margin-bottom: 64px;}
+    .perks-team-list h3{font-size: 28px; line-height: 32px;}
+    .perks-team-icon{max-width: 40px; margin-bottom: 24px;}
+}
+@media only screen and (min-width: 1024px){
+   .perks-team-lists{gap: 64px;}
+   .perks-team-list{flex: 0 0 calc(25% - 48px);}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .perks-team-lists{gap: 30px;}
+    .perks-team-list {
+        flex: 0 0 calc(25% - 23px);
+    }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .perks-team-lists{gap: 40px 20px;}
+    .perks-team-list { flex: 0 0 calc(50% - 10px); }
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    body.page-template-company-careers .perks-team-main{padding-top: 63px;}
+    .perks-team-main { padding: 15px 0 62px; }
+    .perks-team-title{margin-bottom: 40px;}
+    .perks-team-lists{display: block;}
+    .perks-team-list{gap: 24px; margin-bottom: 40px; display: flex; flex-wrap: wrap; align-items: center;}
+    .perks-team-list:last-child{margin-bottom: 0;}
+    .perks-team-icon{width: 40px;}
+    .perks-team-list h3{font-size: 20px; line-height: 24px; margin-bottom: 0;}
+    .perks-team-desc{flex: 100%;}
+}

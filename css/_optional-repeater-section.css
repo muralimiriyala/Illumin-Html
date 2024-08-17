@@ -1,0 +1,74 @@
+body.page-template-flex-default .optional-repeater-section{z-index: 1; position: relative;}
+.optional-repeater-text span.optional-text{margin-bottom: 10px;}
+.optional-diamond{right: -270px; top: 50%; transform: translateY(-50%); width: 624px; height: 624px; position: absolute; z-index: -1; background-image: url('./images/diamond.svg'); background-repeat: no-repeat; background-size: contain;}
+.optional-circle {left: -275px; top: 50%; transform: translateY(-50%); width: 624px; height: 624px; background-image: linear-gradient(-53.19deg, rgba(50, 7, 255, 0) 11.87%, #3207FF 41.6%, #8200F0 73.73%); border-radius: 50%; position: absolute; z-index: -1; } 
+.optional-circle-bg{width: calc(100% - 40px); height: calc(100% - 40px); top: 20px; left: 20px; border-radius: 50%; position: absolute; background-color: var(--white);}
+
+.optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -270px; right: auto;}
+.optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -275px; left: auto;}
+
+body.page-template-stock-performance .optional-diamond{filter: grayscale(100%); -webkit-filter: grayscale(100%); background-image: url('./images/diamond-black.svg');}
+body.page-template-investor-info .optional-diamond{filter: grayscale(100%);  -webkit-filter: grayscale(100%);}
+body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -webkit-filter: grayscale(100%);}
+.no_optional_image .optional-repeater-image{display: none;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .optional-repeater-text h2{margin-bottom: 13px;}
+    .optional-repeater-text .button{margin-top: 8px;}
+    .optional-repeater-text::before{width: 40px; height: 280px; right: -120px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-repeat: no-repeat; content: ""; display: block; position: absolute;}
+    .reverse .optional-repeater-text::before{left: -120px; right: auto;}
+    .optional-repeater-thumb::before{width: 80px; height: 280px; left: -40px; top: 50%; transform: translateY(-50%); border-radius: 0; opacity: 0.15; background-image: url('images/pattern-right.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute;}
+    .reverse .optional-repeater-thumb::before{right: -40px; left: auto;}
+    body.page-template-company-careers .optional-repeater-main{padding-bottom: 92px;}
+    body.page-template-product .optional-repeater-main{padding-top: 100px;}
+}
+@media only screen and (min-width: 1024px){
+    body.page-template-landing-page .optional-repeater-section, body.page-template-investor-info .optional-repeater-section, body.page-template-product .optional-repeater-section, body.page-template-stock-performance .optional-repeater-section{z-index: 1; position: relative;}
+    .optional-repeater-section .container{max-width: 1190px;}
+    .optional-repeater-list{gap: 80px; padding: 80px 0;}
+    .optional-repeater-text{flex: 0 0 488px; font-size: 20px; line-height: 28px;}
+    .optional-repeater-image{flex: 0 0 calc(100% - 568px);}
+    .optional-repeater-list.reverse{flex-direction: row-reverse;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .optional-repeater-list { gap: 30px; }
+    .optional-repeater-image { flex: 0 0 calc(100% - 475px); }
+    .optional-repeater-text { flex: 0 0 445px; }
+    .optional-diamond { right: -205px; width: 382px; height: 382px; }
+    .optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -205px;}
+    .optional-circle{left: -255px; width: 524px; height: 524px;}
+    .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -255px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .optional-repeater-main { padding: 48px 0 0; }
+    .optional-repeater-list{padding-bottom: 80px; display: block;}
+    .optional-repeater-image{margin-bottom: 55px;}
+    .optional-diamond { right: -292px; }
+    .optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -292px;}
+    .optional-circle{left: -200px; width: 585px; height: 585px;}
+    .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -200px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .optional-repeater-main{ padding: 48px 0 94px; }
+    body.page-template-product .optional-repeater-main{padding-bottom: 48px;}
+    body.page-template-stock-performance .optional-repeater-main{padding-bottom: 48px;}
+    .optional-diamond {right: -150px; transform: translateY(-50%); width: 303px; height: 303px; background-image: url('./images/diamond-mobile.svg');} 
+    .optional-repeater-list:nth-child(odd) .optional-diamond{left: -150px; }
+    .optional-circle {left: -138px; width: 303px; height: 303px; }
+    .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -138px;}
+    .optional-circle-bg {width: calc(100% - 24px); height: calc(100% - 24px); top: 12px; left: 12px; border-radius: 50%; position: absolute; background-color: var(--white); } 
+    .optional-repeater-list{display: block; margin-bottom: 94px;}
+    .optional-repeater-list:last-child{margin-bottom: 0;}
+    .optional-repeater-image{margin-bottom: 55px;}
+    body.page-template-investor-info .optional-repeater-image{margin-bottom: 47px;}
+    .optional-repeater-text{font-size: 16px; line-height: 24px; padding-left: 12px; padding-right: 12px;}
+    body.page-template-flex-default .optional-repeater-main{padding-bottom: 48px;}
+    body.page-template-flex-default .optional-repeater-list{margin-bottom: 48px;}
+    body.page-template-flex-default .optional-repeater-list:last-child{margin-bottom: 0;}
+    .optional-repeater-thumb::before, .optional-repeater-thumb::after{ width: 40px; height: 128px; top: 50%; transform: translateY(-50%); border-radius: 0; opacity: .15; background-image: url('images/optional-pattern-mobile.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute; }
+    .optional-repeater-thumb::before{left: -20px;}
+    .optional-repeater-thumb::after{right: -40px;}
+    .reverse .optional-repeater-thumb::before{left: -40px;}
+    .reverse .optional-repeater-thumb::after{right: -20px;}
+}

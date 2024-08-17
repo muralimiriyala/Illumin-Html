@@ -1,0 +1,63 @@
+
+.no-join-team-section .leadership-main{padding-top: 0;}
+.leadership-main{padding: 128px 0 104px;}
+.leadership-head{margin-bottom: 80px;}
+.leadership-title{font-size: 20px; line-height: 28px;}
+.leadership-list{ filter: drop-shadow(0px 0px 48px rgba(94, 158, 232, 0.25)); -webkit-filter: drop-shadow(0px 0px 48px rgba(94, 158, 232, 0.25)); border-radius: 24px; }
+.leadership-text-pos{bottom: 0; height: auto; left: 0; padding: 24px; transform: translateY(48px); width: 100%; position: absolute; transition: all 0.5s ease-in-out;}
+
+.leadership-text { padding: 24px 18px 24px 20px; font-size: 1rem; line-height: 24px; color: var(--slate-color); background-color: var(--white); max-height: 96px; overflow: hidden; width: 100%; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0s; }
+.leadership-text a{color: var(--sky-blue);}
+.leadership-role {padding-right: 20px; color: var(--black); overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box;} 
+.leadership-role span{font-size: 20px; line-height: 24px; padding-right: 20px; display: block; cursor: pointer;}
+.leadership-role p{margin-bottom: 0; color: var(--sky-blue);}
+
+.leadership_arrow{width: 26px; height: 26px; right: 0; top: 11px; background-image: url('images/up-arrow-blue.svg'); background-repeat: no-repeat; background-size: contain; background-position: center; display: block; position: absolute; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0s; cursor: pointer;}
+.leadership-desc{display: none; margin-top: 24px;}
+.linkedin_connect{font-size: 14px; line-height: 20px;}
+.linkedin_connect a{gap: 8px; color: var(--black);}
+.linkedin_connect a:hover{color: var(--sky-blue);}
+.linkedin-icon{font-size: 24px; line-height: normal; color: var(--sky-blue);}
+
+.leadership-list-illumin.expand .leadership-text{max-height: 400px; overflow-y: scroll; scrollbar-width: none; -ms-overflow-style: none;  }
+.leadership-list-illumin.expand .leadership-thumb::before{ width: 100%; height: 100%; top: 0; left: 0; opacity: 0.1; border-radius: 24px; background: var(--black); content: ""; position: absolute; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0s; }
+.leadership-list-illumin.expand .leadership-thumb img{opacity: 0.5;}
+.leadership-list-illumin.expand .leadership_arrow{background-image: url('images/down-arrow-blue.svg');}
+.leadership-text::-webkit-scrollbar  { width: 0; height: 0; }
+
+.leadership-row{z-index: 1;}
+.leadership-space{width: 160px; height: 160px; opacity: 0.15; position: absolute; z-index: -1; background-image: url('./images/leadershipt-spacer.svg'); background-repeat: no-repeat; background-size: contain;}
+.leadership-space.top{top: -80px; right: -80px;}
+.leadership-space.bottom{bottom: -80px; left: -80px;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .leadership-title{flex: 0 0 652px;}
+    .leadership-btn-link{flex: 1; text-align: right;}
+    .leadership-row{gap: 64px;}
+    .leadership-list-illumin{flex: 0 0 calc(33.333% - 43px);}
+    .leadership-thumb{min-height: 400px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+    .leadership-main{padding: 64px 0 104px;}
+    .leadership-head{display: block;}
+    .leadership-title h2{font-size: 40px; line-height: 48px;}
+    .leadership-btn-link{margin-top: 24px;}
+    .leadership-row{gap: 80px 20px;}
+    .leadership-list-illumin{flex: 0 0 calc(50% - 20px);}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .leadership-main{padding: 64px 0 64px;}
+    .leadership-head{display: block;}
+    .leadership-title h2{font-size: 40px; line-height: 48px;}
+    .leadership-btn-link{margin-top: 24px;}
+    .leadership-row{display: block;}
+    .leadership-list-illumin{margin-bottom: 64px;}
+    .leadership-list-illumin:last-child{margin-bottom: 0;}
+    .leadership-space.top{top: -35px; right: -20px;}
+    .leadership-space.bottom{bottom: -67px; left: -20px;}
+    .leadership-desc{font-size: 14px; line-height: 20px;}
+}

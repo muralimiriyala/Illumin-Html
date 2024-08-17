@@ -1,0 +1,55 @@
+
+.our-story-slider .slick-list{overflow: inherit;}
+.our-story-slider .slick-track{ padding-top: 87px; border-top: 2px solid var(--black); }
+.our-story-ring{width: 72px; height: 72px; left: -36px; top: -36px; z-index: -1; position: absolute; opacity: 0.15; border-radius: 50%; background-image: linear-gradient(90deg,#3207ff 0,#8200f0 100%);}
+.our-dot-ring{top: -12px; left: -12px; border: 8px solid var(--black); width: 24px; height: 24px; border-radius: 50%; display: block; position: absolute;}
+.our-dot-ring::after { width: 24px; height: 24px; top: 50%; left: 50%; transform: translate(-50%,-50%); content: ""; border-radius: 50%; background-color: transparent; border: 4px solid var(--white); position: absolute; z-index: -1; }
+.our-story-text{padding: 32px; background-color: var(--white);  font-size: 1rem; line-height: 24px; box-shadow: 0px 0px 80px rgba(0, 125, 235, 0.2);}
+.our-story-slide h2{margin-bottom: 9px;}
+.our-story-slide span:not(.our-story-slide p span){color: var(--sky-blue); margin-bottom: 10px;}
+
+.our-story-slider.slick-slider .slick-arrow{top: -32px; right: 0;  width: 64px; height: 64px;}
+.our-story-slider.slick-slider .slick-arrow::after{ right: 24px; width: 20px; height: 20px; border-bottom-width: 6px; border-right-width: 6px; transition: all .3s ease-in-out;}
+.our-story-slider.slick-slider .slick-arrow.slick-prev::after{left: 24px;}
+.our-story-slider.slick-slider .slick-arrow:hover::after{opacity: 0.75;}
+
+ /*-- media css starts here --*/
+ @media only screen and (min-width: 1024px){
+   .our-story-section{z-index: 1;}
+    .our-story-main{padding: 0 0 168px;}
+    .our-story-head{margin-bottom: 67px;}
+    .our-story-title{flex: 0 0 628px; font-size: 20px; line-height: 28px; background-color: var(--white);}
+    .our-story-slider .slick-track{border-top-left-radius: 24px; }
+    .our-story-line { top: -89px; left: -1px; width: 165.2px; height: 84px; border: 2px solid var(--black); border-radius: 24px 0 0 0; border-right: none; border-bottom: none; position: absolute; }
+    .our-story-slide:nth-child(even) .our-story-line{ top: -161px; height: 156px; }
+    .our-story-dots{ right: 0; top: 0; max-width: 628px; width: 100%; height: 144px; opacity: .15; background-image: url('images/seamless.svg'); background-repeat: no-repeat; background-position: center; background-size: cover; position: absolute; z-index: 0; }
+    .our-story-slider{gap: 0; flex-wrap: nowrap;}
+    .our-story-slide{width: 296px; margin-right: 88px;}
+    .our-story-slide:nth-child(even){transform: translateY(72px);}
+    .our-story-slider.slick-slider .slick-arrow.slick-prev{left: -32px;}
+   .our-story-circle{ width: 624px; height: 624px; top: calc(50% + 79px); transform: translateY(-50%); right: -200px; position: absolute; z-index: -1; background-image: url('./images/timeline-ring.svg'); background-repeat: no-repeat; background-size: contain;}
+ }
+ @media only screen and (max-width: 1439px) and (min-width: 1024px){
+   .our-story-slider{margin-left: 30px;}
+ }
+ @media only screen and (max-width: 1023px) and (min-width: 768px){
+    .our-story-main{padding: 0 0 88px;}
+    .our-story-head{margin-bottom: 67px; display: block;}
+    .our-story-slider.slick-slider{padding-left: 30px;}
+    .our-story-slide{width: 296px; margin-right: 78px;}
+    .our-story-line { left: -1px; top: -89px; width: 165.2px; height: 84px; border: 2px solid var(--black); border-right: none; border-bottom: none; position: absolute; }
+    .our-story-slider.slick-slider .slick-arrow.slick-prev{left: 0px;}
+ }
+ @media only screen and (max-width: 767px) and (min-width: 200px){
+    .our-story-main{padding: 8px 0 88px;}
+    .our-story-head{margin-bottom: 67px; display: block;}
+    .our-story-title h2{font-size: 40px; line-height: 48px;}
+    .our-story-slider.slick-slider{padding-left: 30px;}
+    .our-story-slide{width: 248px; margin-right: 78px;}
+    .our-story-line { left: -1px; top: -89px; width: 165.2px; height: 84px; border: 2px solid var(--black); border-right: none; border-bottom: none; position: absolute; }
+    .our-story-slider.slick-slider .slick-arrow.slick-prev{left: 0px;}
+    .our-story-slide h2{font-size: 40px; line-height: 48px;}
+    .our-story-text{padding: 32px;}
+ }
+
+

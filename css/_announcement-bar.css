@@ -1,0 +1,35 @@
+
+.announcement-bar{padding: 12px; color: var(--white); background: linear-gradient(90deg, #3207FF 0%, #8200F0 100%); z-index: 1250; position: relative;}
+.announcement-close{position: relative; width: 26px; height: 26px;  cursor: pointer;}
+.announcement-close span{display: block; width: 100%; height: 100%;}
+.announcement-close span:after, .announcement-close span:before {width: 26px; height: 4px; background-color: var(--white); transition: all 0.3s; backface-visibility: hidden; border-radius: 2px; left: 0; top: 50%; content: ""; position: absolute; display: block; }
+.announcement-close span:before {transform: rotate(45deg); }
+.announcement-close span:after {transform: rotate(-45deg); }
+.announcement-close:hover span::before, .announcement-close:hover span::after{background-color: var(--white-70);}
+.announcement-text p{margin-bottom: 0;}
+    
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .announcement-main{gap: 0; flex-direction: row-reverse; justify-content: center; position: relative;} 
+    .announcement-text{flex: 1; gap: 0 48px; justify-content: center;}
+    .announcement-close{right: 0; position: absolute;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .announcement-main{gap: 0 30px;}
+    .announcement-text{flex: 0 0 calc(100% - 56px); gap: 0 30px; justify-content: center;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .announcement-bar{padding: 15px 0 20px;}
+    .announcement-main{display: block; text-align: center;} 
+    .announcement-close{margin: 0 auto 10px;}
+    .announcement-text{gap: 10px 0; flex-direction: column;}
+    .announcement-text p{margin-bottom: 5px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .announcement-bar{padding: 15px 0 20px;}
+    .announcement-main{display: block; text-align: center;} 
+    .announcement-close{margin: 0 auto 10px;}
+    .announcement-text{gap: 10px 0; flex-direction: column;}
+    .announcement-text p{margin-bottom: 5px;}
+}

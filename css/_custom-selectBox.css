@@ -1,0 +1,18 @@
+
+select.selectBox{display: none;}
+body .selectBox-dropdown{padding: 14px 40px 14px 16px; font-size: 1rem; line-height: 1.25; color: var(--black); background-color: transparent; font-family: 'Graphik-Semibold', sans-serif; border: 1px solid #8200f0; border-radius: 12px; width: 100%; cursor: pointer; display: block;position: relative; } 
+body .selectBox-dropdown span.selectBox-label{white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
+body .selectBox-dropdown span.selectBox-label a{color: inherit;}
+body .selectBox-dropdown.selectBox-menuShowing{border-radius: 12px 12px 0 0;}
+body .selectBox-dropdown .selectBox-arrow::after{right: 15px; top: 50%; transform: translateY(-50%); font-size: 1rem; content: "\f0d7"; color: var(--illumin-blue); font-weight: normal; font-family: "Font Awesome 6 pro"; position: absolute; }
+body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow::after{content: "\f0d8";}
+ul.selectBox-dropdown-menu{margin: 0; padding: 10px 0 0; top: 100%; left: 0; max-height: 213px; min-height: 1em; min-width: 213px; overflow: auto; display: block; border-radius: 0; background-color: var(--white); position: absolute; z-index: 99999; border: solid 1px var(--purple-color); border-radius: 0 0 12px 12px;}
+ul.selectBox-dropdown-menu li:first-child{display: none;}
+body.page-template-stock-performance ul.selectBox-dropdown-menu li:first-child{display: block;}
+ul.selectBox-dropdown-menu li{display: block; margin-bottom: 0; padding: 0; white-space: nowrap;}
+ul.selectBox-dropdown-menu li::before{display: none;}
+ul.selectBox-dropdown-menu li a{padding: 8px 16px; color: var(--black); cursor: pointer; overflow: hidden; font-size: 1rem; line-height: 1.5; letter-spacing: normal; display: block; white-space: normal; text-transform: capitalize; }
+ul.selectBox-dropdown-menu li:hover a{color: var(--white); background-color: var(--sky-blue);}
+ul.selectBox-dropdown-menu li:hover{background-color: transparent; }
+body.page-template-investor-info ul.selectBox-dropdown-menu{min-width: 178px;}
+body.page-template-stock-performance ul.selectBox-dropdown-menu{min-width: 178px;}

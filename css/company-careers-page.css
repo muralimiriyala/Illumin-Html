@@ -1,0 +1,56 @@
+
+
+.company-careers-section{background-color: var(--tin-color);}
+.company-careers-head h2{font-size: 40px; line-height: 48px; margin-bottom: 17px;}
+.company-careers-list{margin-bottom: 40px;}
+.company-careers-list:last-child{margin-bottom: 0;}
+.company-careers-list h3{margin-bottom: 24px; color: var(--illumin-blue); font-size: 28px; line-height: 32px;}
+.company-careers-pos{background-color: var(--white); margin-bottom: 20px;}
+.company-careers-pos:last-child{margin-bottom: 0;}
+
+ul.scroll_links{margin: 0;}
+ul.scroll_links li::before{display: none;}
+ul.scroll_links li{margin: 0 0 24px;}
+ul.scroll_links li a{padding-right: 30px; font-size: 20px; line-height: 24px; color: var(--black); font-family: 'Graphik-Bold', sans-serif; position: relative;}
+ul.scroll_links li a.active, ul.scroll_links li a:hover{color: var(--illumin-blue);}
+ul.scroll_links li a::after{width: 20px; height: 30px; right: 0; top: 50%; transform: translateY(-50%); position: absolute; background-image: url('images/right-arrow.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0.15s;}
+ul.scroll_links li a:hover::after{opacity: 0; right: 10px;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .company-careers-title{font-size: 1rem; line-height: 20px;}
+    .company-careers-title h4{margin-bottom: 0; font-size: 20px; line-height: 24px;}
+}
+@media only screen and (min-width: 1024px){
+    .company-careers-main{padding: 80px 0 80px; gap: 96px;}
+    .company-careers-text{flex: 0 0 352px;}
+    .company-careers-lists{flex: 0 0 calc(100% - 448px);}
+    .company-careers-pos{gap: 40px; padding: 16px 24px 16px 16px;} 
+    .company-careers-title{flex: 1; gap: 16px; justify-content: space-between;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .company-careers-main{padding: 64px 0 64px; gap: 30px;}
+    .company-careers-text{flex: 0 0 300px;}
+    .company-careers-lists{flex: 0 0 calc(100% - 330px);}
+    .company-careers-pos{padding: 8px 20px 12px 12px; gap: 20px; align-items: center;}
+    .company-careers-title{font-size: 14px; line-height: 20px; display: block; flex: 0 0 calc(100% - 40px);} 
+    .company-careers-title h4{font-size: 1rem; margin-bottom: 0;}
+    .company-careers-iocn{flex: 0 0 20px;}
+    #lever-jobs-container ul.lever-team > li > ul > li{padding: 16px 24px 16px 16px; display: block;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .company-careers-main{padding: 64px 0 24px; display: block;}
+    .company-careers-text{margin-bottom: 40px;}
+    .scroll_links_mobile{ background-color: transparent; cursor: pointer; font-size: 16px; line-height: 20px; border: 1px solid #8200F0; display: block; }
+    .scroll_links_mobile.active{background-color: var(--white); border-radius: 12px 12px 0 0;}
+    .scroll_links_btn{padding: 16px 20px 16px 16px; display: block; width: 100%;}
+    .scroll_links_btn span{right: 16px; top: 50%; transform: translateY(-50%); color: var(--illumin-blue); display: block; position: absolute;}
+    .scroll_links_btn.active span::before{content: "\f0d8";}
+    ul.scroll_links{margin: 0; padding: 10px 20px 20px; width: calc(100% + 2px); top: 100%; left: -1px; border-radius: 0 0 12px 12px; border: 1px solid #8200f0; background-color: var(--white); position: absolute; border-top: 0; display: none; z-index: 1;}
+    ul.scroll_links li:last-child{margin-bottom: 0;}
+    .company-careers-pos{padding: 8px 20px 12px 12px; gap: 20px; align-items: center;}
+    .company-careers-title{font-size: 14px; line-height: 20px; display: block; flex: 0 0 calc(100% - 40px);} 
+    .company-careers-title h4{font-size: 1rem; margin-bottom: 0;}
+    .company-careers-iocn{flex: 0 0 20px;}
+    #lever-jobs-container .lever-department{margin-bottom: 40px;}
+}

@@ -1,0 +1,37 @@
+
+.join-team-section.bg{background-color: var(--tin-color);}
+
+.join-team-main{padding: 80px 0 128px;}
+.join-team-title h2{font-size: 32px; line-height: 40px;}
+.join-team-list h3{color: var(--sky-blue);}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .join-team-title{margin-bottom: 72px;}
+    .join-team-list h3{font-size: 28px; line-height: 32px;}
+    .join-team-icon{max-width: 40px; margin-bottom: 24px;}
+}
+@media only screen and (min-width: 1024px){
+   .join-team-lists{gap: 64px;}
+   .join-team-list{flex: 0 0 calc(25% - 48px);}
+   body.page-template-company-careers .join-team-main{padding-top: 0; margin-top: -3px;}
+   body.page-template-company-overview .join-team-main{padding: 83px 0 96px;}
+   body.page-template-company-overview h2{font-size: 40px; line-height: 48px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    body.page-template-company-careers .join-team-main{padding: 64px 0 64px;}
+    .join-team-main { padding: 67px 0 65px; }
+    .join-team-title{margin-bottom: 40px;}
+    .join-team-lists{display: block;}
+    .join-team-list{gap: 24px; margin-bottom: 40px; display: flex; flex-wrap: wrap; align-items: center;}
+    .join-team-list:last-child{margin-bottom: 0;}
+    .join-team-icon{width: 40px;}
+    .join-team-list h3{font-size: 20px; line-height: 24px; margin-bottom: 0;}
+    .join-team-desc{flex: 100%;}
+}

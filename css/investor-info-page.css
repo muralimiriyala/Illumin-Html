@@ -1,0 +1,86 @@
+.corporate-doc-section{background-color: var(--tin-color);}
+.corporate-doc-main{padding: 80px 0 80px;}
+.corporate-search{position: relative;}
+.corporate-search input{padding: 12px 40px 12px 16px; font-size: 1rem; line-height: 1.5; color: var(--black); font-family: 'Graphik-Semibold', sans-serif; border: 1px solid #8200F0; border-radius: 12px; background-color: transparent;}
+.corporate-search input::-webkit-input-placeholder {color: var(--black);font-family: 'Graphik-Semibold', sans-serif;}
+.corporate-search input:-moz-placeholder {color: var(--black);font-family: 'Graphik-Semibold', sans-serif;}
+.corporate-search input::-moz-placeholder {color: var(--black);font-family: 'Graphik-Semibold', sans-serif;}
+.corporate-search input:-ms-input-placeholder {color: var(--black);font-family: 'Graphik-Semibold', sans-serif;}
+.corporate-srch-btn{width: 16px; height: 16px; font-size: 1rem; line-height: 1.5; padding: 0; right: 16px; top: 50%; transform: translateY(-50%); color: var(--sky-blue); background: none; position: absolute; transition-duration: .75s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transition-property: opacity,visibility,color; transition-delay: 0s; } 
+.corporate-srch-btn:hover{color: var(--illumin-blue);}
+.corporate-srch-btn input{width: 100%; height: 100%; padding: 0; font-size: 0; border: none; position: absolute;}
+.corporate-srch-btn input:hover{background: none;}
+
+ul.policies-links{margin: 0 0 32px; gap: 8px;}
+ul.policies-links li::before{display: none;}
+ul.policies-links li{margin: 0;}
+ul.policies-links li a{padding: 8px 16px; font-size: 24px; line-height: 28px; color: var(--black); display: block; position: relative;}
+ul.policies-links li a.active, ul.policies-links li a:hover{color: var(--illumin-blue);}
+ul.policies-links li a::after{bottom: 0; left: 0; width: 100%; height: 2px; opacity: 0.10; background-color: var(--black); content: ""; display: block; position: absolute;}
+ul.policies-links li a.active::after, ul.policies-links li a:hover::after{opacity: 1; height: 4px; background-image: linear-gradient(90deg,#3207ff 0,#8200f0 100%);}
+
+.corporate-list-main{display: none;}
+.corporate-list-main.current-policie{display: block;}
+.corporate-list{padding: 14px 20px 12px 16px; margin-bottom: 21px; gap: 38px; background-color: var(--white);}
+.corporate-list:nth-child(n+5){display: none;}
+.corporate-stmts{gap: 10px; flex: 1;}
+.corporate-icon{flex: 0 0 20px; top: -1px; position: relative;}
+.corporate-icon img{width: 100%;}
+.corporate-pdf{flex: 0 0 60px; text-align: right; font-size: 1rem; line-height: 1.5; color: var(--black-50);}
+.corporate-pdf span{text-transform: uppercase;}
+.corporate-stmt{flex: 1;}
+.corporate-stmt a{color: var(--black);}
+.corporate-stmt a:hover{color: var(--illumin-blue);}
+.corporate_arrow{transition-duration: .5s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);}
+.corporate_arrow:hover{transform: translateX(-5px);}
+.investor-banner-desc{font-size: 20px; line-height: 28px;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .corporate-stmt{font-size: 20px; line-height: 24px;}
+}
+@media only screen and (min-width: 1024px){
+    .investor-banner-section{z-index: 1;}
+    .investor-banner-main::before, .investor-banner-main::after{width: 40px; height: 252px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-size: auto; background-repeat: no-repeat; content: ""; display: block; position: absolute; z-index: -1;}
+    .investor-banner-main::before{left: -120px;}
+    .investor-banner-main::after{right: -120px;}
+
+    .investor-banner-main{gap: 80px; padding: 64px 0;}
+    .investor-banner-text{flex: 0 0 560px;}
+    .investor-banner-desc{flex: 0 0 calc(100% - 640px);}
+    
+    .corporate-frm-field{margin-bottom: 20px;}
+    .corporate-doc-main{gap: 96px;}
+    .corporate-doc-text{flex: 0 0 352px;}
+    .corporate-statements{flex: 0 0 calc(100% - 448px);}
+    .corporate-year{flex: 1;}
+    ul.corporate-qlinks{flex: 1;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .investor-banner-main { gap: 30px; }
+    .investor-banner-text { flex: 0 0 415px; }
+    .investor-banner-desc { flex: 0 0 calc(100% - 445px); }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .investor-banner-main{display: block; padding: 47px 0 24px;}
+    .investor-banner-text{margin-bottom: 38px;}
+    .investor-banner-text h1{font-size: 40px; line-height: 48px; margin-bottom: 21px;}
+    .corporate-doc-main{display: block;}
+    .corporate-doc-text{margin-bottom: 40px;}
+    .corporate-form{width: 100%; gap: 20px; display: flex; flex-wrap: wrap;}
+    .corporate-frm-field{flex: 1;}
+    .corporate-search{flex: 1;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .investor-banner-main{display: block; padding: 47px 0 40px;}
+    .investor-banner-text{margin-bottom: 38px;}
+    .investor-banner-text span.optional-text{margin-bottom: 23px;}
+    .investor-banner-text h1{font-size: 40px; line-height: 48px; margin-bottom: 21px;}
+    .investor-banner-dots{opacity: 0.15; margin-top: 40px;}
+    .corporate-doc-main{display: block;}
+    .corporate-doc-text{margin-bottom: 40px;}
+    ul.policies-links{flex-wrap: nowrap; overflow-x: auto;}
+    .corporate-frm-field{margin-bottom: 20px;}
+    body.page-template-investor-info span.optional-text{margin-bottom: 15px;}
+}

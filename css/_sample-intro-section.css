@@ -1,0 +1,23 @@
+
+.sample-intro-text{font-size: 20px; line-height: 28px;}
+.sample-intro-head .text-link{margin-top: 11px;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .sample-intro-main{padding: 80px 0 128px; gap: 60px;}
+    body.page-template-company-overview .sample-intro-main{padding-bottom: 94px;}
+    body.page-template-landing-page .sample-intro-main{padding-top: 112px;}
+    .sample-intro-head{flex: 0 0 394px;}
+    .sample-intro-text{flex: 0 0 calc(100% - 454px);}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+    .sample-intro-main{display: block; padding: 48px 0 48px;}
+    .sample-intro-head{padding-bottom: 32px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .sample-intro-main{display: block; padding: 48px 0 48px;}
+    .sample-intro-head{padding-bottom: 32px;}
+}

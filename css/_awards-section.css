@@ -1,0 +1,27 @@
+
+
+.awards-by-main{background-color: rgba(0, 0, 0, 0.05);}
+span.awards-optional{font-size: 20px; line-height: 24px; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: block;}
+.awards-by-logo img{max-width: 124px; width: 100%; margin: 0 auto; display: block; object-fit: contain;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .awards-by-main{gap: 56px; margin-bottom: 48px; padding: 24px 24px 24px 65px;}
+    .awards-by-text{flex: 0 0 130px;}
+    .awards-by-logos{flex: 0 0 calc(100% - 186px); gap: 10px 56px;}
+    .awards-by-logo{flex: 0 0 calc(20% - 45px)}
+    .awards-by-logo:nth-child(1) img{max-width: 88px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .awards-by-main{ padding: 32px; display: block; text-align: center;}
+    .awards-by-text{margin-bottom: 32px;}
+    .awards-by-logos{gap: 20px; justify-content: center;}
+    .awards-by-logo{flex: 0 0 calc(25% - 15px);}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .awards-by-main{ padding: 20px 46px; margin: 24px 0 24px; display: block; text-align: center;}
+    span.awards-optional{margin-bottom: 10px; font-size: 1rem; line-height: 20px;}
+    .awards-by-logos{gap: 20px; justify-content: center;}
+    .awards-by-logo{flex: 0 0 calc(33.333% - 15px);}
+    .awards-by-logo img{max-width: 88px;}
+}

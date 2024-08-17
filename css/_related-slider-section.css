@@ -1,0 +1,45 @@
+
+.related-slider-section{background-color: var(--tin-color);}
+.related-slider-wrap{padding: 80px 0 113px;}
+.related-slider-title h2{font-size: 34px; line-height: 38px;}
+.related-slider-image{margin-bottom: 32px;}
+.related-slider-image img{min-height: 320px; max-height: 320px; overflow-y: hidden;}
+.related-slider-text{font-size: 24px; line-height: 32px; margin-bottom: 0; font-family: 'Graphik-Regular', sans-serif; }
+.related-slider-text a{color: var(--black);}
+.related-slider-text a:hover{color: var(--illumin-blue);}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .related-slider-title{flex: 0 0 50%;}
+    .related-slider-btn{flex: 0 0 50%; text-align: right;}
+    .related-slider-main{gap: 48px; flex: 100%; order: 3; padding-top: 32px;}
+    .related-slider-slide{flex: 0 0 calc(25% - 36px);}
+    .related-slider-main.slick-slider{width: calc(100% + 48px);}
+    .related-slider-main.slick-slider .slick-list{width: 100vw;}
+    .slick-slider .related-slider-slide{margin-right: 48px; width: 280px;}
+    body.single-post .related-slider-wrap{padding-bottom: 79px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .related-slider-main.slick-slider .slick-list{width: calc(100% + 30px);}
+    .slick-slider .related-slider-slide{margin-right: 30px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .related-slider-title { padding: 0 53px 20px; }
+    .related-slider-wrap{display: block;}
+    .related-slider-main.slick-slider{width: calc(100% + 20px);}
+    .related-slider-main.slick-slider .slick-list{overflow: inherit;}
+    .slick-slider .related-slider-slide{margin-right: 20px;}
+    .slick-current .related-slider-text{opacity: 1;}
+    .related-slider-btn { padding: 30px 53px 0; }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .related-slider-wrap{display: block; padding: 80px 0 80px;}
+    .related-slider-title { padding: 0 20px 34px; }
+    body.single-post .related-slider-title{padding-bottom: 42px;}
+    .related-slider-main.slick-slider .slick-list{overflow: inherit;}
+    .slick-slider .related-slider-slide{margin: 0 10px; width: 295px;}
+    .related-slider-text{opacity: 0;}
+    .slick-current .related-slider-text{opacity: 1;}
+    .related-slider-btn { padding: 52px 20px 0; }
+}

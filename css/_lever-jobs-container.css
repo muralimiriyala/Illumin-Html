@@ -1,0 +1,24 @@
+#lever-jobs-container h3.lever-department-title{margin-bottom: 24px; color: var(--illumin-blue); font-size: 28px; line-height: 32px;}
+#lever-jobs-container ul.lever-team{margin: 0;}
+#lever-jobs-container ul.lever-team > li::before{display: none;}
+#lever-jobs-container ul.lever-team > li > ul{margin: 0;}
+#lever-jobs-container ul.lever-team > li > ul > li::before{display: none;}
+#lever-jobs-container ul.lever-team > li > ul > li{ background-color: var(--white); border-radius: 16px; margin-bottom: 20px; }
+#lever-jobs-container ul.lever-team > li > ul > li > a{margin-bottom: 0; color: var(--black); font-size: 20px; line-height: 24px; font-family: 'Graphik-Bold', sans-serif; text-decoration: none;}
+#lever-jobs-container ul.lever-team > li > ul > li > a:hover{color: var(--illumin-blue);}
+#lever-jobs-container ul.lever-team > li > ul > li .lever-job-tag{flex: 0 0 30%; font-size: 18px; line-height: 26px; color: var(--black); font-family: 'Graphik-Regular', sans-serif; }
+#lever-jobs-container .lever-team-title{display: none;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+}
+@media only screen and (min-width: 1024px){
+    #lever-jobs-container ul.lever-team > li > ul > li{ gap: 40px; flex-wrap: wrap; padding: 16px 24px 16px 16px; }
+    #lever-jobs-container ul.lever-team > li > ul > li > a{flex: 0 0 calc(70% - 40px);}
+    #lever-jobs-container ul.lever-team > li > ul > li .lever-job-tag{flex: 0 0 30%;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    #lever-jobs-container ul.lever-team > li > ul > li{display: block; padding: 12px;}
+    #lever-jobs-container ul.lever-team > li > ul > li > a{font-size: 1rem; line-height: 20px;}
+    #lever-jobs-container ul.lever-team > li > ul > li .lever-job-tag{font-size: 14px; line-height: 20px; display: block; color: var(--black-50);}
+}
