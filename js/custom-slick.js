@@ -225,6 +225,24 @@ $(document).ready(function(){
     });  
 
 
+    // $('.platform-for').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     fade: true,
+    //     asNavFor: '.platform-nav'
+    //   });
+    //   $('.platform-nav').slick({
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.platform-for',
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     focusOnSelect: true
+    //   });
+
 
 
 
