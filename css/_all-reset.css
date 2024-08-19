@@ -102,6 +102,9 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 
 .button.btn-white{padding: 11px 14px 9px; font-size: 16px; line-height: 20px; background: var(--white); color: var(--illumin-blue);}
 
+/* Background color */
+.tint-bg{background-color: var(--tint-bg-blue);}
+
 /* Placeholder text color -- selectors need to be separate to work. */ 
 ::-webkit-input-placeholder {color: var(--black-50); font-family: 'Graphik-Regular', sans-serif;}
 :-moz-placeholder {color: var(--black-50); font-family: 'Graphik-Regular', sans-serif; opacity: 1; }
