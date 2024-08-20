@@ -243,6 +243,17 @@ $(document).ready(function(){
     //     focusOnSelect: true
     //   });
 
+    $('.single-testimonial-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 500,
+        infinite: false,
+        dots: false,
+        arrows: true,
+        prevArrow: '<span class="slick-arrow slick-prev"></span>',
+        nextArrow: '<span class="slick-arrow slick-next"></span>',   
+    });
+
 
 
 

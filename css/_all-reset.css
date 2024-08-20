@@ -102,6 +102,8 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 
 .button.btn-white{padding: 11px 14px 9px; font-size: 16px; line-height: 20px; background: var(--white); color: var(--illumin-blue);}
 
+.button.btn-sun{background: var(--sun); color: var(--black);}
+
 /* Background color */
 .tint-bg{background-color: var(--tint-bg-blue);}
 
@@ -194,11 +196,11 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
 .play-btn-bg > span.circle{ background-image: linear-gradient(90deg,#3207ff 0,#8200f0 100%); z-index: 1; }
 .play-btn-bg > span.circle::after{ width: 12px; height: 12px; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 6px solid var(--white); border-radius: 300px; content: ""; display: block; position: absolute; }
 .play-btn-bg > span.circle:hover{ transform: rotate(180deg) }
-.play-btn-bg > span.diamond{ background-image: linear-gradient(90deg,#3207ff 0,#8200f0 100%); z-index: 1; }
+.play-btn-bg > span.diamond{ background-color: var(--white); z-index: 1; }
 .play-btn-bg > span.diamond:after{ left: calc(50% + 5px); width: 34px; height: 48px; top: 50%; transform: translate(-50%,-50%); background-image: url('images/play-icon.svg'); background-repeat: no-repeat; background-size: contain; background-position: center; content: ""; display: block; position: absolute; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); transition-property: all; transition-delay: 0s; }
 .play-btn-bg > span.diamond:hover:after{ transform: translate(-50%,-50%) scale(1.1); }
 .play-btn-bg > span { transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); transition-property: all; transition-delay: 0s; border-radius: 50%; bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; }
-.play-btn-bg > span:not(:first-child) { animation: 6s playBtnZooming infinite linear; transform: scale(1); filter: opacity(0.25); -webkit-filter: opacity(0.25); background-color: var(--white); }
+.play-btn-bg > span:not(:first-child) { animation: 6s playBtnZooming infinite linear; transform: scale(1); filter: opacity(0.25); -webkit-filter: opacity(0.25); background-color: #FFCD00; }
 .play-btn-bg > span:not(:first-child):nth-child(2) { -webkit-animation-delay: 2s; animation-delay: 2s; }
 .play-btn-bg > span:not(:first-child):nth-child(3) { -webkit-animation-delay: 4s; animation-delay: 4s; }
 @keyframes playBtnZooming {
