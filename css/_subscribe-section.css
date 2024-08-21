@@ -11,13 +11,16 @@
 .subscribe-form{position: relative;}
 .subscribe-form .frm_fields_container{display: block;}
 .subscribe-form .frm_forms .frm_form_fields .frm_form_field{margin: 0 0 11px 0;}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-webkit-input-placeholder{color: var(--black-50);}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-moz-placeholder{color: var(--black-50);}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-moz-placeholder{color: var(--black-50);}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-ms-input-placeholder{color: var(--black-50);}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]){padding: 12px 20px; height: 48px; font-size: 16px; line-height: 24px; font-family: 'Graphik-Regular', sans-serif;  border-radius: 16px; border: 2px rgb(81, 41, 255); background: var(--Tint-BG-Blue, #E5F2FD);}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-webkit-input-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-moz-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-moz-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-ms-input-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]){padding: 12px 20px; height: 48px; font-size: 16px; line-height: 24px; font-family: 'Graphik-Regular', sans-serif;  border-radius: 16px; border: 2px solid rgba(81, 41, 255, .10); background: var(--tint-bg-blue);}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):focus{background-color: var(--tint-bg-blue) !important;}
 .subscribe-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 12px 16px; font-size: 16px; line-height: 20px; background: var(--purple-color);}
-.subscribe-form .frm_forms .frm_form_fields .frm_primary_label{display: none;}
+.subscribe-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: var(--purple-color);}
+.subscribe-form .frm_forms .frm_form_fields .frm_primary_label{font-size: 16px; line-height: 24px; margin-bottom: 5px; display: block;}
+.subscribe-form .frm_forms .frm_form_fields .frm_primary_label span{color: #f00;}
 .subscribe-form legend.frm_screen_reader{display: none;}
 .subscribe-angle{overflow: hidden; animation: 5s subscribeZooming infinite linear; animation-delay: 0s; transform: translateX(0); }
  @keyframes subscribeZooming {
@@ -61,4 +64,5 @@
     .subscribe-main{display: block;}
     .subscribe-text{font-size: 18px; line-height: 26px; margin-bottom: 19px;}
     .subscribe-text h3{font-size: 28px; line-height: 32px; margin-bottom: 4px;}
+    .subscribe-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{width: fit-content;}
 }
