@@ -10,12 +10,17 @@
 .single-testimonial-details h5{color: var(--white); margin-bottom: 4px;}
 .single-testimonial-details span{color: var(--white); font-size: 14px; line-height: 24px; display: block;}
 
-
+@media screen and (min-width: 1024px) {
+    .single-testimonial-main .slick-arrow:not(button.slick-arrow)::after{right: 29px; width: 20px; height: 20px;}
+    .single-testimonial-main .slick-arrow:not(button.slick-arrow){top: 0; right: 0; width: 80px; height: 100%; border-radius: 0;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .single-testimonial-slide{padding: 48px 0;}
     .single-testimonial-text h3{line-height: 48px; font-size: 32px;}
     .single-testimonial-text h3 > span{border-bottom: 3px solid var(--sun); display: inline; line-height: 21px;}
     .single-testimonial-details span{line-height: 20px;}
+    .single-testimonial-main .slick-arrow:not(button.slick-arrow)::after{right: 29px; width: 20px; height: 20px;}
+    .single-testimonial-main .slick-arrow:not(button.slick-arrow){top: 0; right: 0; width: 80px; height: 100%; border-radius: 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .single-testimonial-slide{padding: 32px 0;}
