@@ -1,6 +1,51 @@
 
+.home-banner-section{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
+.home-banner-text{font-size: 20px; line-height: 28px; color: var(--white);}
+.home-banner-text h1{color: var(--white);}
+.home-banner-text h1 > span{color: var(--sun);}
 
+@media screen and (min-width: 1300px) {
+    .home-banner-thumb{width: 526px;}
+}
 
 @media screen and (min-width: 1024px) {
-    
+    .home-banner-wrap{padding-top: 183px;}
+    .home-banner-main{gap: 80px;}
+    .home-banner-text{flex: 0 0 674px;}
+    .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
+    .home-banner-image{flex: 0 0 calc(100% - 754px);}
+    .watermark-circle{position: absolute; top: -47px; left: 43px;}
+    .watermark-line{position: absolute; top: 165px; left: 490px;}
+}
+
+@media screen and (max-width: 1339px) and (min-width: 1024px) {
+    .home-banner-main{gap: 40px;}
+    .home-banner-text{flex: 0 0 45.7%;}
+    .home-banner-image{flex: 0 0 calc(100% - 50%);}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .home-banner-wrap{padding-top: 80px;}
+    .home-banner-text{text-align: center; margin-bottom: 56px;}
+    .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
+    .home-banner-image{width: 100%;}
+    .home-banner-thumb{width: 360px; margin: 0 auto;}
+    .home-banner-thumb img{width: 360px;}
+    .watermark-circle{position: absolute; top: -40px; left: 50%; transform: translateX(-50%);}
+    .watermark-circle svg{width: 432px; height: 432px;}
+    .watermark-line{position: absolute; top: 185px; left: calc(50% + 271px); transform: translateX(-50%);}
+    .watermark-line svg{width: 116px; height: 16px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .home-banner-section{background: var(--Gradient-Horizontal, linear-gradient(90deg, #342FE7 0%, #8200F0 100%));}
+    .home-banner-wrap{padding-top: 32px;}
+    .home-banner-text{text-align: center; font-size: 18px; line-height: 26px; width: 100%; margin-bottom: 56px;}
+    .home-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;} 
+    .home-banner-image{width: 100%;}
+    .home-banner-thumb{width: 282px; margin: 0 auto;}
+    .home-banner-thumb img{width: 281.5px;}
+    .watermark-circle{position: absolute; top: 10px; left: 50%; transform: translateX(-50%);}
+    .watermark-circle svg{width: 294px; height: 294px;}
+    .watermark-line{position: absolute; top: 133px; left: calc(50% + 197px); transform: translateX(-50%);}
+    .watermark-line svg{width: 116px; height: 12px;}
 }
