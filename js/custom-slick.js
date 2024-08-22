@@ -224,6 +224,51 @@ $(document).ready(function(){
       }
     });  
 
+
+    const $platformSlider = $(".platform-slider");
+    const $platformAppend = $(".platform-append-arrows");
+    const $platforLink = $("ul.platform-nav li");
+    $platformSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        dots: true,
+        arrows: true,
+        prevArrow: '<span class="slick-arrow slick-prev"></span>',
+        nextArrow: '<span class="slick-arrow slick-next"></span>',  
+        appendDots: $platformAppend,
+        appendArrows: $platformAppend,
+    });
+    function textChange(){
+        let number = Number($platformSlider.slick('slickCurrentSlide'))+1;
+        $(`ul.platform-nav li`).removeClass("slick-current");
+        $(`ul.platform-nav li[data-platform-nav=${number}]`).addClass("slick-current");
+    }
+    $(document).on("click", ".platform-append-arrows span.slick-next", function(e){ e.preventDefault(); textChange(); });
+    $(document).on("click", ".platform-append-arrows span.slick-prev", function(e){ e.preventDefault(); textChange(); });
+    $(document).on("click", "ul.slick-dots li", function(e){ e.preventDefault(); textChange(); });
+    $platformSlider.on("init, setPosition, beforeChange, afterChange", function(){ textChange(); });
+    let $platMql=window.matchMedia("(min-width: 768px)");
+    function platMqlFun(){
+        if($platMql.matches){
+            $platforLink.on("click", function(e){
+                e.preventDefault();
+                $(this).siblings().removeClass("slick-current");
+                $(this).toggleClass("slick-current");
+                $platformSlider.slick('slickGoTo', Number($platformSlider.slick('slickCurrentSlide'))+1);
+            });
+        }
+        else{
+            $platforLink.off('click'); 
+        }
+    }
+    platMqlFun();
+    $platMql.addEventListener('change', platMqlFun);
+    $platMql.addEventListener('load', platMqlFun);
+    $platMql.addEventListener('resize', platMqlFun);
+
+
+
     const $singleSlider=$('.single-testimonial-main');
     const $singleNext=$(".single-slick-next");
     $singleSlider.slick({
