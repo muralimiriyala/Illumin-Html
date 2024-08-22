@@ -14,7 +14,7 @@
 .product-overview-slide{transition: all 0.5s ease; height: 100%; position: absolute; transform: translateX(100vw); }
 .product-overview-slide.current-slide{transform: translateX(0);}
 
-.journey-list{padding: 28px 24px 24px; font-size: 16px; line-height: 24px; cursor: pointer; background-color: var(--white); box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); transition-duration: .5s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);}
+.journey-list{padding: 28px 24px 24px; font-size: 16px; line-height: 24px; cursor: pointer; background-color: var(--white); box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); transition: all 0.5s ease;}
 .journey-list:hover, .journey-list.active-tab{box-shadow: 0px 24px 32px #96AFC8; transform: translateY(-24px);}
 
 .journey-circle{top: -12px; width: 24px; position: absolute;}

@@ -21,6 +21,7 @@ body.page-template-landing-page .faq-section{background-color: var(--white);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+    .faq-wrap{padding: 80px 0;}
     .faq-section.no_insights{padding-top: 60px; background-color: transparent;}
     .faq-section::after{left: auto; right: 0;}
     body.page-template-flex-default .faq-wrap{padding-top: 80px;}
@@ -36,8 +37,7 @@ body.page-template-landing-page .faq-section{background-color: var(--white);}
     .faq-button{margin-top: 32px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .faq-wrap {padding: 32px 0 40px;} 
-    body.home .faq-wrap{padding-top: 70px;}
+    .faq-wrap {padding: 24px 0;} 
     body.page-template-flex-default .faq-wrap { padding: 40px 0 40px; }
     body.page-template-landing-page .faq-wrap{padding-top: 42px;}
     .faq-title h2{font-size: 24px; line-height: 28px;}

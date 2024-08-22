@@ -18,19 +18,6 @@
 <link rel="stylesheet" href="./core.bundle.css" media="all"/>
 </head>
 <body class="home">
-<div class="announcement-bar">
-<div class="container">
-    <div class="announcement-main flex flex-vcenter">
-        <div class="announcement-close">
-            <span></span>
-        </div>
-        <div class="announcement-text flex flex-vcenter">
-            <p>This is the sample text heading for the announcement bar we can toggle on/off!</p>
-            <a href="#" class="button btn-white">Optional Button</a>
-        </div>
-    </div>
-</div>
-</div>
 <header class="main-header">
 <div class="container">
     <div class="header flex flex-vcenter">
@@ -118,14 +105,6 @@
 <section class="home-banner-section pos-relative">
 <div class="container">
 <div class="home-banner-wrap">
-    <div class="home-banner-header flex flex-vcenter">
-        <div class="home-banner-logo">
-            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-        </div>
-        <div class="home-banner-sign">
-            <a href="#" class="text-link sign_in">Sign In</a>
-        </div>
-    </div>
     <div class="home-banner-main">
         <div class="home-banner-bg"></div>
         <div class="home-banner-ellipse pos-relative aligncenter">
@@ -239,31 +218,91 @@
     <div class="container">
         <div class="platform-main">
             <ul class="platform-nav flex flex-center">
-                <li class="slick-current">The illumin platform</li>
-                <li>Journey canvas</li>
-                <li>Audience engagement map</li>
-                <li>Pathlight analysis</li>
+                <li data-platform-nav="1" class="slick-current">The illumin platform</li>
+                <li data-platform-nav="2">Journey canvas</li>
+                <li data-platform-nav="3">Audience engagement map</li>
+                <li data-platform-nav="4">Pathlight analysis</li>
             </ul>
-            <div class="platform-for">
-                <div class="platform-slide">
-                    <div class="platform-list flex flex-vcenter"> <!-- IF no image or no content add this class platform-full -->
-                        <div class="platform-content">
-                            <h4>1A short <span>introduction</span> to this panel shows here and is <span>concise</span>, limited to three or four lines.</h4>
-                            <ul>
-                                <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
-                                <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
-                                <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
-                            </ul>
-                            <a href="#" class="button">More about the platform</a>
+            <div class="platform-for relative">
+                <div class="platform-slider">
+                    <div class="platform-slide">
+                        <div class="platform-list flex flex-vcenter"> <!-- IF no image or no content add this class platform-full -->
+                            <div class="platform-content">
+                                <h4>1A short <span>introduction</span> to this panel shows here and is <span>concise</span>, limited to three or four lines.</h4>
+                                <ul>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                </ul>
+                                <a href="#" class="button">More about the platform</a>
+                            </div>
+                            <div class="platform-image">
+                                <picture class="platform-thumb object-fit">
+                                    <source srcset="images/platform-thumb@2x.png" media="(min-width: 768px)">
+                                    <img src="images/platform-thumb-mob@2x.png" alt="platform-thumb-mob">
+                                </picture>
+                            </div>
                         </div>
-                        <div class="platform-image">
-                            <picture class="platform-thumb object-fit">
-                                <source srcset="images/platform-thumb@2x.png" media="(min-width: 768px)">
-                                <img src="images/platform-thumb-mob@2x.png" alt="platform-thumb-mob">
-                            </picture>
+                    </div>
+                    <div class="platform-slide">
+                        <div class="platform-list flex flex-vcenter"> <!-- IF no image or no content add this class platform-full -->
+                            <div class="platform-content">
+                                <h4>1A short <span>introduction</span> to this panel shows here and is <span>concise</span>, limited to three or four lines.</h4>
+                                <ul>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                </ul>
+                                <a href="#" class="button">More about the platform</a>
+                            </div>
+                            <div class="platform-image">
+                                <picture class="platform-thumb object-fit">
+                                    <source srcset="images/platform-thumb@2x.png" media="(min-width: 768px)">
+                                    <img src="images/platform-thumb-mob@2x.png" alt="platform-thumb-mob">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="platform-slide">
+                        <div class="platform-list flex flex-vcenter"> <!-- IF no image or no content add this class platform-full -->
+                            <div class="platform-content">
+                                <h4>1A short <span>introduction</span> to this panel shows here and is <span>concise</span>, limited to three or four lines.</h4>
+                                <ul>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                </ul>
+                                <a href="#" class="button">More about the platform</a>
+                            </div>
+                            <div class="platform-image">
+                                <picture class="platform-thumb object-fit">
+                                    <source srcset="images/platform-thumb@2x.png" media="(min-width: 768px)">
+                                    <img src="images/platform-thumb-mob@2x.png" alt="platform-thumb-mob">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="platform-slide">
+                        <div class="platform-list flex flex-vcenter"> <!-- IF no image or no content add this class platform-full -->
+                            <div class="platform-content">
+                                <h4>1A short <span>introduction</span> to this panel shows here and is <span>concise</span>, limited to three or four lines.</h4>
+                                <ul>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                    <li>Individual bullet points can exist on each panel, but must be short and sweet.</li>
+                                </ul>
+                                <a href="#" class="button">More about the platform</a>
+                            </div>
+                            <div class="platform-image">
+                                <picture class="platform-thumb object-fit">
+                                    <source srcset="images/platform-thumb@2x.png" media="(min-width: 768px)">
+                                    <img src="images/platform-thumb-mob@2x.png" alt="platform-thumb-mob">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="platform-append-arrows flex pos-relative"></div>
             </div>
         </div>
     </div>
@@ -314,7 +353,7 @@
 </section>
 <section class="single-testimonial-section">
     <div class="single-testimonial-main">
-        <div class="single-testimonial-slide">
+        <div class="single-testimonial-slide" data-testimonial-slide="1" style="background: var(--sky)">
             <div class="container">
                 <div class="single-testimonial-text">
                     <h3>“The illumin AI was <span>above benchmark</span> in delivering incremental return on advertising spend. Additionally, we were able to determine consumers who went through an entirely connected journey had a <span>higher AOV</span> than users who were exposed to a singular stage. This would have been much harder to uncover without the illumin journey canvas.”</h3>
@@ -331,8 +370,11 @@
                     </div>
                 </div>
             </div>
+            <span class="single-slick-arrow single-slick-next" style="background: var(--light-blue)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" viewBox="0 0 32 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1612 24.0003L0.696777 7.53579L7.76784 0.464722L31.3034 24.0003L7.76784 47.5358L0.696777 40.4647L17.1612 24.0003Z" fill="white"/>
+              </svg></span>
         </div>
-        <div class="single-testimonial-slide">
+        <div class="single-testimonial-slide" data-testimonial-slide="2" style="background: var(--light-blue)">
             <div class="container">
                 <div class="single-testimonial-text">
                     <h3>“The illumin AI was <span>above benchmark</span> in delivering incremental return on advertising spend. Additionally, we were able to determine consumers who went through an entirely connected journey had a <span>higher AOV</span> than users who were exposed to a singular stage. This would have been much harder to uncover without the illumin journey canvas.”</h3>
@@ -349,8 +391,11 @@
                     </div>
                 </div>
             </div>
+            <span class="single-slick-arrow single-slick-next" style="background: var(--purple-color)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" viewBox="0 0 32 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1612 24.0003L0.696777 7.53579L7.76784 0.464722L31.3034 24.0003L7.76784 47.5358L0.696777 40.4647L17.1612 24.0003Z" fill="white"/>
+              </svg></span>
         </div>
-        <div class="single-testimonial-slide">
+        <div class="single-testimonial-slide" style="background: var(--purple-color)">
             <div class="container">
                 <div class="single-testimonial-text">
                     <h3>“The illumin AI was <span>above benchmark</span> in delivering incremental return on advertising spend. Additionally, we were able to determine consumers who went through an entirely connected journey had a <span>higher AOV</span> than users who were exposed to a singular stage. This would have been much harder to uncover without the illumin journey canvas.”</h3>
@@ -367,6 +412,9 @@
                     </div>
                 </div>
             </div>
+            <span class="single-slick-arrow single-slick-next" style="background: var(--sky)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" viewBox="0 0 32 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1612 24.0003L0.696777 7.53579L7.76784 0.464722L31.3034 24.0003L7.76784 47.5358L0.696777 40.4647L17.1612 24.0003Z" fill="white"/>
+              </svg></span>
         </div>
     </div>
 </section>
@@ -374,73 +422,148 @@
 <section class="most-viewed-section">
 <div class="container">
 <div class="most-viewed-wrap">
-    <div class="viewed-head hide-desktop">
-        <h2>Related Insights</h2>
-    </div>
-    <div class="most-viewed-main flex most-viewed-slider">
-        <div class="most-viewed-list">
-            <div class="most-viewed-post flex">
-                <div class="most-viewed-post-image">
-                    <picture class="object-fit radius-img-24 most-viewed-thumb">
-                        <source srcset="images/insights-thumb-new@2x.jpg" media="(min-width: 1024px)">
-                        <img loading="eager" src="images/world-cup-mobile@2x.jpg" alt="world-cup-mobile">
-                    </picture>
-                </div>
-                <div class="most-viewed-text">
-                    <div class="most-viewed-small flex flex-vcenter">
-                        <figure class="most-viewed-icon">
-                            <img src="images/whitepapers-icon.svg" alt="whitepapers-icon">
-                        </figure>
-                        <div class="viewed-icon-text flex">
-                            <span><strong>Whitepapers</strong></span>
-                            <span class="blog-date">Jun 10, 2024</span>
+    <div class="most-viewed-main flex"> <!-- If no left or right div add this class no-most-viewed -->
+        <div class="most-viewed-lt">
+            <div class="most-viewed-list">
+                <div class="most-viewed-post flex">
+                    <div class="most-viewed-post-image">
+                        <picture class="object-fit radius-img-24 most-viewed-thumb">
+                            <source srcset="images/article-thumb1@2x.jpg" media="(min-width: 1024px)">
+                            <img loading="eager" src="images/article-thumb1-mob@2x.jpg" alt="article-thumb1-mob">
+                        </picture>
+                    </div>
+                    <div class="most-viewed-text">
+                        <div class="most-viewed-small flex flex-vcenter">
+                            <figure class="most-viewed-icon">
+                                <img src="images/blog-icon.svg" alt="blog-icon">
+                            </figure>
+                            <div class="viewed-icon-text flex">
+                                <span><strong>Blog</strong></span>
+                                <span class="blog-date">Jun 10, 2024</span>
+                            </div>
                         </div>
+                        <h2><a href="#">A short article title appears here spanning two or three lines of text as needed to fit</a></h2>
                     </div>
-                    <h2>Brands need advertising automation to control the consumer journey</h2>
                 </div>
             </div>
         </div>
-        <div class="most-viewed-list" data-animation="fade-in-down">
-            <div class="most-viewed-image">
-                <figure class="object-fit radius-img-24 most-viewed-thumb">
-                    <img loading="eager" src="images/whitepaper-image@2x.jpg" alt="whitepaper-image">
-                </figure>
-            </div>
-            <div class="most-viewed-text">
-                <div class="most-viewed-small flex flex-vcenter">
-                    <figure class="most-viewed-icon">
-                        <img src="images/whitepapers-icon.svg" alt="whitepapers-icon">
-                    </figure>
-                    <div class="viewed-icon-text flex">
-                        <span><strong>Whitepapers</strong></span>
-                        <span class="blog-date">Jun 10, 2024</span>
+        <div class="most-viewed-rt flex">
+            <div class="most-viewed-row flex"> <!-- If only one div add this class no-most-viewed-list -->
+                <div class="most-viewed-list" data-animation="fade-in-down">
+                    <div class="most-viewed-image">
+                        <figure class="object-fit radius-img-24 most-viewed-thumb">
+                            <img loading="eager" src="images/article-thumb2@2x.jpg" alt="article-thumb2">
+                        </figure>
+                    </div>
+                    <div class="most-viewed-text">
+                        <div class="most-viewed-small flex flex-vcenter">
+                            <figure class="most-viewed-icon">
+                                <img src="images/guides-icon.svg" alt="guides-icon">
+                            </figure>
+                            <!-- <span></span> -->
+                            <div class="viewed-icon-text flex">
+                                <span><strong>Guides</strong></span>
+                                <span class="blog-date">Jun 10, 2024</span>
+                            </div>
+                        </div>
+                        <p><a href="#">A short article title appears here spanning two or three lines</a></p>
                     </div>
                 </div>
-                <p>Brands need advertising automation to control the consumer journey</p>
-            </div>
-        </div>
-        <div class="most-viewed-list" data-animation="fade-in-up">
-            <div class="most-viewed-image">
-                <figure class="object-fit most-viewed-thumb">
-                    <img loading="eager" class="radius-24" src="images/guides-image@2x.jpg" alt="guides-image">
-                </figure>
-            </div>
-            <div class="most-viewed-text">
-                <div class="most-viewed-small flex flex-vcenter">
-                    <figure class="most-viewed-icon">
-                        <img src="images/guides-icon.svg" alt="guides-icon">
-                    </figure>
-                    <div class="viewed-icon-text flex">
-                        <span><strong>Guides</strong></span>
-                        <span class="blog-date">Jun 10, 2024</span>
+                <div class="most-viewed-list" data-animation="fade-in-up">
+                    <div class="most-viewed-image">
+                        <figure class="object-fit most-viewed-thumb">
+                            <img loading="eager" class="radius-24" src="images/article-thumb3@2x.jpg" alt="article-thumb3">
+                        </figure>
+                    </div>
+                    <div class="most-viewed-text">
+                        <div class="most-viewed-small flex flex-vcenter">
+                            <figure class="most-viewed-icon">
+                                <img src="images/whitepapers-icon.svg" alt="whitepapers-icon">
+                            </figure>
+                            <div class="viewed-icon-text flex">
+                                <span><strong>Whitepapers</strong></span>
+                                <span class="blog-date">Jun 10, 2024</span>
+                            </div>
+                        </div>
+                        <p><a href="#">A short article title appears here spanning two or three lines</a></p>
                     </div>
                 </div>
-                <p>Best practices guide for cannabis advertising</p>
             </div>
+            <ul class="blog-category flex">
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/blog-icon.svg" alt="blog-icon">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Blog</strong></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/guides-icon.svg" alt="guides-icon">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Gudies</strong></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/events-icon.svg" alt="events-icon">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Events</strong></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/media-icon.svg" alt="media-icon">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Media</strong></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/whitepapers-icon.svg" alt="whitepapers-icon">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Whitepapers</strong></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/right-arrow.svg" alt="right-arrow">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Browse all insights</strong></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="most-viewed-all hide-desktop">
-        <a href="#" class="text-link text-link-btn text-ipad-btn">Explore all insights</a>
     </div>
 </div>
 </div>
