@@ -16,7 +16,7 @@
  ul.footer-links > li > ul > li:last-child{margin-bottom: 0;}
  ul.footer-links > li > ul > li a{font-weight: 700;}
 
- .footer-btns{gap: 40px;}
+.footer-btns{gap: 40px;}
 .footer-btns .button{flex: 0 0 191px;}
 ul.social-icons{margin: 0; gap: 8px; flex: 1;}
 ul.social-icons > li{margin: 0;}
@@ -26,13 +26,14 @@ ul.social-icons > li > a:hover{background-color: var(--sky); color: var(--white)
 
 
 .footer-rt .footer-rt-img{gap: 32px 24px;}
+.copyrights-main {font-size:12px; line-height:16px; color: var(--black-80);}
 ul.copyright-links{margin: 0;}
 ul.copyright-links > li::before{width: 1px; height: 20px; left: -27px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25;}
 ul.copyright-links > li{margin: 0;}
 ul.copyright-links > li > a{color: var(--black-80);}
-ul.copyright-links > li.current-menu-item > a, ul.copyright-links > li > a:hover{color: var(--sky-blue);} 
+ul.copyright-links > li.current-menu-item > a, 
+ul.copyright-links > li > a:hover{color: var(--sky);} 
 
-.copyrights-main {font-size:12px; line-height:16px; color: var(--black-80);}
  
   
 
@@ -47,9 +48,6 @@ ul.copyright-links > li.current-menu-item > a, ul.copyright-links > li > a:hover
     ul.copyright-links { gap: 16px 56px; flex: 1; width: fit-content;}
 
 }   
-@media only screen and (min-width: 1300px){
-
-}
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
 
 }
