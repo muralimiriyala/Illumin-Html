@@ -31,7 +31,7 @@ ul.policies-links li a.active::after, ul.policies-links li a:hover::after{opacit
 .corporate-stmt{flex: 1;}
 .corporate-stmt a{color: var(--black);}
 .corporate-stmt a:hover{color: var(--illumin-blue);}
-.corporate_arrow{transition-duration: .5s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);}
+.corporate_arrow{transition: all 0.5s ease;}
 .corporate_arrow:hover{transform: translateX(-5px);}
 .investor-banner-desc{font-size: 20px; line-height: 28px;}
 

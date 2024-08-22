@@ -49,8 +49,7 @@ body.page-template-request-a-demo .main-header{display: none;}
     
     .site-main-cover{padding-top: 104px;}
     body.home .site-main-cover{padding-top: 0;}
-    body.home .main-header{transform: translateY(-100%);}
-    body.home .fixed_header{transform: translateY(0);}
+
 
     .fixed_header ul.main_menu > li:not(.button) > a{font-size: 1rem; line-height: 20px; padding: 26px 0 26px;}
     .fixed_header ul.main_menu > li.button{padding: 4px 17px 6px;}
