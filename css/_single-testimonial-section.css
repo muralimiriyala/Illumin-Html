@@ -1,6 +1,6 @@
 
-
-.single-testimonial-slide{padding: 84px 0; background: var(--sky);}
+.single-slick-arrow{cursor: pointer;}
+.single-testimonial-slide.slick-slide{padding: 84px 0; background: var(--sky); position: relative;}
 .single-testimonial-text h3{color: var(--white); line-height: 48px; margin-bottom: 24px;}
 .single-testimonial-text h3 > span{border-bottom: 6px solid var(--sun); display: inline-block; line-height: 28px;}
 .single-testimonial-author{gap: 16px;}
@@ -11,18 +11,16 @@
 .single-testimonial-details span{color: var(--white); font-size: 14px; line-height: 24px; display: block;}
 
 @media screen and (min-width: 1024px) {
-    .single-testimonial-main .slick-arrow:not(button.slick-arrow)::after{right: 29px; width: 20px; height: 20px;}
-    .single-testimonial-main .slick-arrow:not(button.slick-arrow){top: 0; right: 0; width: 80px; height: 100%; border-radius: 0; background: var(--sky-blue);}
-    .single-testimonial-main .slick-arrow.slick-prev:not(button.slick-prev){left: 0;}
-    .single-testimonial-main .slick-arrow.slick-prev:not(button.slick-prev)::after{left: 30px;}
+    .single-slick-arrow::after{right: 29px; width: 20px; height: 20px;}
+    .single-slick-arrow{top: 0; right: 0; width: 80px; height: 100%; background: var(--sky-blue); display: flex; align-items: center; justify-content: center; position: absolute;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .single-testimonial-slide{padding: 48px 0;}
     .single-testimonial-text h3{line-height: 48px; font-size: 32px;}
     .single-testimonial-text h3 > span{border-bottom: 3px solid var(--sun); display: inline; line-height: 21px;}
     .single-testimonial-details span{line-height: 20px;}
-    .single-testimonial-main .slick-arrow:not(button.slick-arrow)::after{right: 29px; width: 20px; height: 20px;}
-    .single-testimonial-main .slick-arrow:not(button.slick-arrow){top: 0; right: 0; width: 80px; height: 100%; border-radius: 0;}
+    .single-slick-arrow::after{right: 29px; width: 20px; height: 20px;}
+    .single-slick-arrow{top: 0; right: 0; width: 80px; height: 100%; border-radius: 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .single-testimonial-slide{padding: 32px 0;}

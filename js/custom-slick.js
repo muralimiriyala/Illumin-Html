@@ -224,37 +224,19 @@ $(document).ready(function(){
       }
     });  
 
-
-    // $('.platform-for').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     variableWidth: true,
-    //     fade: true,
-    //     asNavFor: '.platform-nav'
-    //   });
-    //   $('.platform-nav').slick({
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.platform-for',
-    //     dots: false,
-    //     arrows: false,
-    //     variableWidth: true,
-    //     focusOnSelect: true
-    //   });
-
-    $('.single-testimonial-main').slick({
+    const $singleSlider=$('.single-testimonial-main');
+    const $singleNext=$(".single-slick-next");
+    $singleSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 500,
-        infinite: false,
+        infinite: true,
         dots: false,
-        arrows: true,
-        prevArrow: '<span class="slick-arrow slick-prev"></span>',
-        nextArrow: '<span class="slick-arrow slick-next"></span>',   
+        arrows: false, 
     });
-
-
+    $singleNext.on("click", ()=>{
+        $singleSlider.slick('slickGoTo', parseInt($singleSlider.slick('slickCurrentSlide'))+1);
+    });
 
 
    /*-- Ipad & Mobile jQuery --*/
