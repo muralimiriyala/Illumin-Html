@@ -181,6 +181,7 @@ $(document).ready(function(){
     });
 
     /*-- Ipad & Mobile jQuery --*/
+<<<<<<< HEAD
     
     // $('.platform-for').slick({
     //     slidesToShow: 1,
@@ -201,17 +202,64 @@ $(document).ready(function(){
     //   });
 
     $('.single-testimonial-main').slick({
-        slidesToShow: 1,
+=======
+    let $window = $(window);
+    let $most_view_slider = $('.most-viewed-slider');
+    most_view_settings = {
+        slidesToShow: 2,
         slidesToScroll: 1,
-        speed: 500,
-        infinite: false,
+        variableWidth: true,
+        infinite: true,
         dots: false,
         arrows: true,
         prevArrow: '<span class="slick-arrow slick-prev"></span>',
-        nextArrow: '<span class="slick-arrow slick-next"></span>',   
+        nextArrow: '<span class="slick-arrow slick-next"></span>',  
+        draggable: true,
+        touchThreshold: 200,
+        swipeToSlide: true,
+        mobileFirst: true,
+        centerMode: true,
+        centerpadding: '20px',
+        responsive: [
+            {
+            breakpoint: 1023,
+                settings: {
+                    variableWidth: false,
+                }
+            },
+            {
+            breakpoint: 1023,
+                settings: "unslick"
+            }
+        ]
+    };
+    $most_view_slider.slick(most_view_settings);
+    $window.on('resize', function(){
+      if ($window.width() >= 1024) {
+            if ($most_view_slider.hasClass('slick-initialized')){
+                $most_view_slider.slick('unslick');
+                return false;
+            }
+      }
+      if (!$most_view_slider.hasClass('slick-initialized')){
+          return $most_view_slider.slick(most_view_settings);
+      }
+    });  
+
+    const $singleSlider=$('.single-testimonial-main');
+    const $singleNext=$(".single-slick-next");
+    $singleSlider.slick({
+>>>>>>> dd63fb2d5e0c9edd223eb5c58a8a550c3cbae962
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 500,
+        infinite: true,
+        dots: false,
+        arrows: false, 
     });
-
-
+    $singleNext.on("click", ()=>{
+        $singleSlider.slick('slickGoTo', parseInt($singleSlider.slick('slickCurrentSlide'))+1);
+    });
 
 
    /*-- Ipad & Mobile jQuery --*/
