@@ -181,50 +181,7 @@ $(document).ready(function(){
     });
 
     /*-- Ipad & Mobile jQuery --*/
-    let $window = $(window);
-    let $most_view_slider = $('.most-viewed-slider');
-    most_view_settings = {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        variableWidth: true,
-        infinite: true,
-        dots: false,
-        arrows: true,
-        prevArrow: '<span class="slick-arrow slick-prev"></span>',
-        nextArrow: '<span class="slick-arrow slick-next"></span>',  
-        draggable: true,
-        touchThreshold: 200,
-        swipeToSlide: true,
-        mobileFirst: true,
-        centerMode: true,
-        centerpadding: '20px',
-        responsive: [
-            {
-            breakpoint: 1023,
-                settings: {
-                    variableWidth: false,
-                }
-            },
-            {
-            breakpoint: 1023,
-                settings: "unslick"
-            }
-        ]
-    };
-    $most_view_slider.slick(most_view_settings);
-    $window.on('resize', function(){
-      if ($window.width() >= 1024) {
-            if ($most_view_slider.hasClass('slick-initialized')){
-                $most_view_slider.slick('unslick');
-                return false;
-            }
-      }
-      if (!$most_view_slider.hasClass('slick-initialized')){
-          return $most_view_slider.slick(most_view_settings);
-      }
-    });  
-
-
+    
     // $('.platform-for').slick({
     //     slidesToShow: 1,
     //     slidesToScroll: 1,
