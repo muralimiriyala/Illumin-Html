@@ -3,7 +3,7 @@
 
 
 
-.subscribe-wrap{padding: 50px 0 63px;}
+.subscribe-wrap{padding: 45px 0 63px;}
 .subscribe-text{font-size: 20px; line-height: 28px;}
 .subscribe-sub-head{gap: 8px; margin-bottom: 8px;}
 .subscribe-mail-icon{width: 28px; height: 28px;}
@@ -51,16 +51,18 @@
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .subscribe-main{gap: 30px;}
     .subscribe-text { flex: 0 0 445px; font-size: 18px; line-height: 26px; }
-    .subscribe-form{flex: 0 0 calc(100% - 591px);}
+    .subscribe-form{width: calc(100% - 592px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-    .subscribe-text{flex:  0 0 calc(100% - 86px);}
-    .subscribe-icon{flex: 0 0 86px; transform: rotate(90deg);}
-    .subscribe-angle{width: 86px; height: 80px;}
-    .subscribe-form { margin-top: 30px; flex: 100%; }
+    .subscribe-main{gap: 32px;}
+    .subscribe-text{flex: 0 0 268px;}
+    .subscribe-text h3{font-size: 28px; line-height: 32px;}
+    .subscribe-icon{flex: 0 0 87px;}
+    .subscribe-angle{width: 86px; height: 132px;}
+    .subscribe-form{width: calc( 100% - 419px);}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .subscribe-wrap { padding: 50px 0 43px;}
+    .subscribe-wrap{padding: 25px 0 43px;}
     .subscribe-main{display: block;}
     .subscribe-text{font-size: 18px; line-height: 26px; margin-bottom: 19px;}
     .subscribe-text h3{font-size: 28px; line-height: 32px; margin-bottom: 4px;}
