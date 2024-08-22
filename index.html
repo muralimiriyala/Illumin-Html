@@ -383,10 +383,7 @@
 <section class="most-viewed-section">
 <div class="container">
 <div class="most-viewed-wrap">
-    <div class="viewed-head hide-desktop">
-        <h2>Related Insights</h2>
-    </div>
-    <div class="most-viewed-main flex">
+    <div class="most-viewed-main flex"> <!-- If no left or right div add this class no-most-viewed -->
         <div class="most-viewed-lt">
             <div class="most-viewed-list">
                 <div class="most-viewed-post flex">
@@ -411,8 +408,8 @@
                 </div>
             </div>
         </div>
-        <div class="most-viewed-rt">
-            <div class="most-viewed-row flex">
+        <div class="most-viewed-rt flex">
+            <div class="most-viewed-row flex"> <!-- If only one div add this class no-most-viewed-list -->
                 <div class="most-viewed-list" data-animation="fade-in-down">
                     <div class="most-viewed-image">
                         <figure class="object-fit radius-img-24 most-viewed-thumb">
@@ -424,6 +421,7 @@
                             <figure class="most-viewed-icon">
                                 <img src="images/guides-icon.svg" alt="guides-icon">
                             </figure>
+                            <!-- <span></span> -->
                             <div class="viewed-icon-text flex">
                                 <span><strong>Guides</strong></span>
                                 <span class="blog-date">Jun 10, 2024</span>
@@ -513,11 +511,20 @@
                         </div>
                     </a>
                 </li>
+                <li class="blog-category-list">
+                    <a href="#" class="blog-category-main flex">
+                        <div class="blog-category-thumb">
+                            <figure class="blog-category-icon object-fit">
+                                <img src="images/right-arrow.svg" alt="right-arrow">
+                            </figure>
+                        </div>
+                        <div class="blog-category-text">
+                            <span><strong>Browse all insights</strong></span>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
-    </div>
-    <div class="most-viewed-all hide-desktop">
-        <a href="#" class="text-link text-link-btn text-ipad-btn">Explore all insights</a>
     </div>
 </div>
 </div>
