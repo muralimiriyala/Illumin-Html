@@ -1,15 +1,50 @@
 
-.footer-wrapper{padding: 64px 0 48px;}
+ .footer-wrapper{padding: 64px 64px 80px; background-color: var(--tint-bg-blue); border-radius: 24px 24px 0 0;}
+ .footer-lt .footer-logo{max-width: 232px; margin-bottom: 42px;}
 
-ul.copyright-links{margin: 0;}
+
+ ul.footer-links{margin: 0 0 44px; gap: 32px}
+ ul.footer-links > li{padding-left: 32px; border-left: 1px solid var(--sky-blue); margin-bottom: 0; min-width: 192px;}
+ ul.footer-links > li:first-child{padding-left: 0; border-left: 0;}
+ ul.footer-links > li:before{display: none;}
+ ul.footer-links > li a{font-size: 16px; line-height: 20px;}
+ ul.footer-links > li > a{color: var(--Black); font-weight: 400; }
+ ul.footer-links > li > ul{margin: 9px 0 0 0;}
+ ul.footer-links > li > ul > li:before{display: none;}
+ ul.footer-links > li > ul > li{margin-bottom: 6px;}
+ ul.footer-links > li > ul > li:last-child{margin-bottom: 0;}
+ ul.footer-links > li > ul > li a{font-weight: 700;}
+
+ .footer-btns{gap: 40px;}
+.footer-btns .button{flex: 0 0 191px;}
+ .footer-btns ul.social-icons{margin: 0; gap: 8px; flex: 1;}
+ .footer-btns ul.social-icons > li::before{display: none;}
+ .footer-btns ul.social-icons > li{background-color: var(--white); width: 48px; height: 48px; border-radius: 16px; margin-bottom: 0;}
+ .footer-btns ul.social-icons > li a span{display: block; text-align: center; padding: 15px;}
+
+
+ .footer-rt .footer-rt-img{gap: 32px 24px;}
+ ul.copyright-links{margin: 0;}
 ul.copyright-links > li::before{width: 1px; height: 8px; left: -20px; top: 50%; transform: translateY(-50%); background: var(--sky-blue);}
 ul.copyright-links > li:first-child::before{display: none;}
 ul.copyright-links > li{margin: 0;}
 ul.copyright-links > li > a{color: var(--black);}
-ul.copyright-links > li.current-menu-item > a, ul.copyright-links > li > a:hover{color: var(--sky-blue);}
+ul.copyright-links > li.current-menu-item > a, ul.copyright-links > li > a:hover{color: var(--sky-blue);} 
+ 
+.copyrights-main {font-size:12px; line-height:16px }
+ 
+  
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+    .footer-wrapper{gap: 72px;}
+    .footer-lt{flex: 0 0 832px;}
+    .footer-rt{flex: 0 0 calc(100% - 904px);}
+
+    .copyrights-inline { gap: 42px; display: inline-flex; }
+
+    ul.copyright-links { gap: 16px 40px; flex: 1; }
 
 }   
 @media only screen and (min-width: 1300px){
