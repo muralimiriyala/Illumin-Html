@@ -4,7 +4,7 @@ body.page-template-landing-page .faq-section{background-color: var(--white);}
 
 .faq-wrap{padding: 32px 0 80px;}
 .faq-main .text-link{padding-right: 20px;}
-.faq-main .text-link::after{transform: rotate(90deg);}
+.faq-main .text-link::after{transform: rotate(90deg); top: -3px;}
 .faq-title{margin-bottom: 40px;}
 .faq-title span.optional-text{margin-bottom: 24px;}
 .faq-title h2{font-size: 32px; line-height: 40px; font-family: 'Graphik-Bold',sans-serif;}
