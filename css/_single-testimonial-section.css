@@ -30,6 +30,6 @@
     .single-testimonial-author{padding-right: 80px;}
     .single-slick-arrow{cursor: pointer; position: absolute; bottom: 30px; right: 0; width: 54px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 16px 0px 0px 16px;}
     .single-slick-arrow::before{position: absolute; content: ""; display: block; width: 40px; height: 40px; transform: rotate(129deg); border-top: 28px solid #007DEB; border-right: 28px solid transparent; border-left: 28px solid transparent; border-bottom: 28px solid transparent; border-radius: 50%; top: -68px; left: -15px; }
-    .single-slick-arrow::after{position: absolute; content: ""; display: block; width: 40px; height: 40px; transform: rotate(34deg); border-top: 28px solid #007DEB; border-right: 28px solid transparent; border-left: 28px solid transparent; border-bottom: 28px solid transparent; border-radius: 50%; bottom: -68px; left: -15px; }
+    .single-slick-arrow::after{position: absolute; content: ""; display: block; width: 40px; height: 40px; transform: rotate(39deg); border-top: 28px solid #007DEB; border-right: 28px solid transparent; border-left: 28px solid transparent; border-bottom: 28px solid transparent; border-radius: 50%; bottom: -68px; left: -15px; }
     .single-slick-arrow svg{width: 23px;}
 }
