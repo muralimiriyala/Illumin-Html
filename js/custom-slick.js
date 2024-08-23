@@ -234,10 +234,24 @@ $(document).ready(function(){
         speed: 1000,
         dots: true,
         arrows: true,
-        prevArrow: '<span class="slick-arrow slick-prev"></span>',
-        nextArrow: '<span class="slick-arrow slick-next"></span>',  
+        prevArrow: '<span class="slick-arrow slick-prev flex flex-center"><i class="slick-arrows slick-prev-arrow fa-solid fa-chevron-left"></i></span>',
+        nextArrow: '<span class="slick-arrow slick-next flex flex-center"><i class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></i></span>', 
         appendDots: $platformAppend,
         appendArrows: $platformAppend,
+        responsive: [
+            {
+            breakpoint: 1023,
+                settings: {
+                    dots: false,
+                }
+            },
+            {
+            breakpoint: 767,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
     });
     function textChange(){
         let number = Number($platformSlider.slick('slickCurrentSlide'))+1;

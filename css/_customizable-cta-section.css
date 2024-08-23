@@ -1,5 +1,5 @@
 .pattern-cta-circle{width: 336px; height: 336px; right: -142px; top: 0; opacity: 0.15; background-image: url('images/pattern-circle.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; z-index: 1;}
-.customizable-cta-wrap{padding: 100px 0 78px;}
+.customizable-cta-wrap{padding: 100px 0 59px;}
 .customizable-cta-main{padding: 48px; background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
 .customizable-cta-text{color: var(--white);}
 .customizable-cta-text span.optional-text{margin-bottom: 12px;}

@@ -40,7 +40,7 @@ ul.copyright-links > li > a:hover{color: var(--sky);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .footer-main{gap: 72px;}
+    .footer-main{gap: 72px; margin-top: 64px;}
     .footer-lt{flex: 0 0 832px;}
     .footer-rt{flex: 0 0 calc(100% - 904px);}
     .copyrights-main{gap: 16px 56px;}

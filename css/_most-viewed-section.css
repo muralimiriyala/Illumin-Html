@@ -24,7 +24,7 @@
 .blog-category-main:hover{color: var(--illumin-blue);}
 .blog-category-list{margin: 0;}
 .blog-category-list::before{display: none;}
-.blog-category-list:last-child .blog-category-main{flex-direction: row-reverse;}
+.blog-category-list.all-blog-list .blog-category-main{flex-direction: row-reverse;}
 .blog-category-thumb img{width: 20px; height: 20px; object-fit: contain;}
 .blog-category-text{font-size: 16px; line-height: 20px;}
 

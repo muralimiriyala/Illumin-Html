@@ -3,6 +3,9 @@
 .home-banner-text{font-size: 20px; line-height: 28px; color: var(--white);}
 .home-banner-text h1{color: var(--white);}
 .home-banner-text h1 > span{color: var(--sun);}
+.watermark-line{width: 100vw; height: 16px; background: var(--sun);}
+
+.no-banner-image .home-banner-text{flex: 1; padding-bottom: 190px;}
 
 @media screen and (min-width: 1300px) {
     
@@ -15,8 +18,8 @@
     .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
     .home-banner-image{flex: 0 0 calc(100% - 754px); display: flex; justify-content: center;}
     .home-banner-thumb{width: 396px;}
-    .watermark-circle{position: absolute; top: -47px; left: 43px;}
-    .watermark-line{position: absolute; top: 165px; left: 490px;}
+    .watermark-circle{position: absolute; top: -47px; left: 43px; width: 432px;}
+    .watermark-circle::before{content: ""; position: absolute; top: 215px; left: 100%; width: 100vw; height: 16px; background: var(--sun);}
 }
 
 @media screen and (max-width: 1339px) and (min-width: 1024px) {
@@ -32,10 +35,11 @@
     .home-banner-image{width: 100%;}
     .home-banner-thumb{width: 360px; margin: 0 auto;}
     .home-banner-thumb img{width: 360px;}
-    .watermark-circle{position: absolute; top: -40px; left: 50%; transform: translateX(-50%);}
+    .watermark-circle{position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 432px;}
     .watermark-circle svg{width: 432px; height: 432px;}
-    .watermark-line{position: absolute; top: 185px; left: calc(50% + 271px); transform: translateX(-50%);}
-    .watermark-line svg{width: 116px; height: 16px;}
+    .watermark-circle::before{content: ""; position: absolute; top: 185px; left: calc(100% - 2px); width: 100vw; height: 16px; background: var(--sun);}
+
+    .no-banner-image .home-banner-text{padding-bottom: 100px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .home-banner-section{background: var(--Gradient-Horizontal, linear-gradient(90deg, #342FE7 0%, #8200F0 100%));}
@@ -45,8 +49,9 @@
     .home-banner-image{width: 100%;}
     .home-banner-thumb{width: 282px; margin: 0 auto;}
     .home-banner-thumb img{width: 281.5px;}
-    .watermark-circle{position: absolute; top: 10px; left: 50%; transform: translateX(-50%);}
+    .watermark-circle{position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 294px;}
     .watermark-circle svg{width: 294px; height: 294px;}
-    .watermark-line{position: absolute; top: 133px; left: calc(50% + 197px); transform: translateX(-50%);}
-    .watermark-line svg{width: 116px; height: 12px;}
+    .watermark-circle::before{content: ""; position: absolute; top: 133px; left: calc(100% - 2px); width: 100vw; height: 12px; background: var(--sun);}
+
+    .no-banner-image .home-banner-text{padding-bottom: 55px;}
 }
