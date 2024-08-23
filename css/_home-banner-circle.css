@@ -5,7 +5,7 @@
 .home-banner-text h1 > span{color: var(--sun);}
 
 @media screen and (min-width: 1300px) {
-    .home-banner-thumb{width: 526px;}
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -13,7 +13,8 @@
     .home-banner-main{gap: 80px;}
     .home-banner-text{flex: 0 0 674px;}
     .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
-    .home-banner-image{flex: 0 0 calc(100% - 754px);}
+    .home-banner-image{flex: 0 0 calc(100% - 754px); display: flex; justify-content: center;}
+    .home-banner-thumb{width: 396px;}
     .watermark-circle{position: absolute; top: -47px; left: 43px;}
     .watermark-line{position: absolute; top: 165px; left: 490px;}
 }

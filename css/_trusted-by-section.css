@@ -1,15 +1,15 @@
 
 
-.trusted-by-main{background-color: rgba(0, 0, 0, 0.05);}
+.trusted-by-main{background-color: var(--white);}
 span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .trusted-by-main{gap: 56px; padding: 12px 32px 8px;}
+    .trusted-by-main{gap: 51px; padding: 24px 32px;}
     .trusted-by-text{flex: 0 0 130px;}
-    .trusted-by-logos{flex: 0 0 calc(100% - 186px); gap: 5px 56px;}
-    .trusted-by-logo{flex: 0 0 calc(20% - 45px)}
+    .trusted-by-logos{flex: 0 0 calc(100% - 181px); gap: 5px 56px;}
+    .trusted-by-logo{flex: 0 0 calc(16.5% - 45px)}
     body.page-template-product .trusted-by-main{margin: 81px 0 85px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
