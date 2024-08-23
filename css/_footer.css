@@ -41,15 +41,19 @@ ul.copyright-links > li > a:hover{color: var(--sky);}
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .footer-main{gap: 72px; margin-top: 64px;}
-    .footer-lt{flex: 0 0 832px;}
-    .footer-rt{flex: 0 0 calc(100% - 904px);}
+    .footer-lt{flex: 0 0 710px;}
+    .footer-rt{flex: 0 0 calc(100% - 782px);}
     .copyrights-main{gap: 16px 56px;}
     .copyrights-text{width: fit-content;}
     ul.copyright-links { gap: 16px 56px; flex: 1; width: fit-content;}
 
 }   
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
-
+    .footer-main{gap: 72px 30px; padding: 64px 30px 80px; justify-content: space-between;}
+    .footer-lt{flex: 0 0 560px;}
+    ul.footer-links{gap: 20px;}
+    ul.footer-links > li{min-width: auto; max-width: 185px;}
+    .footer-rt{flex: 0 0 calc(100% - 590px); max-width: 314px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
 
