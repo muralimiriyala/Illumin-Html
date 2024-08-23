@@ -33,8 +33,12 @@ ul.platform-nav li::before, ul.platform-nav li::after{content: ""; position: abs
     ul.platform-nav li{width: fit-content; flex: inherit; font-size: 16px; line-height: 20px;}
     .platform-list{gap: 40px; flex-direction: column-reverse;}
 
-    .platform-append-arrows{margin: 32px 0 0; gap: 8px; align-items: center; position: absolute; top: 0; justify-content: space-between;}
-    .platform-append-arrows span.slick-arrow{top: auto; transform: none; position: relative; background: var(--white); width: 48px; height: 48px; border-radius: 8px; filter: none;}
+    .platform-append-arrows{margin: 0; gap: 8px; align-items: center; position: absolute; z-index: 2; top: 47px; right: 5px; width: fit-content;}
+    .platform-append-arrows span.slick-arrow{top: auto; transform: none; position: relative; background: var(--white); width: 32px; height: 32px; border-radius: 8px; filter: none;}
+    .platform-append-arrows span.slick-arrow.slick-prev{display: none !important;}
+    .platform-append-arrows span.slick-arrow svg{width: 13px;}
+    ul.platform-nav{position: relative;}
+    ul.platform-nav::before{content: ""; position: absolute; width: 100px; height: 100%; top: 0; right: 0; background: linear-gradient(90deg, transparent 0%, var(--tint-bg-blue) 50%); z-index: 1; }
 }
 
 @media screen and (max-width: 767px)  and (min-width: 200px) {

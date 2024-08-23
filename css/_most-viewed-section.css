@@ -25,7 +25,8 @@
 .blog-category-list{margin: 0;}
 .blog-category-list::before{display: none;}
 .blog-category-list.all-blog-list .blog-category-main{flex-direction: row-reverse;}
-.blog-category-thumb img{width: 20px; height: 20px; object-fit: contain;}
+.blog-category-thumb{width: 20px; height: 20px;}
+.blog-category-icon{position: relative; top: -2px;}
 .blog-category-text{font-size: 16px; line-height: 20px;}
 
 .no-most-viewed .most-viewed-lt, .no-most-viewed .most-viewed-rt{flex: 1;}
