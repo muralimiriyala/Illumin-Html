@@ -27,12 +27,13 @@ ul.social-icons > li > a:hover{background-color: var(--sky); color: var(--white)
 
 .footer-rt .footer-rt-img{gap: 32px 24px;}
 .copyrights-main {font-size:12px; line-height:16px; color: var(--black-80);}
-ul.copyright-links{margin: 0;}
+ul.copyright-links{margin: 0; justify-content: center;}
 ul.copyright-links > li::before{width: 1px; height: 20px; left: -27px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25;}
 ul.copyright-links > li{margin: 0;}
 ul.copyright-links > li > a{color: var(--black-80);}
 ul.copyright-links > li.current-menu-item > a, 
 ul.copyright-links > li > a:hover{color: var(--sky);} 
+ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
 
  
   
@@ -44,9 +45,7 @@ ul.copyright-links > li > a:hover{color: var(--sky);}
     .footer-lt{flex: 0 0 710px;}
     .footer-rt{flex: 0 0 calc(100% - 782px);}
     .copyrights-main{gap: 16px 56px;}
-    .copyrights-text{width: fit-content;}
     ul.copyright-links { gap: 16px 56px; flex: 1; width: fit-content;}
-
 }   
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .footer-main{gap: 72px 30px; padding: 64px 30px 80px; justify-content: space-between;}
@@ -85,11 +84,12 @@ ul.copyright-links > li > a:hover{color: var(--sky);}
     .footer-btns{flex-direction: column;}
     .footer-btns .button{flex: 1;}
     ul.social-icons {justify-content: center;}
-    .copyrights-text{margin-bottom: 8px;}
-    ul.copyright-links{gap: 8px 25px; justify-content: center;}
+    .copyrights-main{flex-direction: column;}
+    ul.copyright-links{gap: 8px 25px; justify-content: center; max-width: 300px;}
+    ul.copyright-links > li:first-child{flex: 100%; text-align: center;}
     ul.copyright-links > li::before{left: -12px;}
-    ul.copyright-links > li:nth-child(2n + 1)::before , ul.copyright-links > li:nth-child(3n + 1)::before{display: none;}
-      
+    ul.copyright-links > li:not(:nth-child(3))::before, ul.copyright-links > li:not(:nth-child(5))::before{display: none;}
+    ul.copyright-links > li:nth-child(3)::before, ul.copyright-links > li:nth-child(5)::before{content: ""; position: absolute; width: 1px; height: 20px; left: -12px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25; display: block;}
   
 }
 @media only screen and (max-width: 370px) and (min-width: 200px){
