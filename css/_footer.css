@@ -56,9 +56,40 @@ ul.copyright-links > li > a:hover{color: var(--sky);}
     .footer-rt{flex: 0 0 calc(100% - 590px); max-width: 314px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-
+    .footer-main{padding: 40px 40px 64px;}
+    ul.footer-links > li{min-width: auto;}
+    .footer-lt{margin-bottom: 72px;}
+    .footer-rt{margin-bottom: 48px;}
+    .copyrights-main{gap: 25px;}
+    ul.copyright-links{gap: 25px;  flex: 1;}
+    ul.copyright-links > li::before{left: -12px}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .footer-main{padding: 40px 24px 64px;}
+    .footer-lt{width: 100%; margin-bottom: 38px;}
+    .footer-lt .footer-logo{margin: 0 auto 21px;}
+    ul.footer-links{margin: 0 0 22px; justify-content: center;}
+    .footer-btns{gap: 24px;}
+    .footer-rt{width: 100%; margin-bottom: 32px;}
+    .footer-rt .footer-rt-img{gap: 9px; justify-content: center;}
+    .footer-rt-img figure{width: 65px;}
+    ul.footer-links > li:first-child, ul.footer-links > li:last-child{display: none;}
+    ul.footer-links > li::before{display: none;}
+    ul.footer-links > li.footer-lists > a{display: none;}
+    ul.footer-links > li{padding: 0;}
+    ul.footer-links > li > ul{display: flex; margin: 0; gap: 10px 34px; flex-wrap: wrap;}
+    ul.footer-links > li > ul > li {margin: 0;}
+    ul.footer-links > li > ul > li::before{display: block;}
+    ul.footer-links > li > ul > li::before{content: ""; position: absolute; width: 1px; height: 20px; left: -16.5px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25;}
+    ul.footer-links > li > ul > li:first-child::before, ul.footer-links > li > ul > li:nth-child(3n + 1)::before{display: none;}
+    .footer-btns{flex-direction: column;}
+    .footer-btns .button{flex: 1;}
+    ul.social-icons {justify-content: center;}
+    .copyrights-text{margin-bottom: 8px;}
+    ul.copyright-links{gap: 8px 25px; justify-content: center;}
+    ul.copyright-links > li::before{left: -12px;}
+    ul.copyright-links > li:nth-child(2n + 1)::before , ul.copyright-links > li:nth-child(3n + 1)::before{display: none;}
+      
   
 }
 @media only screen and (max-width: 370px) and (min-width: 200px){
