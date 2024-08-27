@@ -1,0 +1,34 @@
+
+.product-banner-section{background: linear-gradient(180deg, rgba(229, 242, 253, 0.00) 80%, #E5F2FD 100%), #FFF;}
+.product-banner-text span.optional-text{font-family: 'Graphik-Bold'; text-transform: uppercase;}
+.no-product-banner-text .product-banner-text{flex: 1;}
+.no-product-banner-image{justify-content: center;}
+
+@media screen and (min-width: 1024px) {
+    .product-banner-main{gap: 80px; flex-direction: row-reverse; padding: 80px 0 0;}
+    .product-banner-text{flex: 0 0 600px; padding-bottom: 80px;}
+    .product-banner-text h1{font-size: 80px; line-height: 80px;}
+    .product-banner-image{flex: 0 0 calc(100% - 680px);}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .product-banner-main{gap: 40px;}
+    .product-banner-text{flex: 0 0 400px; padding-bottom: 40px;}
+    .product-banner-text h1{font-size: 70px; line-height: 70px;}
+    .product-banner-image{flex: 0 0 calc(100% - 440px);}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .product-banner-main{gap: 40px; padding: 50px 0;}
+    .product-banner-text{flex: 100%;}
+    .product-banner-text span.optional-text{margin-bottom: 16px;}
+    .product-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;}
+    .product-banner-image{flex: 100%;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .product-banner-main{padding: 40px 0;}
+    .product-banner-text{flex: 100%;}
+    .product-banner-text span.optional-text{margin-bottom: 16px;}
+    .product-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;}
+    .product-banner-image{flex: 100%;}
+}

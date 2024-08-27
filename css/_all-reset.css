@@ -78,6 +78,8 @@ caption, th, td {text-align: left;}
 del {color: #231f20;}
 hr{margin: 38px 0 39px; display: block; background-color: var(--black-10); border: 0; width:100%; height: 1px;}
 
+hr.sun-line{width: 74px; height: 4px; margin: 16px 0; background-color: var(--sun);}
+
 ::selection {background-color: var(--black); color: var(--white);}
 ::-moz-selection {background-color: var(--black); color: var(--white);}
 
