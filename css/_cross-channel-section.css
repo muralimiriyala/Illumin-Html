@@ -1,0 +1,11 @@
+
+.cross-channel-section{background: var(--tint-bg-blue);}
+
+@media screen and (min-width: 1024px) {
+    .cross-channel-main{padding: 80px 0; gap: 80px;}
+    .cross-channel-lt{flex: 0 0 394px;}
+    .cross-channel-rt{flex: 0 0 calc(100% - 474px);}
+    .cross-channel-list{gap: 48px;}
+    .cross-channel-icon{flex: 0 0 64px;}
+    .cross-channel-text{flex: 0 0 calc(100% - 112px);}
+}
