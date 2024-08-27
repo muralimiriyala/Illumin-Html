@@ -29,6 +29,8 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .trusted-by-section{margin-top: -40px; padding-bottom: 32px;}
     .trusted-by-section::before{height: calc(100% - 40px); top: 40px;}
+    body.page-template-product .trusted-by-section{margin-top: -48px;}
+    body.page-template-product .trusted-by-section::before{height: calc(100% - 48px); top: 48px;}
     .trusted-by-main{padding:20px 24px; display: block;}
     body.page-template-flex-default .trusted-by-main{margin-bottom: 31px;}
     span.trusted-optional{font-size: 16px; line-height: 20px; text-align: center; display: block;}

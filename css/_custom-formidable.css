@@ -86,6 +86,6 @@ body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit, button{ma
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .frm_field_wrapper{margin-top: 38px; flex-direction: column-reverse;}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_radio{margin-bottom: 34px;}
-    body .frm_forms .frm_form_fields .frm_submit{margin-bottom: 34px;}
+    /* body .frm_forms .frm_form_fields .frm_submit{margin-bottom: 34px;} */
     body.page-template-stock-performance .with_frm_style .frm_form_field.frm_html_container#frm_field_56_container{padding-top: 15px;}
 }
