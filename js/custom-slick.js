@@ -267,9 +267,8 @@ $(document).ready(function(){
         if($platMql.matches){
             $platforLink.on("click", function(e){
                 e.preventDefault();
-                $(this).siblings().removeClass("slick-current");
-                $(this).toggleClass("slick-current");
-                $platformSlider.slick('slickGoTo', Number($platformSlider.slick('slickCurrentSlide'))+1);
+                let slideIndex = $(this).data('platform-nav') - 1;
+                $platformSlider.slick('slickGoTo', slideIndex);
             });
         }
         else{
