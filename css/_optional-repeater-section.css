@@ -16,12 +16,7 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
 @media only screen and (min-width: 768px){
     .optional-repeater-text h2{margin-bottom: 13px;}
     .optional-repeater-text .button{margin-top: 8px;}
-    /* .optional-repeater-text::before{width: 40px; height: 280px; right: -120px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-repeat: no-repeat; content: ""; display: block; position: absolute;}
-    .reverse .optional-repeater-text::before{left: -120px; right: auto;}
-    .optional-repeater-thumb::before{width: 80px; height: 280px; left: -40px; top: 50%; transform: translateY(-50%); border-radius: 0; opacity: 0.15; background-image: url('images/pattern-right.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute;}
-    .reverse .optional-repeater-thumb::before{right: -40px; left: auto;} */
     body.page-template-company-careers .optional-repeater-main{padding-bottom: 92px;}
-    body.page-template-product .optional-repeater-main{padding-top: 100px;}
 }
 @media only screen and (min-width: 1024px){
     body.page-template-landing-page .optional-repeater-section, body.page-template-investor-info .optional-repeater-section, body.page-template-product .optional-repeater-section, body.page-template-stock-performance .optional-repeater-section{z-index: 1; position: relative;}
@@ -68,9 +63,5 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
     body.page-template-flex-default .optional-repeater-main{padding-bottom: 48px;}
     body.page-template-flex-default .optional-repeater-list{margin-bottom: 48px;}
     body.page-template-flex-default .optional-repeater-list:last-child{margin-bottom: 0;}
-    /* .optional-repeater-thumb::before, .optional-repeater-thumb::after{ width: 40px; height: 128px; top: 50%; transform: translateY(-50%); border-radius: 0; opacity: .15; background-image: url('images/optional-pattern-mobile.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute; }
-    .optional-repeater-thumb::before{left: -20px;} */
     .optional-repeater-thumb::after{right: -40px;}
-    /* .reverse .optional-repeater-thumb::before{left: -40px;}
-    .reverse .optional-repeater-thumb::after{right: -20px;} */
 }

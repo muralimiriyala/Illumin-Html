@@ -2,6 +2,8 @@
 .trusted-by-section{margin-top: -72px; background: none; position: relative; z-index: 0;}
 .trusted-by-section::before{width: 100%; height: calc(100% - 72px); top: 72px; left: 0; position: absolute; background: var(--tint-bg-blue); content: ""; z-index: -1;}
 .trusted-by-main{background-color: var(--white);}
+body.page-template-product .trusted-by-main{background-color: var(--tint-bg-blue);}
+body.page-template-product .trusted-by-section::before{background: var(--white);}
 span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
 
@@ -11,7 +13,6 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
     .trusted-by-text{flex: 0 0 130px;}
     .trusted-by-logos{flex: 0 0 calc(100% - 181px); gap: 5px 56px;}
     .trusted-by-logo{flex: 0 0 calc(16.5% - 45px)}
-    body.page-template-product .trusted-by-main{margin: 81px 0 85px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .trusted-by-logos{gap: 5px 30px;}
@@ -23,7 +24,7 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
     .trusted-by-text{text-align: center;}
     .trusted-by-logos{gap: 0 32px;}
     .trusted-by-logo{flex: 0 0 calc(20% - 26px);}
-    body.page-template-product .trusted-by-main{margin-bottom: 80px;}
+    /* body.page-template-product .trusted-by-main{margin-bottom: 80px;} */
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .trusted-by-section{margin-top: -40px; padding-bottom: 32px;}
@@ -33,6 +34,6 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
     span.trusted-optional{font-size: 16px; line-height: 20px; text-align: center; display: block;}
     .trusted-by-logos{gap: 0px 16px; justify-content: center;}
     .trusted-by-logo{flex: 0 0 calc(33.333% - 11px);}    
-    body.page-template-product .trusted-by-main{margin-bottom: 60px;}
+    /* body.page-template-product .trusted-by-main{margin-bottom: 60px;} */
 
 }

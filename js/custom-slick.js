@@ -283,7 +283,7 @@ $(document).ready(function(){
 
 
 
-    const $singleSlider=$('.single-testimonial-main');
+    const $singleSlider=$('.single-testimonial-slider');
     const $singleNext=$(".single-slick-next");
     $singleSlider.slick({
         slidesToShow: 1,

@@ -11,8 +11,10 @@
 .single-testimonial-details span{color: var(--white); font-size: 14px; line-height: 24px; display: block;}
 
 @media screen and (min-width: 1024px) {
-    .single-testimonial-text{padding-right: 110px;}
+    .single-testimonial-slider .single-testimonial-text{padding-right: 110px;}
+    .single-testimonial-text{padding-right: 50px;}
     .single-slick-arrow{top: 0; right: 0; width: 80px; height: 100%; background: var(--sky-blue); display: flex; align-items: center; justify-content: center; position: absolute;}
+    body.page-template-product .single-testimonial-slide{padding: 84px 0 156px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .single-testimonial-slide{padding: 48px 0;}

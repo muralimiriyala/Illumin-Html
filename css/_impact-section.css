@@ -4,19 +4,19 @@
 
 .impact-section{background-color: var(--tin-color);}
 .impact-icon img{width: 100%;}
-.impact-list h3{color: var(--sky-blue); font-size: 28px; line-height: 32px;}
+.impact-list h3{color: var(--sky); font-size: 28px; line-height: 32px;}
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .impact-main{padding: 80px 0 80px;}
-    .impact-title{flex: 0 0 50%; order: 1;}
-    .impact-btn{flex:  0 0 50%; order: 2; text-align: right;}
+    .impact-title{flex: 0 0 70%; order: 1;}
+    .impact-btn{flex:  0 0 30%; order: 2; text-align: right;}
     body.page-template-product .impact-btn{margin-top: 16px;}
     .impact-lists{order: 3; gap: 64px; padding-top: 60px;}
     .impact-list{flex: 0 0 calc(25% - 48px);}
     .impact-product{display: block;}
-    .impact-icon{margin-bottom: 24px; max-width: 40px;}
+    .impact-icon{margin-bottom: 24px; max-width: 55px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .impact-lists{gap: 30px;}
