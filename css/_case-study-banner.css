@@ -7,3 +7,11 @@
     .case-study-banner-title h1{font-size: 80px; line-height: 80px; margin-bottom: 0;}
     .case-study-banner-text{flex: 1; max-width: 610px;}
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .case-study-banner-main{gap: 40px; padding: 24px 0;}
+    .case-study-banner-title{flex: 100%;}
+    .case-study-banner-title h1{font-size: 48px; line-height: 48px; margin-bottom: 24px;}
+    .case-study-banner-title hr.sun-line{margin: 0;}
+    .case-study-banner-text{flex: 100%;}
+}
