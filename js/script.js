@@ -227,3 +227,31 @@ $(window).on('load', function(){
 if (navigator.userAgent.indexOf('Mac OS X') != -1 && navigator.userAgent.indexOf('Safari') != -1  && navigator.userAgent.indexOf('Chrome') == -1) {
     $('body').addClass('mac_os');
 }
+
+
+
+"use strict";
+document.addEventListener('DOMContentLoaded', () => {
+    const faqmain = document.querySelector(".faq-main");
+    const accordionShow = (main) =>{
+        const link = main.querySelector(".faq-btn-link");
+        const list = Array.from(main.querySelectorAll(".accordion-list"));
+        const totallist = list.length;
+        if(!link) return;
+        let currentIndex = 5;
+        link.addEventListener("click", function(e){
+            e.preventDefault();
+            this.classList.toggle("open");
+            let nextIndex = Math.min(currentIndex+5, totallist)
+            for(let i = currentIndex; i<nextIndex; i++){
+                list[i].style.display = 'block';
+            }
+            currentIndex= nextIndex;
+            if(currentIndex>=totallist){
+                link.style.display = 'none';
+                return false;
+            }
+        });
+    }
+    accordionShow(faqmain);
+});
