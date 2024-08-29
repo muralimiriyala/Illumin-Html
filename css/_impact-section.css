@@ -14,9 +14,14 @@
     .impact-btn{flex:  0 0 30%; order: 2; text-align: right;}
     body.page-template-product .impact-btn{margin-top: 16px;}
     .impact-lists{order: 3; gap: 64px; padding-top: 60px;}
-    .impact-list{flex: 0 0 calc(25% - 48px);}
+    /* .impact-list{flex: 0 0 calc(25% - 48px);} */
     .impact-product{display: block;}
     .impact-icon{margin-bottom: 24px; max-width: 55px;}
+
+    .highlights1-of-1{flex: 1;}
+    .highlights1-of-2{flex: 0 0 calc(50% - 32px);}
+    .highlights1-of-3{flex: 0 0 calc(33.333% - 43px);}
+    .highlights1-of-4{flex: 0 0 calc(25% - 48px);}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .impact-lists{gap: 30px;}
