@@ -1,5 +1,5 @@
 
-.client-section{background: var(--tint-bg-blue);}
+.client-bg{background: var(--tint-bg-blue); top: 48px; height: calc(100% - 48px);}
 .client-category-filter{padding: 24px; background: var(--white); border-radius: 24px; box-shadow: 0px 0px 80px 0px rgba(0, 125, 235, 0.20);}
 ul.client-category{margin: 0; gap: 12px;}
 .client-category-main{gap: 8px; padding: 14px 16px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black);}
@@ -25,11 +25,13 @@ ul.client-category{margin: 0; gap: 12px;}
 .client-item-thumb{max-width: 200px; max-height: 56px;}
 
 @media screen and (min-width: 1024px) {
-    .client-main{padding: 10px 0 72px; margin-top: 50px;}
-    .client-category-filter{gap: 64px; transform: translateY(-58px);}
+    .client-main{padding: 0 0 72px;}
+    .client-category-filter{gap: 64px; margin-bottom: 56px;}
     ul.client-category{flex: 1;}
     .client-category-search{flex: 0 0 350px;}
-    .client-lists{gap: 48px;}
+    .client-lists{gap: 48px; margin-bottom: 48px;}
+    .client-btn{gap: 8px;}
+    .client-btn-line{margin: 0; flex: 1; background: var(--white); height: 2px; border-radius: 2px;}
     .client-item{flex: 0 0 284px;}
 }
 
@@ -37,14 +39,23 @@ ul.client-category{margin: 0; gap: 12px;}
     .client-lists{gap: 20px;}
     .client-item{flex: 0 0 calc(25% - 15px); padding: 20px;}
 }
-
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .client-main{padding: 0 0 72px;}
+    .client-category-filter{margin-bottom: 30px; gap: 12px;}
+    .client-category-search{flex: 1;}
+    .client-lists{gap: 20px;}
+    .client-item{flex: 0 0 calc(50% - 10px);}
+    .client-btn{margin-top: 48px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .client-main{padding: 72px 0;}
-    .client-category-filter{padding: 16px; gap: 10px;}
+    .client-bg{top: 194px; height: calc(100% - 194px);}
+    .client-main{padding: 0 0 72px;}
+    .client-category-filter{padding: 16px; gap: 10px; margin-bottom: 30px;}
     ul.client-category{gap: 10px 8px;}
     .client-category-list{width: 100%; flex: 0 0 calc(50% - 4px);}
     .client-category-main{justify-content: center;}
     .client-category-search{width: 100%;}
     .client-lists{gap: 24px;}
     .client-item{font-size: 20px; line-height: 24px;}
+    .client-btn{margin-top: 48px;}
 }
