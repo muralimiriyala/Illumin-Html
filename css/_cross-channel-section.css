@@ -3,6 +3,8 @@
 .cross-channel-text h5{color: var(--sky); margin-bottom: 8px;}
 .cross-channel-text::before{content: ""; position: absolute; width: 1px; height: 100%; background: var(--black-25); top: 0; left: -24px;}
 
+.no_channel .cross-channel-lt, .no_channel .cross-channel-rt{flex: 1;}
+
 @media screen and (min-width: 1024px) {
     .cross-channel-main{padding: 80px 0; gap: 80px;}
     .cross-channel-lt{flex: 0 0 394px;}
