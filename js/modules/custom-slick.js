@@ -230,7 +230,7 @@ $(document).ready(function () {
   $platformSlider.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 1000,
+    speed: 1500,
     dots: true,
     arrows: true,
     prevArrow:
