@@ -27,7 +27,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .single-testimonial-slide{padding: 32px 0;}
-   .single-testimonial-section:has(+ .trusted-by-section) .single-testimonial-slide{padding-bottom: 72px !important;}
+   .single-testimonial-section:has(+ .trusted-by-section) .single-testimonial-slide{padding-bottom: 65px !important;}
     .single-testimonial-text p{line-height: 25px; font-size: 20px;}
     .single-testimonial-text p > span{border-bottom: 3px solid var(--sun); display: inline; line-height: 21px;}
     .single-testimonial-details span{line-height: 20px;}

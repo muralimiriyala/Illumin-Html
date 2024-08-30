@@ -28,6 +28,7 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .trusted-by-section{margin-top: -40px; padding-bottom: 32px;}
+    body.page-template-case-study-agencies .trusted-by-section{padding-bottom: 0;}
     .trusted-by-section::before{height: calc(100% - 40px); top: 40px;}
     body.page-template-product .trusted-by-section, body.page-template-product-channel .trusted-by-section{margin-top: -48px;}
     body.page-template-product .trusted-by-section::before, body.page-template-product-channel .trusted-by-section::before{height: calc(100% - 48px); top: 48px;}
