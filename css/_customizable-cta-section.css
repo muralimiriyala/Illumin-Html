@@ -19,6 +19,7 @@
     .customizable-cta-text{flex: 0 0 656px;}
     .customizable-cta-text .button{margin-top: 17px;}
     .customizable-cta-image{flex: 0 0 calc(100% - 624px); max-width: 479px; right: 48px; top: -105px; position: absolute;}
+	body.page-template-case-study-agencies .customizable-cta-wrap{margin-top: -20px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
 	.customizable-cta-main {gap: 30px; padding: 64px 30px; } 
