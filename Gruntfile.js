@@ -1,73 +1,71 @@
 const { config } = require('grunt');
-
 module.exports = function (grunt) {
-  // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    concat: config('concat'),
-    uglify: config('uglify'),
-    cssmin: config('cssmin'),
+    terser: {
+      options: {
+        compress: {
+          drop_console: true,
+        },
+        mangle: true,
+        output: {
+          comments: false,
+        },
+      },
+      my_target: {
+        files: {
+          'dist/core.bundle.js': ['dist/core.concat.js'],
+        },
+      },
+    },
+
+    concat: {
+      dist: {
+        src: ['js/*.js', 'js/**/*.js'],
+        dest: 'dist/core.concat.js',
+      },
+    },
     cssmin: {
       target: {
         files: {
-          'core.bundle.css': ['css/*.css'],
+          'core.bundle.css': ['css/**/*.css', 'css/*.css'],
         },
       },
     },
-    uglify: {
-      my_target: {
-        files: {
-          'dist/core.bundle.js': [
-            'js/slick.min.js',
-            'js/custom-slick.js',
-            'js/jquery.selectBox.js',
-            'js/custom-selectBox.js',
-            'js/script.js',
-            'js/magnific-popup.min.js',
-            'js/custom-magnific-popup.js',
-            'js/animation-script.js',
-            'js/journey-module-slider.js',
-            'js/vertical-slider.js',
-          ],
-        },
+    validation: {
+      options: {
+        doctype: 'HTML5',
+      },
+      files: {
+        src: ['./*.html'],
       },
     },
-    concat: {
-      dist: {
-        src: [
-          'js/slick.min.js',
-          'js/custom-slick.js',
-          'js/jquery.selectBox.js',
-          'js/custom-selectBox.js',
-          'js/script.js',
-          'js/magnific-popup.min.js',
-          'js/custom-magnific-popup.js',
-          'js/animation-script.js',
-          'js/journey-module-slider.js',
-          'js/vertical-slider.js',
-        ],
-        dest: 'dist/core.bundle.js',
-      },
-    },
+
     watch: {
       stylesheets: {
-        files: ['css/*.css'],
+        files: ['css/**/*.css', 'css/*.css'],
         tasks: ['cssmin'],
         livereload: true,
       },
       scripts: {
-        files: ['js/**/*.js'],
-        tasks: ['uglify'],
+        files: ['js/*.js', 'js/**/*.js'],
+        tasks: ['concat', 'terser'],
       },
     },
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-terser');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-w3c-html-validation');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'watch']);
+  grunt.registerTask('default', [
+    'validation',
+    'concat',
+    'terser',
+    'cssmin',
+    'watch',
+  ]);
 };
