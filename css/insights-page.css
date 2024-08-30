@@ -1,18 +1,19 @@
 
-.insights-categories-top{gap: 16px;}
+.insights-categories-top{gap: 16px; margin-bottom: 16px;}
 .insights-categories{gap: 8px; flex: 0 0 auto; width: auto; margin-bottom: 7px; font-size: 16px; line-height: 20px;}
-.insights-title-icon{width: 16px; top: -1px; position: relative;}
+.insights-title-icon{flex: 0 0 16px;}
 .insights-title-icon img{width: 100%;}
+.insights-categories-text{flex: 0 0 calc(100% - 24.32px); gap: 16.64px;}
 .insights-categories span{padding-top: 1px; font-family: 'Graphik-Bold', sans-serif;}
 
 .insights-post-head{z-index: 1;}
-.insights-post-head::after { bottom: -22px; left: -1px; width: 100%; height: 160px; content: ""; background-image: url('./images/union-shape.svg'); background-repeat: no-repeat; background-position: left bottom; background-size: contain; position: absolute; z-index: -1; }
+/* .insights-post-head::after { bottom: -22px; left: -1px; width: 100%; height: 160px; content: ""; background-image: url('./images/union-shape.svg'); background-repeat: no-repeat; background-position: left bottom; background-size: contain; position: absolute; z-index: -1; } */
 
 .insights-post-text{padding-top: 32px; font-size: 24px; line-height: 32px; letter-spacing: -0.02rem;}
 .insights-post-text p a{color: var(--black);}
 .insights-post-text p a:hover{color: var(--illumin-blue);}
-.insights-post-small{gap: 8px; margin-bottom: 8px;}
-.insights-post-icon{flex: 0 0 16px; align-items: flex-start; display: flex; flex-direction: column;}
+.insights-post-small{gap: 8px;}
+.insights-post-icon{flex: 0 0 16px;}
 .insights-post-icon img{width: 100%;}
 .insights-icon-text{flex: 0 0 calc(100% - 24px); font-size: 16px; line-height: 20px;}
  
@@ -67,16 +68,17 @@ ul.blog_list{margin: 0; width: 100%;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
-    .insights-post-head { max-width: 379px; transform: translateY(136px); margin-top: -136px; padding-bottom: 5px; width: 100%; }
-    .insights-post-title{max-width: 348px; width: 100%;}
-    .insights-post-title h2{ letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif; }
+    .insights-post-head {padding-bottom: 5px; width: 100%; }
+    .insights-post-title{width: 100%; padding-right: 16px;}
+    .insights-post-title h1{ letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif; }
 }
 @media only screen and (min-width: 1024px){
     .insights-explore-all{ text-align: right; transform: translateY(75px); }   
-    .insights-post-title h2{ font-size: 28px; line-height: 44px; margin-bottom: 8px;}
+    .insights-post-title h1{font-size: 40px; line-height: 48px; margin-bottom: 0;}
     .insights-post-main{gap: 64px; padding: 53px 0 80px;}
     .insights-post-left{flex: 0 0 calc(50% - 32px);}
-    .insights-post-right{gap: 64px; flex: 0 0 calc(50% - 32px); padding-top: 128px;}
+    .insights-post-post{margin-bottom: 32px;}
+    .insights-post-right{gap: 64px; flex: 0 0 calc(50% - 32px);}
     .insights-post-list{flex: 0 0 calc(50% - 32px);}
     .blog-post-main {padding: 0 0 57px; }
     .blog-post-filter{gap: 80px; align-items: center;}
@@ -94,7 +96,6 @@ ul.blog_list{margin: 0; width: 100%;}
     .subscribe-vertical-main{margin-top: -27px;}
     .subscribe-vertical-main::before, .subscribe-vertical-main::after{width: 100%; height: 69px; top: -98px; left: 0; position: absolute; content: ""; background-image: url('images/subscribe-vertical-pattern.svg');}
     .subscribe-vertical-main::after{bottom: -98px; top: auto;}
-    .insights-post-small{margin-right: 10px; display: inline-flex; width: auto;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .insights-post-wrap{margin-bottom: -115px;}
@@ -113,7 +114,7 @@ ul.blog_list{margin: 0; width: 100%;}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .insights-post-wrap{padding: 0 0 64px;}
     .insights-post-main{display: block; padding: 53px 0 30px;}
-    .insights-post-title h2 {font-size: 28px; line-height: 44px; }
+    .insights-post-title h1 {font-size: 28px; line-height: 44px; }
     .insights-post-right{padding-top: 30px; gap: 30px;}
     .insights-post-list {flex: 0 0 calc(50% - 15px); }
     .blog-post-main {padding: 0 0 61px; }
