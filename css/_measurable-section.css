@@ -1,5 +1,5 @@
 
-.measurable-section{background-color: var(--tin-color); overflow: hidden;}
+.measurable-section{background-color: var(--tint-bg-blue); overflow: hidden;}
 .measurable-bar{ width: 34px; height: auto; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); opacity: 0.75; border-radius: 8px 8px 0px 0px; display: block; transition: all 0.5s ease-in-out; animation: measurableUp 0.75s ease;}
 @keyframes measurableUp{
     0% {
@@ -18,11 +18,12 @@ span.measurable-number{margin-bottom: 12px; display: block; font-size: 88px; lin
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .measurable-main{padding: 80px 0 0;}
-    .measurable-title{max-width: 770px; margin-bottom: 140px;}
+    .measurable-main{padding: 80px 0;}
+    .measurable-title{max-width: 900px; margin-bottom: 140px;}
+    .measurable-title h3{font-size: 40px; line-height: 48px;}
 
     .measurable-views{gap: 44px; position: relative;}
-    .measurable-views::before, .measurable-views::after{width: 100vw; height: 218px; left: calc(100% + 23px); bottom: 0; position: absolute; content: ""; background-image: url('images/Bars-Between.svg'); background-repeat: repeat-x;}
+    /* .measurable-views::before, .measurable-views::after{width: 100vw; height: 218px; left: calc(100% + 23px); bottom: 0; position: absolute; content: ""; background-image: url('images/Bars-Between.svg'); background-repeat: repeat-x;} */
     .measurable-views::before{right: calc(100% - 23px); left: auto;}
     .measurable-list{flex: 0 0 calc(33.333% - 30px); gap: 28px;}
     .measurable-text{flex: 1; padding-bottom: 32px;  transition: all 0.5s ease-in-out;}

@@ -1,8 +1,8 @@
 
 .product-banner-section{background: linear-gradient(180deg, rgba(229, 242, 253, 0.00) 80%, #E5F2FD 100%), #FFF;}
 .product-banner-text span.optional-text{font-family: 'Graphik-Bold'; text-transform: uppercase;}
-.no-product-banner-text .product-banner-text{flex: 1;}
-.no-product-banner-image{justify-content: center;}
+.no-banner-image .product-banner-text{flex: 1;}
+.no-banner-image{justify-content: center;}
 
 @media screen and (min-width: 1024px) {
     .product-banner-main{gap: 80px; flex-direction: row-reverse; padding: 80px 0 0;}
