@@ -15,6 +15,7 @@
     .product-banner-main{gap: 40px;}
     .product-banner-text{flex: 0 0 400px; padding-bottom: 40px;}
     .product-banner-text h1{font-size: 70px; line-height: 70px;}
+    .product-banner-desc{font-size: 20px; line-height: 28px;}
     .product-banner-image{flex: 0 0 calc(100% - 440px);}
 }
 
@@ -30,5 +31,6 @@
     .product-banner-text{flex: 100%;}
     .product-banner-text span.optional-text{margin-bottom: 16px;}
     .product-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;}
+    .product-banner-desc{font-size: 18px; line-height: 26px;}
     .product-banner-image{flex: 100%;}
 }
