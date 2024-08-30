@@ -3,8 +3,9 @@ ul.platform-nav{margin: 0 0 60px 0;}
 ul.platform-nav li{flex: 1; position: relative; text-align: center; margin: 0 0 0 8px; padding-bottom: 13px; color: var(--sky); font-size: 20px; font-family: 'Graphik-Bold'; line-height: 24px; opacity: 0.5; transition: all 0.5s ease;}
 ul.platform-nav li:first-child{margin: 0;}
 ul.platform-nav li.slick-current{color: var(--black); opacity: 1;}
-ul.platform-nav li.slick-current::after{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
 ul.platform-nav li::before, ul.platform-nav li::after{content: ""; position: absolute; width: 100%; height: 6px; left: 0; bottom: 0; top: auto; background: white; transition: all 0.5s ease;}
+ul.platform-nav li::after{height: 0; background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
+ul.platform-nav li.slick-current::after{height: 6px;}
 
 .platform-content h4{font-family: 'Graphik-Regular'; line-height: 32px; margin-bottom: 22px;}
 .platform-content h4 > span{font-family: 'Graphik-Bold';}
@@ -14,6 +15,7 @@ ul.platform-nav li::before, ul.platform-nav li::after{content: ""; position: abs
 .platform-full .platform-content{flex: 1; margin: 0;}
 .platform-full .platform-image{flex: 1;}
 
+/*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     .platform-main{padding: 80px 0 67px;}
     .platform-content{width: 400px; margin-right: 80px;}
@@ -21,12 +23,10 @@ ul.platform-nav li::before, ul.platform-nav li::after{content: ""; position: abs
     .platform-append-arrows{display: none;}
     ul.platform-nav li{cursor: pointer;}
 }
-
 @media screen and (max-width: 1199px)  and (min-width: 1024px) {
     .platform-content{margin-right: 40px;}
     .platform-image{width: calc(100% - 440px);}
 }
-
 @media screen and (max-width: 1023px)  and (min-width: 768px) {
     .platform-main{padding: 48px 0; position: relative;}
     ul.platform-nav{margin: 0 0 40px 0; gap: 12px;}
@@ -40,7 +40,6 @@ ul.platform-nav li::before, ul.platform-nav li::after{content: ""; position: abs
     ul.platform-nav{position: relative;}
     ul.platform-nav::before{content: ""; position: absolute; width: 100px; height: 100%; top: 0; right: 0; background: linear-gradient(90deg, transparent 0%, var(--tint-bg-blue) 50%); z-index: 1; }
 }
-
 @media screen and (max-width: 767px)  and (min-width: 200px) {
     .platform-main{padding: 40px 0;}
     ul.platform-nav{margin: 0 0 32px 0;}
