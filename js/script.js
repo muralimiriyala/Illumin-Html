@@ -291,5 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   };
-  accordionShow(faqmain);
+  if (faqmain) {
+    accordionShow(faqmain);
+  }
 });
