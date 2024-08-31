@@ -61,6 +61,11 @@ body.page-template-request-a-demo .main-header{display: none;}
     ul.main_menu > li.product-menu-item > ul.nav_item_two{justify-content: center;}
     ul.main_menu > li.product-menu-item > ul.nav_item_two > li:nth-child(2){ flex: 0 0 calc(100% - 288px); padding: 0 93px;}
     ul.main_menu > li.insight-nav-item > ul.nav_item_two > li:nth-child(2){max-width: 650px;}
+
+    ul.langauage-btns{margin: 0; gap: 16px;}
+    ul.langauage-btns > li{font-size: 16px; line-height: 16px; margin: 0;}
+    ul.langauage-btns > li > a{color: var(--black);}
+    ul.langauage-btns > li::before{width: 2px; height: 100%; background: rgba(0, 0, 0, 0.25); left: -8px; top: 0;}
 }
 @media only screen and (max-width: 1499px) and (min-width: 1300px){
     .navigation{gap: 30px;}
