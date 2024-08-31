@@ -71,6 +71,13 @@ ul.langauage-btns > li:first-child::before{display: none;}
 
     .nav-btns{margin-right: 5px;}
 
+    .white-header ul.main_menu > li:not(.button) > a{color: var(--white);}
+    .white-header ul.main_menu > li:not(.button) > a:hover{color: var(--sky);}
+    .white-header .nav-btns .text-link{color: var(--white);}
+    .white-header .nav-btns .text-link:hover{color: var(--sky);}
+    .white-header ul.langauage-btns > li > a{color: var(--white);}
+    .white-header ul.langauage-btns > li > a:hover{color: var(--sky);}
+
     
 }
 @media only screen and (max-width: 1499px) and (min-width: 1300px){
