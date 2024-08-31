@@ -19,7 +19,7 @@
     .home-banner-image{flex: 0 0 calc(100% - 754px); display: flex; justify-content: center;}
     .home-banner-thumb{width: 396px;}
     .watermark-circle{position: absolute; top: -47px; left: 43px; width: 432px;}
-    .watermark-circle::before{content: ""; position: absolute; top: 215px; left: 100%; width: 100vw; height: 16px; background: var(--sun);}
+    .watermark-circle-line{content: ""; position: absolute; top: 215px; left: 100%; width: 100vw; height: 16px; background: var(--sun);}
 }
 
 @media screen and (max-width: 1339px) and (min-width: 1024px) {
@@ -37,7 +37,7 @@
     .home-banner-thumb img{width: 360px;}
     .watermark-circle{position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 432px;}
     .watermark-circle svg{width: 432px; height: 432px;}
-    .watermark-circle::before{content: ""; position: absolute; top: 185px; left: calc(100% - 2px); width: 100vw; height: 16px; background: var(--sun);}
+    .watermark-circle-line{content: ""; position: absolute; top: 185px; left: calc(100% - 2px); width: 100vw; height: 16px; background: var(--sun);}
 
     .no-banner-image .home-banner-text{padding-bottom: 100px;}
 }
@@ -51,7 +51,7 @@
     .home-banner-thumb img{width: 281.5px;}
     .watermark-circle{position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 294px;}
     .watermark-circle svg{width: 294px; height: 294px;}
-    .watermark-circle::before{content: ""; position: absolute; top: 133px; left: calc(100% - 2px); width: 100vw; height: 12px; background: var(--sun);}
+    .watermark-circle-line{content: ""; position: absolute; top: 133px; left: calc(100% - 2px); width: 100vw; height: 12px; background: var(--sun);}
 
     .no-banner-image .home-banner-text{padding-bottom: 55px;}
 }
