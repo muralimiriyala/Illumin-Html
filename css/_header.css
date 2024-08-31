@@ -45,7 +45,7 @@ ul.langauage-btns > li:first-child::before{display: none;}
     ul.main_menu > li.product-menu-item > ul > li > ul > li > a{font-size: 20px; line-height: 24px; color: var(--sky); font-family: 'Graphik-Bold', sans-serif;} 
 	ul.main_menu > li.product-menu-item > ul > li > ul > li.current-menu-item > a, ul.main_menu > li.product-menu-item > ul > li > ul > li > a:hover{color: var(--sky-blue);}
     .product-menu-flex{color: var(--white); gap: 48px;}
-    .product-menu-flex::before { position: absolute; content: ""; width: 5px; height: 100%; left: -100px; top: 0; background: var(--sky); }
+    .product-menu-flex::before{position: absolute; content: ""; width: 4px; height: calc(100% + 74%); left: -53px; top: -48px; background: var(--Gradient-Vertical, linear-gradient(180deg, #8200F0 0%, #342FE7 100%)); border-radius: 2px; opacity: 0.25;}
     .product-menu-image{position: absolute; width: 287px; right: 0; bottom: 0; margin-bottom: -91px;}
     /* .product-menu-image::before{width: 128px; height: 128px; left: -62px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-sm.svg'); background-repeat: no-repeat; content: ""; display: block; position: absolute;} */
     .insight-nav-item .product-menu-image{max-width: 178px;}
