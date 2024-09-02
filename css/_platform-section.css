@@ -33,7 +33,7 @@ ul.platform-nav li.slick-current::after{height: 6px;}
     .platform-list{gap: 40px; flex-direction: column-reverse;}
 
     .platform-append-arrows{margin: 0; gap: 8px; align-items: center; position: absolute; z-index: 2; top: 47px; right: 5px; width: fit-content;}
-    .platform-append-arrows span.slick-arrow{top: auto; transform: none; position: relative; background: var(--white); width: 32px; height: 32px; border-radius: 8px; filter: none;}
+    .platform-append-arrows span.slick-arrow{top: auto; transform: none; position: relative; background: var(--white); width: 32px; height: 32px; border-radius: 8px; filter: none; cursor: pointer;}
     .platform-append-arrows span.slick-arrow.slick-prev{display: none !important;}
     .platform-append-arrows span.slick-arrow svg{width: 13px;}
     ul.platform-nav{position: relative;}
