@@ -2,6 +2,8 @@
 .sample-intro-text{font-size: 20px; line-height: 28px;}
 .sample-intro-head .text-link{margin-top: 11px;}
 
+.no-sample-full .sample-intro-head, .no-sample-full  .sample-intro-text{flex: 1;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .sample-intro-main{padding: 80px 0 80px; gap: 60px;}

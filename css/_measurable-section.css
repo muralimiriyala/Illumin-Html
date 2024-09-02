@@ -26,14 +26,16 @@ span.measurable-number{display: block; font-size: 56px; line-height: 56px; color
     .measurable-title h3{font-size: 40px; line-height: 48px;}
 
     .measurable-views{gap: 48px; position: relative;}
-    /* .measurable-views::before, .measurable-views::after{width: 100vw; height: 218px; left: calc(100% + 23px); bottom: 0; position: absolute; content: ""; background-image: url('images/Bars-Between.svg'); background-repeat: repeat-x;} */
     .measurable-views::before{right: calc(100% - 23px); left: auto;}
-    .measurable-list{flex: 0 0 calc(33.333% - 32px); gap: 32px;}
     .measurable-text{flex: 1; padding: 16px 0; transition: all 0.5s ease-in-out;}
     .measurable-text-wrap{margin-bottom: 4px;}
     .measurable-text h4{font-size: 24px; line-height: 28px;}
-    .measurable-text p{max-width: 330px;}   
+    /* .measurable-text p{max-width: 330px;}    */
     .measurable-bg{bottom: 0;}
+
+    .measurable-list1-of-1{flex: 1;}
+    .measurable-list1-of-2{flex: 0 0 calc(50% - 32px); gap: 32px;}
+    .measurable-list1-of-3{flex: 0 0 calc(33.333% - 32px); gap: 32px;}
 
     
 }
