@@ -1,0 +1,10 @@
+
+.insights-subscribe-wrap{padding: 24px; border-radius: 24px; background: var(--tint-bg-blue);}
+.insights-subscribe-main{gap: 12px;}
+.insights-subscribe-text, .insights-subscribe-form{flex: 100%;}
+.insights-subscribe-sub-head{gap: 8px; align-items: flex-start;}
+.insights-subscribe-mail-icon{flex: 0 0 36px;}
+.insights-subscribe-title{flex: 0 0 calc(100% - 44px);}
+span.insights-subscribe-title{font-size: 28px; line-height: normal; display: block; font-family: 'Graphik-Bold', sans-serif; color: var(--sky);}
+.insights-subscribe-form form.hs-form-private{display: flex; gap: 14px; margin: 0;}
+.insights-subscribe-form form.hs-form-private .hs_email > label{display: none;}

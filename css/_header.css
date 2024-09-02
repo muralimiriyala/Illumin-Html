@@ -24,10 +24,10 @@ ul.langauage-btns > li:first-child::before{display: none;}
     ul.main_menu > li.menu-item-has-children:not(.button) > a::after{width: 80px; height: 8px; bottom: -4px; left: 50%; transform: translateX(-50%);  margin: 0 auto; background: var(--sun); content: ""; display: block; position: absolute; opacity: 0; transition: all 0.3s ease-in-out; z-index: 2; }
     ul.main_menu > li.menu-item-has-children:hover:not(.button) > a::after, ul.main_menu > li.menu-item-has-children:not(.button) > a:hover::after{bottom: -4px; opacity: 1;}
     ul.main_menu > li.button > a{color: var(--white); text-transform: none;}
-    ul.main_menu > li > ul{opacity: 0; height: 0; margin: 0; min-width: 288px; left: 50%; transform: translateX(-50%); visibility: hidden; border-radius: 0 0 8px 8px; position: absolute; background-color: var(--black); transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;}
+    ul.main_menu > li > ul{opacity: 0; height: 0; margin: 0; min-width: 288px; left: 50%; transform: translateX(-50%); visibility: hidden; border-radius: 0 0 8px 8px; position: absolute; background-color: var(--tint-bg-blue); transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;}
     ul.main_menu > li:hover > ul{opacity: 1; height: auto; visibility: visible; padding: 32px 32px 16px; }
-    ul.main_menu > li > ul > li{margin: 0;}
-    ul.main_menu > li > ul > li > a{color: var(--white); font-size: 20px;}
+    ul.main_menu > li > ul > li{margin-bottom: 8px;}
+    ul.main_menu > li > ul > li > a{font-size: 20px; line-height: 24px; color: var(--sky); font-family: 'Graphik-Bold', sans-serif;}
     ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li > a:hover{color: var(--sky-blue);}
 
     ul.main_menu > li.product-menu-item{position: static;}
@@ -71,14 +71,20 @@ ul.langauage-btns > li:first-child::before{display: none;}
     ul.main_menu > li.product-menu-item > ul.nav_item_two > li:nth-child(2){ flex: 0 0 calc(100% - 288px); padding: 0 93px;}
     ul.main_menu > li.insight-nav-item > ul.nav_item_two > li:nth-child(2){max-width: 650px;}
 
-    .nav-btns{margin-right: 5px;}
+    /* .nav-btns{margin-right: 5px;} */
+    .nav-btns .text-link{padding-right: 17px;}
+    .nav-btns .text-link::after{right: -3px;}
 
-    .white-header ul.main_menu > li:not(.button) > a{color: var(--white);}
-    .white-header ul.main_menu > li:not(.button) > a:hover{color: var(--light-blue);}
-    .white-header .nav-btns .text-link{color: var(--white);}
-    .white-header .nav-btns .text-link:hover{color: var(--light-blue);}
-    .white-header ul.langauage-btns > li > a{color: var(--white);}
-    .white-header ul.langauage-btns > li > a:hover{color: var(--light-blue);}
+    .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a{color: var(--white);}
+    .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a:hover{color: var(--light-blue);}
+    .white-header ul.main_menu > li.button{background: var(--sun);}
+    .white-header ul.main_menu > li.button a{color: var(--black);}
+    .white-header:not(.fixed_header) .nav-btns span{padding: 9px 12px; background: rgba(0, 0, 0, 0.20); border-radius: 12px;}
+    .white-header:not(.fixed_header) .nav-btns .text-link{color: var(--white);}
+    .white-header:not(.fixed_header) .nav-btns .text-link::after{content: "\f054"; font-family:"Font Awesome 6 pro"; background: none; color: var(--sun); font-size: 20px; right: -10px; font-weight: 900;}
+    .white-header:not(.fixed_header) .nav-btns .text-link:hover{color: var(--light-blue);}
+    .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
+    .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--light-blue);}
 
     
 }
@@ -117,12 +123,12 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .toogle-btn.on span {background-color: transparent; }
     .toogle-btn.on span:before {transform: rotate(45deg) translate(4px,3px); }
     .toogle-btn.on span:after {transform: rotate(-45deg) translate(5px,-5px); }
-    .navigation{margin-top: 80px; display: block; background-color: var(--tint-bg-blue); transition-duration: 0.3s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: opacity, visibility, transform; transition-delay: 0s; width: 100%; height: 100vh; left: 0; top: 0; position: fixed; visibility: hidden; opacity: 0; transform: scale(1.05); overflow-y: auto; }
+    .navigation{margin-top: 80px; display: block; background-color: var(--black); transition-duration: 0.3s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: opacity, visibility, transform; transition-delay: 0s; width: 100%; height: 100vh; left: 0; top: 0; position: fixed; visibility: hidden; opacity: 0; transform: scale(1.05); overflow-y: auto; }
     .navigation.open{visibility: visible; opacity: 1; transform: scale(1); }
     ul.main_menu { display: block; margin: 0; padding: 0; }
     ul.main_menu li::before{display: none;}
     ul.main_menu > li {margin: 0;}
-    ul.main_menu > li:not(.button) > a{padding: 20px 20px; display: block; font-size: 20px; line-height: 24px; font-family: 'Graphik-Bold', sans-serif; color: var(--sky); position: relative;}
+    ul.main_menu > li:not(.button) > a{padding: 20px 20px; display: block; font-size: 20px; line-height: 24px; font-family: 'Graphik-Bold', sans-serif; color: var(--white); position: relative;}
     ul.main_menu > li.button > a{color: var(--white);}
     ul.main_menu > li:not(.button) > a::after {right: 20px; top: 20px; transform: rotate(180deg); width: 28px; height: 16px; position: absolute; background: url('images/down-arrow.svg') no-repeat; background-size: cover; content: ""; }
     ul.main_menu > li:not(.button) > a.active::after{width: 28px; height: 16px; transform: rotate(0deg); background-size: contain;}
@@ -142,9 +148,11 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .site-main-cover{padding-top: 80px;} 
     body.page-template-confirmation .main-header{background-color: var(--white);}
     .nav-btns{padding: 20px 20px; justify-content: space-between; display: flex; flex-wrap: wrap; width: 100%;}
-    .nav-btns span{width: 100%;}
 
     ul.langauage-btns{justify-content: center; padding: 20px; }
+    ul.langauage-btns > li > a{color: var(--white);}
+    ul.langauage-btns > li > a:hover{color: var(--sky);}
+    ul.langauage-btns > li::before{background: rgba(255,255,255,.5); left: -9px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.home .main-header{background-color: var(--white);}
