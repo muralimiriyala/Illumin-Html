@@ -1,5 +1,4 @@
-var $ = jQuery.noConflict();
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   $('.people-slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
