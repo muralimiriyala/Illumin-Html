@@ -59,7 +59,6 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .site-main-cover{padding-top: 104px;}
     body.home .site-main-cover{padding-top: 0;}
 
-
     .fixed_header ul.main_menu > li:not(.button) > a{font-size: 1rem; line-height: 20px; padding: 26px 0 26px;}
     .fixed_header ul.main_menu > li.button{padding: 4px 17px 6px;}
     .fixed_header ul.main_menu > li.button > a{font-size: 16px; line-height: 1rem;}
@@ -79,8 +78,6 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .white-header .nav-btns .text-link:hover{color: var(--light-blue);}
     .white-header ul.langauage-btns > li > a{color: var(--white);}
     .white-header ul.langauage-btns > li > a:hover{color: var(--light-blue);}
-
-    
 }
 @media only screen and (max-width: 1499px) and (min-width: 1300px){
     .navigation{gap: 30px;}
