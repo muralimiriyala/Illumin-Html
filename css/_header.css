@@ -74,7 +74,6 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .nav-btns .text-link{padding-right: 17px;}
     .nav-btns .text-link::after{right: -3px;}
 
-<<<<<<< HEAD
     .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a{color: var(--white);}
     .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a:hover{color: var(--light-blue);}
     .white-header ul.main_menu > li.button{background: var(--sun);}
@@ -86,15 +85,6 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--light-blue);}
 
-    
-=======
-    .white-header ul.main_menu > li:not(.button) > a{color: var(--white);}
-    .white-header ul.main_menu > li:not(.button) > a:hover{color: var(--light-blue);}
-    .white-header .nav-btns .text-link{color: var(--white);}
-    .white-header .nav-btns .text-link:hover{color: var(--light-blue);}
-    .white-header ul.langauage-btns > li > a{color: var(--white);}
-    .white-header ul.langauage-btns > li > a:hover{color: var(--light-blue);}
->>>>>>> 9320bd66f0bb92fa6b30ce635b1d0bf1780587fa
 }
 @media only screen and (max-width: 1499px) and (min-width: 1300px){
     .navigation{gap: 30px;}

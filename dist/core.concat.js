@@ -300,7 +300,6 @@ $(document).ready(function () {
   $('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr('style');
 });
 
-var $ = jQuery.noConflict();
 jQuery(document).ready(function ($) {
   $('.people-slider-for').slick({
     slidesToShow: 1,
