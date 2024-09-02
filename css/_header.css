@@ -90,12 +90,13 @@ ul.langauage-btns > li:first-child::before{display: none;}
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .navigation{gap: 20px;}
     ul.main_menu{gap: 20px;}
-    ul.main_menu > li.product-menu-item > ul {padding: 37px; gap: 30px; } 
-    ul.main_menu > li.product-menu-item > ul > li {flex: 0 0 215px; }
-    ul.main_menu > li.product-menu-item > ul > li:nth-child(3) {flex: 0 0 calc(100% - 384px); padding: 0 15px; }
+    ul.main_menu > li.product-menu-item > ul {padding: 37px; gap: 15px; } 
+    ul.main_menu > li.product-menu-item > ul > li {flex: 0 0 19%; }
+    ul.main_menu > li.product-menu-item > ul > li:nth-child(3) {flex: 0 0 calc(100% - 384px); padding: 0 0 0 20px; }
     .product-menu-flex{gap: 20px;}
-    .product-menu-image {flex: 0 0 240px; } 
-    .product-menu-text p{display: none;}
+    .product-menu-flex::before{left: -20px;}
+    .product-menu-image {width: 240px;} 
+    .product-menu-text{max-width: 235px;}
 
     .nav-btns{margin-right: 0;}
 }
