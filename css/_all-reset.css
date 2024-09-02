@@ -229,9 +229,9 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
 
 .full_width{width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; margin-left: 0 !important; margin-right: 0 !important; float: none !important; display: block !important; padding-left: 0 !important; padding-right: 0 !important; left: 0 !important;}
 
-.actions{padding: 0 !important; margin: 0 !important;}
-.hs-button{padding: 13px 16px 11px; font-size: 16px; line-height: 20px; background: var(--purple-color);}
-.hs-button:hover{color: var(--white); border-radius: 30px; transform: perspective(1px) translateZ(0) scale(.95);}
+.subscribe-form form.hs-form .hs_submit.hs-submit .actions{padding: 0; margin: 0;}
+.subscribe-form form.hs-form .hs_submit.hs-submit .actions input.hs-button{padding: 13px 16px 11px; font-size: 16px; line-height: 20px; background: var(--purple-color);}
+.subscribe-form form.hs-form .hs_submit.hs-submit .actions input.hs-button:hover{color: var(--white); border-radius: 30px; transform: perspective(1px) translateZ(0) scale(.95);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
