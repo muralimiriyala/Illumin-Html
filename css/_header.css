@@ -87,12 +87,14 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .product-menu-flex{gap: 20px;}
     .product-menu-image {flex: 0 0 240px; } 
 }
-@media only screen and (max-width: 1299px) and (min-width: 1024px){
-    .navigation{gap: 20px;}
-    ul.main_menu{gap: 20px;}
+@media only screen and (max-width: 1359px) and (min-width: 1024px){
     ul.main_menu > li.product-menu-item > ul > li:first-child{flex: 0 0 252px; padding-left: 32px;}
     ul.main_menu > li.product-menu-item > ul > li:nth-child(2){flex: 0 0 200px;}
     ul.main_menu > li.product-menu-item > ul > li:nth-child(3){padding-left: 35px; padding-right: 32px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .navigation{gap: 20px;}
+    ul.main_menu{gap: 20px;}
     .product-menu-flex{gap: 20px;}
     .product-menu-flex::before{left: -20px;}
     .product-menu-image {width: 240px;} 
