@@ -313,6 +313,7 @@ $(document).ready(function () {
     infinite: true,
     dots: false,
     arrows: false,
+    adaptiveHeight: true,
   });
   $singleNext.on('click', () => {
     $singleSlider.slick(

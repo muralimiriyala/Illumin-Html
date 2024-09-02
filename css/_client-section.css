@@ -8,6 +8,7 @@ ul.client-category{margin: 0; gap: 12px;}
 .client-category-list::before{display: none;}
 .client-category-list.more-category .client-category-main{flex-direction: row-reverse; background: transparent; }
 .client-category-list.more-category{border: 2px solid var(--tint-bg-blue); border-radius: 16px;}
+.client-category-list.hide-category{display: none;}
 .hide-more-category{display: none;}
 .client-category-thumb{width: 16px; height: 16px;}
 .more-category .client-category-thumb{width: 28px; height: 8px;}
