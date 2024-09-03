@@ -1,11 +1,11 @@
 
 .at4-visually-hidden {position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; overflow: hidden; display: none; }
-.at-resp-share-element .at-share-btn {display: inline-block; *display: inline; *zoom: 1; margin: 0 2px 5px; padding: 0; overflow: hidden; line-height: 0; text-decoration: none; text-transform: none; color: #fff; cursor: pointer; transition: all .2s ease-in-out; border: 0; background-color: transparent; }
+.at-resp-share-element .at-share-btn {display: inline-block; display: inline; zoom: 1; margin: 0 2px 5px; padding: 0; overflow: hidden; line-height: 0; text-decoration: none; text-transform: none; color: #fff; cursor: pointer; transition: all .2s ease-in-out; border: 0; background-color: transparent; }
 .at-style-responsive .at-share-btn {padding: 5px; }
 .at-icon-wrapper {display: inline-block; }
 .at-resp-share-element .at4-share-count-container{display: none;}
-.social-share-icons{width: 100%; padding: 14px 24px 14px; gap: 38px; margin-bottom: 32px; height: auto; border-radius: 32px; background-color: var(--black); justify-content: space-between;} 
-span.share{color: var(--sky-blue); font-size: 1rem; line-height: 1.5;}
+.social-share-icons{width: 100%; padding: 0; padding-bottom: 24px; gap: 38px; margin-bottom: 24px; height: auto; border-radius: 0; border-bottom: 4px solid var(--sun); background-color:transparent; justify-content: space-between;} 
+span.share{color: var(--black); font-size: 1rem; line-height: 1.5;}
 .addthis_inline_share_toolbox{flex: 1;}
 .social-share-icons .at-share-btn-elements{width: 100%; gap: 38px; display: flex; flex-wrap: wrap;}
 .social-share-icons .at-share-btn-elements a.at-icon-wrapper.at-svc-compact{height: auto; margin-bottom: 5px; background-color: transparent !important; font-size: 24px; color: var(--white) !important; display: none;}

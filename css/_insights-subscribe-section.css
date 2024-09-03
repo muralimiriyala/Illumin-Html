@@ -8,3 +8,8 @@
 span.insights-subscribe-title{font-size: 28px; line-height: normal; display: block; font-family: 'Graphik-Bold', sans-serif; color: var(--sky);}
 .insights-subscribe-form form.hs-form-private{display: flex; gap: 14px; margin: 0;}
 .insights-subscribe-form form.hs-form-private .hs_email > label{display: none;}
+
+
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .insights-subscribe-section{width: 100%;}
+}
