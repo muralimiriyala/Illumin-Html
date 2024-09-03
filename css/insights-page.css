@@ -108,14 +108,15 @@ ul.blog_list{margin: 0; width: 100%;}
     .blog-post-list {flex: 0 0 calc(50% - 10px); margin-bottom: 32px;} 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .insights-post-wrap{padding: 55px 0 55px;}
+    .insights-post-wrap{padding: 24px 0 55px;}
     .insights-post-main{display: block;}
     .insights-post-left{margin-bottom: 48px;}
-    .insights-post-head { max-width: 250px; transform: translateY(54px); margin-top: -54px; padding-bottom: 0; width: 100%; }
-    .insights-post-title{width: 100%; max-width: 225px;}
-    .insights-post-title h2{margin-bottom: 0; font-size: 26px; line-height: 38px; letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif; }
+    .insights-post-head{padding-bottom: 0; width: 100%; }
+    .insights-post-title{width: 100%;}
+    .insights-post-title h1{margin-bottom: 0; font-size: 26px; line-height: 38px; letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif; }
     .insights-post-head::after{bottom: -31px;}
-    .insights-post-post{margin-bottom: 24px;}
+    .insights-post-post{margin-bottom: 32px;}
+    .insights-categories-top{margin-bottom: 14px;}
 
     .insights-post-right{display: block;}
     .insights-post-list{margin-bottom: 48px;}
