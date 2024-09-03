@@ -23,7 +23,7 @@ ul.client-category{margin: 0; gap: 12px;}
 .client-search-btn input:hover{background: none;}
 .client-search-btn input[type="submit"]:focus{background-color: transparent;}
 
-.client-item{background: var(--white); border-radius: 24px; gap: 32px; padding: 32px; min-height: 284px; text-align: center; flex-direction: column;}
+.client-item{background: var(--white); color: var(--black); border-radius: 24px; gap: 32px; padding: 32px; min-height: 284px; text-align: center; flex-direction: column;}
 .client-item-thumb{max-width: 200px; max-height: 56px;}
 
 @media screen and (min-width: 1024px) {

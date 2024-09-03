@@ -115,7 +115,7 @@ ul.blog_list{margin: 0; width: 100%;}
     .insights-post-title{width: 100%; max-width: 225px;}
     .insights-post-title h2{margin-bottom: 0; font-size: 26px; line-height: 38px; letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif; }
     .insights-post-head::after{bottom: -31px;}
-    .insights-post-post{margin-top: -20px;}
+    .insights-post-post{margin-bottom: 24px;}
 
     .insights-post-right{display: block;}
     .insights-post-list{margin-bottom: 48px;}

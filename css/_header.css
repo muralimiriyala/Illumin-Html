@@ -10,10 +10,13 @@ ul.langauage-btns > li > a{color: var(--black);}
 ul.langauage-btns > li::before{width: 2px; height: calc(100% + 6px); background: rgba(0, 0, 0, 0.25); left: -8px; top: -4px;}
 ul.langauage-btns > li:first-child::before{display: none;}
 
+/* .white-header:not(.fixed_header) .logo-white */
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .logo{flex: 0 0 156px;}
+    .logo span{width: 156px; display: block;}
     .toogle-btn{display: none;}
     .navigation{flex: 1; gap: 48px;}
     ul.main_menu {gap: 48px; flex: 1; justify-content: flex-end; margin: 0; padding: 0; }
@@ -49,7 +52,7 @@ ul.langauage-btns > li:first-child::before{display: none;}
     ul.main_menu > li.product-menu-item > ul > li > ul > li > a{font-size: 20px; line-height: 24px; color: var(--sky); font-family: 'Graphik-Bold', sans-serif;} 
 	ul.main_menu > li.product-menu-item > ul > li > ul > li.current-menu-item > a, ul.main_menu > li.product-menu-item > ul > li > ul > li > a:hover{color: var(--sky-blue);}
     .product-menu-flex{color: var(--white); gap: 48px;}
-    .product-menu-image{position: absolute; width: 287px; right: 0; bottom: 0; margin-bottom: -91px;}
+    ul.main_menu > li.product-menu-item > ul > li:nth-child(3) .product-menu-image{position: absolute; width: 287px; right: 0; bottom: -91px;}
     .insight-nav-item .product-menu-image{max-width: 178px;}
     .insight-nav-item .product-menu-image figure.object-fit{text-align: right;}
 
@@ -75,15 +78,16 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .nav-btns .text-link::after{right: -3px;}
 
     .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a{color: var(--white);}
-    .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a:hover{color: var(--light-blue);}
+    .white-header:not(.fixed_header) ul.main_menu > li:not(.button) > a:hover{color: var(--sun);}
     .white-header ul.main_menu > li.button{background: var(--sun);}
     .white-header ul.main_menu > li.button a{color: var(--black);}
     .white-header:not(.fixed_header) .nav-btns span{padding: 9px 12px; background: rgba(0, 0, 0, 0.20); border-radius: 12px;}
     .white-header:not(.fixed_header) .nav-btns .text-link{color: var(--white);}
     .white-header:not(.fixed_header) .nav-btns .text-link::after{content: "\f054"; font-family:"Font Awesome 6 pro"; background: none; color: var(--sun); font-size: 20px; right: -10px; font-weight: 900;}
-    .white-header:not(.fixed_header) .nav-btns .text-link:hover{color: var(--light-blue);}
+    .white-header:not(.fixed_header) .nav-btns .text-link:hover{color: var(--sun);}
+    .white-header:not(.fixed_header) .nav-btns .text-link:hover::after{right: 0; opacity: 0;}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
-    .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--light-blue);}
+    .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--sun);}
 
 }
 @media only screen and (max-width: 1499px) and (min-width: 1300px){
