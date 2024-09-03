@@ -10,8 +10,6 @@ ul.langauage-btns > li > a{color: var(--black);}
 ul.langauage-btns > li::before{width: 2px; height: calc(100% + 6px); background: rgba(0, 0, 0, 0.25); left: -8px; top: -4px;}
 ul.langauage-btns > li:first-child::before{display: none;}
 
-/* .white-header:not(.fixed_header) .logo-white */
-
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -52,7 +50,7 @@ ul.langauage-btns > li:first-child::before{display: none;}
     ul.main_menu > li.product-menu-item > ul > li > ul > li > a{font-size: 20px; line-height: 24px; color: var(--sky); font-family: 'Graphik-Bold', sans-serif;} 
 	ul.main_menu > li.product-menu-item > ul > li > ul > li.current-menu-item > a, ul.main_menu > li.product-menu-item > ul > li > ul > li > a:hover{color: var(--sky-blue);}
     .product-menu-flex{color: var(--white); gap: 48px;}
-    ul.main_menu > li.product-menu-item > ul > li:nth-child(3) .product-menu-image{position: absolute; width: 287px; right: 0; bottom: -91px;}
+    ul.main_menu > li.product-menu-item > ul > li:nth-child(3) .product-menu-image{position: absolute; width: 287px; right: 0; bottom: -99px;}
     .insight-nav-item .product-menu-image{max-width: 178px;}
     .insight-nav-item .product-menu-image figure.object-fit{text-align: right;}
 
@@ -89,11 +87,15 @@ ul.langauage-btns > li:first-child::before{display: none;}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--sun);}
 
+    .white-header:not(.fixed_header) .logo-white{display: block;}
+    .white-header.fixed_header .logo-white{display: none;}
+    .white-header:not(.fixed_header) .logo-black{display: none;}
+
 }
 @media only screen and (max-width: 1499px) and (min-width: 1300px){
     .navigation{gap: 30px;}
     .product-menu-flex{gap: 20px;}
-    .product-menu-image {flex: 0 0 240px; } 
+    ul.main_menu > li.product-menu-item > ul > li:nth-child(3)  .product-menu-image {width: 240px;} 
 }
 @media only screen and (max-width: 1359px) and (min-width: 1024px){
     ul.main_menu > li.product-menu-item > ul > li:first-child{flex: 0 0 252px; padding-left: 32px;}
@@ -102,10 +104,11 @@ ul.langauage-btns > li:first-child::before{display: none;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .navigation{gap: 20px;}
+    .white-header .navigation{gap: 10px;}
     ul.main_menu{gap: 20px;}
     .product-menu-flex{gap: 20px;}
     .product-menu-flex::before{left: -20px;}
-    .product-menu-image {width: 240px;} 
+    ul.main_menu > li.product-menu-item > ul > li:nth-child(3)  .product-menu-image {width: 240px;} 
     .product-menu-text{max-width: 235px;}
 
     .nav-btns{margin-right: 0;}
@@ -155,6 +158,8 @@ ul.langauage-btns > li:first-child::before{display: none;}
     ul.langauage-btns > li > a{color: var(--white);}
     ul.langauage-btns > li > a:hover{color: var(--sky);}
     ul.langauage-btns > li::before{background: rgba(255,255,255,.5); left: -9px;}
+
+    .white-header .logo-white{display: none;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.home .main-header{background-color: var(--white);}
