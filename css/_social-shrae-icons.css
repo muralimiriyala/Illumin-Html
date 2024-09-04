@@ -5,7 +5,7 @@
 .at-icon-wrapper {display: inline-block; }
 .at-resp-share-element .at4-share-count-container{display: none;}
 .social-share-icons{width: 100%; padding: 0; padding-bottom: 24px; gap: 38px; margin-bottom: 24px; height: auto; border-radius: 0; border-bottom: 4px solid var(--sun); background-color:transparent; justify-content: space-between;} 
-span.share{color: var(--black); font-size: 1rem; line-height: 1.5;}
+span.share{color: var(--black); font-size: 20px; line-height: 24px;}
 .addthis_inline_share_toolbox{flex: 1;}
 .social-share-icons .at-share-btn-elements{width: 100%; gap: 38px; display: flex; flex-wrap: wrap;}
 .social-share-icons .at-share-btn-elements a.at-icon-wrapper.at-svc-compact{height: auto; margin-bottom: 5px; background-color: transparent !important; font-size: 24px; color: var(--white) !important; display: none;}

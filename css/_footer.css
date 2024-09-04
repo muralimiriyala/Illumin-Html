@@ -36,7 +36,7 @@ ul.copyright-links > li > a:hover{color: var(--sky);}
 ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
 
  
-  
+.footer-rt-img figure{box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.18);}
 
 
 /*-- media css starts here --*/
