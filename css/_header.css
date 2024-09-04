@@ -192,7 +192,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     .white-header:not(.fixed_header) .toogle-btn span,
     .white-header:not(.fixed_header) .toogle-btn span::before,
     .white-header:not(.fixed_header) .toogle-btn span::after{background: var(--sky);}
-
+    .white-header:not(.fixed_header) .toogle-btn.on span{background-color: transparent;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .header{gap: 0 24px; padding: 16px 20px;}
