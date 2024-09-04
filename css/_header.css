@@ -183,7 +183,14 @@ ul.nav-links li a:hover{color: var(--sky);}
     .site-main-cover{padding-top: 80px;} 
     body.page-template-confirmation .main-header{background-color: var(--white);}
     .nav-btns{padding: 20px 20px; justify-content: space-between; display: flex; flex-wrap: wrap; width: 100%;}
-    .white-header .logo-white{display: none;}
+    .white-header .logo-white{display: block;}
+    .white-header .logo-black{display: none;}
+    .white-header ul.langauage-btns > li > a{color: var(--white);}
+    .white-header .toogle-btn{background: var(--white);}
+    .white-header .toogle-btn span,
+    .white-header .toogle-btn span::before,
+    .white-header .toogle-btn span::after{background: var(--sky);}
+
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .header{gap: 0 24px; padding: 16px 20px;}
@@ -194,12 +201,12 @@ ul.nav-links li a:hover{color: var(--sky);}
     ul.langauage-btns > li > a{font-size: 14px; line-height: 18px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    body.home .main-header{background-color: var(--white);}
     .toogle-btn{order: 3;}
     .header{padding: 8px 0; gap: 0 12px;}
     .logo{flex: 0 0 116px; margin-right: auto;}
     .navigation{margin-top: 56px;}
     ul.langauage-btns{padding-top: 2px; order: 2;}
     ul.langauage-btns > li::before{left: -9px;}
-    .site-main-cover{padding-top: 56px;} 
+    .site-main-cover{padding-top: 56px;}
+    body.home .site-main-cover{padding-top: 0;} 
 }
