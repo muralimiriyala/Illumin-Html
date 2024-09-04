@@ -183,13 +183,15 @@ ul.nav-links li a:hover{color: var(--sky);}
     .site-main-cover{padding-top: 80px;} 
     body.page-template-confirmation .main-header{background-color: var(--white);}
     .nav-btns{padding: 20px 20px; justify-content: space-between; display: flex; flex-wrap: wrap; width: 100%;}
-    .white-header .logo-white{display: block;}
-    .white-header .logo-black{display: none;}
-    .white-header ul.langauage-btns > li > a{color: var(--white);}
-    .white-header .toogle-btn{background: var(--white);}
-    .white-header .toogle-btn span,
-    .white-header .toogle-btn span::before,
-    .white-header .toogle-btn span::after{background: var(--sky);}
+    .white-header:not(.fixed_header) .logo-white{display: block;}
+    .white-header:not(.fixed_header) .logo-black{display: none;}
+    .white-header.fixed_header .logo-white{display: none;}
+    .white-header.fixed_header .logo-black{display: block;}
+    .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
+    .white-header:not(.fixed_header) .toogle-btn{background: var(--white);}
+    .white-header:not(.fixed_header) .toogle-btn span,
+    .white-header:not(.fixed_header) .toogle-btn span::before,
+    .white-header:not(.fixed_header) .toogle-btn span::after{background: var(--sky);}
 
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
