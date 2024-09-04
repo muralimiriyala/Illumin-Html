@@ -16,7 +16,7 @@ ul.nav-links li{margin: 0;}
 ul.nav-links li:first-child::before{display: none;}
 ul.nav-links li::before{width: 2px; height: 16px; top: 5px; left: -20px; background: var(--sun);}
 ul.nav-links li a{ color: var(--black); font-size: 16px; font-weight: 700; line-height: 20px; }
-
+ul.nav-links li a:hover{color: var(--sky);}
 
 
 .main-header:not(.white-header) .logo-white{display: none;}
@@ -102,7 +102,7 @@ ul.nav-links li a{ color: var(--black); font-size: 16px; font-weight: 700; line-
     .white-header ul.main_menu > li.button > a{ color: var(--black);}
 
     .white-header:not(.fixed_header) .nav-btns a.sign_in{padding: 8px 9px 8px 12px; background: rgba(0, 0, 0, 0.20); border-radius: 12px; color: var(--white); display: flex; align-items: center; gap: 7px; font-size: 16px; line-height: 20px; font-family: "Graphik-Bold", sans-serif;}
-    .white-header:not(.fixed_header) .nav-btns a.sign_in::after{ width: 13px; height: 19px; content: ""; display: block; background-image: url('images/right-pointer@2x.png'); background-size: contain; background-repeat: no-repeat; }
+    .white-header:not(.fixed_header) .nav-btns a.sign_in::after{width: 13px; height: 19px; content: ""; display: block; background-image: url('images/right-pointer@2x.png'); background-size: contain; background-repeat: no-repeat; position: static; }
     .white-header:not(.fixed_header) .nav-btns a.sign_in:hover{color: var(--sun);}
     .white-header:not(.fixed_header) .nav-btns a.sign_in:hover::after{right: 0;}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
