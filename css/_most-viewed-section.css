@@ -17,7 +17,7 @@
 .viewed-icon-text a:hover{color: var(--illumin-blue);}
 .most-viewed-post-image{width: 100%;}
 .blog-date{color: rgba(0 , 0, 0, .5); position: relative;}
-.blog-date::before{content: ""; position: absolute; top: 0; left: -8px; width: 1px; height: 100%; background: var(--sky);}
+.blog-date::before{content: ""; position: absolute; top: 0; left: -9px; width: 1px; height: 100%; background: var(--sky);}
 
 .blog-category{margin: 0; gap: 8px;}
 .blog-category-main{gap: 8px; padding: 14px 16px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black); align-items: center;}

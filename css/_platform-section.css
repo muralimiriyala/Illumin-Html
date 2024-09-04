@@ -31,11 +31,11 @@ ul.platform-nav li.slick-current::after{height: 6px;}
     ul.platform-nav li{font-size: 17px;}
 }
 @media screen and (max-width: 820px)  and (min-width: 768px) {
-    ul.platform-nav{justify-content: flex-start;}
+    /* ul.platform-nav{} */
 }
 @media screen and (max-width: 1023px)  and (min-width: 768px) {
     .platform-main{padding: 48px 0; position: relative;}
-    ul.platform-nav{margin: 0 0 40px 0; gap: 12px;}
+    ul.platform-nav{margin: 0 0 40px 0; gap: 25px; justify-content: flex-start;}
     ul.platform-nav li{width: fit-content; flex: inherit; font-size: 16px; line-height: 20px;}
     .platform-list{gap: 61px; flex-direction: column-reverse;}
 
