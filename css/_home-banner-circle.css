@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .home-banner-section{background: var(--Gradient-Horizontal, linear-gradient(90deg, #342FE7 0%, #8200F0 100%));}
-    .home-banner-wrap{padding-top: 32px;}
+    .home-banner-wrap{padding-top: 90px;}
     .home-banner-text{text-align: center; font-size: 18px; line-height: 26px; width: 100%; margin-bottom: 56px;}
     .home-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;} 
     .home-banner-image{width: 100%;}
