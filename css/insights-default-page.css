@@ -12,7 +12,7 @@
 .banner-category-text a:hover{color: var(--illumin-blue);}
 span.category_date{position: relative; top: 2px; padding-left: 16px;}
 span.category_date::before{width: 1px; height: 18px; top: 0; left: 0; content: ""; display: block; background-color: var(--illumin-blue); position: absolute;}  
-.insights-def-pos{margin-top: auto; padding-left: 35px;}
+.insights-def-pos{margin-top: auto;}
 .insights-def-avatar{gap: 16px;}
 .insights-def-thumb{width: 80px;}
 .insights-def-text{flex: 1;}

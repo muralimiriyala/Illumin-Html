@@ -4,7 +4,7 @@
 ul.client-category{margin: 0; gap: 12px;}
 .client-category-main{gap: 8px; padding: 14px 16px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black);}
 .client-category-main:hover{color: var(--illumin-blue);}
-.client-category-list{margin: 0; width: fit-content; height: 48px;}
+.client-category-list{margin: 0; width: fit-content;}
 .client-category-list::before{display: none;}
 .client-category-list.more-category .client-category-main{flex-direction: row-reverse; background: transparent; }
 .client-category-list.more-category{border: 2px solid var(--tint-bg-blue); border-radius: 16px;}
@@ -35,6 +35,7 @@ ul.client-category{margin: 0; gap: 12px;}
     .client-btn{gap: 8px;}
     .client-btn-line{margin: 0; flex: 1; background: var(--white); height: 2px; border-radius: 2px;}
     .client-item{flex: 0 0 284px;}
+    .client-category-list{height: 48px;}
 }
 
 @media screen and (max-width: 1349px) and (min-width: 1024px){
