@@ -17,7 +17,8 @@ ul.nav-links li:first-child::before{display: none;}
 ul.nav-links li::before{width: 2px; height: 16px; top: 5px; left: -20px; background: var(--sun);}
 ul.nav-links li a{ color: var(--black); font-size: 16px; font-weight: 700; line-height: 20px; }
 ul.nav-links li a:hover{color: var(--sky);}
-
+.white-header:not(.fixed_header) ul.nav-links li a{color: var(--white);}
+.white-header:not(.fixed_header) ul.nav-links li a:hover{color: var(--sun);}
 
 .main-header:not(.white-header) .logo-white{display: none;}
 
@@ -193,6 +194,8 @@ ul.nav-links li a:hover{color: var(--sky);}
     .white-header:not(.fixed_header) .toogle-btn span::before,
     .white-header:not(.fixed_header) .toogle-btn span::after{background: var(--sky);}
     .white-header:not(.fixed_header) .toogle-btn.on span{background-color: transparent;}
+
+    body.home .site-main-cover{padding-top: 0;} 
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .header{gap: 0 24px; padding: 16px 20px;}
@@ -210,5 +213,5 @@ ul.nav-links li a:hover{color: var(--sky);}
     ul.langauage-btns{padding-top: 2px; order: 2;}
     ul.langauage-btns > li::before{left: -9px;}
     .site-main-cover{padding-top: 56px;}
-    body.home .site-main-cover{padding-top: 0;} 
+
 }
