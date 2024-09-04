@@ -593,6 +593,7 @@ jQuery(document).ready(function ($) {
     if ($platMql.matches) {
       $platforLink.on('click', function (e) {
         e.preventDefault();
+        $(this).addClass('slick-current');
         let slideIndex = $(this).data('platform-nav') - 1;
         $platformSlider.slick('slickGoTo', slideIndex);
       });
