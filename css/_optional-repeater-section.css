@@ -48,7 +48,7 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
     .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -200px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .optional-repeater-main{ padding: 48px 0 94px; }
+    .optional-repeater-main{ padding: 48px 0;}
     body.page-template-product .optional-repeater-main{padding-bottom: 48px;}
     body.single-case-study .optional-repeater-main{padding: 24px 0 48px;}
     body.page-template-stock-performance .optional-repeater-main{padding-bottom: 48px;}
@@ -61,7 +61,7 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
     .optional-repeater-list:last-child{margin-bottom: 0;}
     .optional-repeater-image{margin-bottom: 32px;}
     body.page-template-investor-info .optional-repeater-image{margin-bottom: 47px;}
-    .optional-repeater-text{font-size: 16px; line-height: 24px; padding-left: 12px; padding-right: 12px;}
+    .optional-repeater-text{font-size: 16px; line-height: 24px;}
     body.page-template-flex-default .optional-repeater-main{padding-bottom: 48px;}
     body.page-template-flex-default .optional-repeater-list{margin-bottom: 48px;}
     body.page-template-flex-default .optional-repeater-list:last-child{margin-bottom: 0;}

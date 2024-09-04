@@ -26,6 +26,7 @@ ul.social-icons > li > a:hover{background-color: var(--sky); color: var(--white)
 
 
 .footer-rt .footer-rt-img{gap: 32px 24px;}
+.footer-rt .footer-rt-img img{filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.18));}
 .copyrights-main {font-size:12px; line-height:16px; color: var(--black-80);}
 ul.copyright-links{margin: 0; justify-content: center;}
 ul.copyright-links > li::before{width: 1px; height: 20px; left: -27px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25;}
@@ -35,9 +36,6 @@ ul.copyright-links > li.current-menu-item > a,
 ul.copyright-links > li > a:hover{color: var(--sky);} 
 ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
 
- 
-.footer-rt-img figure{box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.18);}
-
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -45,7 +43,7 @@ ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
     .footer-lt{flex: 0 0 710px;}
     .footer-rt{flex: 0 0 calc(100% - 782px);}
     .copyrights-main{gap: 16px 56px;}
-    ul.copyright-links { gap: 16px 56px; flex: 1; width: fit-content;}
+    ul.copyright-links{gap: 16px 55px; flex: 1; width: fit-content;}
 }   
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .footer-main{gap: 72px 30px; padding: 64px 30px 80px; justify-content: space-between;}
