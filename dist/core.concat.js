@@ -534,7 +534,7 @@ jQuery(document).ready(function ($) {
     speed: 1500,
     dots: true,
     arrows: true,
-
+    adaptiveHeight: true,
     prevArrow:
       '<span class="slick-arrow slick-prev flex flex-center"><svg width="16" height="25" viewBox="0 0 16 25" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.40804 12.4375L15.8027 4.04281L12.1974 0.4375L0.197429 12.4375L12.1974 24.4375L15.8027 20.8322L7.40804 12.4375Z" fill="url(#paint0_linear_2666_14828)"/> <defs> <linearGradient id="paint0_linear_2666_14828" x1="15.8027" y1="12.4375" x2="0.197428" y2="12.4375" gradientUnits="userSpaceOnUse"> <stop stop-color="#342FE7"/> <stop offset="1" stop-color="#8200F0"/> </linearGradient> </defs> </svg></span>',
     nextArrow:

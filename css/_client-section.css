@@ -13,7 +13,7 @@ ul.client-category{margin: 0; gap: 12px;}
 .client-category-thumb{width: 16px; height: 16px;}
 .more-category .client-category-thumb{width: 28px; height: 8px;}
 .client-category-icon{position: relative; top: -2px;}
-.client-category-text{font-size: 16px; line-height: 20px; font-family: 'Graphik-Medium';}
+.client-category-text{font-size: 16px; line-height: 20px; font-family: 'Graphik-Bold', sans-serif;}
 
 .client-category-search > input{padding: 16px 40px 16px 16px; font-size: 16px; line-height: 16px; background: var(--tint-bg-blue); border: 2px solid rgba(81, 41, 255, 0.10); border-radius: 12px; height: 48px;}
 .client-category-search ::placeholder{color: var(--black); font-family: 'Graphik-Medium';}
@@ -30,7 +30,7 @@ ul.client-category{margin: 0; gap: 12px;}
     .client-main{padding: 0 0 72px;}
     .client-category-filter{gap: 64px; margin-bottom: 56px;}
     ul.client-category{flex: 1;}
-    .client-category-search{flex: 0 0 350px;}
+    .client-category-search-form{flex: 0 0 350px;}
     .client-lists{gap: 48px; margin-bottom: 48px;}
     .client-btn{gap: 8px;}
     .client-btn-line{margin: 0; flex: 1; background: var(--white); height: 2px; border-radius: 2px;}
@@ -45,7 +45,7 @@ ul.client-category{margin: 0; gap: 12px;}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .client-main{padding: 0 0 72px;}
     .client-category-filter{margin-bottom: 30px; gap: 12px;}
-    .client-category-search{flex: 1;}
+    .client-category-search-form{flex: 1;}
     .client-lists{gap: 20px;}
     .client-item{flex: 0 0 calc(50% - 10px);}
     .client-btn{margin-top: 48px;}
@@ -57,7 +57,7 @@ ul.client-category{margin: 0; gap: 12px;}
     ul.client-category{gap: 10px 8px;}
     .client-category-list{width: 100%; flex: 0 0 calc(50% - 4px);}
     .client-category-main{justify-content: center;}
-    .client-category-search{width: 100%;}
+    .client-category-search-form{width: 100%;}
     .client-lists{gap: 24px;}
     .client-item{font-size: 20px; line-height: 24px;}
     .client-btn{margin-top: 48px;}

@@ -14,7 +14,7 @@
 @media screen and (min-width: 1024px) {
     .home-banner-wrap{padding-top: 168px;}
     .home-banner-main{gap: 80px;}
-    .home-banner-text{flex: 0 0 674px; padding-bottom: 83px;}
+    .home-banner-text{flex: 0 0 674px; padding: 105px 0 185px;}
     .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
     .home-banner-image{flex: 0 0 calc(100% - 754px); display: flex; justify-content: center;}
     .home-banner-thumb{width: 396px;}

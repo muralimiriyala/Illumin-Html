@@ -12,10 +12,12 @@ body.page-template-investor-info .optional-diamond{filter: grayscale(100%);  -we
 body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -webkit-filter: grayscale(100%);}
 .no_optional_image .optional-repeater-image{display: none;}
 
+.optional-repeater-text .button{margin-top: 4px;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
-    .optional-repeater-text h2{margin-bottom: 13px;}
-    .optional-repeater-text .button{margin-top: 8px;}
+    .optional-repeater-text h2{margin-bottom: 23px;}
+    
     body.page-template-company-careers .optional-repeater-main{padding-bottom: 92px;}
 }
 @media only screen and (min-width: 1024px){
@@ -61,9 +63,10 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
     .optional-repeater-list:last-child{margin-bottom: 0;}
     .optional-repeater-image{margin-bottom: 32px;}
     body.page-template-investor-info .optional-repeater-image{margin-bottom: 47px;}
-    .optional-repeater-text{font-size: 16px; line-height: 24px;}
+    .optional-repeater-text{font-size: 18px; line-height: 26px;}
     body.page-template-flex-default .optional-repeater-main{padding-bottom: 48px;}
     body.page-template-flex-default .optional-repeater-list{margin-bottom: 48px;}
     body.page-template-flex-default .optional-repeater-list:last-child{margin-bottom: 0;}
     .optional-repeater-thumb::after{right: -40px;}
+    .optional-repeater-text h2{margin-bottom: 25px;}
 }

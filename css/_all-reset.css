@@ -203,7 +203,8 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
 .play-btn-bg > span.diamond:hover:after{ transform: translate(-50%,-50%) scale(1.1); }
 .play-btn-bg > span { transition: all 0.5s ease; transition-delay: 0s; border-radius: 50%; bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; }
 .play-btn-bg > span:not(:first-child) { animation: 6s playBtnZooming infinite linear; transform: scale(1); filter: opacity(0.25); -webkit-filter: opacity(0.25); background-color: #FFCD00; }
-.play-btn-bg > span:not(:first-child):nth-child(2) { -webkit-animation-delay: 2s; animation-delay: 2s; }
+.play-btn-bg > span:not(:first-child):nth-child(2) {animation: none; filter: opacity(1); -webkit-filter: opacity(1);}
+.play-btn-bg > span:not(:first-child):nth-child(2)::before{content: ""; display: block; width: 124px; height: 124px; background: var(--sun); top: 50%; left: 50%; position: absolute; transform: translate(-50%, -50%); border-radius: 50%; opacity: .5;}
 .play-btn-bg > span:not(:first-child):nth-child(3) { -webkit-animation-delay: 4s; animation-delay: 4s; }
 @keyframes playBtnZooming {
     0% {
@@ -286,7 +287,7 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
     .text-link.lg::after{top: 2.5px;}
     blockquote{font-size: 20px; line-height: 28px;}
     .play-btn-main .play-sm-mobile{width: 64px; height: 64px;}
-    .play-btn-bg > span.diamond:after{width: 24px; height: 32px;}
+    /* .play-btn-bg > span.diamond:after{width: 24px; height: 32px;} */
 
     .page-not-main{padding: 80px 0 60px;}
     .page-not-main h1{font-size: 3.5rem; line-height: 4rem;}

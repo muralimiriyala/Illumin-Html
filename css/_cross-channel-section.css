@@ -1,5 +1,6 @@
 
 .cross-channel-section{background: var(--tint-bg-blue);}
+.cross-channel-text{padding-top: 8px;}
 .cross-channel-text h5{color: var(--sky); margin-bottom: 8px;}
 .cross-channel-text::before{content: ""; position: absolute; width: 1px; height: 100%; background: var(--black-25); top: 0; left: -24px;}
 
@@ -8,8 +9,10 @@
 @media screen and (min-width: 1024px) {
     .cross-channel-main{padding: 80px 0; gap: 80px;}
     .cross-channel-lt{flex: 0 0 394px;}
+    .cross-channel-lt span.optional-text{margin-bottom: 24px;}
+    .cross-channel-lt .text-link{margin-top: 54px;}
     .cross-channel-rt{flex: 0 0 calc(100% - 474px);}
-    .cross-channel-list{gap: 48px; margin-bottom: 24px;}
+    .cross-channel-list{gap: 48px; margin-bottom: 24px; align-items: center;}
     .cross-channel-list:last-child{margin-bottom: 0;}
     .cross-channel-icon{flex: 0 0 64px;}
     .cross-channel-text{flex: 0 0 calc(100% - 112px);}
@@ -18,7 +21,7 @@
 
 
 @media screen and (max-width: 1023px) and (min-width: 200px) {
-    .cross-channel-main{padding: 64px 0; gap: 68px;}
+    .cross-channel-main{padding: 64px 0; gap: 50px;}
     .cross-channel-lt{flex: 100%;}
     .cross-channel-lt span.optional-text{margin-bottom: 24px;}
     .cross-channel-lt h3{font-size: 28px; line-height: 32px; margin-bottom: 24px;}

@@ -32,7 +32,7 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
     .trusted-by-section::before{height: calc(100% - 40px); top: 40px;}
     body.page-template-product .trusted-by-section, body.page-template-product-channel .trusted-by-section{margin-top: -48px;}
     body.page-template-product .trusted-by-section::before, body.page-template-product-channel .trusted-by-section::before{height: calc(100% - 48px); top: 48px;}
-    .trusted-by-main{padding:20px 24px; display: block;}
+    .trusted-by-main{padding:20px 24px 7px; display: block;}
     body.page-template-flex-default .trusted-by-main{margin-bottom: 31px;}
     span.trusted-optional{font-size: 16px; line-height: 20px; text-align: center; display: block;}
     .trusted-by-logos{gap: 0px 16px; justify-content: center;}

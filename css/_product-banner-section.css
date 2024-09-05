@@ -6,14 +6,16 @@
 
 @media screen and (min-width: 1024px) {
     .product-banner-main{gap: 80px; flex-direction: row-reverse; padding: 80px 0 0;}
-    .product-banner-text{flex: 0 0 600px; padding-bottom: 80px;}
-    .product-banner-text h1{font-size: 80px; line-height: 80px;}
+    .product-banner-text{flex: 0 0 600px; padding: 155px 0 80px; font-size: 20px; line-height: 28px;}
+    .product-banner-text span.optional-text{margin-bottom: 32px;}
+    .product-banner-text h1{font-size: 80px; line-height: 80px; margin-bottom: 32px;}
+    .product-banner-desc .button{margin-top: 17px;}
     .product-banner-image{flex: 0 0 calc(100% - 680px);}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .product-banner-main{gap: 40px;}
-    .product-banner-text{flex: 0 0 400px; padding-bottom: 40px;}
+    .product-banner-text{flex: 0 0 400px; padding: 0 0 50px;}
     .product-banner-text h1{font-size: 70px; line-height: 70px;}
     .product-banner-desc{font-size: 20px; line-height: 28px;}
     .product-banner-image{flex: 0 0 calc(100% - 440px);}
@@ -28,9 +30,10 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .product-banner-main{padding: 40px 0;}
-    .product-banner-text{flex: 100%;}
+    .product-banner-text{flex: 100%; padding: 0 8px;}
     .product-banner-text span.optional-text{margin-bottom: 16px;}
     .product-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;}
     .product-banner-desc{font-size: 18px; line-height: 26px;}
+    .product-banner-desc .button{margin-top: 16px;}
     .product-banner-image{flex: 100%;}
 }

@@ -24,4 +24,5 @@
     .sample-intro-main{display: block; padding: 48px 0 48px;}
     body.single-case-study .sample-intro-main{padding-bottom: 24px;}
     .sample-intro-head{padding-bottom: 32px;}
+    .sample-intro-head h3{font-size: 28px; line-height: 32px;}
 }
