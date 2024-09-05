@@ -41,7 +41,7 @@ hr.half{width: 64px;}
 .table_of_content #ez-toc-container ul ul ul li a{font-size: 1rem;}
 .table_of_content #ez-toc-container ul ul ul li a::before{left: -50px; top: -2px;}
 .table_of_content #ez-toc-container ul.ez-toc-list-level-3{margin: 8px 0 0 16px;}
-.table_of_content #ez-toc-container ul.ez-toc-list-level-3 li a{background: transparent; border-left: 2px solid var(--tint-bg-blue); border-radius: 0; font-family: 'Graphik-Regular', sans-serif;}
+.table_of_content #ez-toc-container ul.ez-toc-list-level-3 li a{background: transparent; border-left: 2px solid var(--tint-bg-blue); border-radius: 0; font-family: 'Graphik-Light', sans-serif;}
 .table_of_content #ez-toc-container ul.ez-toc-list-level-3 li a:hover{color: var(--black);}
 .event_details{padding: 24px; margin-bottom: 32px; background-color: var(--tin-color);}
 .event_details_list{gap: 8px; margin-bottom: 4px;}
