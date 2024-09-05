@@ -12,13 +12,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .home-banner-wrap{padding-top: 183px;}
+    .home-banner-wrap{padding-top: 168px;}
     .home-banner-main{gap: 80px;}
-    .home-banner-text{flex: 0 0 674px; padding-bottom: 90px;}
+    .home-banner-text{flex: 0 0 674px; padding-bottom: 83px;}
     .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
     .home-banner-image{flex: 0 0 calc(100% - 754px); display: flex; justify-content: center;}
     .home-banner-thumb{width: 396px;}
-    .watermark-circle{position: absolute; top: -47px; left: 43px; width: 432px;}
+    .watermark-circle{position: absolute; top: -32px; left: 43px; width: 432px;}
     .watermark-circle-line{content: ""; position: absolute; top: 215px; left: 100%; width: 100vw; height: 16px; background: var(--sun);}
 }
 
