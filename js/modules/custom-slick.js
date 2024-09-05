@@ -295,6 +295,7 @@ jQuery(document).ready(function ($) {
       $platforLink.on('click', function (e) {
         e.preventDefault();
         $(this).addClass('slick-current');
+        $(this).siblings('li').removeClass('slick-current');
         let slideIndex = $(this).data('platform-nav') - 1;
         $platformSlider.slick('slickGoTo', slideIndex);
       });
