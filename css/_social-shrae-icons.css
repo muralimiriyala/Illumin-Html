@@ -29,6 +29,9 @@ span.share{color: var(--black); font-size: 20px; line-height: 24px;}
 /*-- media css starts here --*/
 @media only screen and (max-width: 1023px) and (min-width: 200px){
 }
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .social-share-icons{padding-bottom: 32px; margin-bottom: 34px;}
+}
 @media only screen and (max-width: 370px) and (min-width: 200px){
     .social-share-icons{gap: 24px;}
     .social-share-icons .at-share-btn-elements{gap: 24px;}

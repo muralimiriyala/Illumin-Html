@@ -6,7 +6,8 @@
 
 @media screen and (min-width: 1024px) {
     .product-banner-main{gap: 80px; flex-direction: row-reverse; padding: 80px 0 0;}
-    .product-banner-text{flex: 0 0 600px; padding: 155px 0 80px; font-size: 20px; line-height: 28px;}
+    .product-banner-text{flex: 0 0 600px; padding: 0 0 80px; font-size: 20px; line-height: 28px;}
+    body.case-study-template-default .product-banner-text{padding: 155px 0 80px;}
     .product-banner-text span.optional-text{margin-bottom: 32px;}
     .product-banner-text h1{font-size: 80px; line-height: 80px; margin-bottom: 32px;}
     .product-banner-desc .button{margin-top: 17px;}

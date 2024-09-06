@@ -21,7 +21,7 @@
 
 
 @media screen and (max-width: 1023px) and (min-width: 200px) {
-    .cross-channel-main{padding: 64px 0; gap: 50px;}
+    .cross-channel-main{padding: 48px 0 64px; gap: 50px;}
     .cross-channel-lt{flex: 100%;}
     .cross-channel-lt span.optional-text{margin-bottom: 24px;}
     .cross-channel-lt h3{font-size: 28px; line-height: 32px; margin-bottom: 24px;}

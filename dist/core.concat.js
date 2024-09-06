@@ -411,6 +411,7 @@ jQuery(document).ready(function ($) {
           variableWidth: true,
           centerMode: true,
           centerpadding: '20px',
+          adaptiveHeight: true,
         },
       },
     ],
