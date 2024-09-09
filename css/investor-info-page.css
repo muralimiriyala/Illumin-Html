@@ -42,9 +42,9 @@ ul.policies-links li a.active::after, ul.policies-links li a:hover::after{opacit
 }
 @media only screen and (min-width: 1024px){
     .investor-banner-section{z-index: 1;}
-    .investor-banner-main::before, .investor-banner-main::after{width: 40px; height: 252px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-size: auto; background-repeat: no-repeat; content: ""; display: block; position: absolute; z-index: -1;}
+    /* .investor-banner-main::before, .investor-banner-main::after{width: 40px; height: 252px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-size: auto; background-repeat: no-repeat; content: ""; display: block; position: absolute; z-index: -1;}
     .investor-banner-main::before{left: -120px;}
-    .investor-banner-main::after{right: -120px;}
+    .investor-banner-main::after{right: -120px;} */
 
     .investor-banner-main{gap: 80px; padding: 64px 0;}
     .investor-banner-text{flex: 0 0 560px;}

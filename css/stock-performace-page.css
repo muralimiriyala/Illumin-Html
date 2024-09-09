@@ -54,9 +54,9 @@ ul.financial-qlinks li a.active::after{height: 4px; background-image: linear-gra
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .stock-banner-section{z-index: 1;}
-    .stock-banner-main::before, .stock-banner-main::after{width: 40px; height: 252px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-size: auto; background-repeat: no-repeat; content: ""; display: block; position: absolute; z-index: -1;}
+    /* .stock-banner-main::before, .stock-banner-main::after{width: 40px; height: 252px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-square.svg'); background-size: auto; background-repeat: no-repeat; content: ""; display: block; position: absolute; z-index: -1;}
     .stock-banner-main::before{left: -120px;}
-    .stock-banner-main::after{right: -120px;}
+    .stock-banner-main::after{right: -120px;} */
     .stock-banner-main{gap: 80px; padding: 64px 0 62px; position: relative;}
     .stock-banner-text{flex: 0 0 560px;}
     .stock-banner-desc{flex: 0 0 calc(100% - 640px);}
