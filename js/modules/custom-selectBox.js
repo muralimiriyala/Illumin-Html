@@ -1,9 +1,10 @@
-var $ = jQuery.noConflict();
-$(document).ready(function () {
-  $('select').selectBox({
+jQuery(document).ready(function () {
+  jQuery('select').selectBox({
     keepInViewport: false,
     menuSpeed: 'slow',
     mobile: true,
   });
-  $('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr('style');
+  jQuery('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr(
+    'style'
+  );
 });

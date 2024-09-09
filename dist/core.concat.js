@@ -290,14 +290,15 @@ jQuery(document).ready(function ($) {
   });
 });
 
-var $ = jQuery.noConflict();
-$(document).ready(function () {
-  $('select').selectBox({
+jQuery(document).ready(function () {
+  jQuery('select').selectBox({
     keepInViewport: false,
     menuSpeed: 'slow',
     mobile: true,
   });
-  $('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr('style');
+  jQuery('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr(
+    'style'
+  );
 });
 
 jQuery(document).ready(function ($) {
@@ -527,6 +528,8 @@ jQuery(document).ready(function ($) {
   });
 
   const $platformSlider = $('.platform-slider');
+  var pslidelength = $('.platform-slider').children(' .platform-slide').length;
+
   const $platformAppend = $('.platform-append-arrows');
   const $platforLink = $('ul.platform-nav li');
   $platformSlider.slick({
@@ -559,12 +562,18 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+
   function textChange() {
     let number = Number($platformSlider.slick('slickCurrentSlide')) + 1;
     $(`ul.platform-nav li`).removeClass('slick-current');
     $(`ul.platform-nav li[data-platform-nav=${number}]`).addClass(
       'slick-current'
     );
+    if (number === pslidelength) {
+      $('ul.platform-nav').addClass('last-slide');
+    } else {
+      $('ul.platform-nav').removeClass('last-slide');
+    }
   }
   $(document).on(
     'click',
@@ -668,36 +677,36 @@ jQuery(document).ready(function ($) {
 });
 
 let DesktopFun = function () {
-  if ($(window).width() >= 1024) {
+  if (jQuery(window).width() >= 1024) {
     let totHeight = 0;
     let totalSlides = document.querySelectorAll('.journey-module-slide').length;
     let slideIndex = 1;
-    $('.module-fade-down').on('click', function (e) {
+    jQuery('.module-fade-down').on('click', function (e) {
       e.preventDefault();
-      $('.module-fade-up').removeClass('disabled');
+      jQuery('.module-fade-up').removeClass('disabled');
       if (slideIndex < totalSlides) {
-        let currentEle = $('.journey-module-slides').find(
+        let currentEle = jQuery('.journey-module-slides').find(
           "[data-index='" + slideIndex + "']"
         );
         let nextslideHeight = currentEle.height();
         totHeight += nextslideHeight;
-        let targetDiv = $('.journey-module-slides').css({
+        let targetDiv = jQuery('.journey-module-slides').css({
           marginTop: -totHeight + 'px',
         });
         slideIndex++;
         if (slideIndex === totalSlides) {
-          $(this).addClass('disabled');
+          jQuery(this).addClass('disabled');
         }
       }
     });
 
-    $('.module-fade-up').on('click', function (e) {
+    jQuery('.module-fade-up').on('click', function (e) {
       e.preventDefault();
-      $('.module-fade-down').removeClass('disabled');
+      jQuery('.module-fade-down').removeClass('disabled');
       if (slideIndex <= totalSlides) {
         slideIndex--;
         if (slideIndex > 0) {
-          let currentEle = $('.journey-module-slides').find(
+          let currentEle = jQuery('.journey-module-slides').find(
             "[data-index='" + slideIndex + "']"
           );
           let nextslideHeight = currentEle.height();
@@ -705,10 +714,10 @@ let DesktopFun = function () {
 
           if (slideIndex == 1) {
             totHeight = 0;
-            $(this).addClass('disabled');
+            jQuery(this).addClass('disabled');
           }
 
-          let targetDiv = $('.journey-module-slides').css({
+          let targetDiv = jQuery('.journey-module-slides').css({
             marginTop: -totHeight + 'px',
           });
         } else if (slideIndex <= 0) {
@@ -719,7 +728,7 @@ let DesktopFun = function () {
     });
   }
 };
-$(document).ready(function () {
+jQuery(document).ready(function () {
   DesktopFun();
 });
 
@@ -4790,7 +4799,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let DesktopFunction = function () {
-  if ($(window).width() >= 1024) {
+  if (jQuery(window).width() >= 1024) {
     let ftotHeight = 0;
     let ftotalSlides = document.querySelectorAll(
       '.feature-overview-list'
@@ -4798,53 +4807,58 @@ let DesktopFunction = function () {
     let fslideIndex = 1;
     let slideCount = 1;
 
-    $('.feature-overview-list[data-count="1"]').addClass('current-list');
-    $('.feature-overview-image[data-slide="1"]').addClass('current-slide');
+    jQuery('.feature-overview-list[data-count="1"]').addClass('current-list');
+    jQuery('.feature-overview-image[data-slide="1"]').addClass('current-slide');
 
-    $('.feature-fade-down, .feature-arrows-down').on('click', function (e) {
-      e.preventDefault();
-      $('.feature-fade-up, .feature-arrows-up').removeClass('disabled');
-      if (fslideIndex < ftotalSlides) {
-        let fcurrentEle = $('.feature-overview-lists').find(
-          "[data-count='" + fslideIndex + "']"
-        );
+    jQuery('.feature-fade-down, .feature-arrows-down').on(
+      'click',
+      function (e) {
+        e.preventDefault();
+        jQuery('.feature-fade-up, .feature-arrows-up').removeClass('disabled');
+        if (fslideIndex < ftotalSlides) {
+          let fcurrentEle = jQuery('.feature-overview-lists').find(
+            "[data-count='" + fslideIndex + "']"
+          );
 
-        let fnextslideHeight = fcurrentEle.height();
-        ftotHeight += fnextslideHeight;
-        let targetDiv = $('.feature-overview-lists').css({
-          marginTop: -ftotHeight + 'px',
-        });
-        fslideIndex++;
-        if (fslideIndex === ftotalSlides) {
-          $(this).addClass('disabled');
+          let fnextslideHeight = fcurrentEle.height();
+          ftotHeight += fnextslideHeight;
+          let targetDiv = jQuery('.feature-overview-lists').css({
+            marginTop: -ftotHeight + 'px',
+          });
+          fslideIndex++;
+          if (fslideIndex === ftotalSlides) {
+            jQuery(this).addClass('disabled');
+          }
+        }
+
+        if (slideCount < ftotalSlides) {
+          slideCount++;
+          jQuery('.feature-overview-image').removeClass('current-slide');
+          let targetSlide = jQuery(
+            '.feature-overview-image[data-slide=' + slideCount + ']'
+          ).addClass('current-slide');
+          if (slideCount === ftotalSlides) {
+            slideCount = 1;
+          }
         }
       }
+    );
 
-      if (slideCount < ftotalSlides) {
-        slideCount++;
-        $('.feature-overview-image').removeClass('current-slide');
-        let targetSlide = $(
-          '.feature-overview-image[data-slide=' + slideCount + ']'
-        ).addClass('current-slide');
-        if (slideCount === ftotalSlides) {
-          slideCount = 1;
-        }
-      }
-    });
-
-    $('.feature-fade-up, .feature-arrows-up').on('click', function (e) {
+    jQuery('.feature-fade-up, .feature-arrows-up').on('click', function (e) {
       e.preventDefault();
-      $('.feature-fade-down, .feature-arrows-down').removeClass('disabled');
+      jQuery('.feature-fade-down, .feature-arrows-down').removeClass(
+        'disabled'
+      );
       if (fslideIndex <= ftotalSlides) {
         fslideIndex--;
 
-        $('.feature-overview-image').removeClass('current-slide');
-        let targetSlide = $(
+        jQuery('.feature-overview-image').removeClass('current-slide');
+        let targetSlide = jQuery(
           '.feature-overview-image[data-slide=' + fslideIndex + ']'
         ).addClass('current-slide');
 
         if (fslideIndex > 0) {
-          let fcurrentEle = $('.feature-overview-lists').find(
+          let fcurrentEle = jQuery('.feature-overview-lists').find(
             "[data-count='" + fslideIndex + "']"
           );
           let fnextslideHeight = fcurrentEle.height();
@@ -4852,9 +4866,9 @@ let DesktopFunction = function () {
 
           if (fslideIndex == 1) {
             ftotHeight = 0;
-            $(this).addClass('disabled');
+            jQuery(this).addClass('disabled');
           }
-          let targetDiv = $('.feature-overview-lists').css({
+          let targetDiv = jQuery('.feature-overview-lists').css({
             marginTop: -ftotHeight + 'px',
           });
         } else if (fslideIndex <= 0) {
@@ -4865,6 +4879,6 @@ let DesktopFunction = function () {
     });
   }
 };
-$(document).ready(function () {
+jQuery(document).ready(function () {
   DesktopFunction();
 });
