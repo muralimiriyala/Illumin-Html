@@ -11,7 +11,7 @@
 .insights-post-text{padding-top: 25px; font-size: 24px; line-height: 32px; letter-spacing: -0.02rem;}
 .insights-post-text p a{color: var(--black);}
 .insights-post-text p a:hover{color: var(--illumin-blue);}
-.insights-post-small{gap: 8px; margin-bottom: 11px;}
+.insights-post-small{gap: 8px; margin-bottom: 11px; align-items: flex-start;}
 .insights-post-icon{flex: 0 0 16px; align-items: flex-start; display: flex;}
 .insights-post-icon img{width: 100%;}
 .insights-icon-text{flex: 0 0 calc(100% - 24px); font-size: 16px; line-height: 20px;}

@@ -106,6 +106,7 @@ ul.nav-links li a:hover{color: var(--sky);}
 
     ul.main_menu > li.product-menu-item > ul.nav_item_two{justify-content: center;}
     ul.main_menu > li.product-menu-item > ul.nav_item_two > li:nth-child(2){ flex: 0 0 calc(100% - 288px); padding: 0 93px;}
+    ul.main_menu > li.product-menu-item.new-menu > ul.nav_item_two > li:nth-child(2){max-width: 650px; margin-right: auto; padding-right: 0;}
     ul.main_menu > li.insight-nav-item > ul.nav_item_two > li:nth-child(2){max-width: 650px; margin-right: auto;}
 
     .nav-btns .text-link{padding-right: 17px;}

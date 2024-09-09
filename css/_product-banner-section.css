@@ -31,7 +31,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .product-banner-main{padding: 40px 0;}
-    .product-banner-text{flex: 100%; padding: 0 8px;}
+    .product-banner-text{flex: 100%; padding: 23px 8px 0;}
     .product-banner-text span.optional-text{margin-bottom: 16px;}
     .product-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;}
     .product-banner-desc{font-size: 18px; line-height: 26px;}
