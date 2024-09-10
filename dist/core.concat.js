@@ -383,6 +383,7 @@ jQuery(document).ready(function ($) {
     infinite: true,
     dots: false,
     arrows: true,
+    adaptiveHeight: true,
     prevArrow: '<span class="slick-arrow slick-prev"></span>',
     nextArrow: '<span class="slick-arrow slick-next"></span>',
     responsive: [
@@ -412,7 +413,11 @@ jQuery(document).ready(function ($) {
           infinite: true,
           variableWidth: true,
           centerMode: true,
+<<<<<<< HEAD
           centerPadding: '20px',
+=======
+          centerpadding: '20px',
+>>>>>>> 5afdec07bce347641a395741fcd6508a0bdc98cf
         },
       },
     ],
