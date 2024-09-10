@@ -83,12 +83,15 @@ ul.blog_list{margin: 0; width: 100%;}
     .blog-post-main {padding: 0 0 44px; }
     .blog-post-filter{gap: 64px; align-items: center;}
     ul.blog-filter-lists{flex: 0 0 calc(100% - 414px);}
+    ul.blog-filter-lists li{align-items: center;}
     .blog-post-form{flex: 0 0 350px;}
     .blog-post-search{flex: 1;}
     .blog-post-lists{gap: 48px;}
     .blog-post-list{flex: 0 0 calc(25% - 36px);}
 
     .page-title{margin-bottom: 40px; }
+
+    
 
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){

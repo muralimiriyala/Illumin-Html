@@ -4,6 +4,7 @@
 .trusted-by-main{background-color: var(--white);}
 body.page-template-product-channel .trusted-by-main, body.page-template-product .trusted-by-main{background-color: var(--tint-bg-blue);}
 body.page-template-product-channel .trusted-by-section::before, body.page-template-product .trusted-by-section::before{background: var(--white);}
+body.page-template-company-overview .trusted-by-section::before{background: var(--white);}
 span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
 

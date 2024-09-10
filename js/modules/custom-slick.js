@@ -79,6 +79,7 @@ jQuery(document).ready(function ($) {
     infinite: true,
     dots: false,
     arrows: true,
+    adaptiveHeight: true,
     prevArrow: '<span class="slick-arrow slick-prev"></span>',
     nextArrow: '<span class="slick-arrow slick-next"></span>',
     responsive: [
@@ -109,7 +110,6 @@ jQuery(document).ready(function ($) {
           variableWidth: true,
           centerMode: true,
           centerpadding: '20px',
-          adaptiveHeight: true,
         },
       },
     ],
