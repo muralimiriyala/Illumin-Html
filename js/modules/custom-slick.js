@@ -110,11 +110,7 @@ jQuery(document).ready(function ($) {
           infinite: true,
           variableWidth: true,
           centerMode: true,
-<<<<<<< HEAD
           centerPadding: '20px',
-=======
-          centerpadding: '20px',
->>>>>>> 5afdec07bce347641a395741fcd6508a0bdc98cf
         },
       },
     ],
