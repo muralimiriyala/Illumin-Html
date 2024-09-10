@@ -16,7 +16,7 @@
 .viewed-icon-text a{color: var(--black);}
 .viewed-icon-text a:hover{color: var(--illumin-blue);}
 .most-viewed-post-image{width: 100%;}
-.blog-date{color: rgba(0 , 0, 0, .5); position: relative;}
+.blog-date{color: rgba(0 , 0, 0, .5); position: relative; font-size: 16px; line-height: 20px; font-family: 'Graphik-Bold', sans-serif;}
 .blog-date::before{content: ""; position: absolute; top: 0; left: -9px; width: 1px; height: 100%; background: var(--sky);}
 
 .blog-category{margin: 0; gap: 8px;}
@@ -31,6 +31,9 @@
 
 .no-most-viewed .most-viewed-lt, .no-most-viewed .most-viewed-rt{flex: 1;}
 .no-most-viewed-list .most-viewed-list{flex: 1;}
+
+.blog-category-list.all-blog-list .blog-category-thumb{width: 13px;}
+.blog-category-list.all-blog-list .blog-category-icon img{width: 13px; object-fit: contain;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){

@@ -15,7 +15,7 @@
     .impact-lists{order: 3; gap: 64px; padding-top: 53px;}
     /* .impact-list{flex: 0 0 calc(25% - 48px);} */
     .impact-product{display: block;}
-    .impact-icon{margin-bottom: 24px; max-width: 55px;}
+    .impact-icon{margin-bottom: 24px; max-width: 64px;}
 
     .highlights1-of-1{flex: 1;}
     .highlights1-of-2{flex: 0 0 calc(50% - 32px);}
@@ -34,7 +34,7 @@
     .impact-lists{order: 3; gap: 64px; padding-top: 60px;}
     .impact-list{flex: 0 0 calc(50% - 48px);}
     .impact-product{display: block;}
-    .impact-icon{margin-bottom: 24px; max-width: 40px;}
+    .impact-icon{margin-bottom: 24px; max-width: 64px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .impact-main{padding: 64px 0 64px; display: block;}
