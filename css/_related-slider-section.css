@@ -36,6 +36,7 @@
     .slick-current .related-slider-text{opacity: 1;}
     .related-slider-btn { padding: 30px 53px 0; }
     .related-slider-main.slick-slider .slick-arrow:not(button.slick-arrow){filter: drop-shadow(-9.333px 9.333px 9.333px rgba(0, 0, 0, 0.49));}
+    body.single-post .related-slider-wrap{padding-bottom: 40px;}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){

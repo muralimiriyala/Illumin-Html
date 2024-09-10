@@ -39,7 +39,7 @@
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
     .subscribe-text h3{font-size: 40px; line-height: 48px; margin-bottom: 4px;}
-    body.single-post .subscribe-wrap{padding-top: 72px;}
+    body.single-post .subscribe-wrap{padding-top: 35px;}
 }
 @media only screen and (min-width: 1024px){
     .subscribe-main{gap: 64px;}
