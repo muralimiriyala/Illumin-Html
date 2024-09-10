@@ -237,7 +237,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     ul.langauage-btns > li::before { width: 100%; height: 2px; left: 0; top: 0; }
     ul.langauage-btns > li > a{font-size: 14px; line-height: 18px;}
 
-    .white-header ul.nav-links{gap: 0 17px;}
+    .white-header:not(.fixed_header) ul.nav-links{gap: 0 17px;}
     ul.nav-links li a{font-family: 'Graphik-Bold', sans-serif;}
 
     .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li.nav-link-yellow{background: var(--sun); font-size: 16px; line-height: 20px; border-radius: 16px; padding: 9px 17px 8px; font-family: 'Graphik-Bold', sans-serif; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(.05px,.05px,0) scale(1);}
@@ -247,9 +247,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign::after{width: 13px; height: 19px; content: ""; display: block; background-image: url('images/right-pointer@2x.png'); background-size: contain; background-repeat: no-repeat; position: absolute; top: 8px; right: 9px; transition: all .5s ease;}
     .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign:hover::after{right: 12px; opacity: 1; transform: none;}
 
-    
-
-    .white-header ul.nav-links li::before{display: none;}
+    .white-header:not(.fixed_header) ul.nav-links li::before{display: none;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .toogle-btn{order: 3;}

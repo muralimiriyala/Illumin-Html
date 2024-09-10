@@ -26,15 +26,27 @@ ul.social-icons > li > a:hover{background-color: var(--sky); color: var(--white)
 
 
 .footer-rt .footer-rt-img{gap: 32px 24px;}
-.footer-rt .footer-rt-img img{filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.18));}
+/* .footer-rt .footer-rt-img img{filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.18));} */
+/* .footer-rt-img figure::before {
+    content: "";
+    position: absolute;
+    width: 111px;
+    height: 144px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0,100% 0,100% 76%,50% 100%,0 76%);
+    background: red;
+    opacity: .5;
+  } */
 .copyrights-main {font-size:12px; line-height:16px; color: var(--black-80);}
 ul.copyright-links{margin: 0; justify-content: center;}
-ul.copyright-links > li::before{width: 1px; height: 20px; left: -27px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25;}
+ul.copyright-links > li::before{display: none;}
+ul.copyright-links > li::after{content: ""; position: absolute; width: 1px; height: 20px; right: -27px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25;}
+ul.copyright-links > li:last-child::after{display: none;}
 ul.copyright-links > li{margin: 0;}
 ul.copyright-links > li > a{color: var(--black-80);}
 ul.copyright-links > li.current-menu-item > a, 
 ul.copyright-links > li > a:hover{color: var(--sky);} 
-ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
 
 
 /*-- media css starts here --*/
@@ -44,6 +56,8 @@ ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
     .footer-rt{flex: 0 0 calc(100% - 782px);}
     .copyrights-main{gap: 16px 56px;}
     ul.copyright-links{gap: 16px 55px; flex: 1; width: fit-content;}
+    .footer-rt-img figure{position: relative;}
+    .footer-rt-img figure::before{content: ""; position: absolute; width: 128px; height: 144px; top: 0; left: 0; clip-path: polygon(0 0, 100% 0, 100% 67%, 49% 100%, 0 68%); background: red;}
 }   
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .footer-main{gap: 72px 30px; padding: 64px 30px 80px; justify-content: space-between;}
@@ -60,7 +74,7 @@ ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
     .footer-rt{margin-bottom: 48px; width: 100%;}
     .copyrights-main{gap: 25px;}
     ul.copyright-links{gap: 25px;  flex: 1;}
-    ul.copyright-links > li::before{left: -12px}
+    ul.copyright-links > li::after{right: -12px}
     .footer-rt-img figure{flex: 0 0 calc(25% - 18px);}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
@@ -90,11 +104,11 @@ ul.copyright-links > li:first-child::before{display: none; color: var(--black);}
     ul.copyright-links > li{font-size: 12px; line-height: 20px; color: var(--black);}
     ul.copyright-links > li a{color: rgba(0, 0, 0, 0.8);}
     ul.copyright-links > li:first-child{flex: 100%; text-align: center;}
-    ul.copyright-links > li::before{left: -12px;}
-    ul.copyright-links > li:not(:nth-child(3))::before, ul.copyright-links > li:not(:nth-child(5))::before{display: none;}
-    ul.copyright-links > li:nth-child(3)::before, ul.copyright-links > li:nth-child(5)::before{content: ""; position: absolute; width: 1px; height: 20px; left: -12px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25; display: block;}
+    ul.copyright-links > li::after{right: -12px;}
+    ul.copyright-links > li:not(:nth-child(3))::after, ul.copyright-links > li:not(:nth-child(5))::after{display: none;}
+    ul.copyright-links > li:nth-child(3)::after, ul.copyright-links > li:nth-child(5)::after{content: ""; position: absolute; width: 1px; height: 20px; left: -12px; top: 50%; transform: translateY(-50%); background: var(--sky); opacity: 0.25; display: block;}
     ul.footer-links > li{font-size: 0; line-height: normal;}
-    .footer-rt .footer-rt-img img { filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.31)); }
+    /* .footer-rt .footer-rt-img img { filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.31)); } */
   
 }
 @media only screen and (max-width: 370px) and (min-width: 200px){
