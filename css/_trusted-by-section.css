@@ -11,6 +11,7 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .trusted-by-main{gap: 51px; padding: 24px 32px;}
+    body.page-template-company-overview .trusted-by-main{margin-top: 80px;}
     .trusted-by-text{flex: 0 0 130px;}
     .trusted-by-logos{flex: 0 0 calc(100% - 181px); gap: 5px 56px;}
     .trusted-by-logo{flex: 0 0 calc(16.5% - 45px)}

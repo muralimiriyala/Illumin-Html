@@ -20,13 +20,13 @@
 .blog-date::before{content: ""; position: absolute; top: 0; left: -9px; width: 1px; height: 100%; background: var(--sky);}
 
 .blog-category{margin: 0; gap: 8px;}
-.blog-category-main{gap: 8px; padding: 14px 16px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black); align-items: center;}
+.blog-category-main{gap: 8px; padding: 14px 16px 13px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black); align-items: center;}
 .blog-category-main:hover{color: var(--illumin-blue);}
 .blog-category-list{margin: 0;}
 .blog-category-list::before{display: none;}
-.blog-category-list.all-blog-list .blog-category-main{flex-direction: row-reverse;}
+.blog-category-list.all-blog-list .blog-category-main{flex-direction: row-reverse; padding: 14px 13px 13px 16px;}
 .blog-category-thumb{width: 20px; height: 20px;}
-.blog-category-icon{position: relative; top: -2px;}
+.blog-category-icon{position: relative; top: -1px;}
 .blog-category-text{font-size: 16px; line-height: 20px;}
 
 .no-most-viewed .most-viewed-lt, .no-most-viewed .most-viewed-rt{flex: 1;}

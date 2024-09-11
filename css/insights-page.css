@@ -56,8 +56,8 @@ ul.blog-filter-lists li.hide-category{display: none;}
 
 #ajax-load-more{width: 100%;}
 ul.blog_list{margin: 0; width: 100%;}
-.list_count{margin-bottom: 64px; display: block;}
-.list_count:last-child{margin-bottom: 0;}
+.list_count{display: block;}
+.list_count:last-child{margin-bottom: 64px;}
 .blog-post-main .load-more.more{padding-top: 64px;}
 
 .insight-btn-main{width: 100%;}
