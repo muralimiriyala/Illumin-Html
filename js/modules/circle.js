@@ -1,7 +1,9 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
   var watermarkCircle = document.querySelector('.watermark-circle');
+  let watermarkCss = `visibility: visible; opacity: 1`;
   if (watermarkCircle) {
+    watermarkCircle.style = watermarkCss;
     const svgElement = watermarkCircle.querySelector('svg');
     const circle = svgElement.querySelector('circle');
     const radius = circle.getAttribute('r');
