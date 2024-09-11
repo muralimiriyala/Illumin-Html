@@ -24,7 +24,7 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .trusted-by-main{ padding: 24px 32px; display: block;}
     .trusted-by-text{text-align: center;}
-    .trusted-by-logos{gap: 0 32px;}
+    .trusted-by-logos{gap: 0 32px; justify-content: center;}
     .trusted-by-logo{flex: 0 0 calc(20% - 26px);}
     /* body.page-template-product .trusted-by-main{margin-bottom: 80px;} */
 

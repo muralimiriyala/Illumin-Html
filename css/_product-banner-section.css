@@ -6,12 +6,12 @@
 
 @media screen and (min-width: 1024px) {
     .product-banner-main{gap: 80px; flex-direction: row-reverse; padding: 80px 0 0;}
-    .product-banner-text{flex: 0 0 600px; padding: 0 0 80px; font-size: 20px; line-height: 28px;}
-    body.case-study-template-default .product-banner-text{padding: 155px 0 80px;}
+    .product-banner-text{flex: 0 0 600px; padding: 0 0 80px; font-size: 20px; line-height: 28px; height: 100%; align-items: center; display: flex;}
+    /* body.case-study-template-default .product-banner-text{padding: 155px 0 80px;} */
     .product-banner-text span.optional-text{margin-bottom: 32px;}
     .product-banner-text h1{font-size: 80px; line-height: 80px; margin-bottom: 32px;}
     .product-banner-desc .button{margin-top: 17px;}
-    .product-banner-image{flex: 0 0 calc(100% - 680px);}
+    .product-banner-image{flex: 0 0 calc(100% - 680px); margin-top: auto;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
@@ -26,7 +26,8 @@
     .product-banner-main{gap: 40px; padding: 50px 0;}
     .product-banner-text{flex: 100%;}
     .product-banner-text span.optional-text{margin-bottom: 16px;}
-    .product-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;}
+    .product-banner-text h1{font-size: 64px; line-height: 64px; margin-bottom: 20px;}
+    .product-banner-text hr.sun-line{display: none;}
     .product-banner-image{flex: 100%;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {

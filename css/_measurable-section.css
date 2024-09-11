@@ -67,7 +67,7 @@ span.measurable-number{display: block; font-size: 56px; line-height: 56px;  font
     .measurable-views{display: block;}
     .measurable-list{margin-bottom: 40px; gap: 32px;}
     .measurable-list:last-child{margin-bottom: 0;}
-    .measurable-text{flex:1; padding: 16px 0x;}
+    .measurable-text{flex:1; padding: 16px 0;}
     span.measurable-number{font-size: 56px; line-height: 60px;}
     .measurable-text h4{font-size: 24px; line-height: 28px;}
     @keyframes measurableUp{

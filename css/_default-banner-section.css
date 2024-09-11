@@ -13,6 +13,7 @@ body.page-template-company-overview .default-banner-bg{display: none;}
 @media only screen and (min-width: 1024px){
     .default-banner-main{gap: 128px; flex-direction: row-reverse; padding-bottom: 82px;}
     body.page-template-product .default-banner-main{padding-bottom: 0;}
+    body.page-id-1854 .default-banner-main{padding-top: 80px;}
     .default-banner-text{width: calc(100% - 752px); font-size: 20px; line-height: 28px;}
     .default-banner-image{width: 624px;}
     .default-banner-bg{ width: 621px; height: 621px; top: 53px; left: 2px; }
