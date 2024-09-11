@@ -6,6 +6,7 @@
 .watermark-line{width: 100vw; height: 16px; background: var(--sun);}
 
 .no-banner-image .home-banner-text{flex: 1; padding-bottom: 190px;}
+.watermark-circle{visibility: hidden; opacity: 0;}
 
 @media screen and (min-width: 1300px) {
     
