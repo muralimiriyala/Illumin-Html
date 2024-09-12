@@ -7,6 +7,7 @@ body.page-template-product-channel .trusted-by-section::before, body.page-templa
 body.page-template-company-overview .trusted-by-section::before{background: var(--white);}
 span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
+.trusted-by-section.no-testimonial{margin-top: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -34,7 +35,7 @@ span.trusted-optional{font-size: 20px; line-height: 24px; background: linear-gra
     .trusted-by-section{margin-top: -40px; padding-bottom: 32px;}
     body.single-case-study .trusted-by-section{padding-bottom: 0;}
     .trusted-by-section::before{height: calc(100% - 40px); top: 40px;}
-    body.page-template-product .trusted-by-section, body.page-template-product-channel .trusted-by-section{margin-top: -48px;}
+    /* body.page-template-product .trusted-by-section, body.page-template-product-channel .trusted-by-section{margin-top: -48px;} */
     body.page-template-product .trusted-by-section::before, body.page-template-product-channel .trusted-by-section::before{height: calc(100% - 48px); top: 48px;}
     body.page-template-company-overview .trusted-by-section{padding-bottom: 0; margin: 20px 0 0;}
     body.page-template-company-overview .trusted-by-text{margin-bottom: 20px;}

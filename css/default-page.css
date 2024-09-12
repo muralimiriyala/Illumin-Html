@@ -56,6 +56,8 @@
     body.single-post .default-slider-main{padding-top: 54px;}
     .default-slider-main{padding: 0 0 104px;}
     .default-video-wrap{padding: 108px 0 168px;}
+
+    body.page-id-19189 .default-content-main{padding-top: 20px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.page-template-flex-default .default-content-section:nth-child(2) .default-content-main{padding-top: 80px;}
@@ -82,4 +84,6 @@
     .core-icon{flex: 0 0 42px;}
     .core-text{padding-top: 7px;}
     body.page-template-landing-page .default-content-main h3:not(:nth-child(2)){padding-top: 15px;}
+
+    body.page-id-19189 .default-content-main{padding-top: 20px;}
 }
