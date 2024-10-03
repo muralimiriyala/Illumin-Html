@@ -1,4 +1,5 @@
 
+body.home .trusted-by-section{z-index: 1;}
 .trusted-by-section{margin-top: -72px; background: none; position: relative; z-index: 0;}
 .trusted-by-section::before{width: 100%; height: calc(100% - 72px); top: 72px; left: 0; position: absolute; background: var(--tint-bg-blue); content: ""; z-index: -1;}
 .trusted-by-main{background-color: var(--white);}
