@@ -8,7 +8,8 @@
 
 @media screen and (min-width: 1024px) {
     .cross-channel-main{padding: 80px 0; gap: 80px;}
-    .cross-channel-lt{flex: 0 0 394px; padding-bottom: 100px;}
+    .cross-channel-lt{flex: 0 0 394px;}
+    .sticky-sidebar-inner{padding-bottom: 200px;}
     .cross-channel-lt span.optional-text{margin-bottom: 24px;}
     .cross-channel-lt .text-link{margin-top: 24px;}
     .cross-channel-rt{flex: 0 0 calc(100% - 474px);}
