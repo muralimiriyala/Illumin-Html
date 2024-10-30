@@ -19,6 +19,8 @@
 .contact-form{padding: 32px; background: #FFFFFF; box-shadow: 0px 0px 128px rgba(0, 125, 235, 0.2); }
 .contact-form legend.frm_screen_reader{display: none;}
 
+.contact-text span.optional-text{font-family: 'Graphik-Bold', sans-serif; text-transform: uppercase;}
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){

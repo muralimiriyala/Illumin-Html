@@ -26,7 +26,7 @@
 .leadership-text::-webkit-scrollbar  { width: 0; height: 0; }
 
 .leadership-row{z-index: 1;}
-.leadership-space{width: 160px; height: 160px; opacity: 0.15; position: absolute; z-index: -1; background-image: url('./images/leadershipt-spacer.svg'); background-repeat: no-repeat; background-size: contain;}
+.leadership-space{display: none; width: 160px; height: 160px; opacity: 0.15; position: absolute; z-index: -1; background-image: url('./images/leadershipt-spacer.svg'); background-repeat: no-repeat; background-size: contain;}
 .leadership-space.top{top: -80px; right: -80px;}
 .leadership-space.bottom{bottom: -80px; left: -80px;}
 

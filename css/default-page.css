@@ -1,5 +1,6 @@
 
 .default-content-main{padding: 80px 0 0;}
+body.page-id-16128 .default-content-main{padding: 0;}
 .default-content-main.no_cta_div{padding-bottom: 38px;}
 .default-content-main p:nth-child(1) span{font-size: 24px; line-height: 32px; color: var(--illumin-blue);}
 .default-content-main h5:not(.core-text h5){padding-top: 15px;}
@@ -59,6 +60,9 @@
     .default-video-wrap{padding: 108px 0 168px;}
 
     body.page-id-19189 .default-content-main{padding-top: 20px;}
+
+    .icons-block-main{display: block; padding: 48px 0 48px;}
+    .icons-block-text{margin-bottom: 58px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.page-template-flex-default .default-content-section:nth-child(2) .default-content-main{padding-top: 80px;}

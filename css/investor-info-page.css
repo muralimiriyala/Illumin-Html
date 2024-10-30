@@ -47,8 +47,10 @@ ul.policies-links li a.active::after, ul.policies-links li a:hover::after{opacit
     .investor-banner-main::after{right: -120px;} */
 
     .investor-banner-main{gap: 80px; padding: 64px 0;}
-    .investor-banner-text{flex: 0 0 560px;}
-    .investor-banner-desc{flex: 0 0 calc(100% - 640px);}
+    /* .investor-banner-text{flex: 0 0 560px;}
+    .investor-banner-desc{flex: 0 0 calc(100% - 640px);} */
+    .investor-banner-text{flex: 1;}
+    .investor-banner-desc{flex: 1;}
     
     .corporate-frm-field{margin-bottom: 20px;}
     .corporate-doc-main{gap: 96px;}
@@ -59,8 +61,8 @@ ul.policies-links li a.active::after, ul.policies-links li a:hover::after{opacit
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .investor-banner-main { gap: 30px; }
-    .investor-banner-text { flex: 0 0 415px; }
-    .investor-banner-desc { flex: 0 0 calc(100% - 445px); }
+    /* .investor-banner-text { flex: 0 0 415px; }
+    .investor-banner-desc { flex: 0 0 calc(100% - 445px); } */
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .investor-banner-main{display: block; padding: 47px 0 24px;}

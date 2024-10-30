@@ -87,7 +87,7 @@ ul.nav-links li a:hover{color: var(--sky);}
 
     .product-menu-flex{color: var(--white); gap: 48px;}
     .product-menu-image{flex: 0 0 296px;}
-    .product-menu-image::before{width: 128px; height: 128px; left: -62px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-sm.svg'); background-repeat: no-repeat; content: ""; display: block; position: absolute;}
+    /* .product-menu-image::before{width: 128px; height: 128px; left: -62px; top: 50%; transform: translateY(-50%); background-image: url('images/pattern-sm.svg'); background-repeat: no-repeat; content: ""; display: block; position: absolute;} */
     .insight-nav-item .product-menu-image{max-width: 178px;}
     .insight-nav-item .product-menu-image figure.object-fit{text-align: right;}
 

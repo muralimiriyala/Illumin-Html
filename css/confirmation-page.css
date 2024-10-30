@@ -1,5 +1,5 @@
 
-.confirmation-bg{ opacity: 0.15;}
+.confirmation-bg{ display: none; opacity: 0.15;}
 .confirmation-title{z-index: 1;}
 .confirmation-title :is(p){color: var(--purple-color); max-width: 178px; margin: 0 auto;}
 
