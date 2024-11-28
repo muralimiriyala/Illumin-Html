@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const radius = circle.getAttribute('r');
     const circumference = 2 * Math.PI * radius;
 
-    // Set initial stroke properties for animation
+    // Set initial stroke properties for anim ation
     circle.style.strokeDasharray = circumference;
     circle.style.strokeDashoffset = circumference;
 
