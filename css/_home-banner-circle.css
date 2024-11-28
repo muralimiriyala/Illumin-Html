@@ -8,7 +8,7 @@
 
 .no-banner-image .home-banner-text{flex: 1; padding-bottom: 190px;}
 .watermark-circle{visibility: hidden; opacity: 0;}
-/* .watermark-circle{z-index: -1;} */
+.watermark-circle{z-index: -1;}
 
 @media screen and (min-width: 1300px) {
     
