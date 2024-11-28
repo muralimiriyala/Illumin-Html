@@ -8,6 +8,8 @@
 .related-slider-text a{color: var(--black);}
 .related-slider-text a:hover{color: var(--illumin-blue);}
 
+.related-slider-slide .viewed-icon-text{gap: 9px; }
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1440px){
     .related-slider-main.slick-slider .slick-arrow:not(button.slick-arrow){right: -6px;}

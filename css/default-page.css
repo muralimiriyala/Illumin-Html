@@ -1,5 +1,6 @@
 
 .default-content-main{padding: 80px 0 0;}
+body.page-id-16128 .default-content-main{padding: 0;}
 .default-content-main.no_cta_div{padding-bottom: 38px;}
 .default-content-main p:nth-child(1) span{font-size: 24px; line-height: 32px; color: var(--illumin-blue);}
 .default-content-main h5:not(.core-text h5){padding-top: 15px;}
@@ -11,7 +12,7 @@
 .default-content-title::after{ bottom: -22px; left: -1px; width: 100%; height: 160px; content: ""; background-image: url('./images/union-shape.svg'); background-repeat: no-repeat; background-position: left bottom; background-size: contain; position: absolute; z-index: -1; }
 .default-content-title h2{font-size: 48px; line-height: 56px;letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif;}
 
-.icons-block-section{background-color: var(--tin-color);}
+.icons-block-section{background-color: var(--tin-color); overflow: hidden;}
 .core-text h5{margin-bottom: 7px; color: var(--illumin-blue);}
 .core-list{gap: 24px; margin-bottom: 24px;}
 .core-list:last-child{margin-bottom: 0;}
@@ -50,12 +51,18 @@
     .default-slider-main{padding: 0 0 72px;}
     .icons-block-main{gap: 60px; padding: 116px 0 96px;}
     .icons-block-text{flex: 0 0 394px;}
+    .sticky-sidebar-inner{padding-bottom: 200px;}
     .icons-block-core{flex: 0 0 calc(100% - 454px); margin-top: -10px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     body.single-post .default-slider-main{padding-top: 54px;}
     .default-slider-main{padding: 0 0 104px;}
     .default-video-wrap{padding: 108px 0 168px;}
+
+    body.page-id-19189 .default-content-main{padding-top: 20px;}
+
+    .icons-block-main{display: block; padding: 48px 0 48px;}
+    .icons-block-text{margin-bottom: 58px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.page-template-flex-default .default-content-section:nth-child(2) .default-content-main{padding-top: 80px;}
@@ -82,4 +89,6 @@
     .core-icon{flex: 0 0 42px;}
     .core-text{padding-top: 7px;}
     body.page-template-landing-page .default-content-main h3:not(:nth-child(2)){padding-top: 15px;}
+
+    body.page-id-19189 .default-content-main{padding-top: 20px;}
 }

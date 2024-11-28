@@ -15,9 +15,11 @@
     .single-testimonial-text{padding-right: 50px;}
     .single-slick-arrow{top: 0; right: 0; width: 80px; height: 100%; background: var(--sky-blue); display: flex; align-items: center; justify-content: center; position: absolute;}
     body.page-template-product .single-testimonial-slide, body.single-case-study .single-testimonial-slide, body.page-template-product-channel .single-testimonial-slide{padding: 84px 0 156px;}
+    .single-testimonial-section.no-trusted-section .single-testimonial-slide{padding: 84px 0;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .single-testimonial-slide{padding: 48px 0;}
+    .single-testimonial-section.no-trusted-section .single-testimonial-slide{padding: 48px 0;}
     .single-testimonial-section:has(+ .trusted-by-section) .single-testimonial-slide{padding-bottom: 100px !important;}
     .single-testimonial-text{padding-right: 110px;}
     .single-testimonial-text p{line-height: 48px; font-size: 32px;}
@@ -27,6 +29,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .single-testimonial-slide{padding: 32px 0; overflow: hidden;}
+    .single-testimonial-section.no-trusted-section .single-testimonial-slide{padding: 32px 0;}
    .single-testimonial-section:has(+ .trusted-by-section) .single-testimonial-slide{padding-bottom: 65px !important;}
     .single-testimonial-text p{line-height: 25px; font-size: 20px;}
     .single-testimonial-text p > span{border-bottom: 3px solid var(--sun); display: inline; line-height: 21px;}

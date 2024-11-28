@@ -14,6 +14,8 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
 
 .optional-repeater-text .button{margin-top: 4px;}
 
+body.page-id-19189 .optional-repeater-main{padding-top: 0;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
     .optional-repeater-text h2{margin-bottom: 23px;}

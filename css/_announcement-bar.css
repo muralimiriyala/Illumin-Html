@@ -1,5 +1,6 @@
 
-.announcement-bar{padding: 12px; color: var(--white); background: linear-gradient(90deg, #3207FF 0%, #8200F0 100%); z-index: 1250; position: relative;}
+/* .announcement-bar{padding: 12px; color: var(--white); background: linear-gradient(90deg, #3207FF 0%, #8200F0 100%); z-index: 1250; position: relative;} */
+.announcement-bar{padding: 12px; color: var(--white); background: var(--black); z-index: 1250; position: relative;}
 .announcement-close{position: relative; width: 26px; height: 26px;  cursor: pointer;}
 .announcement-close span{display: block; width: 100%; height: 100%;}
 .announcement-close span:after, .announcement-close span:before {width: 26px; height: 4px; background-color: var(--white); transition: all 0.3s; backface-visibility: hidden; border-radius: 2px; left: 0; top: 50%; content: ""; position: absolute; display: block; }

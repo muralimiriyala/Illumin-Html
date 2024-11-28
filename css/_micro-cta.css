@@ -1,7 +1,7 @@
 
 .micro-cta-main{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
 .micro-cta-text span.optional-text{margin-bottom: 12px; color: var(--sun);}
-.micro-cta-text h3{color: var(--white);}
+.micro-cta-text .h3{color: var(--white); font-family: 'Graphik-Bold', sans-serif;}
 .micro-cta-text .button{background: var(--sun); color: var(--black);}
 .micro-cta-circle{width: 194px; height: 194px; right: 40px; top: calc(50% + 17px); transform: translateY(-50%); opacity: 0.15; background-image: url('images/pattern-circle-sm.svg'); background-size: cover; position: absolute;}
 .micro-cta-ring{ background-image: url('images/micro-cta-ring.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; z-index: -1;}
@@ -11,7 +11,7 @@
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
 	.micro-cta-text{font-size: 20px; line-height: 28px;}
-	.micro-cta-text h3{margin-bottom: 32px; font-size: 28px; line-height: 32px; color: var(--white);}
+	.micro-cta-text .h3{margin-bottom: 32px; font-size: 28px; line-height: 32px; color: var(--white);}
 }
 @media only screen and (min-width: 1024px){
 	.micro-cta-wrap{padding: 0 0 64px;}
@@ -33,7 +33,7 @@
 	.micro-cta-ring { width: 248px; height: 248px; left: 0; right: 0; bottom: -1px; margin: 0 auto; background-position: center bottom; }
 	.micro-cta-thumb { max-width: 300px; margin: 0 auto; z-index: 1; }
 	.micro-cta-text{padding: 24px 30px 30px; text-align: center;}
-	.micro-cta-text h3{font-size: 24px; line-height: 28px; margin-bottom: 23px;}
+	.micro-cta-text .h3{font-size: 24px; line-height: 28px; margin-bottom: 23px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
 	.micro-cta-wrap {padding: 0 0 62px; } 
@@ -44,5 +44,5 @@
 	.micro-cta-ring { width: 248px; height: 248px; left: 0; right: 0; margin: 0 auto; bottom: -1px; background-position: center bottom; }
 	.micro-cta-thumb { max-width: 276px; margin: 0 auto; z-index: 1; }
 	.micro-cta-text{padding: 16px 24px 24px; text-align: center;}
-	.micro-cta-text h3{font-size: 20px; line-height: 24px; margin-bottom: 23px;}
+	.micro-cta-text .h3{font-size: 20px; line-height: 24px; margin-bottom: 23px;}
 }

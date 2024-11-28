@@ -1,7 +1,12 @@
 
+.default-banner-section{background: linear-gradient(180deg,rgba(229,242,253,0) 80%,#e5f2fd 100%),#fff; overflow: hidden;}
+body.page-id-298 .default-banner-section{background: transparent;}
+/* body.page-id-16128 .default-banner-section,  */
+.default-banner-main{position: relative; z-index: 1;}
 .hero-images{background-repeat: no-repeat; background-size: contain; background-position: center;}
-.default-banner-bg{ opacity: 0.5; position: absolute; z-index: -1; box-shadow: 0px 0px 128px rgba(151, 71, 255, 0.3); background-color: var(--white); border-radius: 50%;}
-.default-banner-text span.optional-text{margin-bottom: 12px;}
+/* .default-banner-bg{ opacity: 0.5; position: absolute; z-index: -1; box-shadow: 0px 0px 128px rgba(151, 71, 255, 0.3); background-color: var(--white); border-radius: 50%;} */
+.default-banner-bg{display: none;}
+.default-banner-text span.optional-text{margin-bottom: 12px; font-family: 'Graphik-Bold', sans-serif; text-transform: uppercase;}
 .default-banner-text .button{margin-top: 16px;}
 body.page-template-company-overview .default-banner-bg{display: none;}
 
@@ -11,11 +16,14 @@ body.page-template-company-overview .default-banner-bg{display: none;}
     body.page-template-flex-default .default-banner-desc h1{font-size: 54px; line-height: 60px;}
 }
 @media only screen and (min-width: 1024px){
-    .default-banner-main{gap: 128px; flex-direction: row-reverse; padding-bottom: 82px;}
+    .default-banner-main{gap: 128px; flex-direction: row-reverse; align-items: flex-end;}
     body.page-template-product .default-banner-main{padding-bottom: 0;}
-    .default-banner-text{width: calc(100% - 752px); font-size: 20px; line-height: 28px;}
+    body.page-id-1854 .default-banner-main{padding-top: 80px;}
+    .default-banner-text{width: calc(100% - 752px); font-size: 20px; line-height: 28px; padding: 40px 0 82px;}
     .default-banner-image{width: 624px;}
+
     .default-banner-bg{ width: 621px; height: 621px; top: 53px; left: 2px; }
+    body.page-id-1854 .default-banner-bg{top: -42px;}
     .hero-images{min-height: 624px;}
     body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 15px;}
 }
@@ -28,11 +36,15 @@ body.page-template-company-overview .default-banner-bg{display: none;}
     .default-banner-image{width: 524px;}
     .default-banner-bg{ width: 521px; height: 521px; top: 53px; left: 2px; }
 }
+/* @media only screen and (max-width: 1050px) and (min-width: 1024px){
+    .default-banner-image{bottom: -97px;}
+} */
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .default-banner-main { display: block; padding: 40px 0 64px; }
     .default-banner-text{padding-top: 80px;}
     .default-banner-image{max-width: 524px; margin: 0 auto;}
     .default-banner-bg{ width: 521px; height: 521px; top: 53px; left: 2px; }
+    body.page-id-1854 .default-banner-bg{top: -29px;}
     .hero-images{min-height: 524px;}
     body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 18px;}
 }
