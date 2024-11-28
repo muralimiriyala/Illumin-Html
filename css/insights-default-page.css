@@ -35,7 +35,7 @@ hr.half{width: 64px;}
 .table_of_content #ez-toc-container ul li a{color: var(--sky); text-decoration: none; background: var(--tint-bg-blue); display: block; padding: 9px 12px 8px; border-radius: 8px; font-size: 16px; line-height: 20px; font-family: 'Graphik-Medium', sans-serif;}
 .table_of_content #ez-toc-container ul li a:hover{color: var(--white); background: var(--sky);}
 .table_of_content #ez-toc-container ul li a::before{display: none;}
-.table_of_content #ez-toc-container ul ul{margin-left: 35px;}
+.table_of_content #ez-toc-container ul ul{margin-left: 35px; margin-top: 10px;}
 .table_of_content #ez-toc-container ul ul li a::before{left: -35px; top: 2px;}
 .table_of_content #ez-toc-container ul ul ul{margin-left: 50px;}
 .table_of_content #ez-toc-container ul ul ul li a{font-size: 1rem;}
