@@ -11,7 +11,7 @@
 ul.module-links{margin: 0;}
 ul.module-links li::before{display: none;}
 ul.module-links li{margin: 0 0 24px;}
-ul.module-links li a{padding-right: 30px; font-size: 20px; line-height: 24px; color: var(--black); font-family: 'Graphik-Bold', sans-serif; position: relative;}
+ul.module-links li a{padding-right: 30px; font-size: 20px; line-height: 24px; color: var(--black); font-weight: 700px; position: relative;}
 ul.module-links li a:hover{color: var(--illumin-blue);}
 ul.module-links li a::after{width: 20px; height: 30px; right: 0; top: 50%; transform: translateY(-50%); position: absolute; background-image: url('images/right-arrow.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block;}
 

@@ -5,7 +5,7 @@
 .people-slider-nav .slick-list{padding: 56px; border-radius: 24px; background-color: var(--black); color: var(--white); z-index: 1;}
 .people-slider-nav .slick-list::before{ background-color: #3207FF; opacity: 0.25; filter: blur(104px); -webkit-filter: blur(104px); z-index: -1; position: absolute; content: "";}
 body.mac_os .people-slider-nav .slick-list::before{opacity: 0.75;}
-.people-slider-text blockquote{margin: 0; font-size: 24px; line-height: 40px; font-style: normal; color: var(--white); font-family: 'Graphik-Light', sans-serif;} 
+.people-slider-text blockquote{margin: 0; font-size: 24px; line-height: 40px; font-style: normal; color: var(--white); font-weight: 300;} 
 .people-slider-text blockquote p::before, .people-slider-text blockquote p::after{display: none;}
 .people-name span{margin-bottom: 7px; font-size: 20px; line-height: 24px; color: var(--white); display: block;}
 .people-name{font-size: 1rem; line-height: 20px; color: var(--sky-blue);}
@@ -14,7 +14,7 @@ body.mac_os .people-slider-nav .slick-list::before{opacity: 0.75;}
 .people-slider-nav.slick-slider ul.slick-dots li{display: none; margin: 0;}
 .people-slider-nav.slick-slider ul.slick-dots li::before{display: none;}
 .people-slider-nav.slick-slider ul.slick-dots li.slick-active{display: block;}
-.people-slider-nav.slick-slider ul.slick-dots li a{font-size: 1rem; line-height: 20px; color: var(--black); font-family: 'Graphik-Bold', sans-serif;}
+.people-slider-nav.slick-slider ul.slick-dots li a{font-size: 1rem; line-height: 20px; color: var(--black); font-weight: 700px;}
 .slick-slash{top: 2px; margin: 0 5px; width: 4px; height: 18px; background-image: linear-gradient(90deg, #3207FF 0%, #8200F0 100%); display: inline-block; transform: rotate(10deg); position: relative; }
 
 /*-- media css starts here --*/

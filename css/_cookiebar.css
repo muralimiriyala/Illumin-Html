@@ -1,9 +1,9 @@
 .cky-btn-revisit-wrapper.cky-revisit-bottom-left{right: 15px; left: auto; background: linear-gradient(90deg,#3207ff 0,#8200f0 100%) !important;}
 body .cky-consent-container{left: auto; right: 40px;}
-.cky-notice .cky-title{font-family: 'Graphik-Bold', sans-serif;}
-body .cky-consent-bar .cky-notice-des p, body .cky-gpc-wrapper .cky-gpc-desc p, body .cky-preference-body-wrapper .cky-preference-content-wrapper p, body .cky-accordion-header-wrapper .cky-accordion-header-des p, body .cky-cookie-des-table li div:last-child p{font-family: 'Graphik-Regular', sans-serif; color: var(--black); font-size: 1rem; line-height: 1.5; font-weight: normal; }
+.cky-notice .cky-title{font-weight: 700px;}
+body .cky-consent-bar .cky-notice-des p, body .cky-gpc-wrapper .cky-gpc-desc p, body .cky-preference-body-wrapper .cky-preference-content-wrapper p, body .cky-accordion-header-wrapper .cky-accordion-header-des p, body .cky-cookie-des-table li div:last-child p{font-family: "Inter", sans-serif; color: var(--black); font-size: 1rem; line-height: 1.5; font-weight: normal; }
 body .cky-notice-btn-wrapper{gap: 20px;}
-body .cky-notice-btn-wrapper .cky-btn{padding: 8px 17px 9px; margin: 0; font-size: 1.125rem; font-weight: normal; font-family: 'Graphik-Regular', sans-serif; line-height: 1.22; letter-spacing: normal; border-radius: 26px; background: linear-gradient(90deg,#3207ff 0,#8200f0 100%) !important; color: var(--black) !important; border: none !important; transition: all 0.5s ease;}
+body .cky-notice-btn-wrapper .cky-btn{padding: 8px 17px 9px; margin: 0; font-size: 1.125rem; font-weight: normal; font-family: "Inter", sans-serif; line-height: 1.22; letter-spacing: normal; border-radius: 26px; background: linear-gradient(90deg,#3207ff 0,#8200f0 100%) !important; color: var(--black) !important; border: none !important; transition: all 0.5s ease;}
 body .cky-notice-btn-wrapper .cky-btn:not(.cky-btn-accept)::after{width: calc(100% - 4px); height: calc(100% - 4px); top: 2px; left: 2px; background-color: var(--white); border-radius: 26px; content: ""; display: block; position: absolute; z-index: -1; }
 body .cky-notice-btn-wrapper .cky-btn:hover{opacity: 1; color: var(--white) !important;}
 body .cky-notice-btn-wrapper .cky-btn:hover:after{background-color: transparent;}
@@ -12,7 +12,7 @@ body .cky-notice-btn-wrapper .cky-btn.cky-btn-accept{ background: linear-gradien
 body .cky-prefrence-btn-wrapper{gap: 20px;}
 body .cky-accordion-header .cky-always-active{color: var(--illumin-blue);}
 body button.cky-show-desc-btn:not(:hover):not(:active){color: var(--black); }
-body .cky-prefrence-btn-wrapper .cky-btn{padding: 8px 17px 9px; margin: 0; font-size: 1.125rem; font-weight: normal; font-family: 'Graphik-Bold', sans-serif; line-height: 1.22; letter-spacing: normal; border-radius: 26px; background: linear-gradient(90deg,#3207ff 0,#8200f0 100%) !important; color: var(--black) !important; border: none !important; text-transform: capitalize;}
+body .cky-prefrence-btn-wrapper .cky-btn{padding: 8px 17px 9px; margin: 0; font-size: 1.125rem; font-weight: normal; font-weight: 700px; line-height: 1.22; letter-spacing: normal; border-radius: 26px; background: linear-gradient(90deg,#3207ff 0,#8200f0 100%) !important; color: var(--black) !important; border: none !important; text-transform: capitalize;}
 body .cky-prefrence-btn-wrapper .cky-btn:not(.cky-btn-accept)::after{width: calc(100% - 4px); height: calc(100% - 4px); top: 2px; left: 2px; background-color: var(--white); border-radius: 26px; content: ""; display: block; position: absolute; z-index: -1; }
 body .cky-prefrence-btn-wrapper .cky-btn:hover{opacity: 1; color: var(--white) !important;}
 body .cky-prefrence-btn-wrapper .cky-btn:hover:after{background-color: transparent;}

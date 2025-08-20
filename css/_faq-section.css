@@ -6,16 +6,16 @@ body.page-template-landing-page .faq-section{background-color: var(--white);}
 .faq-main .text-link{padding-right: 20px;}
 .faq-main .text-link::after{transform: rotate(90deg); top: -3px;}
 .faq-title{margin-bottom: 40px;}
-.faq-title span.optional-text{margin-bottom: 24px;}
+.faq-title span.optional-text{margin-bottom: 24px; color: var(--Dark-parma-violet);}
 .faq-title h2{font-size: 32px; line-height: 40px; font-family: 'Graphik-Bold',sans-serif;}
 
 .accordion-list{margin-bottom: 16px; background-color: var(--white); border-radius: 8px;}
 .accordion-list:last-child{margin-bottom: 0;}
 .accordion-list.active{box-shadow: 0px 12px 24px rgba(151, 173, 200, 0.5);}
-.accordion-header{padding: 20px 53px 16px 16px; background-color: var(--tint-bg-blue); border-radius: 8px; font-size: 16px; line-height: 20px; cursor: pointer; font-family: 'Graphik-Bold',sans-serif; position: relative;}
-.accordion-header.open{background-color: var(--white); color: var(--illumin-blue);}
-.accordion-header::after{right: 20px; top: 50%; transform: translateY(-50%) rotate(180deg); width: 28px; height: 16px; position: absolute; transition: all 0.5s ease; background: url('images/down-arrow.svg') no-repeat; background-size: cover; content: "";}
-.accordion-header.open::after{transform: translateY(-50%) rotate(0deg);}
+.accordion-header{padding: 20px 53px 16px 16px; background-color: var(--Pale-Parma-Violet); border-radius: 8px; font-size: 16px; line-height: 20px; cursor: pointer; font-family: 'Graphik-Bold',sans-serif; position: relative;}
+.accordion-header.open{background-color: var(--white); color: var(--Dark-parma-violet);}
+.accordion-header::after{right: 20px; top: 50%; transform: translateY(-50%) rotate(0deg); width: 20px; height: 12px; position: absolute; transition: all 0.5s ease; background: url('images/down-arrow-new.svg') no-repeat; background-size: cover; content: "";}
+.accordion-header.open::after{transform: translateY(-50%) rotate(180deg);}
 .accordion-content{display: none; padding: 4px 20px 20px; font-size: 14px; line-height: 20px;}
 .accordion-content ul li::before{top: 6px;}
 .accordion-list:nth-child(n+6){display: none;}

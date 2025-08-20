@@ -1,7 +1,7 @@
 
 .micro-cta-main{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
 .micro-cta-text span.optional-text{margin-bottom: 12px; color: var(--sun);}
-.micro-cta-text .h3{color: var(--white); font-family: 'Graphik-Bold', sans-serif;}
+.micro-cta-text .h3{color: var(--white); font-weight: 700px;}
 .micro-cta-text .button{background: var(--sun); color: var(--black);}
 .micro-cta-circle{width: 194px; height: 194px; right: 40px; top: calc(50% + 17px); transform: translateY(-50%); opacity: 0.15; background-image: url('images/pattern-circle-sm.svg'); background-size: cover; position: absolute;}
 .micro-cta-ring{ background-image: url('images/micro-cta-ring.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; z-index: -1;}

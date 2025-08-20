@@ -17,7 +17,7 @@ ul.client-category{margin: 0; gap: 12px;}
 .more-category .client-category-text{top: -2px; position: relative;}
 .client-category-icon{position: relative;}
 body.archive .client-category-icon{top: -2px;}
-.client-category-text{font-size: 16px; line-height: 20px; font-family: 'Graphik-Bold', sans-serif;}
+.client-category-text{font-size: 16px; line-height: 20px; font-weight: 700px;}
 
 .client-category-search > input{padding: 16px 40px 16px 16px; font-size: 16px; line-height: 16px; background: var(--tint-bg-blue); border: 2px solid rgba(81, 41, 255, 0.10); border-radius: 12px; height: 48px;}
 .client-category-search ::placeholder{color: var(--black); font-family: 'Graphik-Medium';}

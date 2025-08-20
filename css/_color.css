@@ -25,4 +25,12 @@
     --sky: #5129FF;
     --sun: #FFCD00;
     --light-blue: #007deb;
+
+    /* new color */
+
+    --Dark-parma-violet: #3A186A;
+    --Pale-Parma-Violet: #F5EDFD;
+    --Mid-parma-violet: #897AE9;
+
+    --Gradient-Horizontal: linear-gradient(90deg, #3A186A 0%, #897AE9 100%);
 }

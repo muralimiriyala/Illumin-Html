@@ -11,7 +11,7 @@
 ul.scroll_links{margin: 0;}
 ul.scroll_links li::before{display: none;}
 ul.scroll_links li{margin: 0 0 24px;}
-ul.scroll_links li a{padding-right: 30px; font-size: 20px; line-height: 24px; color: var(--black); font-family: 'Graphik-Bold', sans-serif; position: relative;}
+ul.scroll_links li a{padding-right: 30px; font-size: 20px; line-height: 24px; color: var(--black); font-weight: 700px; position: relative;}
 ul.scroll_links li a.active, ul.scroll_links li a:hover{color: var(--illumin-blue);}
 ul.scroll_links li a::after{width: 20px; height: 30px; right: 0; top: 50%; transform: translateY(-50%); position: absolute; background-image: url('images/right-arrow.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0.15s;}
 ul.scroll_links li a:hover::after{opacity: 0; right: 10px;}

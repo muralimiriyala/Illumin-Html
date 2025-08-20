@@ -1,5 +1,5 @@
 
- .footer-main{padding: 64px 64px 80px; background-color: var(--tint-bg-blue); border-radius: 24px 24px 0 0;}
+ .footer-main{padding: 64px 64px 80px; background-color: var(--Pale-Parma-Violet); border-radius: 24px 24px 0 0;}
  .footer-lt .footer-logo{max-width: 232px; margin-bottom: 42px;}
 
 
@@ -14,7 +14,7 @@
  ul.footer-links > li > ul > li:before{display: none;}
  ul.footer-links > li > ul > li{margin-bottom: 6px;}
  ul.footer-links > li > ul > li:last-child{margin-bottom: 0;}
- ul.footer-links > li > ul > li a{font-weight: 700;}
+ ul.footer-links > li > ul > li a{font-weight: 900;}
 
 .footer-btns{gap: 40px;}
 .footer-btns .button{flex: 0 0 191px;}
@@ -22,7 +22,7 @@ ul.social-icons{margin: 0; gap: 8px; flex: 1;}
 ul.social-icons > li{margin: 0;}
 ul.social-icons > li::before{display: none;}
 ul.social-icons > li > a{background-color: var(--white); width: 48px; height: 48px; border-radius: 16px;}
-ul.social-icons > li > a:hover{background-color: var(--sky); color: var(--white);}
+ul.social-icons > li > a:hover{background-color: var(--Dark-parma-violet); color: var(--white);}
 
 
 

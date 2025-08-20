@@ -10,7 +10,7 @@ body.page-id-16128 .default-content-main{padding: 0;}
 
 .default-content-title{position: relative; z-index: 1;}
 .default-content-title::after{ bottom: -22px; left: -1px; width: 100%; height: 160px; content: ""; background-image: url('./images/union-shape.svg'); background-repeat: no-repeat; background-position: left bottom; background-size: contain; position: absolute; z-index: -1; }
-.default-content-title h2{font-size: 48px; line-height: 56px;letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif;}
+.default-content-title h2{font-size: 48px; line-height: 56px;letter-spacing: -0.02em; font-family: "Inter", sans-serif;}
 
 .icons-block-section{background-color: var(--tin-color); overflow: hidden;}
 .core-text h5{margin-bottom: 7px; color: var(--illumin-blue);}

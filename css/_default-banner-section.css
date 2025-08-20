@@ -6,7 +6,7 @@ body.page-id-298 .default-banner-section{background: transparent;}
 .hero-images{background-repeat: no-repeat; background-size: contain; background-position: center;}
 /* .default-banner-bg{ opacity: 0.5; position: absolute; z-index: -1; box-shadow: 0px 0px 128px rgba(151, 71, 255, 0.3); background-color: var(--white); border-radius: 50%;} */
 .default-banner-bg{display: none;}
-.default-banner-text span.optional-text{margin-bottom: 12px; font-family: 'Graphik-Bold', sans-serif; text-transform: uppercase;}
+.default-banner-text span.optional-text{margin-bottom: 12px; font-weight: 700px; text-transform: uppercase;}
 .default-banner-text .button{margin-top: 16px;}
 body.page-template-company-overview .default-banner-bg{display: none;}
 

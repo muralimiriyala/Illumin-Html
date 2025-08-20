@@ -13,13 +13,13 @@
 .contact-loc img{flex: 0 0 20px;}
 .contact-address hr{width: 100%; height: 2px; margin: 0 0 24px; background-color: var(--illumin-blue);}
 .contact-address p{margin-bottom: 8px;}
-.contact-address a{color: var(--black); font-family: 'Graphik-Bold', sans-serif;}
+.contact-address a{color: var(--black); font-weight: 700px;}
 .contact-address a:hover{color: var(--illumin-blue);}
 
 .contact-form{padding: 32px; background: #FFFFFF; box-shadow: 0px 0px 128px rgba(0, 125, 235, 0.2); }
 .contact-form legend.frm_screen_reader{display: none;}
 
-.contact-text span.optional-text{font-family: 'Graphik-Bold', sans-serif; text-transform: uppercase;}
+.contact-text span.optional-text{font-weight: 700px; text-transform: uppercase;}
 
 
 /*-- media css starts here --*/

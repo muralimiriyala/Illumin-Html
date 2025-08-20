@@ -4,7 +4,7 @@
 .related-slider-title h2{font-size: 34px; line-height: 38px;}
 .related-slider-image{margin-bottom: 32px;}
 .related-slider-image img{min-height: 320px; max-height: 320px; overflow-y: hidden;}
-.related-slider-text{font-size: 24px; line-height: 32px; margin-bottom: 0; font-family: 'Graphik-Regular', sans-serif; }
+.related-slider-text{font-size: 24px; line-height: 32px; margin-bottom: 0; font-family: "Inter", sans-serif; }
 .related-slider-text a{color: var(--black);}
 .related-slider-text a:hover{color: var(--illumin-blue);}
 

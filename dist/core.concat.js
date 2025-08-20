@@ -278,11 +278,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
 jQuery(document).ready(function ($) {
-  jQuery('.popup-youtube').magnificPopup({
+  jQuery(".popup-youtube").magnificPopup({
     /* disableOn: 700,*/
-    type: 'iframe',
-    mainClass: 'mfp-fade',
+    type: "iframe",
+    mainClass: "mfp-fade",
     removalDelay: 160,
     preloader: false,
     fixedContentPos: false,
@@ -740,89 +741,89 @@ jQuery(document).ready(function () {
     }
     return (
       (this.typeTimer = null),
-      (this.typeSearch = ''),
+      (this.typeSearch = ""),
       (this.isMac = navigator.platform.match(/mac/i)),
-      (t = 'object' == typeof t ? t : {}),
+      (t = "object" == typeof t ? t : {}),
       (this.selectElement = e),
       !(
         !t.mobile &&
         navigator.userAgent.match(/iPad|iPhone|Android|IEMobile|BlackBerry/i)
       ) &&
-        'select' === e.tagName.toLowerCase() &&
+        "select" === e.tagName.toLowerCase() &&
         void this.init(t)
     );
   });
-  (t.prototype.version = '1.2.0'),
+  (t.prototype.version = "1.2.0"),
     (t.prototype.init = function (t) {
       var s = e(this.selectElement);
-      if (s.data('selectBox-control')) return !1;
+      if (s.data("selectBox-control")) return !1;
       var o = e('<a class="selectBox" />'),
-        a = s.attr('multiple') || parseInt(s.attr('size')) > 1,
+        a = s.attr("multiple") || parseInt(s.attr("size")) > 1,
         n = t || {},
-        l = parseInt(s.prop('tabindex')) || 0,
+        l = parseInt(s.prop("tabindex")) || 0,
         i = this;
       if (
         (o
           .width(s.outerWidth())
-          .addClass(s.attr('class'))
-          .attr('title', s.attr('title') || '')
-          .attr('tabindex', l)
-          .css('display', 'inline-block')
-          .bind('focus.selectBox', function () {
+          .addClass(s.attr("class"))
+          .attr("title", s.attr("title") || "")
+          .attr("tabindex", l)
+          .css("display", "inline-block")
+          .bind("focus.selectBox", function () {
             this !== document.activeElement &&
               document.body !== document.activeElement &&
               e(document.activeElement).blur(),
-              o.hasClass('selectBox-active') ||
-                (o.addClass('selectBox-active'), s.trigger('focus'));
+              o.hasClass("selectBox-active") ||
+                (o.addClass("selectBox-active"), s.trigger("focus"));
           })
-          .bind('blur.selectBox', function () {
-            o.hasClass('selectBox-active') &&
-              (o.removeClass('selectBox-active'), s.trigger('blur'));
+          .bind("blur.selectBox", function () {
+            o.hasClass("selectBox-active") &&
+              (o.removeClass("selectBox-active"), s.trigger("blur"));
           }),
-        e(window).data('selectBox-bindings') ||
+        e(window).data("selectBox-bindings") ||
           e(window)
-            .data('selectBox-bindings', !0)
+            .data("selectBox-bindings", !0)
             .bind(
-              'scroll.selectBox',
-              n.hideOnWindowScroll ? this.hideMenus : e.noop
+              "scroll.selectBox",
+              n.hideOnWindowScroll ? this.hideMenus : e.noop,
             )
-            .bind('resize.selectBox', this.hideMenus),
-        s.attr('disabled') && o.addClass('selectBox-disabled'),
-        s.bind('click.selectBox', function (e) {
+            .bind("resize.selectBox", this.hideMenus),
+        s.attr("disabled") && o.addClass("selectBox-disabled"),
+        s.bind("click.selectBox", function (e) {
           o.focus(), e.preventDefault();
         }),
         a)
       ) {
         if (
-          ((t = this.getOptions('inline')),
+          ((t = this.getOptions("inline")),
           o
             .append(t)
-            .data('selectBox-options', t)
-            .addClass('selectBox-inline selectBox-menuShowing')
-            .bind('keydown.selectBox', function (e) {
+            .data("selectBox-options", t)
+            .addClass("selectBox-inline selectBox-menuShowing")
+            .bind("keydown.selectBox", function (e) {
               i.handleKeyDown(e);
             })
-            .bind('keypress.selectBox', function (e) {
+            .bind("keypress.selectBox", function (e) {
               i.handleKeyPress(e);
             })
-            .bind('mousedown.selectBox', function (t) {
+            .bind("mousedown.selectBox", function (t) {
               1 === t.which &&
-                (e(t.target).is('A.selectBox-inline') && t.preventDefault(),
-                o.hasClass('selectBox-focus') || o.focus());
+                (e(t.target).is("A.selectBox-inline") && t.preventDefault(),
+                o.hasClass("selectBox-focus") || o.focus());
             })
             .insertAfter(s),
           !s[0].style.height)
         ) {
-          var c = s.attr('size') ? parseInt(s.attr('size')) : 5,
+          var c = s.attr("size") ? parseInt(s.attr("size")) : 5,
             r = o
               .clone()
-              .removeAttr('id')
-              .css({ position: 'absolute', top: '-9999em' })
+              .removeAttr("id")
+              .css({ position: "absolute", top: "-9999em" })
               .show()
-              .appendTo('body');
-          r.find('.selectBox-options').html('<li><a> </a></li>');
+              .appendTo("body");
+          r.find(".selectBox-options").html("<li><a> </a></li>");
           var d = parseInt(
-            r.find('.selectBox-options A:first').html('&nbsp;').outerHeight()
+            r.find(".selectBox-options A:first").html("&nbsp;").outerHeight(),
           );
           r.remove(), o.height(d * c);
         }
@@ -830,46 +831,46 @@ jQuery(document).ready(function () {
       } else {
         var h = e('<span class="selectBox-label" />'),
           p = e('<span class="selectBox-arrow" />');
-        h.attr('class', this.getLabelClass()).html(this.getLabelHtml()),
-          (t = this.getOptions('dropdown')).appendTo('BODY'),
+        h.attr("class", this.getLabelClass()).html(this.getLabelHtml()),
+          (t = this.getOptions("dropdown")).appendTo("BODY"),
           o
-            .data('selectBox-options', t)
-            .addClass('selectBox-dropdown')
+            .data("selectBox-options", t)
+            .addClass("selectBox-dropdown")
             .append(h)
             .append(p)
-            .bind('mousedown.selectBox', function (e) {
+            .bind("mousedown.selectBox", function (e) {
               1 === e.which &&
-                (o.hasClass('selectBox-menuShowing')
+                (o.hasClass("selectBox-menuShowing")
                   ? i.hideMenus()
                   : (e.stopPropagation(),
                     t
-                      .data('selectBox-down-at-x', e.screenX)
-                      .data('selectBox-down-at-y', e.screenY),
+                      .data("selectBox-down-at-x", e.screenX)
+                      .data("selectBox-down-at-y", e.screenY),
                     i.showMenu()));
             })
-            .bind('keydown.selectBox', function (e) {
+            .bind("keydown.selectBox", function (e) {
               i.handleKeyDown(e);
             })
-            .bind('keypress.selectBox', function (e) {
+            .bind("keypress.selectBox", function (e) {
               i.handleKeyPress(e);
             })
-            .bind('open.selectBox', function (e, t) {
+            .bind("open.selectBox", function (e, t) {
               (t && !0 === t._selectBox) || i.showMenu();
             })
-            .bind('close.selectBox', function (e, t) {
+            .bind("close.selectBox", function (e, t) {
               (t && !0 === t._selectBox) || i.hideMenus();
             })
             .insertAfter(s);
         var x =
           o.width() -
           p.outerWidth() -
-          (parseInt(h.css('paddingLeft')) || 0) -
-          (parseInt(h.css('paddingRight')) || 0);
+          (parseInt(h.css("paddingLeft")) || 0) -
+          (parseInt(h.css("paddingRight")) || 0);
         h.width(x), this.disableSelection(o);
       }
-      s.addClass('selectBox')
-        .data('selectBox-control', o)
-        .data('selectBox-settings', n)
+      s.addClass("selectBox")
+        .data("selectBox-control", o)
+        .data("selectBox-settings", n)
         .hide();
     }),
     (t.prototype.getOptions = function (t) {
@@ -878,238 +879,238 @@ jQuery(document).ready(function () {
         a = this,
         n = function (t, s) {
           return (
-            t.children('OPTION, OPTGROUP').each(function () {
-              if (e(this).is('OPTION'))
+            t.children("OPTION, OPTGROUP").each(function () {
+              if (e(this).is("OPTION"))
                 e(this).length > 0
                   ? a.generateOptions(e(this), s)
-                  : s.append('<li> </li>');
+                  : s.append("<li> </li>");
               else {
                 var t = e('<li class="selectBox-optgroup" />');
-                t.text(e(this).attr('label')), s.append(t), (s = n(e(this), s));
+                t.text(e(this).attr("label")), s.append(t), (s = n(e(this), s));
               }
             }),
             s
           );
         };
       switch (t) {
-        case 'inline':
+        case "inline":
           return (
             (s = e('<ul class="selectBox-options" />')),
             (s = n(o, s))
-              .find('A')
-              .bind('mouseover.selectBox', function (t) {
+              .find("A")
+              .bind("mouseover.selectBox", function (t) {
                 a.addHover(e(this).parent());
               })
-              .bind('mouseout.selectBox', function (t) {
+              .bind("mouseout.selectBox", function (t) {
                 a.removeHover(e(this).parent());
               })
-              .bind('mousedown.selectBox', function (e) {
+              .bind("mousedown.selectBox", function (e) {
                 1 === e.which &&
                   (e.preventDefault(),
-                  o.selectBox('control').hasClass('selectBox-active') ||
-                    o.selectBox('control').focus());
+                  o.selectBox("control").hasClass("selectBox-active") ||
+                    o.selectBox("control").focus());
               })
-              .bind('mouseup.selectBox', function (t) {
+              .bind("mouseup.selectBox", function (t) {
                 1 === t.which &&
                   (a.hideMenus(), a.selectOption(e(this).parent(), t));
               }),
             this.disableSelection(s),
             s
           );
-        case 'dropdown':
+        case "dropdown":
           (s = e('<ul class="selectBox-dropdown-menu selectBox-options" />')),
             (s = n(o, s))
-              .data('selectBox-select', o)
-              .css('display', 'none')
-              .appendTo('BODY')
-              .find('A')
-              .bind('mousedown.selectBox', function (t) {
+              .data("selectBox-select", o)
+              .css("display", "none")
+              .appendTo("BODY")
+              .find("A")
+              .bind("mousedown.selectBox", function (t) {
                 1 === t.which &&
                   (t.preventDefault(),
-                  t.screenX === s.data('selectBox-down-at-x') &&
-                    t.screenY === s.data('selectBox-down-at-y') &&
+                  t.screenX === s.data("selectBox-down-at-x") &&
+                    t.screenY === s.data("selectBox-down-at-y") &&
                     (s
-                      .removeData('selectBox-down-at-x')
-                      .removeData('selectBox-down-at-y'),
+                      .removeData("selectBox-down-at-x")
+                      .removeData("selectBox-down-at-y"),
                     /android/i.test(navigator.userAgent.toLowerCase()) &&
                       /chrome/i.test(navigator.userAgent.toLowerCase()) &&
                       a.selectOption(e(this).parent()),
                     a.hideMenus()));
               })
-              .bind('mouseup.selectBox', function (t) {
+              .bind("mouseup.selectBox", function (t) {
                 1 === t.which &&
-                  ((t.screenX === s.data('selectBox-down-at-x') &&
-                    t.screenY === s.data('selectBox-down-at-y')) ||
+                  ((t.screenX === s.data("selectBox-down-at-x") &&
+                    t.screenY === s.data("selectBox-down-at-y")) ||
                     (s
-                      .removeData('selectBox-down-at-x')
-                      .removeData('selectBox-down-at-y'),
+                      .removeData("selectBox-down-at-x")
+                      .removeData("selectBox-down-at-y"),
                     a.selectOption(e(this).parent()),
                     a.hideMenus()));
               })
-              .bind('mouseover.selectBox', function (t) {
+              .bind("mouseover.selectBox", function (t) {
                 a.addHover(e(this).parent());
               })
-              .bind('mouseout.selectBox', function (t) {
+              .bind("mouseout.selectBox", function (t) {
                 a.removeHover(e(this).parent());
               });
-          var l = o.attr('class') || '';
-          if ('' !== l) {
-            l = l.split(' ');
+          var l = o.attr("class") || "";
+          if ("" !== l) {
+            l = l.split(" ");
             for (var i = 0; i < l.length; i++)
-              s.addClass(l[i] + '-selectBox-dropdown-menu');
+              s.addClass(l[i] + "-selectBox-dropdown-menu");
           }
           return this.disableSelection(s), s;
       }
     }),
     (t.prototype.getLabelClass = function () {
       return (
-        'selectBox-label ' +
-        (e(this.selectElement).find('OPTION:selected').attr('class') || '')
-      ).replace(/\s+$/, '');
+        "selectBox-label " +
+        (e(this.selectElement).find("OPTION:selected").attr("class") || "")
+      ).replace(/\s+$/, "");
     }),
     (t.prototype.getLabelHtml = function () {
-      var t = e(this.selectElement).find('OPTION:selected');
+      var t = e(this.selectElement).find("OPTION:selected");
       return (
-        (t.data('icon')
+        (t.data("icon")
           ? '<i class="fa fa-' +
-            t.data('icon') +
+            t.data("icon") +
             ' fa-fw fa-lg"></i> ' +
             t.text()
-          : t.text()) || ' '
+          : t.text()) || " "
       );
     }),
     (t.prototype.setLabel = function () {
-      var t = e(this.selectElement).data('selectBox-control');
+      var t = e(this.selectElement).data("selectBox-control");
       t &&
         t
-          .find('.selectBox-label')
-          .attr('class', this.getLabelClass())
+          .find(".selectBox-label")
+          .attr("class", this.getLabelClass())
           .html(this.getLabelHtml());
     }),
     (t.prototype.destroy = function () {
       var t = e(this.selectElement),
-        s = t.data('selectBox-control');
+        s = t.data("selectBox-control");
       s &&
-        (s.data('selectBox-options').remove(),
+        (s.data("selectBox-options").remove(),
         s.remove(),
         t
-          .removeClass('selectBox')
-          .removeData('selectBox-control')
-          .data('selectBox-control', null)
-          .removeData('selectBox-settings')
-          .data('selectBox-settings', null)
+          .removeClass("selectBox")
+          .removeData("selectBox-control")
+          .data("selectBox-control", null)
+          .removeData("selectBox-settings")
+          .data("selectBox-settings", null)
           .show());
     }),
     (t.prototype.refresh = function () {
       var t,
-        s = e(this.selectElement).data('selectBox-control'),
-        o = s.hasClass('selectBox-dropdown') ? 'dropdown' : 'inline';
+        s = e(this.selectElement).data("selectBox-control"),
+        o = s.hasClass("selectBox-dropdown") ? "dropdown" : "inline";
       switch (
-        (s.data('selectBox-options').remove(),
+        (s.data("selectBox-options").remove(),
         (t = this.getOptions(o)),
-        s.data('selectBox-options', t),
+        s.data("selectBox-options", t),
         o)
       ) {
-        case 'inline':
+        case "inline":
           s.append(t);
           break;
-        case 'dropdown':
-          this.setLabel(), e('BODY').append(t);
+        case "dropdown":
+          this.setLabel(), e("BODY").append(t);
       }
-      'dropdown' === o &&
-        s.hasClass('selectBox-menuShowing') &&
+      "dropdown" === o &&
+        s.hasClass("selectBox-menuShowing") &&
         this.showMenu();
     }),
     (t.prototype.showMenu = function () {
       var t = this,
         s = e(this.selectElement),
-        o = s.data('selectBox-control'),
-        a = s.data('selectBox-settings'),
-        n = o.data('selectBox-options');
-      if (o.hasClass('selectBox-disabled')) return !1;
+        o = s.data("selectBox-control"),
+        a = s.data("selectBox-settings"),
+        n = o.data("selectBox-options");
+      if (o.hasClass("selectBox-disabled")) return !1;
       this.hideMenus();
-      var l = parseInt(o.css('borderBottomWidth')) || 0,
-        i = parseInt(o.css('borderTopWidth')) || 0,
+      var l = parseInt(o.css("borderBottomWidth")) || 0,
+        i = parseInt(o.css("borderTopWidth")) || 0,
         c = o.offset(),
         r = a.topPositionCorrelation ? a.topPositionCorrelation : 0,
         d = a.bottomPositionCorrelation ? a.bottomPositionCorrelation : 0,
         h = n.outerHeight(),
         p = o.outerHeight(),
-        x = parseInt(n.css('max-height')),
+        x = parseInt(n.css("max-height")),
         u = e(window).scrollTop(),
         f = c.top - u,
         B = e(window).height() - (f + p),
         m = f > B && (null == a.keepInViewport || a.keepInViewport),
-        v = o.innerWidth() >= n.innerWidth() ? o.innerWidth() + 'px' : 'auto',
+        v = o.innerWidth() >= n.innerWidth() ? o.innerWidth() + "px" : "auto",
         g = m ? c.top - h + i + r : c.top + p - l - d;
       if (f < x && B < x)
         if (m) {
           var b = x - (f - 5);
-          n.css({ 'max-height': x - b + 'px' }), (g += b);
+          n.css({ "max-height": x - b + "px" }), (g += b);
         } else {
           b = x - (B - 5);
-          n.css({ 'max-height': x - b + 'px' });
+          n.css({ "max-height": x - b + "px" });
         }
       if (
-        (n.data('posTop', m),
+        (n.data("posTop", m),
         n
           .width(v)
           .css({ top: g, left: o.offset().left })
           .addClass(
-            'selectBox-options selectBox-options-' + (m ? 'top' : 'bottom')
+            "selectBox-options selectBox-options-" + (m ? "top" : "bottom"),
           ),
         a.styleClass && n.addClass(a.styleClass),
-        s.triggerHandler('beforeopen'))
+        s.triggerHandler("beforeopen"))
       )
         return !1;
       var w = function () {
-        s.triggerHandler('open', { _selectBox: !0 });
+        s.triggerHandler("open", { _selectBox: !0 });
       };
       switch (a.menuTransition) {
-        case 'fade':
+        case "fade":
           n.fadeIn(a.menuSpeed, w);
           break;
-        case 'slide':
+        case "slide":
           n.slideDown(a.menuSpeed, w);
           break;
         default:
           n.show(a.menuSpeed, w);
       }
       a.menuSpeed || w();
-      var C = n.find('.selectBox-selected:first');
+      var C = n.find(".selectBox-selected:first");
       this.keepOptionInView(C, !0),
         this.addHover(C),
         o.addClass(
-          'selectBox-menuShowing selectBox-menuShowing-' +
-            (m ? 'top' : 'bottom')
+          "selectBox-menuShowing selectBox-menuShowing-" +
+            (m ? "top" : "bottom"),
         ),
-        e(document).bind('mousedown.selectBox', function (s) {
+        e(document).bind("mousedown.selectBox", function (s) {
           if (1 === s.which) {
-            if (e(s.target).parents().andSelf().hasClass('selectBox-options'))
+            if (e(s.target).parents().andSelf().hasClass("selectBox-options"))
               return;
             t.hideMenus();
           }
         });
     }),
     (t.prototype.hideMenus = function () {
-      0 !== e('.selectBox-dropdown-menu:visible').length &&
-        (e(document).unbind('mousedown.selectBox'),
-        e('.selectBox-dropdown-menu').each(function () {
+      0 !== e(".selectBox-dropdown-menu:visible").length &&
+        (e(document).unbind("mousedown.selectBox"),
+        e(".selectBox-dropdown-menu").each(function () {
           var t = e(this),
-            s = t.data('selectBox-select'),
-            o = s.data('selectBox-control'),
-            a = s.data('selectBox-settings'),
-            n = t.data('posTop');
-          if (s.triggerHandler('beforeclose')) return !1;
+            s = t.data("selectBox-select"),
+            o = s.data("selectBox-control"),
+            a = s.data("selectBox-settings"),
+            n = t.data("posTop");
+          if (s.triggerHandler("beforeclose")) return !1;
           var l = function () {
-            s.triggerHandler('close', { _selectBox: !0 });
+            s.triggerHandler("close", { _selectBox: !0 });
           };
           if (a) {
             switch (a.menuTransition) {
-              case 'fade':
+              case "fade":
                 t.fadeOut(a.menuSpeed, l);
                 break;
-              case 'slide':
+              case "slide":
                 t.slideUp(a.menuSpeed, l);
                 break;
               default:
@@ -1117,75 +1118,75 @@ jQuery(document).ready(function () {
             }
             a.menuSpeed || l(),
               o.removeClass(
-                'selectBox-menuShowing selectBox-menuShowing-' +
-                  (n ? 'top' : 'bottom')
+                "selectBox-menuShowing selectBox-menuShowing-" +
+                  (n ? "top" : "bottom"),
               );
           } else
             e(this).hide(),
-              e(this).triggerHandler('close', { _selectBox: !0 }),
+              e(this).triggerHandler("close", { _selectBox: !0 }),
               e(this).removeClass(
-                'selectBox-menuShowing selectBox-menuShowing-' +
-                  (n ? 'top' : 'bottom')
+                "selectBox-menuShowing selectBox-menuShowing-" +
+                  (n ? "top" : "bottom"),
               );
-          t.css('max-height', ''),
-            t.removeClass('selectBox-options-' + (n ? 'top' : 'bottom')),
-            t.data('posTop', !1);
+          t.css("max-height", ""),
+            t.removeClass("selectBox-options-" + (n ? "top" : "bottom")),
+            t.data("posTop", !1);
         }));
     }),
     (t.prototype.selectOption = function (t, s) {
       var o = e(this.selectElement);
       t = e(t);
       var a,
-        n = o.data('selectBox-control');
-      o.data('selectBox-settings');
-      if (n.hasClass('selectBox-disabled')) return !1;
-      if (0 === t.length || t.hasClass('selectBox-disabled')) return !1;
-      o.attr('multiple')
-        ? s.shiftKey && n.data('selectBox-last-selected')
-          ? (t.toggleClass('selectBox-selected'),
+        n = o.data("selectBox-control");
+      o.data("selectBox-settings");
+      if (n.hasClass("selectBox-disabled")) return !1;
+      if (0 === t.length || t.hasClass("selectBox-disabled")) return !1;
+      o.attr("multiple")
+        ? s.shiftKey && n.data("selectBox-last-selected")
+          ? (t.toggleClass("selectBox-selected"),
             (a = (a =
-              t.index() > n.data('selectBox-last-selected').index()
+              t.index() > n.data("selectBox-last-selected").index()
                 ? t
                     .siblings()
-                    .slice(n.data('selectBox-last-selected').index(), t.index())
+                    .slice(n.data("selectBox-last-selected").index(), t.index())
                 : t
                     .siblings()
                     .slice(
                       t.index(),
-                      n.data('selectBox-last-selected').index()
-                    )).not('.selectBox-optgroup, .selectBox-disabled')),
-            t.hasClass('selectBox-selected')
-              ? a.addClass('selectBox-selected')
-              : a.removeClass('selectBox-selected'))
+                      n.data("selectBox-last-selected").index(),
+                    )).not(".selectBox-optgroup, .selectBox-disabled")),
+            t.hasClass("selectBox-selected")
+              ? a.addClass("selectBox-selected")
+              : a.removeClass("selectBox-selected"))
           : (this.isMac && s.metaKey) || (!this.isMac && s.ctrlKey)
-            ? t.toggleClass('selectBox-selected')
-            : (t.siblings().removeClass('selectBox-selected'),
-              t.addClass('selectBox-selected'))
-        : (t.siblings().removeClass('selectBox-selected'),
-          t.addClass('selectBox-selected'));
-      n.hasClass('selectBox-dropdown') &&
-        n.find('.selectBox-label').html(t.html());
+            ? t.toggleClass("selectBox-selected")
+            : (t.siblings().removeClass("selectBox-selected"),
+              t.addClass("selectBox-selected"))
+        : (t.siblings().removeClass("selectBox-selected"),
+          t.addClass("selectBox-selected"));
+      n.hasClass("selectBox-dropdown") &&
+        n.find(".selectBox-label").html(t.html());
       var l = 0,
         i = [];
       return (
-        o.attr('multiple')
-          ? n.find('.selectBox-selected A').each(function () {
-              i[l++] = e(this).attr('rel');
+        o.attr("multiple")
+          ? n.find(".selectBox-selected A").each(function () {
+              i[l++] = e(this).attr("rel");
             })
-          : (i = t.find('A').attr('rel')),
-        n.data('selectBox-last-selected', t),
-        o.val() !== i && (o.val(i), this.setLabel(), o.trigger('change')),
+          : (i = t.find("A").attr("rel")),
+        n.data("selectBox-last-selected", t),
+        o.val() !== i && (o.val(i), this.setLabel(), o.trigger("change")),
         !0
       );
     }),
     (t.prototype.addHover = function (t) {
       (t = e(t)),
         e(this.selectElement)
-          .data('selectBox-control')
-          .data('selectBox-options')
-          .find('.selectBox-hover')
-          .removeClass('selectBox-hover'),
-        t.addClass('selectBox-hover');
+          .data("selectBox-control")
+          .data("selectBox-options")
+          .find(".selectBox-hover")
+          .removeClass("selectBox-hover"),
+        t.addClass("selectBox-hover");
     }),
     (t.prototype.getSelectElement = function () {
       return this.selectElement;
@@ -1193,21 +1194,21 @@ jQuery(document).ready(function () {
     (t.prototype.removeHover = function (t) {
       (t = e(t)),
         e(this.selectElement)
-          .data('selectBox-control')
-          .data('selectBox-options')
-          .find('.selectBox-hover')
-          .removeClass('selectBox-hover');
+          .data("selectBox-control")
+          .data("selectBox-options")
+          .find(".selectBox-hover")
+          .removeClass("selectBox-hover");
     }),
     (t.prototype.keepOptionInView = function (t, s) {
       if (t && 0 !== t.length) {
-        var o = e(this.selectElement).data('selectBox-control'),
-          a = o.data('selectBox-options'),
-          n = o.hasClass('selectBox-dropdown') ? a : a.parent(),
+        var o = e(this.selectElement).data("selectBox-control"),
+          a = o.data("selectBox-options"),
+          n = o.hasClass("selectBox-dropdown") ? a : a.parent(),
           l = parseInt(t.offset().top - n.position().top),
           i = parseInt(l + t.outerHeight());
         s
           ? n.scrollTop(
-              t.offset().top - n.offset().top + n.scrollTop() - n.height() / 2
+              t.offset().top - n.offset().top + n.scrollTop() - n.height() / 2,
             )
           : (l < 0 &&
               n.scrollTop(t.offset().top - n.offset().top + n.scrollTop()),
@@ -1217,43 +1218,43 @@ jQuery(document).ready(function () {
                   t.outerHeight() -
                   n.offset().top +
                   n.scrollTop() -
-                  n.height()
+                  n.height(),
               ));
       }
     }),
     (t.prototype.handleKeyDown = function (t) {
       var s = e(this.selectElement),
-        o = s.data('selectBox-control'),
-        a = o.data('selectBox-options'),
-        n = s.data('selectBox-settings'),
+        o = s.data("selectBox-control"),
+        a = o.data("selectBox-options"),
+        n = s.data("selectBox-settings"),
         l = 0,
         i = 0;
-      if (!o.hasClass('selectBox-disabled'))
+      if (!o.hasClass("selectBox-disabled"))
         switch (t.keyCode) {
           case 8:
-            t.preventDefault(), (this.typeSearch = '');
+            t.preventDefault(), (this.typeSearch = "");
             break;
           case 9:
           case 27:
             this.hideMenus(), this.removeHover();
             break;
           case 13:
-            o.hasClass('selectBox-menuShowing')
-              ? (this.selectOption(a.find('LI.selectBox-hover:first'), t),
-                o.hasClass('selectBox-dropdown') && this.hideMenus())
+            o.hasClass("selectBox-menuShowing")
+              ? (this.selectOption(a.find("LI.selectBox-hover:first"), t),
+                o.hasClass("selectBox-dropdown") && this.hideMenus())
               : this.showMenu();
             break;
           case 38:
           case 37:
-            if ((t.preventDefault(), o.hasClass('selectBox-menuShowing'))) {
-              var c = a.find('.selectBox-hover').prev('LI');
+            if ((t.preventDefault(), o.hasClass("selectBox-menuShowing"))) {
+              var c = a.find(".selectBox-hover").prev("LI");
               for (
-                l = a.find('LI:not(.selectBox-optgroup)').length, i = 0;
+                l = a.find("LI:not(.selectBox-optgroup)").length, i = 0;
                 (0 === c.length ||
-                  c.hasClass('selectBox-disabled') ||
-                  c.hasClass('selectBox-optgroup')) &&
-                (0 === (c = c.prev('LI')).length &&
-                  (c = n.loopOptions ? a.find('LI:last') : a.find('LI:first')),
+                  c.hasClass("selectBox-disabled") ||
+                  c.hasClass("selectBox-optgroup")) &&
+                (0 === (c = c.prev("LI")).length &&
+                  (c = n.loopOptions ? a.find("LI:last") : a.find("LI:first")),
                 !(++i >= l));
 
               );
@@ -1264,15 +1265,15 @@ jQuery(document).ready(function () {
             break;
           case 40:
           case 39:
-            if ((t.preventDefault(), o.hasClass('selectBox-menuShowing'))) {
-              var r = a.find('.selectBox-hover').next('LI');
+            if ((t.preventDefault(), o.hasClass("selectBox-menuShowing"))) {
+              var r = a.find(".selectBox-hover").next("LI");
               for (
-                l = a.find('LI:not(.selectBox-optgroup)').length, i = 0;
+                l = a.find("LI:not(.selectBox-optgroup)").length, i = 0;
                 (0 === r.length ||
-                  r.hasClass('selectBox-disabled') ||
-                  r.hasClass('selectBox-optgroup')) &&
-                (0 === (r = r.next('LI')).length &&
-                  (r = n.loopOptions ? a.find('LI:first') : a.find('LI:last')),
+                  r.hasClass("selectBox-disabled") ||
+                  r.hasClass("selectBox-optgroup")) &&
+                (0 === (r = r.next("LI")).length &&
+                  (r = n.loopOptions ? a.find("LI:first") : a.find("LI:last")),
                 !(++i >= l));
 
               );
@@ -1283,10 +1284,10 @@ jQuery(document).ready(function () {
         }
     }),
     (t.prototype.handleKeyPress = function (t) {
-      var s = e(this.selectElement).data('selectBox-control'),
-        o = s.data('selectBox-options'),
+      var s = e(this.selectElement).data("selectBox-control"),
+        o = s.data("selectBox-options"),
         a = this;
-      if (!s.hasClass('selectBox-disabled'))
+      if (!s.hasClass("selectBox-disabled"))
         switch (t.keyCode) {
           case 9:
           case 27:
@@ -1297,11 +1298,11 @@ jQuery(document).ready(function () {
           case 39:
             break;
           default:
-            s.hasClass('selectBox-menuShowing') || this.showMenu(),
+            s.hasClass("selectBox-menuShowing") || this.showMenu(),
               t.preventDefault(),
               clearTimeout(this.typeTimer),
               (this.typeSearch += String.fromCharCode(t.charCode || t.keyCode)),
-              o.find('A').each(function () {
+              o.find("A").each(function () {
                 if (
                   e(this)
                     .text()
@@ -1316,151 +1317,151 @@ jQuery(document).ready(function () {
                   );
               }),
               (this.typeTimer = setTimeout(function () {
-                a.typeSearch = '';
+                a.typeSearch = "";
               }, 1e3));
         }
     }),
     (t.prototype.enable = function () {
       var t = e(this.selectElement);
-      t.prop('disabled', !1);
-      var s = t.data('selectBox-control');
-      s && s.removeClass('selectBox-disabled');
+      t.prop("disabled", !1);
+      var s = t.data("selectBox-control");
+      s && s.removeClass("selectBox-disabled");
     }),
     (t.prototype.disable = function () {
       var t = e(this.selectElement);
-      t.prop('disabled', !0);
-      var s = t.data('selectBox-control');
-      s && s.addClass('selectBox-disabled');
+      t.prop("disabled", !0);
+      var s = t.data("selectBox-control");
+      s && s.addClass("selectBox-disabled");
     }),
     (t.prototype.setValue = function (t) {
       var s = e(this.selectElement);
       s.val(t),
         null === (t = s.val()) && ((t = s.children().first().val()), s.val(t));
-      var o = s.data('selectBox-control');
+      var o = s.data("selectBox-control");
       if (o) {
-        var a = s.data('selectBox-settings'),
-          n = o.data('selectBox-options');
+        var a = s.data("selectBox-settings"),
+          n = o.data("selectBox-options");
         this.setLabel(),
-          n.find('.selectBox-selected').removeClass('selectBox-selected'),
-          n.find('A').each(function () {
-            if ('object' == typeof t)
+          n.find(".selectBox-selected").removeClass("selectBox-selected"),
+          n.find("A").each(function () {
+            if ("object" == typeof t)
               for (var s = 0; s < t.length; s++)
-                e(this).attr('rel') == t[s] &&
-                  e(this).parent().addClass('selectBox-selected');
+                e(this).attr("rel") == t[s] &&
+                  e(this).parent().addClass("selectBox-selected");
             else
-              e(this).attr('rel') == t &&
-                e(this).parent().addClass('selectBox-selected');
+              e(this).attr("rel") == t &&
+                e(this).parent().addClass("selectBox-selected");
           }),
           a.change && a.change.call(s);
       }
     }),
     (t.prototype.disableSelection = function (t) {
       e(t)
-        .css('MozUserSelect', 'none')
-        .bind('selectstart', function (e) {
+        .css("MozUserSelect", "none")
+        .bind("selectstart", function (e) {
           e.preventDefault();
         });
     }),
     (t.prototype.generateOptions = function (t, s) {
-      var o = e('<li />'),
-        a = e('<a />');
-      o.addClass(t.attr('class')),
+      var o = e("<li />"),
+        a = e("<a />");
+      o.addClass(t.attr("class")),
         o.data(t.data()),
-        t.data('icon')
+        t.data("icon")
           ? a
-              .attr('rel', t.val())
+              .attr("rel", t.val())
               .html(
                 '<i class="fa fa-' +
-                  t.data('icon') +
+                  t.data("icon") +
                   ' fa-fw fa-lg"></i> ' +
-                  t.text()
+                  t.text(),
               )
-          : a.attr('rel', t.val()).text(t.text()),
+          : a.attr("rel", t.val()).text(t.text()),
         o.append(a),
-        t.attr('disabled') && o.addClass('selectBox-disabled'),
-        t.attr('selected') && o.addClass('selectBox-selected'),
+        t.attr("disabled") && o.addClass("selectBox-disabled"),
+        t.attr("selected") && o.addClass("selectBox-selected"),
         s.append(o);
     }),
     e.extend(e.fn, {
       setOptions: function (t) {
         var s = e(this),
-          o = s.data('selectBox-control');
+          o = s.data("selectBox-control");
         switch (typeof t) {
-          case 'string':
+          case "string":
             s.html(t);
             break;
-          case 'object':
-            for (var a in (s.html(''), t))
+          case "object":
+            for (var a in (s.html(""), t))
               if (null !== t[a])
-                if ('object' == typeof t[a]) {
+                if ("object" == typeof t[a]) {
                   var n = e('<optgroup label="' + a + '" />');
                   for (var l in t[a])
                     n.append(
-                      '<option value="' + l + '">' + t[a][l] + '</option>'
+                      '<option value="' + l + '">' + t[a][l] + "</option>",
                     );
                   s.append(n);
                 } else {
-                  var i = e('<option value="' + a + '">' + t[a] + '</option>');
+                  var i = e('<option value="' + a + '">' + t[a] + "</option>");
                   s.append(i);
                 }
         }
-        o && e(this).selectBox('refresh');
+        o && e(this).selectBox("refresh");
       },
       selectBox: function (s, o) {
         var a;
         switch (s) {
-          case 'control':
-            return e(this).data('selectBox-control');
-          case 'settings':
-            if (!o) return e(this).data('selectBox-settings');
+          case "control":
+            return e(this).data("selectBox-control");
+          case "settings":
+            if (!o) return e(this).data("selectBox-settings");
             e(this).each(function () {
               e(this).data(
-                'selectBox-settings',
-                e.extend(!0, e(this).data('selectBox-settings'), o)
+                "selectBox-settings",
+                e.extend(!0, e(this).data("selectBox-settings"), o),
               );
             });
             break;
-          case 'options':
+          case "options":
             if (void 0 === o)
               return e(this)
-                .data('selectBox-control')
-                .data('selectBox-options');
+                .data("selectBox-control")
+                .data("selectBox-options");
             e(this).each(function () {
               e(this).setOptions(o);
             });
             break;
-          case 'value':
+          case "value":
             if (void 0 === o) return e(this).val();
             e(this).each(function () {
-              (a = e(this).data('selectBox')) && a.setValue(o);
+              (a = e(this).data("selectBox")) && a.setValue(o);
             });
             break;
-          case 'refresh':
+          case "refresh":
             e(this).each(function () {
-              (a = e(this).data('selectBox')) && a.refresh();
+              (a = e(this).data("selectBox")) && a.refresh();
             });
             break;
-          case 'enable':
+          case "enable":
             e(this).each(function () {
-              (a = e(this).data('selectBox')) && a.enable(this);
+              (a = e(this).data("selectBox")) && a.enable(this);
             });
             break;
-          case 'disable':
+          case "disable":
             e(this).each(function () {
-              (a = e(this).data('selectBox')) && a.disable();
+              (a = e(this).data("selectBox")) && a.disable();
             });
             break;
-          case 'destroy':
+          case "destroy":
             e(this).each(function () {
-              (a = e(this).data('selectBox')) &&
-                (a.destroy(), e(this).data('selectBox', null));
+              (a = e(this).data("selectBox")) &&
+                (a.destroy(), e(this).data("selectBox", null));
             });
             break;
-          case 'instance':
-            return e(this).data('selectBox');
+          case "instance":
+            return e(this).data("selectBox");
           default:
             e(this).each(function (o, a) {
-              e(a).data('selectBox') || e(a).data('selectBox', new t(a, s));
+              e(a).data("selectBox") || e(a).data("selectBox", new t(a, s));
             });
         }
         return e(this);
@@ -1472,12 +1473,12 @@ jQuery(document).ready(function () {
  * http://dimsemenov.com/plugins/magnific-popup/
  * Copyright (c) 2016 Dmitry Semenov; */
 !(function (a) {
-  'function' == typeof define && define.amd
-    ? define(['jquery'], a)
+  "function" == typeof define && define.amd
+    ? define(["jquery"], a)
     : a(
-        'object' == typeof exports
-          ? require('jquery')
-          : window.jQuery || window.Zepto
+        "object" == typeof exports
+          ? require("jquery")
+          : window.jQuery || window.Zepto,
       );
 })(function (a) {
   var b,
@@ -1486,18 +1487,18 @@ jQuery(document).ready(function () {
     e,
     f,
     g,
-    h = 'Close',
-    i = 'BeforeClose',
-    j = 'AfterClose',
-    k = 'BeforeAppend',
-    l = 'MarkupParse',
-    m = 'Open',
-    n = 'Change',
-    o = 'mfp',
-    p = '.' + o,
-    q = 'mfp-ready',
-    r = 'mfp-removing',
-    s = 'mfp-prevent-close',
+    h = "Close",
+    i = "BeforeClose",
+    j = "AfterClose",
+    k = "BeforeAppend",
+    l = "MarkupParse",
+    m = "Open",
+    n = "Change",
+    o = "mfp",
+    p = "." + o,
+    q = "mfp-ready",
+    r = "mfp-removing",
+    s = "mfp-prevent-close",
     t = function () {},
     u = !!window.jQuery,
     v = a(window),
@@ -1505,9 +1506,9 @@ jQuery(document).ready(function () {
       b.ev.on(o + a + p, c);
     },
     x = function (b, c, d, e) {
-      var f = document.createElement('div');
+      var f = document.createElement("div");
       return (
-        (f.className = 'mfp-' + b),
+        (f.className = "mfp-" + b),
         d && (f.innerHTML = d),
         e ? c && c.appendChild(f) : ((f = a(f)), c && f.appendTo(c)),
         f
@@ -1524,7 +1525,7 @@ jQuery(document).ready(function () {
       return (
         (c === g && b.currTemplate.closeBtn) ||
           ((b.currTemplate.closeBtn = a(
-            b.st.closeMarkup.replace('%title%', b.st.tClose)
+            b.st.closeMarkup.replace("%title%", b.st.tClose),
           )),
           (g = c)),
         b.currTemplate.closeBtn
@@ -1535,10 +1536,10 @@ jQuery(document).ready(function () {
         ((b = new t()), b.init(), (a.magnificPopup.instance = b));
     },
     B = function () {
-      var a = document.createElement('p').style,
-        b = ['ms', 'O', 'Moz', 'Webkit'];
+      var a = document.createElement("p").style,
+        b = ["ms", "O", "Moz", "Webkit"];
       if (void 0 !== a.transition) return !0;
-      for (; b.length; ) if (b.pop() + 'Transition' in a) return !0;
+      for (; b.length; ) if (b.pop() + "Transition" in a) return !0;
       return !1;
     };
   (t.prototype = {
@@ -1553,7 +1554,7 @@ jQuery(document).ready(function () {
           b.isAndroid ||
           b.isIOS ||
           /(Opera Mini)|Kindle|webOS|BlackBerry|(Opera Mobi)|(Windows Phone)|IEMobile/i.test(
-            navigator.userAgent
+            navigator.userAgent,
           )),
         (d = a(document)),
         (b.popupsCache = {});
@@ -1574,7 +1575,7 @@ jQuery(document).ready(function () {
           (b.index = c.index || 0);
       if (b.isOpen) return void b.updateItemHTML();
       (b.types = []),
-        (f = ''),
+        (f = ""),
         c.mainEl && c.mainEl.length ? (b.ev = c.mainEl.eq(0)) : (b.ev = d),
         c.key
           ? (b.popupsCache[c.key] || (b.popupsCache[c.key] = {}),
@@ -1582,7 +1583,7 @@ jQuery(document).ready(function () {
           : (b.currTemplate = {}),
         (b.st = a.extend(!0, {}, a.magnificPopup.defaults, c)),
         (b.fixedContentPos =
-          'auto' === b.st.fixedContentPos
+          "auto" === b.st.fixedContentPos
             ? !b.probablyMobile
             : b.st.fixedContentPos),
         b.st.modal &&
@@ -1591,50 +1592,50 @@ jQuery(document).ready(function () {
           (b.st.showCloseBtn = !1),
           (b.st.enableEscapeKey = !1)),
         b.bgOverlay ||
-          ((b.bgOverlay = x('bg').on('click' + p, function () {
+          ((b.bgOverlay = x("bg").on("click" + p, function () {
             b.close();
           })),
-          (b.wrap = x('wrap')
-            .attr('tabindex', -1)
-            .on('click' + p, function (a) {
+          (b.wrap = x("wrap")
+            .attr("tabindex", -1)
+            .on("click" + p, function (a) {
               b._checkIfClose(a.target) && b.close();
             })),
-          (b.container = x('container', b.wrap))),
-        (b.contentContainer = x('content')),
+          (b.container = x("container", b.wrap))),
+        (b.contentContainer = x("content")),
         b.st.preloader &&
-          (b.preloader = x('preloader', b.container, b.st.tLoading));
+          (b.preloader = x("preloader", b.container, b.st.tLoading));
       var i = a.magnificPopup.modules;
       for (e = 0; e < i.length; e++) {
         var j = i[e];
-        (j = j.charAt(0).toUpperCase() + j.slice(1)), b['init' + j].call(b);
+        (j = j.charAt(0).toUpperCase() + j.slice(1)), b["init" + j].call(b);
       }
-      y('BeforeOpen'),
+      y("BeforeOpen"),
         b.st.showCloseBtn &&
           (b.st.closeBtnInside
             ? (w(l, function (a, b, c, d) {
                 c.close_replaceWith = z(d.type);
               }),
-              (f += ' mfp-close-btn-in'))
+              (f += " mfp-close-btn-in"))
             : b.wrap.append(z())),
-        b.st.alignTop && (f += ' mfp-align-top'),
+        b.st.alignTop && (f += " mfp-align-top"),
         b.fixedContentPos
           ? b.wrap.css({
               overflow: b.st.overflowY,
-              overflowX: 'hidden',
+              overflowX: "hidden",
               overflowY: b.st.overflowY,
             })
-          : b.wrap.css({ top: v.scrollTop(), position: 'absolute' }),
+          : b.wrap.css({ top: v.scrollTop(), position: "absolute" }),
         (b.st.fixedBgPos === !1 ||
-          ('auto' === b.st.fixedBgPos && !b.fixedContentPos)) &&
-          b.bgOverlay.css({ height: d.height(), position: 'absolute' }),
+          ("auto" === b.st.fixedBgPos && !b.fixedContentPos)) &&
+          b.bgOverlay.css({ height: d.height(), position: "absolute" }),
         b.st.enableEscapeKey &&
-          d.on('keyup' + p, function (a) {
+          d.on("keyup" + p, function (a) {
             27 === a.keyCode && b.close();
           }),
-        v.on('resize' + p, function () {
+        v.on("resize" + p, function () {
           b.updateSize();
         }),
-        b.st.closeOnContentClick || (f += ' mfp-auto-cursor'),
+        b.st.closeOnContentClick || (f += " mfp-auto-cursor"),
         f && b.wrap.addClass(f);
       var k = (b.wH = v.height()),
         n = {};
@@ -1644,22 +1645,22 @@ jQuery(document).ready(function () {
       }
       b.fixedContentPos &&
         (b.isIE7
-          ? a('body, html').css('overflow', 'hidden')
-          : (n.overflow = 'hidden'));
+          ? a("body, html").css("overflow", "hidden")
+          : (n.overflow = "hidden"));
       var r = b.st.mainClass;
       return (
-        b.isIE7 && (r += ' mfp-ie7'),
+        b.isIE7 && (r += " mfp-ie7"),
         r && b._addClassToMFP(r),
         b.updateItemHTML(),
-        y('BuildControls'),
-        a('html').css(n),
+        y("BuildControls"),
+        a("html").css(n),
         b.bgOverlay.add(b.wrap).prependTo(b.st.prependTo || a(document.body)),
         (b._lastFocusedEl = document.activeElement),
         setTimeout(function () {
           b.content
             ? (b._addClassToMFP(q), b._setFocus())
             : b.bgOverlay.addClass(q),
-            d.on('focusin' + p, b._onFocusIn);
+            d.on("focusin" + p, b._onFocusIn);
         }, 16),
         (b.isOpen = !0),
         b.updateSize(k),
@@ -1680,24 +1681,24 @@ jQuery(document).ready(function () {
     },
     _close: function () {
       y(h);
-      var c = r + ' ' + q + ' ';
+      var c = r + " " + q + " ";
       if (
         (b.bgOverlay.detach(),
         b.wrap.detach(),
         b.container.empty(),
-        b.st.mainClass && (c += b.st.mainClass + ' '),
+        b.st.mainClass && (c += b.st.mainClass + " "),
         b._removeClassFromMFP(c),
         b.fixedContentPos)
       ) {
-        var e = { marginRight: '' };
-        b.isIE7 ? a('body, html').css('overflow', '') : (e.overflow = ''),
-          a('html').css(e);
+        var e = { marginRight: "" };
+        b.isIE7 ? a("body, html").css("overflow", "") : (e.overflow = ""),
+          a("html").css(e);
       }
-      d.off('keyup' + p + ' focusin' + p),
+      d.off("keyup" + p + " focusin" + p),
         b.ev.off(p),
-        b.wrap.attr('class', 'mfp-wrap').removeAttr('style'),
-        b.bgOverlay.attr('class', 'mfp-bg'),
-        b.container.attr('class', 'mfp-container'),
+        b.wrap.attr("class", "mfp-wrap").removeAttr("style"),
+        b.bgOverlay.attr("class", "mfp-bg"),
+        b.container.attr("class", "mfp-container"),
         !b.st.showCloseBtn ||
           (b.st.closeBtnInside && b.currTemplate[b.currItem.type] !== !0) ||
           (b.currTemplate.closeBtn && b.currTemplate.closeBtn.detach()),
@@ -1712,9 +1713,9 @@ jQuery(document).ready(function () {
       if (b.isIOS) {
         var c = document.documentElement.clientWidth / window.innerWidth,
           d = window.innerHeight * c;
-        b.wrap.css('height', d), (b.wH = d);
+        b.wrap.css("height", d), (b.wH = d);
       } else b.wH = a || v.height();
-      b.fixedContentPos || b.wrap.css('height', b.wH), y('Resize');
+      b.fixedContentPos || b.wrap.css("height", b.wH), y("Resize");
     },
     updateItemHTML: function () {
       var c = b.items[b.index];
@@ -1723,35 +1724,35 @@ jQuery(document).ready(function () {
         c.parsed || (c = b.parseEl(b.index));
       var d = c.type;
       if (
-        (y('BeforeChange', [b.currItem ? b.currItem.type : '', d]),
+        (y("BeforeChange", [b.currItem ? b.currItem.type : "", d]),
         (b.currItem = c),
         !b.currTemplate[d])
       ) {
         var f = b.st[d] ? b.st[d].markup : !1;
-        y('FirstMarkupParse', f),
+        y("FirstMarkupParse", f),
           f ? (b.currTemplate[d] = a(f)) : (b.currTemplate[d] = !0);
       }
-      e && e !== c.type && b.container.removeClass('mfp-' + e + '-holder');
-      var g = b['get' + d.charAt(0).toUpperCase() + d.slice(1)](
+      e && e !== c.type && b.container.removeClass("mfp-" + e + "-holder");
+      var g = b["get" + d.charAt(0).toUpperCase() + d.slice(1)](
         c,
-        b.currTemplate[d]
+        b.currTemplate[d],
       );
       b.appendContent(g, d),
         (c.preloaded = !0),
         y(n, c),
         (e = c.type),
         b.container.prepend(b.contentContainer),
-        y('AfterChange');
+        y("AfterChange");
     },
     appendContent: function (a, c) {
       (b.content = a),
         a
           ? b.st.showCloseBtn && b.st.closeBtnInside && b.currTemplate[c] === !0
-            ? b.content.find('.mfp-close').length || b.content.append(z())
+            ? b.content.find(".mfp-close").length || b.content.append(z())
             : (b.content = a)
-          : (b.content = ''),
+          : (b.content = ""),
         y(k),
-        b.container.addClass('mfp-' + c + '-holder'),
+        b.container.addClass("mfp-" + c + "-holder"),
         b.contentContainer.append(b.content);
     },
     parseEl: function (c) {
@@ -1764,19 +1765,19 @@ jQuery(document).ready(function () {
         e.el)
       ) {
         for (var f = b.types, g = 0; g < f.length; g++)
-          if (e.el.hasClass('mfp-' + f[g])) {
+          if (e.el.hasClass("mfp-" + f[g])) {
             d = f[g];
             break;
           }
-        (e.src = e.el.attr('data-mfp-src')),
-          e.src || (e.src = e.el.attr('href'));
+        (e.src = e.el.attr("data-mfp-src")),
+          e.src || (e.src = e.el.attr("href"));
       }
       return (
-        (e.type = d || b.st.type || 'inline'),
+        (e.type = d || b.st.type || "inline"),
         (e.index = c),
         (e.parsed = !0),
         (b.items[c] = e),
-        y('ElementParse', e),
+        y("ElementParse", e),
         b.items[c]
       );
     },
@@ -1785,7 +1786,7 @@ jQuery(document).ready(function () {
         (d.mfpEl = this), b._openClick(d, a, c);
       };
       c || (c = {});
-      var e = 'click.magnificPopup';
+      var e = "click.magnificPopup";
       (c.mainEl = a),
         c.items
           ? ((c.isObj = !0), a.off(e).on(e, d))
@@ -1817,17 +1818,17 @@ jQuery(document).ready(function () {
     },
     updateStatus: function (a, d) {
       if (b.preloader) {
-        c !== a && b.container.removeClass('mfp-s-' + c),
-          d || 'loading' !== a || (d = b.st.tLoading);
+        c !== a && b.container.removeClass("mfp-s-" + c),
+          d || "loading" !== a || (d = b.st.tLoading);
         var e = { status: a, text: d };
-        y('UpdateStatus', e),
+        y("UpdateStatus", e),
           (a = e.status),
           (d = e.text),
           b.preloader.html(d),
-          b.preloader.find('a').on('click', function (a) {
+          b.preloader.find("a").on("click", function (a) {
             a.stopImmediatePropagation();
           }),
-          b.container.addClass('mfp-s-' + a),
+          b.container.addClass("mfp-s-" + a),
           (c = a);
       }
     },
@@ -1838,7 +1839,7 @@ jQuery(document).ready(function () {
         if (d && e) return !0;
         if (
           !b.content ||
-          a(c).hasClass('mfp-close') ||
+          a(c).hasClass("mfp-close") ||
           (b.preloader && c === b.preloader[0])
         )
           return !0;
@@ -1873,28 +1874,30 @@ jQuery(document).ready(function () {
         y(l, [b, c, d]),
         a.each(c, function (c, d) {
           if (void 0 === d || d === !1) return !0;
-          if (((e = c.split('_')), e.length > 1)) {
-            var f = b.find(p + '-' + e[0]);
+          if (((e = c.split("_")), e.length > 1)) {
+            var f = b.find(p + "-" + e[0]);
             if (f.length > 0) {
               var g = e[1];
-              'replaceWith' === g
+              "replaceWith" === g
                 ? f[0] !== d[0] && f.replaceWith(d)
-                : 'img' === g
-                  ? f.is('img')
-                    ? f.attr('src', d)
+                : "img" === g
+                  ? f.is("img")
+                    ? f.attr("src", d)
                     : f.replaceWith(
-                        a('<img>').attr('src', d).attr('class', f.attr('class'))
+                        a("<img>")
+                          .attr("src", d)
+                          .attr("class", f.attr("class")),
                       )
                   : f.attr(e[1], d);
             }
-          } else b.find(p + '-' + c).html(d);
+          } else b.find(p + "-" + c).html(d);
         });
     },
     _getScrollbarSize: function () {
       if (void 0 === b.scrollbarSize) {
-        var a = document.createElement('div');
+        var a = document.createElement("div");
         (a.style.cssText =
-          'width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;'),
+          "width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;"),
           document.body.appendChild(a),
           (b.scrollbarSize = a.offsetWidth - a.clientWidth),
           document.body.removeChild(a);
@@ -1927,9 +1930,9 @@ jQuery(document).ready(function () {
         disableOn: 0,
         key: null,
         midClick: !1,
-        mainClass: '',
+        mainClass: "",
         preloader: !0,
-        focus: '',
+        focus: "",
         closeOnContentClick: !1,
         closeOnBgClick: !0,
         closeBtnInside: !0,
@@ -1939,23 +1942,23 @@ jQuery(document).ready(function () {
         alignTop: !1,
         removalDelay: 0,
         prependTo: null,
-        fixedContentPos: 'auto',
-        fixedBgPos: 'auto',
-        overflowY: 'auto',
+        fixedContentPos: "auto",
+        fixedBgPos: "auto",
+        overflowY: "auto",
         closeMarkup:
           '<button title="%title%" type="button" class="mfp-close">&#215;</button>',
-        tClose: 'Close (Esc)',
-        tLoading: 'Loading...',
+        tClose: "Close (Esc)",
+        tLoading: "Loading...",
         autoFocusLast: !0,
       },
     }),
     (a.fn.magnificPopup = function (c) {
       A();
       var d = a(this);
-      if ('string' == typeof c)
-        if ('open' === c) {
+      if ("string" == typeof c)
+        if ("open" === c) {
           var e,
-            f = u ? d.data('magnificPopup') : d[0].magnificPopup,
+            f = u ? d.data("magnificPopup") : d[0].magnificPopup,
             g = parseInt(arguments[1], 10) || 0;
           f.items
             ? (e = f.items[g])
@@ -1965,27 +1968,27 @@ jQuery(document).ready(function () {
           b.isOpen && b[c].apply(b, Array.prototype.slice.call(arguments, 1));
       else
         (c = a.extend(!0, {}, c)),
-          u ? d.data('magnificPopup', c) : (d[0].magnificPopup = c),
+          u ? d.data("magnificPopup", c) : (d[0].magnificPopup = c),
           b.addGroup(d, c);
       return d;
     });
   var C,
     D,
     E,
-    F = 'inline',
+    F = "inline",
     G = function () {
       E && (D.after(E.addClass(C)).detach(), (E = null));
     };
   a.magnificPopup.registerModule(F, {
     options: {
-      hiddenClass: 'hide',
-      markup: '',
-      tNotFound: 'Content not found',
+      hiddenClass: "hide",
+      markup: "",
+      tNotFound: "Content not found",
     },
     proto: {
       initInline: function () {
         b.types.push(F),
-          w(h + '.' + F, function () {
+          w(h + "." + F, function () {
             G();
           });
       },
@@ -1997,18 +2000,18 @@ jQuery(document).ready(function () {
             var g = f[0].parentNode;
             g &&
               g.tagName &&
-              (D || ((C = e.hiddenClass), (D = x(C)), (C = 'mfp-' + C)),
+              (D || ((C = e.hiddenClass), (D = x(C)), (C = "mfp-" + C)),
               (E = f.after(D).detach().removeClass(C))),
-              b.updateStatus('ready');
-          } else b.updateStatus('error', e.tNotFound), (f = a('<div>'));
+              b.updateStatus("ready");
+          } else b.updateStatus("error", e.tNotFound), (f = a("<div>"));
           return (c.inlineElement = f), f;
         }
-        return b.updateStatus('ready'), b._parseMarkup(d, {}, c), d;
+        return b.updateStatus("ready"), b._parseMarkup(d, {}, c), d;
       },
     },
   });
   var H,
-    I = 'ajax',
+    I = "ajax",
     J = function () {
       H && a(document.body).removeClass(H);
     },
@@ -2018,24 +2021,24 @@ jQuery(document).ready(function () {
   a.magnificPopup.registerModule(I, {
     options: {
       settings: null,
-      cursor: 'mfp-ajax-cur',
+      cursor: "mfp-ajax-cur",
       tError: '<a href="%url%">The content</a> could not be loaded.',
     },
     proto: {
       initAjax: function () {
         b.types.push(I),
           (H = b.st.ajax.cursor),
-          w(h + '.' + I, K),
-          w('BeforeChange.' + I, K);
+          w(h + "." + I, K),
+          w("BeforeChange." + I, K);
       },
       getAjax: function (c) {
-        H && a(document.body).addClass(H), b.updateStatus('loading');
+        H && a(document.body).addClass(H), b.updateStatus("loading");
         var d = a.extend(
           {
             url: c.src,
             success: function (d, e, f) {
               var g = { data: d, xhr: f };
-              y('ParseAjax', g),
+              y("ParseAjax", g),
                 b.appendContent(a(g.data), I),
                 (c.finished = !0),
                 J(),
@@ -2043,21 +2046,21 @@ jQuery(document).ready(function () {
                 setTimeout(function () {
                   b.wrap.addClass(q);
                 }, 16),
-                b.updateStatus('ready'),
-                y('AjaxContentAdded');
+                b.updateStatus("ready"),
+                y("AjaxContentAdded");
             },
             error: function () {
               J(),
                 (c.finished = c.loadError = !0),
                 b.updateStatus(
-                  'error',
-                  b.st.ajax.tError.replace('%url%', c.src)
+                  "error",
+                  b.st.ajax.tError.replace("%url%", c.src),
                 );
             },
           },
-          b.st.ajax.settings
+          b.st.ajax.settings,
         );
-        return (b.req = a.ajax(d)), '';
+        return (b.req = a.ajax(d)), "";
       },
     },
   });
@@ -2067,35 +2070,35 @@ jQuery(document).ready(function () {
       var d = b.st.image.titleSrc;
       if (d) {
         if (a.isFunction(d)) return d.call(b, c);
-        if (c.el) return c.el.attr(d) || '';
+        if (c.el) return c.el.attr(d) || "";
       }
-      return '';
+      return "";
     };
-  a.magnificPopup.registerModule('image', {
+  a.magnificPopup.registerModule("image", {
     options: {
       markup:
         '<div class="mfp-figure"><div class="mfp-close"></div><figure><div class="mfp-img"></div><figcaption><div class="mfp-bottom-bar"><div class="mfp-title"></div><div class="mfp-counter"></div></div></figcaption></figure></div>',
-      cursor: 'mfp-zoom-out-cur',
-      titleSrc: 'title',
+      cursor: "mfp-zoom-out-cur",
+      titleSrc: "title",
       verticalFit: !0,
       tError: '<a href="%url%">The image</a> could not be loaded.',
     },
     proto: {
       initImage: function () {
         var c = b.st.image,
-          d = '.image';
-        b.types.push('image'),
+          d = ".image";
+        b.types.push("image"),
           w(m + d, function () {
-            'image' === b.currItem.type &&
+            "image" === b.currItem.type &&
               c.cursor &&
               a(document.body).addClass(c.cursor);
           }),
           w(h + d, function () {
             c.cursor && a(document.body).removeClass(c.cursor),
-              v.off('resize' + p);
+              v.off("resize" + p);
           }),
-          w('Resize' + d, b.resizeImage),
-          b.isLowIE && w('AfterChange', b.resizeImage);
+          w("Resize" + d, b.resizeImage),
+          b.isLowIE && w("AfterChange", b.resizeImage);
       },
       resizeImage: function () {
         var a = b.currItem;
@@ -2103,9 +2106,9 @@ jQuery(document).ready(function () {
           var c = 0;
           b.isLowIE &&
             (c =
-              parseInt(a.img.css('padding-top'), 10) +
-              parseInt(a.img.css('padding-bottom'), 10)),
-            a.img.css('max-height', b.wH - c);
+              parseInt(a.img.css("padding-top"), 10) +
+              parseInt(a.img.css("padding-bottom"), 10)),
+            a.img.css("max-height", b.wH - c);
         }
       },
       _onImageHasSize: function (a) {
@@ -2113,9 +2116,9 @@ jQuery(document).ready(function () {
           ((a.hasSize = !0),
           L && clearInterval(L),
           (a.isCheckingImgSize = !1),
-          y('ImageHasSize', a),
+          y("ImageHasSize", a),
           a.imgHidden &&
-            (b.content && b.content.removeClass('mfp-loading'),
+            (b.content && b.content.removeClass("mfp-loading"),
             (a.imgHidden = !1)));
       },
       findImageSize: function (a) {
@@ -2142,35 +2145,35 @@ jQuery(document).ready(function () {
           f = function () {
             c &&
               (c.img[0].complete
-                ? (c.img.off('.mfploader'),
+                ? (c.img.off(".mfploader"),
                   c === b.currItem &&
-                    (b._onImageHasSize(c), b.updateStatus('ready')),
+                    (b._onImageHasSize(c), b.updateStatus("ready")),
                   (c.hasSize = !0),
                   (c.loaded = !0),
-                  y('ImageLoadComplete'))
+                  y("ImageLoadComplete"))
                 : (e++, 200 > e ? setTimeout(f, 100) : g()));
           },
           g = function () {
             c &&
-              (c.img.off('.mfploader'),
+              (c.img.off(".mfploader"),
               c === b.currItem &&
                 (b._onImageHasSize(c),
-                b.updateStatus('error', h.tError.replace('%url%', c.src))),
+                b.updateStatus("error", h.tError.replace("%url%", c.src))),
               (c.hasSize = !0),
               (c.loaded = !0),
               (c.loadError = !0));
           },
           h = b.st.image,
-          i = d.find('.mfp-img');
+          i = d.find(".mfp-img");
         if (i.length) {
-          var j = document.createElement('img');
-          (j.className = 'mfp-img'),
+          var j = document.createElement("img");
+          (j.className = "mfp-img"),
             c.el &&
-              c.el.find('img').length &&
-              (j.alt = c.el.find('img').attr('alt')),
-            (c.img = a(j).on('load.mfploader', f).on('error.mfploader', g)),
+              c.el.find("img").length &&
+              (j.alt = c.el.find("img").attr("alt")),
+            (c.img = a(j).on("load.mfploader", f).on("error.mfploader", g)),
             (j.src = c.src),
-            i.is('img') && (c.img = c.img.clone()),
+            i.is("img") && (c.img = c.img.clone()),
             (j = c.img[0]),
             j.naturalWidth > 0 ? (c.hasSize = !0) : j.width || (c.hasSize = !1);
         }
@@ -2180,15 +2183,15 @@ jQuery(document).ready(function () {
           c.hasSize
             ? (L && clearInterval(L),
               c.loadError
-                ? (d.addClass('mfp-loading'),
-                  b.updateStatus('error', h.tError.replace('%url%', c.src)))
-                : (d.removeClass('mfp-loading'), b.updateStatus('ready')),
+                ? (d.addClass("mfp-loading"),
+                  b.updateStatus("error", h.tError.replace("%url%", c.src)))
+                : (d.removeClass("mfp-loading"), b.updateStatus("ready")),
               d)
-            : (b.updateStatus('loading'),
+            : (b.updateStatus("loading"),
               (c.loading = !0),
               c.hasSize ||
                 ((c.imgHidden = !0),
-                d.addClass('mfp-loading'),
+                d.addClass("mfp-loading"),
                 b.findImageSize(c)),
               d)
         );
@@ -2199,24 +2202,24 @@ jQuery(document).ready(function () {
     O = function () {
       return (
         void 0 === N &&
-          (N = void 0 !== document.createElement('p').style.MozTransform),
+          (N = void 0 !== document.createElement("p").style.MozTransform),
         N
       );
     };
-  a.magnificPopup.registerModule('zoom', {
+  a.magnificPopup.registerModule("zoom", {
     options: {
       enabled: !1,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       duration: 300,
       opener: function (a) {
-        return a.is('img') ? a : a.find('img');
+        return a.is("img") ? a : a.find("img");
       },
     },
     proto: {
       initZoom: function () {
         var a,
           c = b.st.zoom,
-          d = '.zoom';
+          d = ".zoom";
         if (c.enabled && b.supportsTransition) {
           var e,
             f,
@@ -2224,32 +2227,32 @@ jQuery(document).ready(function () {
             j = function (a) {
               var b = a
                   .clone()
-                  .removeAttr('style')
-                  .removeAttr('class')
-                  .addClass('mfp-animated-image'),
-                d = 'all ' + c.duration / 1e3 + 's ' + c.easing,
+                  .removeAttr("style")
+                  .removeAttr("class")
+                  .addClass("mfp-animated-image"),
+                d = "all " + c.duration / 1e3 + "s " + c.easing,
                 e = {
-                  position: 'fixed',
+                  position: "fixed",
                   zIndex: 9999,
                   left: 0,
                   top: 0,
-                  '-webkit-backface-visibility': 'hidden',
+                  "-webkit-backface-visibility": "hidden",
                 },
-                f = 'transition';
+                f = "transition";
               return (
-                (e['-webkit-' + f] = e['-moz-' + f] = e['-o-' + f] = e[f] = d),
+                (e["-webkit-" + f] = e["-moz-" + f] = e["-o-" + f] = e[f] = d),
                 b.css(e),
                 b
               );
             },
             k = function () {
-              b.content.css('visibility', 'visible');
+              b.content.css("visibility", "visible");
             };
-          w('BuildControls' + d, function () {
+          w("BuildControls" + d, function () {
             if (b._allowZoom()) {
               if (
                 (clearTimeout(e),
-                b.content.css('visibility', 'hidden'),
+                b.content.css("visibility", "hidden"),
                 (a = b._getItemToZoom()),
                 !a)
               )
@@ -2262,7 +2265,7 @@ jQuery(document).ready(function () {
                     (e = setTimeout(function () {
                       k(),
                         setTimeout(function () {
-                          f.remove(), (a = f = null), y('ZoomAnimationEnded');
+                          f.remove(), (a = f = null), y("ZoomAnimationEnded");
                         }, 16);
                     }, g));
                 }, 16));
@@ -2276,7 +2279,7 @@ jQuery(document).ready(function () {
                 }
                 f.css(b._getOffset(!0)),
                   b.wrap.append(f),
-                  b.content.css('visibility', 'hidden'),
+                  b.content.css("visibility", "hidden"),
                   setTimeout(function () {
                     f.css(b._getOffset());
                   }, 16);
@@ -2288,7 +2291,7 @@ jQuery(document).ready(function () {
         }
       },
       _allowZoom: function () {
-        return 'image' === b.currItem.type;
+        return "image" === b.currItem.type;
       },
       _getItemToZoom: function () {
         return b.currItem.hasSize ? b.currItem.img : !1;
@@ -2297,8 +2300,8 @@ jQuery(document).ready(function () {
         var d;
         d = c ? b.currItem.img : b.st.zoom.opener(b.currItem.el || b.currItem);
         var e = d.offset(),
-          f = parseInt(d.css('padding-top'), 10),
-          g = parseInt(d.css('padding-bottom'), 10);
+          f = parseInt(d.css("padding-top"), 10),
+          g = parseInt(d.css("padding-bottom"), 10);
         e.top -= a(window).scrollTop() - f;
         var h = {
           width: d.width(),
@@ -2306,50 +2309,50 @@ jQuery(document).ready(function () {
         };
         return (
           O()
-            ? (h['-moz-transform'] = h.transform =
-                'translate(' + e.left + 'px,' + e.top + 'px)')
+            ? (h["-moz-transform"] = h.transform =
+                "translate(" + e.left + "px," + e.top + "px)")
             : ((h.left = e.left), (h.top = e.top)),
           h
         );
       },
     },
   });
-  var P = 'iframe',
-    Q = '//about:blank',
+  var P = "iframe",
+    Q = "//about:blank",
     R = function (a) {
       if (b.currTemplate[P]) {
-        var c = b.currTemplate[P].find('iframe');
+        var c = b.currTemplate[P].find("iframe");
         c.length &&
           (a || (c[0].src = Q),
-          b.isIE8 && c.css('display', a ? 'block' : 'none'));
+          b.isIE8 && c.css("display", a ? "block" : "none"));
       }
     };
   a.magnificPopup.registerModule(P, {
     options: {
       markup:
         '<div class="mfp-iframe-scaler"><div class="mfp-close"></div><iframe class="mfp-iframe" src="//about:blank" frameborder="0" allowfullscreen></iframe></div>',
-      srcAction: 'iframe_src',
+      srcAction: "iframe_src",
       patterns: {
         youtube: {
-          index: 'youtube.com',
-          id: 'v=',
-          src: '//www.youtube.com/embed/%id%?autoplay=1',
+          index: "youtube.com",
+          id: "v=",
+          src: "//www.youtube.com/embed/%id%?autoplay=1",
         },
         vimeo: {
-          index: 'vimeo.com/',
-          id: '/',
-          src: '//player.vimeo.com/video/%id%?autoplay=1',
+          index: "vimeo.com/",
+          id: "/",
+          src: "//player.vimeo.com/video/%id%?autoplay=1",
         },
-        gmaps: { index: '//maps.google.', src: '%id%&output=embed' },
+        gmaps: { index: "//maps.google.", src: "%id%&output=embed" },
       },
     },
     proto: {
       initIframe: function () {
         b.types.push(P),
-          w('BeforeChange', function (a, b, c) {
+          w("BeforeChange", function (a, b, c) {
             b !== c && (b === P ? R() : c === P && R(!0));
           }),
-          w(h + '.' + P, function () {
+          w(h + "." + P, function () {
             R();
           });
       },
@@ -2360,13 +2363,13 @@ jQuery(document).ready(function () {
           return e.indexOf(this.index) > -1
             ? (this.id &&
                 (e =
-                  'string' == typeof this.id
+                  "string" == typeof this.id
                     ? e.substr(
                         e.lastIndexOf(this.id) + this.id.length,
-                        e.length
+                        e.length,
                       )
                     : this.id.call(this, e)),
-              (e = this.src.replace('%id%', e)),
+              (e = this.src.replace("%id%", e)),
               !1)
             : void 0;
         });
@@ -2374,7 +2377,7 @@ jQuery(document).ready(function () {
         return (
           f.srcAction && (g[f.srcAction] = e),
           b._parseMarkup(d, g, c),
-          b.updateStatus('ready'),
+          b.updateStatus("ready"),
           d
         );
       },
@@ -2387,7 +2390,7 @@ jQuery(document).ready(function () {
     T = function (a, b, c) {
       return a.replace(/%curr%/gi, b + 1).replace(/%total%/gi, c);
     };
-  a.magnificPopup.registerModule('gallery', {
+  a.magnificPopup.registerModule("gallery", {
     options: {
       enabled: !1,
       arrowMarkup:
@@ -2395,45 +2398,47 @@ jQuery(document).ready(function () {
       preload: [0, 2],
       navigateByImgClick: !0,
       arrows: !0,
-      tPrev: 'Previous (Left arrow key)',
-      tNext: 'Next (Right arrow key)',
-      tCounter: '%curr% of %total%',
+      tPrev: "Previous (Left arrow key)",
+      tNext: "Next (Right arrow key)",
+      tCounter: "%curr% of %total%",
     },
     proto: {
       initGallery: function () {
         var c = b.st.gallery,
-          e = '.mfp-gallery';
+          e = ".mfp-gallery";
         return (
           (b.direction = !0),
           c && c.enabled
-            ? ((f += ' mfp-gallery'),
+            ? ((f += " mfp-gallery"),
               w(m + e, function () {
                 c.navigateByImgClick &&
-                  b.wrap.on('click' + e, '.mfp-img', function () {
+                  b.wrap.on("click" + e, ".mfp-img", function () {
                     return b.items.length > 1 ? (b.next(), !1) : void 0;
                   }),
-                  d.on('keydown' + e, function (a) {
+                  d.on("keydown" + e, function (a) {
                     37 === a.keyCode ? b.prev() : 39 === a.keyCode && b.next();
                   });
               }),
-              w('UpdateStatus' + e, function (a, c) {
+              w("UpdateStatus" + e, function (a, c) {
                 c.text &&
                   (c.text = T(c.text, b.currItem.index, b.items.length));
               }),
               w(l + e, function (a, d, e, f) {
                 var g = b.items.length;
-                e.counter = g > 1 ? T(c.tCounter, f.index, g) : '';
+                e.counter = g > 1 ? T(c.tCounter, f.index, g) : "";
               }),
-              w('BuildControls' + e, function () {
+              w("BuildControls" + e, function () {
                 if (b.items.length > 1 && c.arrows && !b.arrowLeft) {
                   var d = c.arrowMarkup,
                     e = (b.arrowLeft = a(
-                      d.replace(/%title%/gi, c.tPrev).replace(/%dir%/gi, 'left')
+                      d
+                        .replace(/%title%/gi, c.tPrev)
+                        .replace(/%dir%/gi, "left"),
                     ).addClass(s)),
                     f = (b.arrowRight = a(
                       d
                         .replace(/%title%/gi, c.tNext)
-                        .replace(/%dir%/gi, 'right')
+                        .replace(/%dir%/gi, "right"),
                     ).addClass(s));
                   e.click(function () {
                     b.prev();
@@ -2452,7 +2457,7 @@ jQuery(document).ready(function () {
               }),
               void w(h + e, function () {
                 d.off(e),
-                  b.wrap.off('click' + e),
+                  b.wrap.off("click" + e),
                   (b.arrowRight = b.arrowLeft = null);
               }))
             : !1
@@ -2481,27 +2486,27 @@ jQuery(document).ready(function () {
         if (((c = S(c)), !b.items[c].preloaded)) {
           var d = b.items[c];
           d.parsed || (d = b.parseEl(c)),
-            y('LazyLoad', d),
-            'image' === d.type &&
+            y("LazyLoad", d),
+            "image" === d.type &&
               (d.img = a('<img class="mfp-img" />')
-                .on('load.mfploader', function () {
+                .on("load.mfploader", function () {
                   d.hasSize = !0;
                 })
-                .on('error.mfploader', function () {
-                  (d.hasSize = !0), (d.loadError = !0), y('LazyLoadError', d);
+                .on("error.mfploader", function () {
+                  (d.hasSize = !0), (d.loadError = !0), y("LazyLoadError", d);
                 })
-                .attr('src', d.src)),
+                .attr("src", d.src)),
             (d.preloaded = !0);
         }
       },
     },
   });
-  var U = 'retina';
+  var U = "retina";
   a.magnificPopup.registerModule(U, {
     options: {
       replaceSrc: function (a) {
         return a.src.replace(/\.\w+$/, function (a) {
-          return '@2x' + a;
+          return "@2x" + a;
         });
       },
       ratio: 1,
@@ -2513,13 +2518,13 @@ jQuery(document).ready(function () {
             c = a.ratio;
           (c = isNaN(c) ? c() : c),
             c > 1 &&
-              (w('ImageHasSize.' + U, function (a, b) {
+              (w("ImageHasSize." + U, function (a, b) {
                 b.img.css({
-                  'max-width': b.img[0].naturalWidth / c,
-                  width: '100%',
+                  "max-width": b.img[0].naturalWidth / c,
+                  width: "100%",
                 });
               }),
-              w('ElementParse.' + U, function (b, d) {
+              w("ElementParse." + U, function (b, d) {
                 d.src = a.replaceSrc(d, c);
               }));
         }
@@ -2848,41 +2853,34 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function stickyResize() {
-  if (window.matchMedia('(min-width: 1024px)').matches) {
-    jQuery('.cross-channel-lt , .icons-block-text').stickySidebar({
-      topSpacing: 96,
-      bottomSpacing: 250,
-      resizeSensor: true,
-      containerSelector: false,
-      innerWrapperSelector: '.sticky-sidebar-inner',
-    });
-  } else {
-    var stickySidebar = jQuery('.cross-channel-lt , .icons-block-text').data(
-      'stickySidebar'
-    );
-    if (stickySidebar) {
-      stickySidebar.destroy();
+    if(window.matchMedia('(min-width: 1024px)').matches) {
+        jQuery('.cross-channel-lt , .icons-block-text').stickySidebar({
+            topSpacing: 96,
+            bottomSpacing: 250,
+            resizeSensor: true,
+            containerSelector: false,
+            innerWrapperSelector: '.sticky-sidebar-inner',
+        });
     }
-  }
+    else{
+        var stickySidebar = jQuery('.cross-channel-lt , .icons-block-text').data('stickySidebar');
+        if (stickySidebar){
+            stickySidebar.destroy();
+        }
+    }
 }
-jQuery(document).ready(function () {
-  stickyResize();
-});
-jQuery(window).on('load', function () {
-  stickyResize();
-});
-jQuery(window).on('resize', function () {
-  stickyResize();
-});
+jQuery(document).ready(function() { stickyResize(); });
+jQuery(window).on('load', function() { stickyResize(); });
+jQuery(window).on('resize', function() { stickyResize(); });
 !(function (i) {
-  'use strict';
-  'function' == typeof define && define.amd
-    ? define(['jquery'], i)
-    : 'undefined' != typeof exports
-      ? (module.exports = i(require('jquery')))
+  "use strict";
+  "function" == typeof define && define.amd
+    ? define(["jquery"], i)
+    : "undefined" != typeof exports
+      ? (module.exports = i(require("jquery")))
       : i(jQuery);
 })(function (i) {
-  'use strict';
+  "use strict";
   var e = window.Slick || {};
   ((e = (function () {
     var e = 0;
@@ -2903,31 +2901,31 @@ jQuery(window).on('resize', function () {
         autoplay: !1,
         autoplaySpeed: 3e3,
         centerMode: !1,
-        centerPadding: '50px',
-        cssEase: 'ease',
+        centerPadding: "50px",
+        cssEase: "ease",
         customPaging: function (e, t) {
           return i('<button type="button" />').text(t + 1);
         },
         dots: !1,
-        dotsClass: 'slick-dots',
+        dotsClass: "slick-dots",
         draggable: !0,
-        easing: 'linear',
+        easing: "linear",
         edgeFriction: 0.35,
         fade: !1,
         focusOnSelect: !1,
         focusOnChange: !1,
         infinite: !0,
         initialSlide: 0,
-        lazyLoad: 'ondemand',
+        lazyLoad: "ondemand",
         mobileFirst: !1,
         pauseOnHover: !0,
         pauseOnFocus: !0,
         pauseOnDotsHover: !1,
-        respondTo: 'window',
+        respondTo: "window",
         responsive: null,
         rows: 1,
         rtl: !1,
-        slide: '',
+        slide: "",
         slidesPerRow: 1,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -2981,7 +2979,7 @@ jQuery(window).on('resize', function () {
         (n.cssTransitions = !1),
         (n.focussed = !1),
         (n.interrupted = !1),
-        (n.hidden = 'hidden'),
+        (n.hidden = "hidden"),
         (n.paused = !0),
         (n.positionProp = null),
         (n.respondTo = null),
@@ -2991,19 +2989,19 @@ jQuery(window).on('resize', function () {
         (n.$slidesCache = null),
         (n.transformType = null),
         (n.transitionType = null),
-        (n.visibilityChange = 'visibilitychange'),
+        (n.visibilityChange = "visibilitychange"),
         (n.windowWidth = 0),
         (n.windowTimer = null),
-        (s = i(t).data('slick') || {}),
+        (s = i(t).data("slick") || {}),
         (n.options = i.extend({}, n.defaults, o, s)),
         (n.currentSlide = n.options.initialSlide),
         (n.originalSettings = n.options),
         void 0 !== document.mozHidden
-          ? ((n.hidden = 'mozHidden'),
-            (n.visibilityChange = 'mozvisibilitychange'))
+          ? ((n.hidden = "mozHidden"),
+            (n.visibilityChange = "mozvisibilitychange"))
           : void 0 !== document.webkitHidden &&
-            ((n.hidden = 'webkitHidden'),
-            (n.visibilityChange = 'webkitvisibilitychange')),
+            ((n.hidden = "webkitHidden"),
+            (n.visibilityChange = "webkitvisibilitychange")),
         (n.autoPlay = i.proxy(n.autoPlay, n)),
         (n.autoPlayClear = i.proxy(n.autoPlayClear, n)),
         (n.autoPlayIterator = i.proxy(n.autoPlayIterator, n)),
@@ -3021,18 +3019,18 @@ jQuery(window).on('resize', function () {
     };
   })()).prototype.activateADA = function () {
     this.$slideTrack
-      .find('.slick-active')
-      .attr({ 'aria-hidden': 'false' })
-      .find('a, input, button, select')
-      .attr({ tabindex: '0' });
+      .find(".slick-active")
+      .attr({ "aria-hidden": "false" })
+      .find("a, input, button, select")
+      .attr({ tabindex: "0" });
   }),
     (e.prototype.addSlide = e.prototype.slickAdd =
       function (e, t, o) {
         var s = this;
-        if ('boolean' == typeof t) (o = t), (t = null);
+        if ("boolean" == typeof t) (o = t), (t = null);
         else if (t < 0 || t >= s.slideCount) return !1;
         s.unload(),
-          'number' == typeof t
+          "number" == typeof t
             ? 0 === t && 0 === s.$slides.length
               ? i(e).appendTo(s.$slideTrack)
               : o
@@ -3045,7 +3043,7 @@ jQuery(window).on('resize', function () {
           s.$slideTrack.children(this.options.slide).detach(),
           s.$slideTrack.append(s.$slides),
           s.$slides.each(function (e, t) {
-            i(t).attr('data-slick-index', e);
+            i(t).attr("data-slick-index", e);
           }),
           (s.$slidesCache = s.$slides),
           s.reinit();
@@ -3072,13 +3070,13 @@ jQuery(window).on('resize', function () {
                 { left: e },
                 s.options.speed,
                 s.options.easing,
-                t
+                t,
               )
             : s.$slideTrack.animate(
                 { top: e },
                 s.options.speed,
                 s.options.easing,
-                t
+                t,
               )
           : !1 === s.cssTransitions
             ? (!0 === s.options.rtl && (s.currentLeft = -s.currentLeft),
@@ -3090,21 +3088,21 @@ jQuery(window).on('resize', function () {
                   step: function (i) {
                     (i = Math.ceil(i)),
                       !1 === s.options.vertical
-                        ? ((o[s.animType] = 'translate(' + i + 'px, 0px)'),
+                        ? ((o[s.animType] = "translate(" + i + "px, 0px)"),
                           s.$slideTrack.css(o))
-                        : ((o[s.animType] = 'translate(0px,' + i + 'px)'),
+                        : ((o[s.animType] = "translate(0px," + i + "px)"),
                           s.$slideTrack.css(o));
                   },
                   complete: function () {
                     t && t.call();
                   },
-                }
+                },
               ))
             : (s.applyTransition(),
               (e = Math.ceil(e)),
               !1 === s.options.vertical
-                ? (o[s.animType] = 'translate3d(' + e + 'px, 0px, 0px)')
-                : (o[s.animType] = 'translate3d(0px,' + e + 'px, 0px)'),
+                ? (o[s.animType] = "translate3d(" + e + "px, 0px, 0px)")
+                : (o[s.animType] = "translate3d(0px," + e + "px, 0px)"),
               s.$slideTrack.css(o),
               t &&
                 setTimeout(function () {
@@ -3119,9 +3117,9 @@ jQuery(window).on('resize', function () {
     (e.prototype.asNavFor = function (e) {
       var t = this.getNavTarget();
       null !== t &&
-        'object' == typeof t &&
+        "object" == typeof t &&
         t.each(function () {
-          var t = i(this).slick('getSlick');
+          var t = i(this).slick("getSlick");
           t.unslicked || t.slideHandler(e, !0);
         });
     }),
@@ -3130,9 +3128,9 @@ jQuery(window).on('resize', function () {
         t = {};
       !1 === e.options.fade
         ? (t[e.transitionType] =
-            e.transformType + ' ' + e.options.speed + 'ms ' + e.options.cssEase)
+            e.transformType + " " + e.options.speed + "ms " + e.options.cssEase)
         : (t[e.transitionType] =
-            'opacity ' + e.options.speed + 'ms ' + e.options.cssEase),
+            "opacity " + e.options.speed + "ms " + e.options.cssEase),
         !1 === e.options.fade ? e.$slideTrack.css(t) : e.$slides.eq(i).css(t);
     }),
     (e.prototype.autoPlay = function () {
@@ -3141,7 +3139,7 @@ jQuery(window).on('resize', function () {
         i.slideCount > i.options.slidesToShow &&
           (i.autoPlayTimer = setInterval(
             i.autoPlayIterator,
-            i.options.autoplaySpeed
+            i.options.autoplaySpeed,
           ));
     }),
     (e.prototype.autoPlayClear = function () {
@@ -3165,27 +3163,27 @@ jQuery(window).on('resize', function () {
     (e.prototype.buildArrows = function () {
       var e = this;
       !0 === e.options.arrows &&
-        ((e.$prevArrow = i(e.options.prevArrow).addClass('slick-arrow')),
-        (e.$nextArrow = i(e.options.nextArrow).addClass('slick-arrow')),
+        ((e.$prevArrow = i(e.options.prevArrow).addClass("slick-arrow")),
+        (e.$nextArrow = i(e.options.nextArrow).addClass("slick-arrow")),
         e.slideCount > e.options.slidesToShow
           ? (e.$prevArrow
-              .removeClass('slick-hidden')
-              .removeAttr('aria-hidden tabindex'),
+              .removeClass("slick-hidden")
+              .removeAttr("aria-hidden tabindex"),
             e.$nextArrow
-              .removeClass('slick-hidden')
-              .removeAttr('aria-hidden tabindex'),
+              .removeClass("slick-hidden")
+              .removeAttr("aria-hidden tabindex"),
             e.htmlExpr.test(e.options.prevArrow) &&
               e.$prevArrow.prependTo(e.options.appendArrows),
             e.htmlExpr.test(e.options.nextArrow) &&
               e.$nextArrow.appendTo(e.options.appendArrows),
             !0 !== e.options.infinite &&
               e.$prevArrow
-                .addClass('slick-disabled')
-                .attr('aria-disabled', 'true'))
+                .addClass("slick-disabled")
+                .attr("aria-disabled", "true"))
           : e.$prevArrow
               .add(e.$nextArrow)
-              .addClass('slick-hidden')
-              .attr({ 'aria-disabled': 'true', tabindex: '-1' }));
+              .addClass("slick-hidden")
+              .attr({ "aria-disabled": "true", tabindex: "-1" }));
     }),
     (e.prototype.buildDots = function () {
       var e,
@@ -3193,46 +3191,46 @@ jQuery(window).on('resize', function () {
         o = this;
       if (!0 === o.options.dots) {
         for (
-          o.$slider.addClass('slick-dotted'),
-            t = i('<ul />').addClass(o.options.dotsClass),
+          o.$slider.addClass("slick-dotted"),
+            t = i("<ul />").addClass(o.options.dotsClass),
             e = 0;
           e <= o.getDotCount();
           e += 1
         )
-          t.append(i('<li />').append(o.options.customPaging.call(this, o, e)));
+          t.append(i("<li />").append(o.options.customPaging.call(this, o, e)));
         (o.$dots = t.appendTo(o.options.appendDots)),
-          o.$dots.find('li').first().addClass('slick-active');
+          o.$dots.find("li").first().addClass("slick-active");
       }
     }),
     (e.prototype.buildOut = function () {
       var e = this;
       (e.$slides = e.$slider
-        .children(e.options.slide + ':not(.slick-cloned)')
-        .addClass('slick-slide')),
+        .children(e.options.slide + ":not(.slick-cloned)")
+        .addClass("slick-slide")),
         (e.slideCount = e.$slides.length),
         e.$slides.each(function (e, t) {
           i(t)
-            .attr('data-slick-index', e)
-            .data('originalStyling', i(t).attr('style') || '');
+            .attr("data-slick-index", e)
+            .data("originalStyling", i(t).attr("style") || "");
         }),
-        e.$slider.addClass('slick-slider'),
+        e.$slider.addClass("slick-slider"),
         (e.$slideTrack =
           0 === e.slideCount
             ? i('<div class="slick-track"/>').appendTo(e.$slider)
             : e.$slides.wrapAll('<div class="slick-track"/>').parent()),
         (e.$list = e.$slideTrack.wrap('<div class="slick-list"/>').parent()),
-        e.$slideTrack.css('opacity', 0),
+        e.$slideTrack.css("opacity", 0),
         (!0 !== e.options.centerMode && !0 !== e.options.swipeToSlide) ||
           (e.options.slidesToScroll = 1),
-        i('img[data-lazy]', e.$slider).not('[src]').addClass('slick-loading'),
+        i("img[data-lazy]", e.$slider).not("[src]").addClass("slick-loading"),
         e.setupInfinite(),
         e.buildArrows(),
         e.buildDots(),
         e.updateDots(),
         e.setSlideClasses(
-          'number' == typeof e.currentSlide ? e.currentSlide : 0
+          "number" == typeof e.currentSlide ? e.currentSlide : 0,
         ),
-        !0 === e.options.draggable && e.$list.addClass('draggable');
+        !0 === e.options.draggable && e.$list.addClass("draggable");
     }),
     (e.prototype.buildRows = function () {
       var i,
@@ -3255,9 +3253,9 @@ jQuery(window).on('resize', function () {
           i < s;
           i++
         ) {
-          var d = document.createElement('div');
+          var d = document.createElement("div");
           for (e = 0; e < l.options.rows; e++) {
-            var a = document.createElement('div');
+            var a = document.createElement("div");
             for (t = 0; t < l.options.slidesPerRow; t++) {
               var c = i * r + (e * l.options.slidesPerRow + t);
               n.get(c) && a.appendChild(n.get(c));
@@ -3272,8 +3270,8 @@ jQuery(window).on('resize', function () {
             .children()
             .children()
             .css({
-              width: 100 / l.options.slidesPerRow + '%',
-              display: 'inline-block',
+              width: 100 / l.options.slidesPerRow + "%",
+              display: "inline-block",
             });
       }
     }),
@@ -3286,11 +3284,11 @@ jQuery(window).on('resize', function () {
         d = r.$slider.width(),
         a = window.innerWidth || i(window).width();
       if (
-        ('window' === r.respondTo
+        ("window" === r.respondTo
           ? (n = a)
-          : 'slider' === r.respondTo
+          : "slider" === r.respondTo
             ? (n = d)
-            : 'min' === r.respondTo && (n = Math.min(a, d)),
+            : "min" === r.respondTo && (n = Math.min(a, d)),
         r.options.responsive &&
           r.options.responsive.length &&
           null !== r.options.responsive)
@@ -3305,23 +3303,23 @@ jQuery(window).on('resize', function () {
           ? null !== r.activeBreakpoint
             ? (s !== r.activeBreakpoint || t) &&
               ((r.activeBreakpoint = s),
-              'unslick' === r.breakpointSettings[s]
+              "unslick" === r.breakpointSettings[s]
                 ? r.unslick(s)
                 : ((r.options = i.extend(
                     {},
                     r.originalSettings,
-                    r.breakpointSettings[s]
+                    r.breakpointSettings[s],
                   )),
                   !0 === e && (r.currentSlide = r.options.initialSlide),
                   r.refresh(e)),
               (l = s))
             : ((r.activeBreakpoint = s),
-              'unslick' === r.breakpointSettings[s]
+              "unslick" === r.breakpointSettings[s]
                 ? r.unslick(s)
                 : ((r.options = i.extend(
                     {},
                     r.originalSettings,
-                    r.breakpointSettings[s]
+                    r.breakpointSettings[s],
                   )),
                   !0 === e && (r.currentSlide = r.options.initialSlide),
                   r.refresh(e)),
@@ -3332,7 +3330,7 @@ jQuery(window).on('resize', function () {
             !0 === e && (r.currentSlide = r.options.initialSlide),
             r.refresh(e),
             (l = s)),
-          e || !1 === l || r.$slider.trigger('breakpoint', [r, l]);
+          e || !1 === l || r.$slider.trigger("breakpoint", [r, l]);
       }
     }),
     (e.prototype.changeSlide = function (e, t) {
@@ -3342,31 +3340,31 @@ jQuery(window).on('resize', function () {
         r = this,
         l = i(e.currentTarget);
       switch (
-        (l.is('a') && e.preventDefault(),
-        l.is('li') || (l = l.closest('li')),
+        (l.is("a") && e.preventDefault(),
+        l.is("li") || (l = l.closest("li")),
         (n = r.slideCount % r.options.slidesToScroll != 0),
         (o = n
           ? 0
           : (r.slideCount - r.currentSlide) % r.options.slidesToScroll),
         e.data.message)
       ) {
-        case 'previous':
+        case "previous":
           (s = 0 === o ? r.options.slidesToScroll : r.options.slidesToShow - o),
             r.slideCount > r.options.slidesToShow &&
               r.slideHandler(r.currentSlide - s, !1, t);
           break;
-        case 'next':
+        case "next":
           (s = 0 === o ? r.options.slidesToScroll : o),
             r.slideCount > r.options.slidesToShow &&
               r.slideHandler(r.currentSlide + s, !1, t);
           break;
-        case 'index':
+        case "index":
           var d =
             0 === e.data.index
               ? 0
               : e.data.index || l.index() * r.options.slidesToScroll;
           r.slideHandler(r.checkNavigable(d), !1, t),
-            l.children().trigger('focus');
+            l.children().trigger("focus");
           break;
         default:
           return;
@@ -3390,52 +3388,52 @@ jQuery(window).on('resize', function () {
       var e = this;
       e.options.dots &&
         null !== e.$dots &&
-        (i('li', e.$dots)
-          .off('click.slick', e.changeSlide)
-          .off('mouseenter.slick', i.proxy(e.interrupt, e, !0))
-          .off('mouseleave.slick', i.proxy(e.interrupt, e, !1)),
+        (i("li", e.$dots)
+          .off("click.slick", e.changeSlide)
+          .off("mouseenter.slick", i.proxy(e.interrupt, e, !0))
+          .off("mouseleave.slick", i.proxy(e.interrupt, e, !1)),
         !0 === e.options.accessibility &&
-          e.$dots.off('keydown.slick', e.keyHandler)),
-        e.$slider.off('focus.slick blur.slick'),
+          e.$dots.off("keydown.slick", e.keyHandler)),
+        e.$slider.off("focus.slick blur.slick"),
         !0 === e.options.arrows &&
           e.slideCount > e.options.slidesToShow &&
-          (e.$prevArrow && e.$prevArrow.off('click.slick', e.changeSlide),
-          e.$nextArrow && e.$nextArrow.off('click.slick', e.changeSlide),
+          (e.$prevArrow && e.$prevArrow.off("click.slick", e.changeSlide),
+          e.$nextArrow && e.$nextArrow.off("click.slick", e.changeSlide),
           !0 === e.options.accessibility &&
-            (e.$prevArrow && e.$prevArrow.off('keydown.slick', e.keyHandler),
-            e.$nextArrow && e.$nextArrow.off('keydown.slick', e.keyHandler))),
-        e.$list.off('touchstart.slick mousedown.slick', e.swipeHandler),
-        e.$list.off('touchmove.slick mousemove.slick', e.swipeHandler),
-        e.$list.off('touchend.slick mouseup.slick', e.swipeHandler),
-        e.$list.off('touchcancel.slick mouseleave.slick', e.swipeHandler),
-        e.$list.off('click.slick', e.clickHandler),
+            (e.$prevArrow && e.$prevArrow.off("keydown.slick", e.keyHandler),
+            e.$nextArrow && e.$nextArrow.off("keydown.slick", e.keyHandler))),
+        e.$list.off("touchstart.slick mousedown.slick", e.swipeHandler),
+        e.$list.off("touchmove.slick mousemove.slick", e.swipeHandler),
+        e.$list.off("touchend.slick mouseup.slick", e.swipeHandler),
+        e.$list.off("touchcancel.slick mouseleave.slick", e.swipeHandler),
+        e.$list.off("click.slick", e.clickHandler),
         i(document).off(e.visibilityChange, e.visibility),
         e.cleanUpSlideEvents(),
         !0 === e.options.accessibility &&
-          e.$list.off('keydown.slick', e.keyHandler),
+          e.$list.off("keydown.slick", e.keyHandler),
         !0 === e.options.focusOnSelect &&
-          i(e.$slideTrack).children().off('click.slick', e.selectHandler),
+          i(e.$slideTrack).children().off("click.slick", e.selectHandler),
         i(window).off(
-          'orientationchange.slick.slick-' + e.instanceUid,
-          e.orientationChange
+          "orientationchange.slick.slick-" + e.instanceUid,
+          e.orientationChange,
         ),
-        i(window).off('resize.slick.slick-' + e.instanceUid, e.resize),
-        i('[draggable!=true]', e.$slideTrack).off(
-          'dragstart',
-          e.preventDefault
+        i(window).off("resize.slick.slick-" + e.instanceUid, e.resize),
+        i("[draggable!=true]", e.$slideTrack).off(
+          "dragstart",
+          e.preventDefault,
         ),
-        i(window).off('load.slick.slick-' + e.instanceUid, e.setPosition);
+        i(window).off("load.slick.slick-" + e.instanceUid, e.setPosition);
     }),
     (e.prototype.cleanUpSlideEvents = function () {
       var e = this;
-      e.$list.off('mouseenter.slick', i.proxy(e.interrupt, e, !0)),
-        e.$list.off('mouseleave.slick', i.proxy(e.interrupt, e, !1));
+      e.$list.off("mouseenter.slick", i.proxy(e.interrupt, e, !0)),
+        e.$list.off("mouseleave.slick", i.proxy(e.interrupt, e, !1));
     }),
     (e.prototype.cleanUpRows = function () {
       var i,
         e = this;
       e.options.rows > 1 &&
-        ((i = e.$slides.children().children()).removeAttr('style'),
+        ((i = e.$slides.children().children()).removeAttr("style"),
         e.$slider.empty().append(i));
     }),
     (e.prototype.clickHandler = function (i) {
@@ -3447,47 +3445,47 @@ jQuery(window).on('resize', function () {
       t.autoPlayClear(),
         (t.touchObject = {}),
         t.cleanUpEvents(),
-        i('.slick-cloned', t.$slider).detach(),
+        i(".slick-cloned", t.$slider).detach(),
         t.$dots && t.$dots.remove(),
         t.$prevArrow &&
           t.$prevArrow.length &&
           (t.$prevArrow
-            .removeClass('slick-disabled slick-arrow slick-hidden')
-            .removeAttr('aria-hidden aria-disabled tabindex')
-            .css('display', ''),
+            .removeClass("slick-disabled slick-arrow slick-hidden")
+            .removeAttr("aria-hidden aria-disabled tabindex")
+            .css("display", ""),
           t.htmlExpr.test(t.options.prevArrow) && t.$prevArrow.remove()),
         t.$nextArrow &&
           t.$nextArrow.length &&
           (t.$nextArrow
-            .removeClass('slick-disabled slick-arrow slick-hidden')
-            .removeAttr('aria-hidden aria-disabled tabindex')
-            .css('display', ''),
+            .removeClass("slick-disabled slick-arrow slick-hidden")
+            .removeAttr("aria-hidden aria-disabled tabindex")
+            .css("display", ""),
           t.htmlExpr.test(t.options.nextArrow) && t.$nextArrow.remove()),
         t.$slides &&
           (t.$slides
             .removeClass(
-              'slick-slide slick-active slick-center slick-visible slick-current'
+              "slick-slide slick-active slick-center slick-visible slick-current",
             )
-            .removeAttr('aria-hidden')
-            .removeAttr('data-slick-index')
+            .removeAttr("aria-hidden")
+            .removeAttr("data-slick-index")
             .each(function () {
-              i(this).attr('style', i(this).data('originalStyling'));
+              i(this).attr("style", i(this).data("originalStyling"));
             }),
           t.$slideTrack.children(this.options.slide).detach(),
           t.$slideTrack.detach(),
           t.$list.detach(),
           t.$slider.append(t.$slides)),
         t.cleanUpRows(),
-        t.$slider.removeClass('slick-slider'),
-        t.$slider.removeClass('slick-initialized'),
-        t.$slider.removeClass('slick-dotted'),
+        t.$slider.removeClass("slick-slider"),
+        t.$slider.removeClass("slick-initialized"),
+        t.$slider.removeClass("slick-dotted"),
         (t.unslicked = !0),
-        e || t.$slider.trigger('destroy', [t]);
+        e || t.$slider.trigger("destroy", [t]);
     }),
     (e.prototype.disableTransition = function (i) {
       var e = this,
         t = {};
-      (t[e.transitionType] = ''),
+      (t[e.transitionType] = ""),
         !1 === e.options.fade ? e.$slideTrack.css(t) : e.$slides.eq(i).css(t);
     }),
     (e.prototype.fadeSlide = function (i, e) {
@@ -3512,7 +3510,7 @@ jQuery(window).on('resize', function () {
             .animate(
               { opacity: 0, zIndex: e.options.zIndex - 2 },
               e.options.speed,
-              e.options.easing
+              e.options.easing,
             )
         : (e.applyTransition(i),
           e.$slides.eq(i).css({ opacity: 0, zIndex: e.options.zIndex - 2 }));
@@ -3530,13 +3528,13 @@ jQuery(window).on('resize', function () {
     (e.prototype.focusHandler = function () {
       var e = this;
       e.$slider
-        .off('focus.slick blur.slick')
-        .on('focus.slick blur.slick', '*', function (t) {
+        .off("focus.slick blur.slick")
+        .on("focus.slick blur.slick", "*", function (t) {
           t.stopImmediatePropagation();
           var o = i(this);
           setTimeout(function () {
             e.options.pauseOnFocus &&
-              ((e.focussed = o.is(':focus')), e.autoPlay());
+              ((e.focussed = o.is(":focus")), e.autoPlay());
           }, 0);
         });
     }),
@@ -3572,7 +3570,7 @@ jQuery(window).on('resize', function () {
         o =
           1 +
           Math.ceil(
-            (i.slideCount - i.options.slidesToShow) / i.options.slidesToScroll
+            (i.slideCount - i.options.slidesToShow) / i.options.slidesToScroll,
           );
       return o - 1;
     }),
@@ -3635,9 +3633,9 @@ jQuery(window).on('resize', function () {
         !0 === n.options.variableWidth &&
           ((o =
             n.slideCount <= n.options.slidesToShow || !1 === n.options.infinite
-              ? n.$slideTrack.children('.slick-slide').eq(i)
+              ? n.$slideTrack.children(".slick-slide").eq(i)
               : n.$slideTrack
-                  .children('.slick-slide')
+                  .children(".slick-slide")
                   .eq(i + n.options.slidesToShow)),
           (e =
             !0 === n.options.rtl
@@ -3651,9 +3649,9 @@ jQuery(window).on('resize', function () {
             ((o =
               n.slideCount <= n.options.slidesToShow ||
               !1 === n.options.infinite
-                ? n.$slideTrack.children('.slick-slide').eq(i)
+                ? n.$slideTrack.children(".slick-slide").eq(i)
                 : n.$slideTrack
-                    .children('.slick-slide')
+                    .children(".slick-slide")
                     .eq(i + n.options.slidesToShow + 1)),
             (e =
               !0 === n.options.rtl
@@ -3707,22 +3705,22 @@ jQuery(window).on('resize', function () {
             ? o.slideWidth * Math.floor(o.options.slidesToShow / 2)
             : 0),
         !0 === o.options.swipeToSlide
-          ? (o.$slideTrack.find('.slick-slide').each(function (s, n) {
+          ? (o.$slideTrack.find(".slick-slide").each(function (s, n) {
               if (n.offsetLeft - t + i(n).outerWidth() / 2 > -1 * o.swipeLeft)
                 return (e = n), !1;
             }),
-            Math.abs(i(e).attr('data-slick-index') - o.currentSlide) || 1)
+            Math.abs(i(e).attr("data-slick-index") - o.currentSlide) || 1)
           : o.options.slidesToScroll
       );
     }),
     (e.prototype.goTo = e.prototype.slickGoTo =
       function (i, e) {
-        this.changeSlide({ data: { message: 'index', index: parseInt(i) } }, e);
+        this.changeSlide({ data: { message: "index", index: parseInt(i) } }, e);
       }),
     (e.prototype.init = function (e) {
       var t = this;
-      i(t.$slider).hasClass('slick-initialized') ||
-        (i(t.$slider).addClass('slick-initialized'),
+      i(t.$slider).hasClass("slick-initialized") ||
+        (i(t.$slider).addClass("slick-initialized"),
         t.buildRows(),
         t.buildOut(),
         t.setProps(),
@@ -3733,7 +3731,7 @@ jQuery(window).on('resize', function () {
         t.updateDots(),
         t.checkResponsive(!0),
         t.focusHandler()),
-        e && t.$slider.trigger('init', [t]),
+        e && t.$slider.trigger("init", [t]),
         !0 === t.options.accessibility && t.initADA(),
         t.options.autoplay && ((t.paused = !1), t.autoPlay());
     }),
@@ -3744,50 +3742,50 @@ jQuery(window).on('resize', function () {
           return i >= 0 && i < e.slideCount;
         });
       e.$slides
-        .add(e.$slideTrack.find('.slick-cloned'))
-        .attr({ 'aria-hidden': 'true', tabindex: '-1' })
-        .find('a, input, button, select')
-        .attr({ tabindex: '-1' }),
+        .add(e.$slideTrack.find(".slick-cloned"))
+        .attr({ "aria-hidden": "true", tabindex: "-1" })
+        .find("a, input, button, select")
+        .attr({ tabindex: "-1" }),
         null !== e.$dots &&
           (e.$slides
-            .not(e.$slideTrack.find('.slick-cloned'))
+            .not(e.$slideTrack.find(".slick-cloned"))
             .each(function (t) {
               var s = o.indexOf(t);
               i(this).attr({
-                role: 'tabpanel',
-                id: 'slick-slide' + e.instanceUid + t,
+                role: "tabpanel",
+                id: "slick-slide" + e.instanceUid + t,
                 tabindex: -1,
               }),
                 -1 !== s &&
                   i(this).attr({
-                    'aria-describedby':
-                      'slick-slide-control' + e.instanceUid + s,
+                    "aria-describedby":
+                      "slick-slide-control" + e.instanceUid + s,
                   });
             }),
           e.$dots
-            .attr('role', 'tablist')
-            .find('li')
+            .attr("role", "tablist")
+            .find("li")
             .each(function (s) {
               var n = o[s];
-              i(this).attr({ role: 'presentation' }),
+              i(this).attr({ role: "presentation" }),
                 i(this)
-                  .find('button')
+                  .find("button")
                   .first()
                   .attr({
-                    role: 'tab',
-                    id: 'slick-slide-control' + e.instanceUid + s,
-                    'aria-controls': 'slick-slide' + e.instanceUid + n,
-                    'aria-label': s + 1 + ' of ' + t,
-                    'aria-selected': null,
-                    tabindex: '-1',
+                    role: "tab",
+                    id: "slick-slide-control" + e.instanceUid + s,
+                    "aria-controls": "slick-slide" + e.instanceUid + n,
+                    "aria-label": s + 1 + " of " + t,
+                    "aria-selected": null,
+                    tabindex: "-1",
                   });
             })
             .eq(e.currentSlide)
-            .find('button')
-            .attr({ 'aria-selected': 'true', tabindex: '0' })
+            .find("button")
+            .attr({ "aria-selected": "true", tabindex: "0" })
             .end());
       for (var s = e.currentSlide, n = s + e.options.slidesToShow; s < n; s++)
-        e.$slides.eq(s).attr('tabindex', 0);
+        e.$slides.eq(s).attr("tabindex", 0);
       e.activateADA();
     }),
     (e.prototype.initArrowEvents = function () {
@@ -3795,36 +3793,36 @@ jQuery(window).on('resize', function () {
       !0 === i.options.arrows &&
         i.slideCount > i.options.slidesToShow &&
         (i.$prevArrow
-          .off('click.slick')
-          .on('click.slick', { message: 'previous' }, i.changeSlide),
+          .off("click.slick")
+          .on("click.slick", { message: "previous" }, i.changeSlide),
         i.$nextArrow
-          .off('click.slick')
-          .on('click.slick', { message: 'next' }, i.changeSlide),
+          .off("click.slick")
+          .on("click.slick", { message: "next" }, i.changeSlide),
         !0 === i.options.accessibility &&
-          (i.$prevArrow.on('keydown.slick', i.keyHandler),
-          i.$nextArrow.on('keydown.slick', i.keyHandler)));
+          (i.$prevArrow.on("keydown.slick", i.keyHandler),
+          i.$nextArrow.on("keydown.slick", i.keyHandler)));
     }),
     (e.prototype.initDotEvents = function () {
       var e = this;
       !0 === e.options.dots &&
-        (i('li', e.$dots).on(
-          'click.slick',
-          { message: 'index' },
-          e.changeSlide
+        (i("li", e.$dots).on(
+          "click.slick",
+          { message: "index" },
+          e.changeSlide,
         ),
         !0 === e.options.accessibility &&
-          e.$dots.on('keydown.slick', e.keyHandler)),
+          e.$dots.on("keydown.slick", e.keyHandler)),
         !0 === e.options.dots &&
           !0 === e.options.pauseOnDotsHover &&
-          i('li', e.$dots)
-            .on('mouseenter.slick', i.proxy(e.interrupt, e, !0))
-            .on('mouseleave.slick', i.proxy(e.interrupt, e, !1));
+          i("li", e.$dots)
+            .on("mouseenter.slick", i.proxy(e.interrupt, e, !0))
+            .on("mouseleave.slick", i.proxy(e.interrupt, e, !1));
     }),
     (e.prototype.initSlideEvents = function () {
       var e = this;
       e.options.pauseOnHover &&
-        (e.$list.on('mouseenter.slick', i.proxy(e.interrupt, e, !0)),
-        e.$list.on('mouseleave.slick', i.proxy(e.interrupt, e, !1)));
+        (e.$list.on("mouseenter.slick", i.proxy(e.interrupt, e, !0)),
+        e.$list.on("mouseleave.slick", i.proxy(e.interrupt, e, !1)));
     }),
     (e.prototype.initializeEvents = function () {
       var e = this;
@@ -3832,41 +3830,41 @@ jQuery(window).on('resize', function () {
         e.initDotEvents(),
         e.initSlideEvents(),
         e.$list.on(
-          'touchstart.slick mousedown.slick',
-          { action: 'start' },
-          e.swipeHandler
+          "touchstart.slick mousedown.slick",
+          { action: "start" },
+          e.swipeHandler,
         ),
         e.$list.on(
-          'touchmove.slick mousemove.slick',
-          { action: 'move' },
-          e.swipeHandler
+          "touchmove.slick mousemove.slick",
+          { action: "move" },
+          e.swipeHandler,
         ),
         e.$list.on(
-          'touchend.slick mouseup.slick',
-          { action: 'end' },
-          e.swipeHandler
+          "touchend.slick mouseup.slick",
+          { action: "end" },
+          e.swipeHandler,
         ),
         e.$list.on(
-          'touchcancel.slick mouseleave.slick',
-          { action: 'end' },
-          e.swipeHandler
+          "touchcancel.slick mouseleave.slick",
+          { action: "end" },
+          e.swipeHandler,
         ),
-        e.$list.on('click.slick', e.clickHandler),
+        e.$list.on("click.slick", e.clickHandler),
         i(document).on(e.visibilityChange, i.proxy(e.visibility, e)),
         !0 === e.options.accessibility &&
-          e.$list.on('keydown.slick', e.keyHandler),
+          e.$list.on("keydown.slick", e.keyHandler),
         !0 === e.options.focusOnSelect &&
-          i(e.$slideTrack).children().on('click.slick', e.selectHandler),
+          i(e.$slideTrack).children().on("click.slick", e.selectHandler),
         i(window).on(
-          'orientationchange.slick.slick-' + e.instanceUid,
-          i.proxy(e.orientationChange, e)
+          "orientationchange.slick.slick-" + e.instanceUid,
+          i.proxy(e.orientationChange, e),
         ),
         i(window).on(
-          'resize.slick.slick-' + e.instanceUid,
-          i.proxy(e.resize, e)
+          "resize.slick.slick-" + e.instanceUid,
+          i.proxy(e.resize, e),
         ),
-        i('[draggable!=true]', e.$slideTrack).on('dragstart', e.preventDefault),
-        i(window).on('load.slick.slick-' + e.instanceUid, e.setPosition),
+        i("[draggable!=true]", e.$slideTrack).on("dragstart", e.preventDefault),
+        i(window).on("load.slick.slick-" + e.instanceUid, e.setPosition),
         i(e.setPosition);
     }),
     (e.prototype.initUI = function () {
@@ -3880,42 +3878,42 @@ jQuery(window).on('resize', function () {
     }),
     (e.prototype.keyHandler = function (i) {
       var e = this;
-      i.target.tagName.match('TEXTAREA|INPUT|SELECT') ||
+      i.target.tagName.match("TEXTAREA|INPUT|SELECT") ||
         (37 === i.keyCode && !0 === e.options.accessibility
           ? e.changeSlide({
-              data: { message: !0 === e.options.rtl ? 'next' : 'previous' },
+              data: { message: !0 === e.options.rtl ? "next" : "previous" },
             })
           : 39 === i.keyCode &&
             !0 === e.options.accessibility &&
             e.changeSlide({
-              data: { message: !0 === e.options.rtl ? 'previous' : 'next' },
+              data: { message: !0 === e.options.rtl ? "previous" : "next" },
             }));
     }),
     (e.prototype.lazyLoad = function () {
       function e(e) {
-        i('img[data-lazy]', e).each(function () {
+        i("img[data-lazy]", e).each(function () {
           var e = i(this),
-            t = i(this).attr('data-lazy'),
-            o = i(this).attr('data-srcset'),
-            s = i(this).attr('data-sizes') || n.$slider.attr('data-sizes'),
-            r = document.createElement('img');
+            t = i(this).attr("data-lazy"),
+            o = i(this).attr("data-srcset"),
+            s = i(this).attr("data-sizes") || n.$slider.attr("data-sizes"),
+            r = document.createElement("img");
           (r.onload = function () {
             e.animate({ opacity: 0 }, 100, function () {
-              o && (e.attr('srcset', o), s && e.attr('sizes', s)),
-                e.attr('src', t).animate({ opacity: 1 }, 200, function () {
-                  e.removeAttr('data-lazy data-srcset data-sizes').removeClass(
-                    'slick-loading'
+              o && (e.attr("srcset", o), s && e.attr("sizes", s)),
+                e.attr("src", t).animate({ opacity: 1 }, 200, function () {
+                  e.removeAttr("data-lazy data-srcset data-sizes").removeClass(
+                    "slick-loading",
                   );
                 }),
-                n.$slider.trigger('lazyLoaded', [n, e, t]);
+                n.$slider.trigger("lazyLoaded", [n, e, t]);
             });
           }),
             (r.onerror = function () {
               e
-                .removeAttr('data-lazy')
-                .removeClass('slick-loading')
-                .addClass('slick-lazyload-error'),
-                n.$slider.trigger('lazyLoadError', [n, e, t]);
+                .removeAttr("data-lazy")
+                .removeClass("slick-loading")
+                .addClass("slick-lazyload-error"),
+                n.$slider.trigger("lazyLoadError", [n, e, t]);
             }),
             (r.src = t);
         });
@@ -3933,7 +3931,7 @@ jQuery(window).on('resize', function () {
                 2)
             : ((o = Math.max(
                 0,
-                n.currentSlide - (n.options.slidesToShow / 2 + 1)
+                n.currentSlide - (n.options.slidesToShow / 2 + 1),
               )),
               (s = n.options.slidesToShow / 2 + 1 + 2 + n.currentSlide))
           : ((o = n.options.infinite
@@ -3941,11 +3939,11 @@ jQuery(window).on('resize', function () {
               : n.currentSlide),
             (s = Math.ceil(o + n.options.slidesToShow)),
             !0 === n.options.fade && (o > 0 && o--, s <= n.slideCount && s++)),
-        (t = n.$slider.find('.slick-slide').slice(o, s)),
-        'anticipated' === n.options.lazyLoad)
+        (t = n.$slider.find(".slick-slide").slice(o, s)),
+        "anticipated" === n.options.lazyLoad)
       )
         for (
-          var r = o - 1, l = s, d = n.$slider.find('.slick-slide'), a = 0;
+          var r = o - 1, l = s, d = n.$slider.find(".slick-slide"), a = 0;
           a < n.options.slidesToScroll;
           a++
         )
@@ -3955,29 +3953,31 @@ jQuery(window).on('resize', function () {
             l++;
       e(t),
         n.slideCount <= n.options.slidesToShow
-          ? e(n.$slider.find('.slick-slide'))
+          ? e(n.$slider.find(".slick-slide"))
           : n.currentSlide >= n.slideCount - n.options.slidesToShow
             ? e(
-                n.$slider.find('.slick-cloned').slice(0, n.options.slidesToShow)
+                n.$slider
+                  .find(".slick-cloned")
+                  .slice(0, n.options.slidesToShow),
               )
             : 0 === n.currentSlide &&
               e(
                 n.$slider
-                  .find('.slick-cloned')
-                  .slice(-1 * n.options.slidesToShow)
+                  .find(".slick-cloned")
+                  .slice(-1 * n.options.slidesToShow),
               );
     }),
     (e.prototype.loadSlider = function () {
       var i = this;
       i.setPosition(),
         i.$slideTrack.css({ opacity: 1 }),
-        i.$slider.removeClass('slick-loading'),
+        i.$slider.removeClass("slick-loading"),
         i.initUI(),
-        'progressive' === i.options.lazyLoad && i.progressiveLazyLoad();
+        "progressive" === i.options.lazyLoad && i.progressiveLazyLoad();
     }),
     (e.prototype.next = e.prototype.slickNext =
       function () {
-        this.changeSlide({ data: { message: 'next' } });
+        this.changeSlide({ data: { message: "next" } });
       }),
     (e.prototype.orientationChange = function () {
       var i = this;
@@ -4000,7 +4000,7 @@ jQuery(window).on('resize', function () {
     (e.prototype.postSlide = function (e) {
       var t = this;
       t.unslicked ||
-        (t.$slider.trigger('afterChange', [t, e]),
+        (t.$slider.trigger("afterChange", [t, e]),
         (t.animating = !1),
         t.slideCount > t.options.slidesToShow && t.setPosition(),
         (t.swipeLeft = null),
@@ -4008,11 +4008,11 @@ jQuery(window).on('resize', function () {
         !0 === t.options.accessibility &&
           (t.initADA(),
           t.options.focusOnChange &&
-            i(t.$slides.get(t.currentSlide)).attr('tabindex', 0).focus()));
+            i(t.$slides.get(t.currentSlide)).attr("tabindex", 0).focus()));
     }),
     (e.prototype.prev = e.prototype.slickPrev =
       function () {
-        this.changeSlide({ data: { message: 'previous' } });
+        this.changeSlide({ data: { message: "previous" } });
       }),
     (e.prototype.preventDefault = function (i) {
       i.preventDefault();
@@ -4025,20 +4025,20 @@ jQuery(window).on('resize', function () {
         n,
         r,
         l = this,
-        d = i('img[data-lazy]', l.$slider);
+        d = i("img[data-lazy]", l.$slider);
       d.length
         ? ((t = d.first()),
-          (o = t.attr('data-lazy')),
-          (s = t.attr('data-srcset')),
-          (n = t.attr('data-sizes') || l.$slider.attr('data-sizes')),
-          ((r = document.createElement('img')).onload = function () {
-            s && (t.attr('srcset', s), n && t.attr('sizes', n)),
+          (o = t.attr("data-lazy")),
+          (s = t.attr("data-srcset")),
+          (n = t.attr("data-sizes") || l.$slider.attr("data-sizes")),
+          ((r = document.createElement("img")).onload = function () {
+            s && (t.attr("srcset", s), n && t.attr("sizes", n)),
               t
-                .attr('src', o)
-                .removeAttr('data-lazy data-srcset data-sizes')
-                .removeClass('slick-loading'),
+                .attr("src", o)
+                .removeAttr("data-lazy data-srcset data-sizes")
+                .removeClass("slick-loading"),
               !0 === l.options.adaptiveHeight && l.setPosition(),
-              l.$slider.trigger('lazyLoaded', [l, t, o]),
+              l.$slider.trigger("lazyLoaded", [l, t, o]),
               l.progressiveLazyLoad();
           }),
           (r.onerror = function () {
@@ -4047,14 +4047,14 @@ jQuery(window).on('resize', function () {
                   l.progressiveLazyLoad(e + 1);
                 }, 500)
               : (t
-                  .removeAttr('data-lazy')
-                  .removeClass('slick-loading')
-                  .addClass('slick-lazyload-error'),
-                l.$slider.trigger('lazyLoadError', [l, t, o]),
+                  .removeAttr("data-lazy")
+                  .removeClass("slick-loading")
+                  .addClass("slick-lazyload-error"),
+                l.$slider.trigger("lazyLoadError", [l, t, o]),
                 l.progressiveLazyLoad());
           }),
           (r.src = o))
-        : l.$slider.trigger('allImagesLoaded', [l]);
+        : l.$slider.trigger("allImagesLoaded", [l]);
     }),
     (e.prototype.refresh = function (e) {
       var t,
@@ -4067,7 +4067,7 @@ jQuery(window).on('resize', function () {
         s.destroy(!0),
         i.extend(s, s.initials, { currentSlide: t }),
         s.init(),
-        e || s.changeSlide({ data: { message: 'index', index: t } }, !1);
+        e || s.changeSlide({ data: { message: "index", index: t } }, !1);
     }),
     (e.prototype.registerBreakpoints = function () {
       var e,
@@ -4075,8 +4075,8 @@ jQuery(window).on('resize', function () {
         o,
         s = this,
         n = s.options.responsive || null;
-      if ('array' === i.type(n) && n.length) {
-        s.respondTo = s.options.respondTo || 'window';
+      if ("array" === i.type(n) && n.length) {
+        s.respondTo = s.options.respondTo || "window";
         for (e in n)
           if (((o = s.breakpoints.length - 1), n.hasOwnProperty(e))) {
             for (t = n[e].breakpoint; o >= 0; )
@@ -4095,7 +4095,7 @@ jQuery(window).on('resize', function () {
       var e = this;
       (e.$slides = e.$slideTrack
         .children(e.options.slide)
-        .addClass('slick-slide')),
+        .addClass("slick-slide")),
         (e.slideCount = e.$slides.length),
         e.currentSlide >= e.slideCount &&
           0 !== e.currentSlide &&
@@ -4114,15 +4114,15 @@ jQuery(window).on('resize', function () {
         e.initSlideEvents(),
         e.checkResponsive(!1, !0),
         !0 === e.options.focusOnSelect &&
-          i(e.$slideTrack).children().on('click.slick', e.selectHandler),
+          i(e.$slideTrack).children().on("click.slick", e.selectHandler),
         e.setSlideClasses(
-          'number' == typeof e.currentSlide ? e.currentSlide : 0
+          "number" == typeof e.currentSlide ? e.currentSlide : 0,
         ),
         e.setPosition(),
         e.focusHandler(),
         (e.paused = !e.options.autoplay),
         e.autoPlay(),
-        e.$slider.trigger('reInit', [e]);
+        e.$slider.trigger("reInit", [e]);
     }),
     (e.prototype.resize = function () {
       var e = this;
@@ -4139,7 +4139,7 @@ jQuery(window).on('resize', function () {
         var o = this;
         if (
           ((i =
-            'boolean' == typeof i
+            "boolean" == typeof i
               ? !0 === (e = i)
                 ? 0
                 : o.slideCount - 1
@@ -4165,36 +4165,36 @@ jQuery(window).on('resize', function () {
         o = this,
         s = {};
       !0 === o.options.rtl && (i = -i),
-        (e = 'left' == o.positionProp ? Math.ceil(i) + 'px' : '0px'),
-        (t = 'top' == o.positionProp ? Math.ceil(i) + 'px' : '0px'),
+        (e = "left" == o.positionProp ? Math.ceil(i) + "px" : "0px"),
+        (t = "top" == o.positionProp ? Math.ceil(i) + "px" : "0px"),
         (s[o.positionProp] = i),
         !1 === o.transformsEnabled
           ? o.$slideTrack.css(s)
           : ((s = {}),
             !1 === o.cssTransitions
-              ? ((s[o.animType] = 'translate(' + e + ', ' + t + ')'),
+              ? ((s[o.animType] = "translate(" + e + ", " + t + ")"),
                 o.$slideTrack.css(s))
-              : ((s[o.animType] = 'translate3d(' + e + ', ' + t + ', 0px)'),
+              : ((s[o.animType] = "translate3d(" + e + ", " + t + ", 0px)"),
                 o.$slideTrack.css(s)));
     }),
     (e.prototype.setDimensions = function () {
       var i = this;
       !1 === i.options.vertical
         ? !0 === i.options.centerMode &&
-          i.$list.css({ padding: '0px ' + i.options.centerPadding })
+          i.$list.css({ padding: "0px " + i.options.centerPadding })
         : (i.$list.height(
-            i.$slides.first().outerHeight(!0) * i.options.slidesToShow
+            i.$slides.first().outerHeight(!0) * i.options.slidesToShow,
           ),
           !0 === i.options.centerMode &&
-            i.$list.css({ padding: i.options.centerPadding + ' 0px' })),
+            i.$list.css({ padding: i.options.centerPadding + " 0px" })),
         (i.listWidth = i.$list.width()),
         (i.listHeight = i.$list.height()),
         !1 === i.options.vertical && !1 === i.options.variableWidth
           ? ((i.slideWidth = Math.ceil(i.listWidth / i.options.slidesToShow)),
             i.$slideTrack.width(
               Math.ceil(
-                i.slideWidth * i.$slideTrack.children('.slick-slide').length
-              )
+                i.slideWidth * i.$slideTrack.children(".slick-slide").length,
+              ),
             ))
           : !0 === i.options.variableWidth
             ? i.$slideTrack.width(5e3 * i.slideCount)
@@ -4202,12 +4202,12 @@ jQuery(window).on('resize', function () {
               i.$slideTrack.height(
                 Math.ceil(
                   i.$slides.first().outerHeight(!0) *
-                    i.$slideTrack.children('.slick-slide').length
-                )
+                    i.$slideTrack.children(".slick-slide").length,
+                ),
               ));
       var e = i.$slides.first().outerWidth(!0) - i.$slides.first().width();
       !1 === i.options.variableWidth &&
-        i.$slideTrack.children('.slick-slide').width(i.slideWidth - e);
+        i.$slideTrack.children(".slick-slide").width(i.slideWidth - e);
     }),
     (e.prototype.setFade = function () {
       var e,
@@ -4216,14 +4216,14 @@ jQuery(window).on('resize', function () {
         (e = t.slideWidth * o * -1),
           !0 === t.options.rtl
             ? i(s).css({
-                position: 'relative',
+                position: "relative",
                 right: e,
                 top: 0,
                 zIndex: t.options.zIndex - 2,
                 opacity: 0,
               })
             : i(s).css({
-                position: 'relative',
+                position: "relative",
                 left: e,
                 top: 0,
                 zIndex: t.options.zIndex - 2,
@@ -4242,7 +4242,7 @@ jQuery(window).on('resize', function () {
         !1 === i.options.vertical
       ) {
         var e = i.$slides.eq(i.currentSlide).outerHeight(!0);
-        i.$list.css('height', e);
+        i.$list.css("height", e);
       }
     }),
     (e.prototype.setOption = e.prototype.slickSetOption =
@@ -4255,25 +4255,25 @@ jQuery(window).on('resize', function () {
           r = this,
           l = !1;
         if (
-          ('object' === i.type(arguments[0])
-            ? ((o = arguments[0]), (l = arguments[1]), (n = 'multiple'))
-            : 'string' === i.type(arguments[0]) &&
+          ("object" === i.type(arguments[0])
+            ? ((o = arguments[0]), (l = arguments[1]), (n = "multiple"))
+            : "string" === i.type(arguments[0]) &&
               ((o = arguments[0]),
               (s = arguments[1]),
               (l = arguments[2]),
-              'responsive' === arguments[0] && 'array' === i.type(arguments[1])
-                ? (n = 'responsive')
-                : void 0 !== arguments[1] && (n = 'single')),
-          'single' === n)
+              "responsive" === arguments[0] && "array" === i.type(arguments[1])
+                ? (n = "responsive")
+                : void 0 !== arguments[1] && (n = "single")),
+          "single" === n)
         )
           r.options[o] = s;
-        else if ('multiple' === n)
+        else if ("multiple" === n)
           i.each(o, function (i, e) {
             r.options[i] = e;
           });
-        else if ('responsive' === n)
+        else if ("responsive" === n)
           for (t in s)
-            if ('array' !== i.type(r.options.responsive))
+            if ("array" !== i.type(r.options.responsive))
               r.options.responsive = [s[t]];
             else {
               for (e = r.options.responsive.length - 1; e >= 0; )
@@ -4291,54 +4291,54 @@ jQuery(window).on('resize', function () {
         !1 === i.options.fade
           ? i.setCSS(i.getLeft(i.currentSlide))
           : i.setFade(),
-        i.$slider.trigger('setPosition', [i]);
+        i.$slider.trigger("setPosition", [i]);
     }),
     (e.prototype.setProps = function () {
       var i = this,
         e = document.body.style;
-      (i.positionProp = !0 === i.options.vertical ? 'top' : 'left'),
-        'top' === i.positionProp
-          ? i.$slider.addClass('slick-vertical')
-          : i.$slider.removeClass('slick-vertical'),
+      (i.positionProp = !0 === i.options.vertical ? "top" : "left"),
+        "top" === i.positionProp
+          ? i.$slider.addClass("slick-vertical")
+          : i.$slider.removeClass("slick-vertical"),
         (void 0 === e.WebkitTransition &&
           void 0 === e.MozTransition &&
           void 0 === e.msTransition) ||
           (!0 === i.options.useCSS && (i.cssTransitions = !0)),
         i.options.fade &&
-          ('number' == typeof i.options.zIndex
+          ("number" == typeof i.options.zIndex
             ? i.options.zIndex < 3 && (i.options.zIndex = 3)
             : (i.options.zIndex = i.defaults.zIndex)),
         void 0 !== e.OTransform &&
-          ((i.animType = 'OTransform'),
-          (i.transformType = '-o-transform'),
-          (i.transitionType = 'OTransition'),
+          ((i.animType = "OTransform"),
+          (i.transformType = "-o-transform"),
+          (i.transitionType = "OTransition"),
           void 0 === e.perspectiveProperty &&
             void 0 === e.webkitPerspective &&
             (i.animType = !1)),
         void 0 !== e.MozTransform &&
-          ((i.animType = 'MozTransform'),
-          (i.transformType = '-moz-transform'),
-          (i.transitionType = 'MozTransition'),
+          ((i.animType = "MozTransform"),
+          (i.transformType = "-moz-transform"),
+          (i.transitionType = "MozTransition"),
           void 0 === e.perspectiveProperty &&
             void 0 === e.MozPerspective &&
             (i.animType = !1)),
         void 0 !== e.webkitTransform &&
-          ((i.animType = 'webkitTransform'),
-          (i.transformType = '-webkit-transform'),
-          (i.transitionType = 'webkitTransition'),
+          ((i.animType = "webkitTransform"),
+          (i.transformType = "-webkit-transform"),
+          (i.transitionType = "webkitTransition"),
           void 0 === e.perspectiveProperty &&
             void 0 === e.webkitPerspective &&
             (i.animType = !1)),
         void 0 !== e.msTransform &&
-          ((i.animType = 'msTransform'),
-          (i.transformType = '-ms-transform'),
-          (i.transitionType = 'msTransition'),
+          ((i.animType = "msTransform"),
+          (i.transformType = "-ms-transform"),
+          (i.transitionType = "msTransition"),
           void 0 === e.msTransform && (i.animType = !1)),
         void 0 !== e.transform &&
           !1 !== i.animType &&
-          ((i.animType = 'transform'),
-          (i.transformType = 'transform'),
-          (i.transitionType = 'transition')),
+          ((i.animType = "transform"),
+          (i.transformType = "transform"),
+          (i.transitionType = "transition")),
         (i.transformsEnabled =
           i.options.useTransform && null !== i.animType && !1 !== i.animType);
     }),
@@ -4350,10 +4350,10 @@ jQuery(window).on('resize', function () {
         n = this;
       if (
         ((t = n.$slider
-          .find('.slick-slide')
-          .removeClass('slick-active slick-center slick-current')
-          .attr('aria-hidden', 'true')),
-        n.$slides.eq(i).addClass('slick-current'),
+          .find(".slick-slide")
+          .removeClass("slick-active slick-center slick-current")
+          .attr("aria-hidden", "true")),
+        n.$slides.eq(i).addClass("slick-current"),
         !0 === n.options.centerMode)
       ) {
         var r = n.options.slidesToShow % 2 == 0 ? 1 : 0;
@@ -4362,42 +4362,42 @@ jQuery(window).on('resize', function () {
             (i >= e && i <= n.slideCount - 1 - e
               ? n.$slides
                   .slice(i - e + r, i + e + 1)
-                  .addClass('slick-active')
-                  .attr('aria-hidden', 'false')
+                  .addClass("slick-active")
+                  .attr("aria-hidden", "false")
               : ((o = n.options.slidesToShow + i),
                 t
                   .slice(o - e + 1 + r, o + e + 2)
-                  .addClass('slick-active')
-                  .attr('aria-hidden', 'false')),
+                  .addClass("slick-active")
+                  .attr("aria-hidden", "false")),
             0 === i
               ? t
                   .eq(t.length - 1 - n.options.slidesToShow)
-                  .addClass('slick-center')
+                  .addClass("slick-center")
               : i === n.slideCount - 1 &&
-                t.eq(n.options.slidesToShow).addClass('slick-center')),
-          n.$slides.eq(i).addClass('slick-center');
+                t.eq(n.options.slidesToShow).addClass("slick-center")),
+          n.$slides.eq(i).addClass("slick-center");
       } else
         i >= 0 && i <= n.slideCount - n.options.slidesToShow
           ? n.$slides
               .slice(i, i + n.options.slidesToShow)
-              .addClass('slick-active')
-              .attr('aria-hidden', 'false')
+              .addClass("slick-active")
+              .attr("aria-hidden", "false")
           : t.length <= n.options.slidesToShow
-            ? t.addClass('slick-active').attr('aria-hidden', 'false')
+            ? t.addClass("slick-active").attr("aria-hidden", "false")
             : ((s = n.slideCount % n.options.slidesToShow),
               (o = !0 === n.options.infinite ? n.options.slidesToShow + i : i),
               n.options.slidesToShow == n.options.slidesToScroll &&
               n.slideCount - i < n.options.slidesToShow
                 ? t
                     .slice(o - (n.options.slidesToShow - s), o + s)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false')
+                    .addClass("slick-active")
+                    .attr("aria-hidden", "false")
                 : t
                     .slice(o, o + n.options.slidesToShow)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false'));
-      ('ondemand' !== n.options.lazyLoad &&
-        'anticipated' !== n.options.lazyLoad) ||
+                    .addClass("slick-active")
+                    .attr("aria-hidden", "false"));
+      ("ondemand" !== n.options.lazyLoad &&
+        "anticipated" !== n.options.lazyLoad) ||
         n.lazyLoad();
     }),
     (e.prototype.setupInfinite = function () {
@@ -4423,23 +4423,23 @@ jQuery(window).on('resize', function () {
           (t = e - 1),
             i(s.$slides[t])
               .clone(!0)
-              .attr('id', '')
-              .attr('data-slick-index', t - s.slideCount)
+              .attr("id", "")
+              .attr("data-slick-index", t - s.slideCount)
               .prependTo(s.$slideTrack)
-              .addClass('slick-cloned');
+              .addClass("slick-cloned");
         for (e = 0; e < o + s.slideCount; e += 1)
           (t = e),
             i(s.$slides[t])
               .clone(!0)
-              .attr('id', '')
-              .attr('data-slick-index', t + s.slideCount)
+              .attr("id", "")
+              .attr("data-slick-index", t + s.slideCount)
               .appendTo(s.$slideTrack)
-              .addClass('slick-cloned');
+              .addClass("slick-cloned");
         s.$slideTrack
-          .find('.slick-cloned')
-          .find('[id]')
+          .find(".slick-cloned")
+          .find("[id]")
           .each(function () {
-            i(this).attr('id', '');
+            i(this).attr("id", "");
           });
       }
     }),
@@ -4449,10 +4449,10 @@ jQuery(window).on('resize', function () {
     }),
     (e.prototype.selectHandler = function (e) {
       var t = this,
-        o = i(e.target).is('.slick-slide')
+        o = i(e.target).is(".slick-slide")
           ? i(e.target)
-          : i(e.target).parents('.slick-slide'),
-        s = parseInt(o.attr('data-slick-index'));
+          : i(e.target).parents(".slick-slide"),
+        s = parseInt(o.attr("data-slick-index"));
       s || (s = 0),
         t.slideCount <= t.options.slidesToShow
           ? t.slideHandler(s, !1, !0)
@@ -4516,12 +4516,12 @@ jQuery(window).on('resize', function () {
                     : o - a.slideCount
                   : o),
             (a.animating = !0),
-            a.$slider.trigger('beforeChange', [a, a.currentSlide, s]),
+            a.$slider.trigger("beforeChange", [a, a.currentSlide, s]),
             (n = a.currentSlide),
             (a.currentSlide = s),
             a.setSlideClasses(a.currentSlide),
             a.options.asNavFor &&
-              (l = (l = a.getNavTarget()).slick('getSlick')).slideCount <=
+              (l = (l = a.getNavTarget()).slick("getSlick")).slideCount <=
                 l.options.slidesToShow &&
               l.setSlideClasses(a.currentSlide),
             a.updateDots(),
@@ -4552,7 +4552,7 @@ jQuery(window).on('resize', function () {
         !0 === i.options.dots &&
           i.slideCount > i.options.slidesToShow &&
           i.$dots.hide(),
-        i.$slider.addClass('slick-loading');
+        i.$slider.addClass("slick-loading");
     }),
     (e.prototype.swipeDirection = function () {
       var i,
@@ -4567,21 +4567,21 @@ jQuery(window).on('resize', function () {
         (o = Math.round((180 * t) / Math.PI)) < 0 && (o = 360 - Math.abs(o)),
         o <= 45 && o >= 0
           ? !1 === s.options.rtl
-            ? 'left'
-            : 'right'
+            ? "left"
+            : "right"
           : o <= 360 && o >= 315
             ? !1 === s.options.rtl
-              ? 'left'
-              : 'right'
+              ? "left"
+              : "right"
             : o >= 135 && o <= 225
               ? !1 === s.options.rtl
-                ? 'right'
-                : 'left'
+                ? "right"
+                : "left"
               : !0 === s.options.verticalSwiping
                 ? o >= 35 && o <= 135
-                  ? 'down'
-                  : 'up'
-                : 'vertical'
+                  ? "down"
+                  : "up"
+                : "vertical"
       );
     }),
     (e.prototype.swipeEnd = function (i) {
@@ -4598,28 +4598,28 @@ jQuery(window).on('resize', function () {
         return !1;
       if (
         (!0 === o.touchObject.edgeHit &&
-          o.$slider.trigger('edge', [o, o.swipeDirection()]),
+          o.$slider.trigger("edge", [o, o.swipeDirection()]),
         o.touchObject.swipeLength >= o.touchObject.minSwipe)
       ) {
         switch ((t = o.swipeDirection())) {
-          case 'left':
-          case 'down':
+          case "left":
+          case "down":
             (e = o.options.swipeToSlide
               ? o.checkNavigable(o.currentSlide + o.getSlideCount())
               : o.currentSlide + o.getSlideCount()),
               (o.currentDirection = 0);
             break;
-          case 'right':
-          case 'up':
+          case "right":
+          case "up":
             (e = o.options.swipeToSlide
               ? o.checkNavigable(o.currentSlide - o.getSlideCount())
               : o.currentSlide - o.getSlideCount()),
               (o.currentDirection = 1);
         }
-        'vertical' != t &&
+        "vertical" != t &&
           (o.slideHandler(e),
           (o.touchObject = {}),
-          o.$slider.trigger('swipe', [o, t]));
+          o.$slider.trigger("swipe", [o, t]));
       } else
         o.touchObject.startX !== o.touchObject.curX &&
           (o.slideHandler(o.currentSlide), (o.touchObject = {}));
@@ -4629,8 +4629,8 @@ jQuery(window).on('resize', function () {
       if (
         !(
           !1 === e.options.swipe ||
-          ('ontouchend' in document && !1 === e.options.swipe) ||
-          (!1 === e.options.draggable && -1 !== i.type.indexOf('mouse'))
+          ("ontouchend" in document && !1 === e.options.swipe) ||
+          (!1 === e.options.draggable && -1 !== i.type.indexOf("mouse"))
         )
       )
         switch (
@@ -4643,13 +4643,13 @@ jQuery(window).on('resize', function () {
             (e.touchObject.minSwipe = e.listHeight / e.options.touchThreshold),
           i.data.action)
         ) {
-          case 'start':
+          case "start":
             e.swipeStart(i);
             break;
-          case 'move':
+          case "move":
             e.swipeMove(i);
             break;
-          case 'end':
+          case "end":
             e.swipeEnd(i);
         }
     }),
@@ -4668,10 +4668,10 @@ jQuery(window).on('resize', function () {
           (l.touchObject.curX = void 0 !== n ? n[0].pageX : i.clientX),
           (l.touchObject.curY = void 0 !== n ? n[0].pageY : i.clientY),
           (l.touchObject.swipeLength = Math.round(
-            Math.sqrt(Math.pow(l.touchObject.curX - l.touchObject.startX, 2))
+            Math.sqrt(Math.pow(l.touchObject.curX - l.touchObject.startX, 2)),
           )),
           (r = Math.round(
-            Math.sqrt(Math.pow(l.touchObject.curY - l.touchObject.startY, 2))
+            Math.sqrt(Math.pow(l.touchObject.curY - l.touchObject.startY, 2)),
           )),
           !l.options.verticalSwiping && !l.swiping && r > 4
             ? ((l.scrolling = !0), !1)
@@ -4689,8 +4689,8 @@ jQuery(window).on('resize', function () {
               (o = l.touchObject.swipeLength),
               (l.touchObject.edgeHit = !1),
               !1 === l.options.infinite &&
-                ((0 === l.currentSlide && 'right' === t) ||
-                  (l.currentSlide >= l.getDotCount() && 'left' === t)) &&
+                ((0 === l.currentSlide && "right" === t) ||
+                  (l.currentSlide >= l.getDotCount() && "left" === t)) &&
                 ((o = l.touchObject.swipeLength * l.options.edgeFriction),
                 (l.touchObject.edgeHit = !0)),
               !1 === l.options.vertical
@@ -4733,7 +4733,7 @@ jQuery(window).on('resize', function () {
       }),
     (e.prototype.unload = function () {
       var e = this;
-      i('.slick-cloned', e.$slider).remove(),
+      i(".slick-cloned", e.$slider).remove(),
         e.$dots && e.$dots.remove(),
         e.$prevArrow &&
           e.htmlExpr.test(e.options.prevArrow) &&
@@ -4742,13 +4742,13 @@ jQuery(window).on('resize', function () {
           e.htmlExpr.test(e.options.nextArrow) &&
           e.$nextArrow.remove(),
         e.$slides
-          .removeClass('slick-slide slick-active slick-visible slick-current')
-          .attr('aria-hidden', 'true')
-          .css('width', '');
+          .removeClass("slick-slide slick-active slick-visible slick-current")
+          .attr("aria-hidden", "true")
+          .css("width", "");
     }),
     (e.prototype.unslick = function (i) {
       var e = this;
-      e.$slider.trigger('unslick', [e, i]), e.destroy();
+      e.$slider.trigger("unslick", [e, i]), e.destroy();
     }),
     (e.prototype.updateArrows = function () {
       var i = this;
@@ -4757,43 +4757,43 @@ jQuery(window).on('resize', function () {
           i.slideCount > i.options.slidesToShow &&
           !i.options.infinite &&
           (i.$prevArrow
-            .removeClass('slick-disabled')
-            .attr('aria-disabled', 'false'),
+            .removeClass("slick-disabled")
+            .attr("aria-disabled", "false"),
           i.$nextArrow
-            .removeClass('slick-disabled')
-            .attr('aria-disabled', 'false'),
+            .removeClass("slick-disabled")
+            .attr("aria-disabled", "false"),
           0 === i.currentSlide
             ? (i.$prevArrow
-                .addClass('slick-disabled')
-                .attr('aria-disabled', 'true'),
+                .addClass("slick-disabled")
+                .attr("aria-disabled", "true"),
               i.$nextArrow
-                .removeClass('slick-disabled')
-                .attr('aria-disabled', 'false'))
+                .removeClass("slick-disabled")
+                .attr("aria-disabled", "false"))
             : i.currentSlide >= i.slideCount - i.options.slidesToShow &&
                 !1 === i.options.centerMode
               ? (i.$nextArrow
-                  .addClass('slick-disabled')
-                  .attr('aria-disabled', 'true'),
+                  .addClass("slick-disabled")
+                  .attr("aria-disabled", "true"),
                 i.$prevArrow
-                  .removeClass('slick-disabled')
-                  .attr('aria-disabled', 'false'))
+                  .removeClass("slick-disabled")
+                  .attr("aria-disabled", "false"))
               : i.currentSlide >= i.slideCount - 1 &&
                 !0 === i.options.centerMode &&
                 (i.$nextArrow
-                  .addClass('slick-disabled')
-                  .attr('aria-disabled', 'true'),
+                  .addClass("slick-disabled")
+                  .attr("aria-disabled", "true"),
                 i.$prevArrow
-                  .removeClass('slick-disabled')
-                  .attr('aria-disabled', 'false')));
+                  .removeClass("slick-disabled")
+                  .attr("aria-disabled", "false")));
     }),
     (e.prototype.updateDots = function () {
       var i = this;
       null !== i.$dots &&
-        (i.$dots.find('li').removeClass('slick-active').end(),
+        (i.$dots.find("li").removeClass("slick-active").end(),
         i.$dots
-          .find('li')
+          .find("li")
           .eq(Math.floor(i.currentSlide / i.options.slidesToScroll))
-          .addClass('slick-active'));
+          .addClass("slick-active"));
     }),
     (e.prototype.visibility = function () {
       var i = this;
@@ -4809,7 +4809,7 @@ jQuery(window).on('resize', function () {
         r = o.length;
       for (i = 0; i < r; i++)
         if (
-          ('object' == typeof s || void 0 === s
+          ("object" == typeof s || void 0 === s
             ? (o[i].slick = new e(o[i], s))
             : (t = o[i].slick[s].apply(o[i].slick, n)),
           void 0 !== t)
@@ -4820,989 +4820,753 @@ jQuery(window).on('resize', function () {
 });
 
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined'
-    ? (module.exports = factory())
-    : typeof define === 'function' && define.amd
-      ? define(factory)
-      : (global.StickySidebar = factory());
-})(this, function () {
-  'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.StickySidebar = factory());
+}(this, (function () { 'use strict';
 
-  var commonjsGlobal =
-    typeof window !== 'undefined'
-      ? window
-      : typeof global !== 'undefined'
-        ? global
-        : typeof self !== 'undefined'
-          ? self
-          : {};
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
-  function unwrapExports(x) {
-    return x &&
-      x.__esModule &&
-      Object.prototype.hasOwnProperty.call(x, 'default')
-      ? x['default']
-      : x;
+
+
+function unwrapExports (x) {
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var stickySidebar = createCommonjsModule(function (module, exports) {
+(function (global, factory) {
+  if (typeof undefined === "function" && undefined.amd) {
+    undefined(['exports'], factory);
+  } else {
+    factory(exports);
+  }
+})(commonjsGlobal, function (exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
   }
 
-  function createCommonjsModule(fn, module) {
-    return (
-      (module = { exports: {} }), fn(module, module.exports), module.exports
-    );
-  }
-
-  var stickySidebar = createCommonjsModule(function (module, exports) {
-    (function (global, factory) {
-      if (typeof undefined === 'function' && undefined.amd) {
-        undefined(['exports'], factory);
-      } else {
-        factory(exports);
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
       }
-    })(commonjsGlobal, function (exports) {
-      Object.defineProperty(exports, '__esModule', {
-        value: true,
-      });
+    }
 
-      function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-          throw new TypeError('Cannot call a class as a function');
-        }
-      }
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
 
-      var _createClass = (function () {
-        function defineProperties(target, props) {
-          for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];
-            descriptor.enumerable = descriptor.enumerable || false;
-            descriptor.configurable = true;
-            if ('value' in descriptor) descriptor.writable = true;
-            Object.defineProperty(target, descriptor.key, descriptor);
-          }
-        }
+  /**
+   * Sticky Sidebar JavaScript Plugin.
+   * @version 3.3.4
+   * @author Ahmed Bouhuolia <a.bouhuolia@gmail.com>
+   * @license The MIT License (MIT)
+   */
+  var StickySidebar = function () {
 
-        return function (Constructor, protoProps, staticProps) {
-          if (protoProps) defineProperties(Constructor.prototype, protoProps);
-          if (staticProps) defineProperties(Constructor, staticProps);
-          return Constructor;
-        };
-      })();
+    // ---------------------------------
+    // # Define Constants
+    // ---------------------------------
+    //
+    var EVENT_KEY = '.stickySidebar';
+    var DEFAULTS = {
+      /**
+       * Additional top spacing of the element when it becomes sticky.
+       * @type {Numeric|Function}
+       */
+      topSpacing: 0,
 
       /**
-       * Sticky Sidebar JavaScript Plugin.
-       * @version 3.3.4
-       * @author Ahmed Bouhuolia <a.bouhuolia@gmail.com>
-       * @license The MIT License (MIT)
+       * Additional bottom spacing of the element when it becomes sticky.
+       * @type {Numeric|Function}
        */
-      var StickySidebar = (function () {
-        // ---------------------------------
-        // # Define Constants
-        // ---------------------------------
-        //
-        var EVENT_KEY = '.stickySidebar';
-        var DEFAULTS = {
-          /**
-           * Additional top spacing of the element when it becomes sticky.
-           * @type {Numeric|Function}
-           */
-          topSpacing: 0,
+      bottomSpacing: 0,
 
-          /**
-           * Additional bottom spacing of the element when it becomes sticky.
-           * @type {Numeric|Function}
-           */
-          bottomSpacing: 0,
+      /**
+       * Container sidebar selector to know what the beginning and end of sticky element.
+       * @type {String|False}
+       */
+      containerSelector: false,
 
-          /**
-           * Container sidebar selector to know what the beginning and end of sticky element.
-           * @type {String|False}
-           */
-          containerSelector: false,
+      /**
+       * Inner wrapper selector.
+       * @type {String}
+       */
+      innerWrapperSelector: '.inner-wrapper-sticky',
 
-          /**
-           * Inner wrapper selector.
-           * @type {String}
-           */
-          innerWrapperSelector: '.inner-wrapper-sticky',
+      /**
+       * The name of CSS class to apply to elements when they have become stuck.
+       * @type {String|False}
+       */
+      stickyClass: 'is-affixed',
 
-          /**
-           * The name of CSS class to apply to elements when they have become stuck.
-           * @type {String|False}
-           */
-          stickyClass: 'is-affixed',
+      /**
+       * Detect when sidebar and its container change height so re-calculate their dimensions.
+       * @type {Boolean}
+       */
+      resizeSensor: true,
 
-          /**
-           * Detect when sidebar and its container change height so re-calculate their dimensions.
-           * @type {Boolean}
-           */
-          resizeSensor: true,
+      /**
+       * The sidebar returns to its normal position if its width below this value.
+       * @type {Numeric}
+       */
+      minWidth: false
+    };
 
-          /**
-           * The sidebar returns to its normal position if its width below this value.
-           * @type {Numeric}
-           */
-          minWidth: false,
+    // ---------------------------------
+    // # Class Definition
+    // ---------------------------------
+    //
+    /**
+     * Sticky Sidebar Class.
+     * @public
+     */
+
+    var StickySidebar = function () {
+
+      /**
+       * Sticky Sidebar Constructor.
+       * @constructor
+       * @param {HTMLElement|String} sidebar - The sidebar element or sidebar selector.
+       * @param {Object} options - The options of sticky sidebar.
+       */
+      function StickySidebar(sidebar) {
+        var _this = this;
+
+        var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+        _classCallCheck(this, StickySidebar);
+
+        this.options = StickySidebar.extend(DEFAULTS, options);
+
+        // Sidebar element query if there's no one, throw error.
+        this.sidebar = 'string' === typeof sidebar ? document.querySelector(sidebar) : sidebar;
+        if ('undefined' === typeof this.sidebar) throw new Error("There is no specific sidebar element.");
+
+        this.sidebarInner = false;
+        this.container = this.sidebar.parentElement;
+
+        // Current Affix Type of sidebar element.
+        this.affixedType = 'STATIC';
+        this.direction = 'down';
+        this.support = {
+          transform: false,
+          transform3d: false
         };
 
-        // ---------------------------------
-        // # Class Definition
-        // ---------------------------------
-        //
-        /**
-         * Sticky Sidebar Class.
-         * @public
-         */
+        this._initialized = false;
+        this._reStyle = false;
+        this._breakpoint = false;
 
-        var StickySidebar = (function () {
-          /**
-           * Sticky Sidebar Constructor.
-           * @constructor
-           * @param {HTMLElement|String} sidebar - The sidebar element or sidebar selector.
-           * @param {Object} options - The options of sticky sidebar.
-           */
-          function StickySidebar(sidebar) {
-            var _this = this;
+        // Dimensions of sidebar, container and screen viewport.
+        this.dimensions = {
+          translateY: 0,
+          maxTranslateY: 0,
+          topSpacing: 0,
+          lastTopSpacing: 0,
+          bottomSpacing: 0,
+          lastBottomSpacing: 0,
+          sidebarHeight: 0,
+          sidebarWidth: 0,
+          containerTop: 0,
+          containerHeight: 0,
+          viewportHeight: 0,
+          viewportTop: 0,
+          lastViewportTop: 0
+        };
 
-            var options =
-              arguments.length > 1 && arguments[1] !== undefined
-                ? arguments[1]
-                : {};
+        // Bind event handlers for referencability.
+        ['handleEvent'].forEach(function (method) {
+          _this[method] = _this[method].bind(_this);
+        });
 
-            _classCallCheck(this, StickySidebar);
+        // Initialize sticky sidebar for first time.
+        this.initialize();
+      }
 
-            this.options = StickySidebar.extend(DEFAULTS, options);
+      /**
+       * Initializes the sticky sidebar by adding inner wrapper, define its container, 
+       * min-width breakpoint, calculating dimensions, adding helper classes and inline style.
+       * @private
+       */
 
-            // Sidebar element query if there's no one, throw error.
-            this.sidebar =
-              'string' === typeof sidebar
-                ? document.querySelector(sidebar)
-                : sidebar;
-            if ('undefined' === typeof this.sidebar)
-              throw new Error('There is no specific sidebar element.');
 
-            this.sidebarInner = false;
-            this.container = this.sidebar.parentElement;
+      _createClass(StickySidebar, [{
+        key: 'initialize',
+        value: function initialize() {
+          var _this2 = this;
 
-            // Current Affix Type of sidebar element.
-            this.affixedType = 'STATIC';
-            this.direction = 'down';
-            this.support = {
-              transform: false,
-              transform3d: false,
-            };
+          this._setSupportFeatures();
 
-            this._initialized = false;
-            this._reStyle = false;
-            this._breakpoint = false;
+          // Get sticky sidebar inner wrapper, if not found, will create one.
+          if (this.options.innerWrapperSelector) {
+            this.sidebarInner = this.sidebar.querySelector(this.options.innerWrapperSelector);
 
-            // Dimensions of sidebar, container and screen viewport.
-            this.dimensions = {
-              translateY: 0,
-              maxTranslateY: 0,
-              topSpacing: 0,
-              lastTopSpacing: 0,
-              bottomSpacing: 0,
-              lastBottomSpacing: 0,
-              sidebarHeight: 0,
-              sidebarWidth: 0,
-              containerTop: 0,
-              containerHeight: 0,
-              viewportHeight: 0,
-              viewportTop: 0,
-              lastViewportTop: 0,
-            };
-
-            // Bind event handlers for referencability.
-            ['handleEvent'].forEach(function (method) {
-              _this[method] = _this[method].bind(_this);
-            });
-
-            // Initialize sticky sidebar for first time.
-            this.initialize();
+            if (null === this.sidebarInner) this.sidebarInner = false;
           }
 
-          /**
-           * Initializes the sticky sidebar by adding inner wrapper, define its container,
-           * min-width breakpoint, calculating dimensions, adding helper classes and inline style.
-           * @private
-           */
-
-          _createClass(
-            StickySidebar,
-            [
-              {
-                key: 'initialize',
-                value: function initialize() {
-                  var _this2 = this;
-
-                  this._setSupportFeatures();
-
-                  // Get sticky sidebar inner wrapper, if not found, will create one.
-                  if (this.options.innerWrapperSelector) {
-                    this.sidebarInner = this.sidebar.querySelector(
-                      this.options.innerWrapperSelector
-                    );
-
-                    if (null === this.sidebarInner) this.sidebarInner = false;
-                  }
-
-                  if (!this.sidebarInner) {
-                    var wrapper = document.createElement('div');
-                    wrapper.setAttribute('class', 'inner-wrapper-sticky');
-                    this.sidebar.appendChild(wrapper);
-
-                    while (this.sidebar.firstChild != wrapper) {
-                      wrapper.appendChild(this.sidebar.firstChild);
-                    }
-                    this.sidebarInner = this.sidebar.querySelector(
-                      '.inner-wrapper-sticky'
-                    );
-                  }
-
-                  // Container wrapper of the sidebar.
-                  if (this.options.containerSelector) {
-                    var containers = document.querySelectorAll(
-                      this.options.containerSelector
-                    );
-                    containers = Array.prototype.slice.call(containers);
-
-                    containers.forEach(function (container, item) {
-                      if (!container.contains(_this2.sidebar)) return;
-                      _this2.container = container;
-                    });
-
-                    if (!containers.length)
-                      throw new Error(
-                        'The container does not contains on the sidebar.'
-                      );
-                  }
-
-                  // If top/bottom spacing is not function parse value to integer.
-                  if ('function' !== typeof this.options.topSpacing)
-                    this.options.topSpacing =
-                      parseInt(this.options.topSpacing) || 0;
-
-                  if ('function' !== typeof this.options.bottomSpacing)
-                    this.options.bottomSpacing =
-                      parseInt(this.options.bottomSpacing) || 0;
-
-                  // Breakdown sticky sidebar if screen width below `options.minWidth`.
-                  this._widthBreakpoint();
-
-                  // Calculate dimensions of sidebar, container and viewport.
-                  this.calcDimensions();
-
-                  // Affix sidebar in proper position.
-                  this.stickyPosition();
-
-                  // Bind all events.
-                  this.bindEvents();
-
-                  // Inform other properties the sticky sidebar is initialized.
-                  this._initialized = true;
-                },
-              },
-              {
-                key: 'bindEvents',
-                value: function bindEvents() {
-                  window.addEventListener('resize', this, {
-                    passive: true,
-                    capture: false,
-                  });
-                  window.addEventListener('scroll', this, {
-                    passive: true,
-                    capture: false,
-                  });
-
-                  this.sidebar.addEventListener('update' + EVENT_KEY, this);
-
-                  if (
-                    this.options.resizeSensor &&
-                    'undefined' !== typeof ResizeSensor
-                  ) {
-                    new ResizeSensor(this.sidebarInner, this.handleEvent);
-                    new ResizeSensor(this.container, this.handleEvent);
-                  }
-                },
-              },
-              {
-                key: 'handleEvent',
-                value: function handleEvent(event) {
-                  this.updateSticky(event);
-                },
-              },
-              {
-                key: 'calcDimensions',
-                value: function calcDimensions() {
-                  if (this._breakpoint) return;
-                  var dims = this.dimensions;
-
-                  // Container of sticky sidebar dimensions.
-                  dims.containerTop = StickySidebar.offsetRelative(
-                    this.container
-                  ).top;
-                  dims.containerHeight = this.container.clientHeight;
-                  dims.containerBottom =
-                    dims.containerTop + dims.containerHeight;
-
-                  // Sidebar dimensions.
-                  dims.sidebarHeight = this.sidebarInner.offsetHeight;
-                  dims.sidebarWidth = this.sidebarInner.offsetWidth;
-
-                  // Screen viewport dimensions.
-                  dims.viewportHeight = window.innerHeight;
-
-                  // Maximum sidebar translate Y.
-                  dims.maxTranslateY =
-                    dims.containerHeight - dims.sidebarHeight;
-
-                  this._calcDimensionsWithScroll();
-                },
-              },
-              {
-                key: '_calcDimensionsWithScroll',
-                value: function _calcDimensionsWithScroll() {
-                  var dims = this.dimensions;
-
-                  dims.sidebarLeft = StickySidebar.offsetRelative(
-                    this.sidebar
-                  ).left;
-
-                  dims.viewportTop =
-                    document.documentElement.scrollTop ||
-                    document.body.scrollTop;
-                  dims.viewportBottom = dims.viewportTop + dims.viewportHeight;
-                  dims.viewportLeft =
-                    document.documentElement.scrollLeft ||
-                    document.body.scrollLeft;
-
-                  dims.topSpacing = this.options.topSpacing;
-                  dims.bottomSpacing = this.options.bottomSpacing;
-
-                  if ('function' === typeof dims.topSpacing)
-                    dims.topSpacing =
-                      parseInt(dims.topSpacing(this.sidebar)) || 0;
-
-                  if ('function' === typeof dims.bottomSpacing)
-                    dims.bottomSpacing =
-                      parseInt(dims.bottomSpacing(this.sidebar)) || 0;
-
-                  if ('VIEWPORT-TOP' === this.affixedType) {
-                    // Adjust translate Y in the case decrease top spacing value.
-                    if (dims.topSpacing < dims.lastTopSpacing) {
-                      dims.translateY += dims.lastTopSpacing - dims.topSpacing;
-                      this._reStyle = true;
-                    }
-                  } else if ('VIEWPORT-BOTTOM' === this.affixedType) {
-                    // Adjust translate Y in the case decrease bottom spacing value.
-                    if (dims.bottomSpacing < dims.lastBottomSpacing) {
-                      dims.translateY +=
-                        dims.lastBottomSpacing - dims.bottomSpacing;
-                      this._reStyle = true;
-                    }
-                  }
-
-                  dims.lastTopSpacing = dims.topSpacing;
-                  dims.lastBottomSpacing = dims.bottomSpacing;
-                },
-              },
-              {
-                key: 'isSidebarFitsViewport',
-                value: function isSidebarFitsViewport() {
-                  var dims = this.dimensions;
-                  var offset =
-                    this.scrollDirection === 'down'
-                      ? dims.lastBottomSpacing
-                      : dims.lastTopSpacing;
-                  return (
-                    this.dimensions.sidebarHeight + offset <
-                    this.dimensions.viewportHeight
-                  );
-                },
-              },
-              {
-                key: 'observeScrollDir',
-                value: function observeScrollDir() {
-                  var dims = this.dimensions;
-                  if (dims.lastViewportTop === dims.viewportTop) return;
-
-                  var furthest =
-                    'down' === this.direction ? Math.min : Math.max;
-
-                  // If the browser is scrolling not in the same direction.
-                  if (
-                    dims.viewportTop ===
-                    furthest(dims.viewportTop, dims.lastViewportTop)
-                  )
-                    this.direction = 'down' === this.direction ? 'up' : 'down';
-                },
-              },
-              {
-                key: 'getAffixType',
-                value: function getAffixType() {
-                  this._calcDimensionsWithScroll();
-                  var dims = this.dimensions;
-                  var colliderTop = dims.viewportTop + dims.topSpacing;
-                  var affixType = this.affixedType;
-
-                  if (
-                    colliderTop <= dims.containerTop ||
-                    dims.containerHeight <= dims.sidebarHeight
-                  ) {
-                    dims.translateY = 0;
-                    affixType = 'STATIC';
-                  } else {
-                    affixType =
-                      'up' === this.direction
-                        ? this._getAffixTypeScrollingUp()
-                        : this._getAffixTypeScrollingDown();
-                  }
-
-                  // Make sure the translate Y is not bigger than container height.
-                  dims.translateY = Math.max(0, dims.translateY);
-                  dims.translateY = Math.min(
-                    dims.containerHeight,
-                    dims.translateY
-                  );
-                  dims.translateY = Math.round(dims.translateY);
-
-                  dims.lastViewportTop = dims.viewportTop;
-                  return affixType;
-                },
-              },
-              {
-                key: '_getAffixTypeScrollingDown',
-                value: function _getAffixTypeScrollingDown() {
-                  var dims = this.dimensions;
-                  var sidebarBottom = dims.sidebarHeight + dims.containerTop;
-                  var colliderTop = dims.viewportTop + dims.topSpacing;
-                  var colliderBottom = dims.viewportBottom - dims.bottomSpacing;
-                  var affixType = this.affixedType;
-
-                  if (this.isSidebarFitsViewport()) {
-                    if (
-                      dims.sidebarHeight + colliderTop >=
-                      dims.containerBottom
-                    ) {
-                      dims.translateY = dims.containerBottom - sidebarBottom;
-                      affixType = 'CONTAINER-BOTTOM';
-                    } else if (colliderTop >= dims.containerTop) {
-                      dims.translateY = colliderTop - dims.containerTop;
-                      affixType = 'VIEWPORT-TOP';
-                    }
-                  } else {
-                    if (dims.containerBottom <= colliderBottom) {
-                      dims.translateY = dims.containerBottom - sidebarBottom;
-                      affixType = 'CONTAINER-BOTTOM';
-                    } else if (
-                      sidebarBottom + dims.translateY <=
-                      colliderBottom
-                    ) {
-                      dims.translateY = colliderBottom - sidebarBottom;
-                      affixType = 'VIEWPORT-BOTTOM';
-                    } else if (
-                      dims.containerTop + dims.translateY <= colliderTop &&
-                      0 !== dims.translateY &&
-                      dims.maxTranslateY !== dims.translateY
-                    ) {
-                      affixType = 'VIEWPORT-UNBOTTOM';
-                    }
-                  }
-
-                  return affixType;
-                },
-              },
-              {
-                key: '_getAffixTypeScrollingUp',
-                value: function _getAffixTypeScrollingUp() {
-                  var dims = this.dimensions;
-                  var sidebarBottom = dims.sidebarHeight + dims.containerTop;
-                  var colliderTop = dims.viewportTop + dims.topSpacing;
-                  var colliderBottom = dims.viewportBottom - dims.bottomSpacing;
-                  var affixType = this.affixedType;
-
-                  if (colliderTop <= dims.translateY + dims.containerTop) {
-                    dims.translateY = colliderTop - dims.containerTop;
-                    affixType = 'VIEWPORT-TOP';
-                  } else if (dims.containerBottom <= colliderBottom) {
-                    dims.translateY = dims.containerBottom - sidebarBottom;
-                    affixType = 'CONTAINER-BOTTOM';
-                  } else if (!this.isSidebarFitsViewport()) {
-                    if (
-                      dims.containerTop <= colliderTop &&
-                      0 !== dims.translateY &&
-                      dims.maxTranslateY !== dims.translateY
-                    ) {
-                      affixType = 'VIEWPORT-UNBOTTOM';
-                    }
-                  }
-
-                  return affixType;
-                },
-              },
-              {
-                key: '_getStyle',
-                value: function _getStyle(affixType) {
-                  if ('undefined' === typeof affixType) return;
-
-                  var style = { inner: {}, outer: {} };
-                  var dims = this.dimensions;
-
-                  switch (affixType) {
-                    case 'VIEWPORT-TOP':
-                      style.inner = {
-                        position: 'fixed',
-                        top: dims.topSpacing,
-                        left: dims.sidebarLeft - dims.viewportLeft,
-                        width: dims.sidebarWidth,
-                      };
-                      break;
-                    case 'VIEWPORT-BOTTOM':
-                      style.inner = {
-                        position: 'fixed',
-                        top: 'auto',
-                        left: dims.sidebarLeft,
-                        bottom: dims.bottomSpacing,
-                        width: dims.sidebarWidth,
-                      };
-                      break;
-                    case 'CONTAINER-BOTTOM':
-                    case 'VIEWPORT-UNBOTTOM':
-                      var translate = this._getTranslate(
-                        0,
-                        dims.translateY + 'px'
-                      );
-
-                      if (translate) style.inner = { transform: translate };
-                      else
-                        style.inner = {
-                          position: 'absolute',
-                          top: dims.translateY,
-                          width: dims.sidebarWidth,
-                        };
-                      break;
-                  }
-
-                  switch (affixType) {
-                    case 'VIEWPORT-TOP':
-                    case 'VIEWPORT-BOTTOM':
-                    case 'VIEWPORT-UNBOTTOM':
-                    case 'CONTAINER-BOTTOM':
-                      style.outer = {
-                        height: dims.sidebarHeight,
-                        position: 'relative',
-                      };
-                      break;
-                  }
-
-                  style.outer = StickySidebar.extend(
-                    { height: '', position: '' },
-                    style.outer
-                  );
-                  style.inner = StickySidebar.extend(
-                    {
-                      position: 'relative',
-                      top: '',
-                      left: '',
-                      bottom: '',
-                      width: '',
-                      transform: '',
-                    },
-                    style.inner
-                  );
-
-                  return style;
-                },
-              },
-              {
-                key: 'stickyPosition',
-                value: function stickyPosition(force) {
-                  if (this._breakpoint) return;
-
-                  force = this._reStyle || force || false;
-
-                  var offsetTop = this.options.topSpacing;
-                  var offsetBottom = this.options.bottomSpacing;
-
-                  var affixType = this.getAffixType();
-                  var style = this._getStyle(affixType);
-
-                  if ((this.affixedType != affixType || force) && affixType) {
-                    var affixEvent =
-                      'affix.' +
-                      affixType.toLowerCase().replace('viewport-', '') +
-                      EVENT_KEY;
-                    StickySidebar.eventTrigger(this.sidebar, affixEvent);
-
-                    if ('STATIC' === affixType)
-                      StickySidebar.removeClass(
-                        this.sidebar,
-                        this.options.stickyClass
-                      );
-                    else
-                      StickySidebar.addClass(
-                        this.sidebar,
-                        this.options.stickyClass
-                      );
-
-                    for (var key in style.outer) {
-                      var unit =
-                        'number' === typeof style.outer[key] ? 'px' : '';
-                      this.sidebar.style[key] = style.outer[key] + unit;
-                    }
-
-                    for (var _key in style.inner) {
-                      var _unit =
-                        'number' === typeof style.inner[_key] ? 'px' : '';
-                      this.sidebarInner.style[_key] = style.inner[_key] + _unit;
-                    }
-
-                    var affixedEvent =
-                      'affixed.' +
-                      affixType.toLowerCase().replace('viewport-', '') +
-                      EVENT_KEY;
-                    StickySidebar.eventTrigger(this.sidebar, affixedEvent);
-                  } else {
-                    if (this._initialized)
-                      this.sidebarInner.style.left = style.inner.left;
-                  }
-
-                  this.affixedType = affixType;
-                },
-              },
-              {
-                key: '_widthBreakpoint',
-                value: function _widthBreakpoint() {
-                  if (window.innerWidth <= this.options.minWidth) {
-                    this._breakpoint = true;
-                    this.affixedType = 'STATIC';
-
-                    this.sidebar.removeAttribute('style');
-                    StickySidebar.removeClass(
-                      this.sidebar,
-                      this.options.stickyClass
-                    );
-                    this.sidebarInner.removeAttribute('style');
-                  } else {
-                    this._breakpoint = false;
-                  }
-                },
-              },
-              {
-                key: 'updateSticky',
-                value: function updateSticky() {
-                  var _this3 = this;
-
-                  var event =
-                    arguments.length > 0 && arguments[0] !== undefined
-                      ? arguments[0]
-                      : {};
-
-                  if (this._running) return;
-                  this._running = true;
-
-                  (function (eventType) {
-                    requestAnimationFrame(function () {
-                      switch (eventType) {
-                        // When browser is scrolling and re-calculate just dimensions
-                        // within scroll.
-                        case 'scroll':
-                          _this3._calcDimensionsWithScroll();
-                          _this3.observeScrollDir();
-                          _this3.stickyPosition();
-                          break;
-
-                        // When browser is resizing or there's no event, observe width
-                        // breakpoint and re-calculate dimensions.
-                        case 'resize':
-                        default:
-                          _this3._widthBreakpoint();
-                          _this3.calcDimensions();
-                          _this3.stickyPosition(true);
-                          break;
-                      }
-                      _this3._running = false;
-                    });
-                  })(event.type);
-                },
-              },
-              {
-                key: '_setSupportFeatures',
-                value: function _setSupportFeatures() {
-                  var support = this.support;
-
-                  support.transform = StickySidebar.supportTransform();
-                  support.transform3d = StickySidebar.supportTransform(true);
-                },
-              },
-              {
-                key: '_getTranslate',
-                value: function _getTranslate() {
-                  var y =
-                    arguments.length > 0 && arguments[0] !== undefined
-                      ? arguments[0]
-                      : 0;
-                  var x =
-                    arguments.length > 1 && arguments[1] !== undefined
-                      ? arguments[1]
-                      : 0;
-                  var z =
-                    arguments.length > 2 && arguments[2] !== undefined
-                      ? arguments[2]
-                      : 0;
-
-                  if (this.support.transform3d)
-                    return 'translate3d(' + y + ', ' + x + ', ' + z + ')';
-                  else if (this.support.translate)
-                    return 'translate(' + y + ', ' + x + ')';
-                  else return false;
-                },
-              },
-              {
-                key: 'destroy',
-                value: function destroy() {
-                  window.removeEventListener('resize', this, {
-                    capture: false,
-                  });
-                  window.removeEventListener('scroll', this, {
-                    capture: false,
-                  });
-
-                  this.sidebar.classList.remove(this.options.stickyClass);
-                  this.sidebar.style.minHeight = '';
-
-                  this.sidebar.removeEventListener('update' + EVENT_KEY, this);
-
-                  var styleReset = { inner: {}, outer: {} };
-
-                  styleReset.inner = {
-                    position: '',
-                    top: '',
-                    left: '',
-                    bottom: '',
-                    width: '',
-                    transform: '',
-                  };
-                  styleReset.outer = { height: '', position: '' };
-
-                  for (var key in styleReset.outer) {
-                    this.sidebar.style[key] = styleReset.outer[key];
-                  }
-                  for (var _key2 in styleReset.inner) {
-                    this.sidebarInner.style[_key2] = styleReset.inner[_key2];
-                  }
-                  if (
-                    this.options.resizeSensor &&
-                    'undefined' !== typeof ResizeSensor
-                  ) {
-                    ResizeSensor.detach(this.sidebarInner, this.handleEvent);
-                    ResizeSensor.detach(this.container, this.handleEvent);
-                  }
-                },
-              },
-            ],
-            [
-              {
-                key: 'supportTransform',
-                value: function supportTransform(transform3d) {
-                  var result = false,
-                    property = transform3d ? 'perspective' : 'transform',
-                    upper =
-                      property.charAt(0).toUpperCase() + property.slice(1),
-                    prefixes = ['Webkit', 'Moz', 'O', 'ms'],
-                    support = document.createElement('support'),
-                    style = support.style;
-
-                  (property + ' ' + prefixes.join(upper + ' ') + upper)
-                    .split(' ')
-                    .forEach(function (property, i) {
-                      if (style[property] !== undefined) {
-                        result = property;
-                        return false;
-                      }
-                    });
-                  return result;
-                },
-              },
-              {
-                key: 'eventTrigger',
-                value: function eventTrigger(element, eventName, data) {
-                  try {
-                    var event = new CustomEvent(eventName, { detail: data });
-                  } catch (e) {
-                    var event = document.createEvent('CustomEvent');
-                    event.initCustomEvent(eventName, true, true, data);
-                  }
-                  element.dispatchEvent(event);
-                },
-              },
-              {
-                key: 'extend',
-                value: function extend(defaults, options) {
-                  var results = {};
-                  for (var key in defaults) {
-                    if ('undefined' !== typeof options[key])
-                      results[key] = options[key];
-                    else results[key] = defaults[key];
-                  }
-                  return results;
-                },
-              },
-              {
-                key: 'offsetRelative',
-                value: function offsetRelative(element) {
-                  var result = { left: 0, top: 0 };
-
-                  do {
-                    var offsetTop = element.offsetTop;
-                    var offsetLeft = element.offsetLeft;
-
-                    if (!isNaN(offsetTop)) result.top += offsetTop;
-
-                    if (!isNaN(offsetLeft)) result.left += offsetLeft;
-
-                    element =
-                      'BODY' === element.tagName
-                        ? element.parentElement
-                        : element.offsetParent;
-                  } while (element);
-                  return result;
-                },
-              },
-              {
-                key: 'addClass',
-                value: function addClass(element, className) {
-                  if (!StickySidebar.hasClass(element, className)) {
-                    if (element.classList) element.classList.add(className);
-                    else element.className += ' ' + className;
-                  }
-                },
-              },
-              {
-                key: 'removeClass',
-                value: function removeClass(element, className) {
-                  if (StickySidebar.hasClass(element, className)) {
-                    if (element.classList) element.classList.remove(className);
-                    else
-                      element.className = element.className.replace(
-                        new RegExp(
-                          '(^|\\b)' +
-                            className.split(' ').join('|') +
-                            '(\\b|$)',
-                          'gi'
-                        ),
-                        ' '
-                      );
-                  }
-                },
-              },
-              {
-                key: 'hasClass',
-                value: function hasClass(element, className) {
-                  if (element.classList)
-                    return element.classList.contains(className);
-                  else
-                    return new RegExp('(^| )' + className + '( |$)', 'gi').test(
-                      element.className
-                    );
-                },
-              },
-              {
-                key: 'defaults',
-                get: function () {
-                  return DEFAULTS;
-                },
-              },
-            ]
-          );
-
-          return StickySidebar;
-        })();
-
-        return StickySidebar;
-      })();
-
-      exports.default = StickySidebar;
-
-      // Global
-      // -------------------------
-      window.StickySidebar = StickySidebar;
-    });
-  });
-
-  unwrapExports(stickySidebar);
-
-  var jquery_stickySidebar = createCommonjsModule(function (module, exports) {
-    (function (global, factory) {
-      if (typeof undefined === 'function' && undefined.amd) {
-        undefined(['./sticky-sidebar'], factory);
-      } else {
-        factory(stickySidebar);
-      }
-    })(commonjsGlobal, function (_stickySidebar) {
-      var _stickySidebar2 = _interopRequireDefault(_stickySidebar);
-
-      function _interopRequireDefault(obj) {
-        return obj && obj.__esModule
-          ? obj
-          : {
-              default: obj,
-            };
-      }
-
-      (function () {
-        if ('undefined' === typeof window) return;
-
-        var plugin = window.$ || window.jQuery || window.Zepto;
-        var DATA_NAMESPACE = 'stickySidebar';
-
-        // Make sure the site has jquery or zepto plugin.
-        if (plugin) {
-          var _jQueryPlugin = function (config) {
-            return this.each(function () {
-              var $this = plugin(this),
-                data = plugin(this).data(DATA_NAMESPACE);
-
-              if (!data) {
-                data = new _stickySidebar2.default(
-                  this,
-                  typeof config == 'object' && config
-                );
-                $this.data(DATA_NAMESPACE, data);
-              }
-
-              if ('string' === typeof config) {
-                if (
-                  data[config] === undefined &&
-                  ['destroy', 'updateSticky'].indexOf(config) === -1
-                )
-                  throw new Error('No method named "' + config + '"');
-
-                data[config]();
-              }
+          if (!this.sidebarInner) {
+            var wrapper = document.createElement('div');
+            wrapper.setAttribute('class', 'inner-wrapper-sticky');
+            this.sidebar.appendChild(wrapper);
+
+            while (this.sidebar.firstChild != wrapper) {
+              wrapper.appendChild(this.sidebar.firstChild);
+            }this.sidebarInner = this.sidebar.querySelector('.inner-wrapper-sticky');
+          }
+
+          // Container wrapper of the sidebar.
+          if (this.options.containerSelector) {
+            var containers = document.querySelectorAll(this.options.containerSelector);
+            containers = Array.prototype.slice.call(containers);
+
+            containers.forEach(function (container, item) {
+              if (!container.contains(_this2.sidebar)) return;
+              _this2.container = container;
             });
-          };
 
-          plugin.fn.stickySidebar = _jQueryPlugin;
-          plugin.fn.stickySidebar.Constructor = _stickySidebar2.default;
+            if (!containers.length) throw new Error("The container does not contains on the sidebar.");
+          }
 
-          var old = plugin.fn.stickySidebar;
+          // If top/bottom spacing is not function parse value to integer.
+          if ('function' !== typeof this.options.topSpacing) this.options.topSpacing = parseInt(this.options.topSpacing) || 0;
 
-          /**
-           * Sticky Sidebar No Conflict.
-           */
-          plugin.fn.stickySidebar.noConflict = function () {
-            plugin.fn.stickySidebar = old;
-            return this;
-          };
+          if ('function' !== typeof this.options.bottomSpacing) this.options.bottomSpacing = parseInt(this.options.bottomSpacing) || 0;
+
+          // Breakdown sticky sidebar if screen width below `options.minWidth`.
+          this._widthBreakpoint();
+
+          // Calculate dimensions of sidebar, container and viewport.
+          this.calcDimensions();
+
+          // Affix sidebar in proper position.
+          this.stickyPosition();
+
+          // Bind all events.
+          this.bindEvents();
+
+          // Inform other properties the sticky sidebar is initialized.
+          this._initialized = true;
         }
-      })();
-    });
-  });
+      }, {
+        key: 'bindEvents',
+        value: function bindEvents() {
+          window.addEventListener('resize', this, { passive: true, capture: false });
+          window.addEventListener('scroll', this, { passive: true, capture: false });
 
-  var jquery_stickySidebar$1 = unwrapExports(jquery_stickySidebar);
+          this.sidebar.addEventListener('update' + EVENT_KEY, this);
 
-  return jquery_stickySidebar$1;
+          if (this.options.resizeSensor && 'undefined' !== typeof ResizeSensor) {
+            new ResizeSensor(this.sidebarInner, this.handleEvent);
+            new ResizeSensor(this.container, this.handleEvent);
+          }
+        }
+      }, {
+        key: 'handleEvent',
+        value: function handleEvent(event) {
+          this.updateSticky(event);
+        }
+      }, {
+        key: 'calcDimensions',
+        value: function calcDimensions() {
+          if (this._breakpoint) return;
+          var dims = this.dimensions;
+
+          // Container of sticky sidebar dimensions.
+          dims.containerTop = StickySidebar.offsetRelative(this.container).top;
+          dims.containerHeight = this.container.clientHeight;
+          dims.containerBottom = dims.containerTop + dims.containerHeight;
+
+          // Sidebar dimensions.
+          dims.sidebarHeight = this.sidebarInner.offsetHeight;
+          dims.sidebarWidth = this.sidebarInner.offsetWidth;
+
+          // Screen viewport dimensions.
+          dims.viewportHeight = window.innerHeight;
+
+          // Maximum sidebar translate Y.
+          dims.maxTranslateY = dims.containerHeight - dims.sidebarHeight;
+
+          this._calcDimensionsWithScroll();
+        }
+      }, {
+        key: '_calcDimensionsWithScroll',
+        value: function _calcDimensionsWithScroll() {
+          var dims = this.dimensions;
+
+          dims.sidebarLeft = StickySidebar.offsetRelative(this.sidebar).left;
+
+          dims.viewportTop = document.documentElement.scrollTop || document.body.scrollTop;
+          dims.viewportBottom = dims.viewportTop + dims.viewportHeight;
+          dims.viewportLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+
+          dims.topSpacing = this.options.topSpacing;
+          dims.bottomSpacing = this.options.bottomSpacing;
+
+          if ('function' === typeof dims.topSpacing) dims.topSpacing = parseInt(dims.topSpacing(this.sidebar)) || 0;
+
+          if ('function' === typeof dims.bottomSpacing) dims.bottomSpacing = parseInt(dims.bottomSpacing(this.sidebar)) || 0;
+
+          if ('VIEWPORT-TOP' === this.affixedType) {
+            // Adjust translate Y in the case decrease top spacing value.
+            if (dims.topSpacing < dims.lastTopSpacing) {
+              dims.translateY += dims.lastTopSpacing - dims.topSpacing;
+              this._reStyle = true;
+            }
+          } else if ('VIEWPORT-BOTTOM' === this.affixedType) {
+            // Adjust translate Y in the case decrease bottom spacing value.
+            if (dims.bottomSpacing < dims.lastBottomSpacing) {
+              dims.translateY += dims.lastBottomSpacing - dims.bottomSpacing;
+              this._reStyle = true;
+            }
+          }
+
+          dims.lastTopSpacing = dims.topSpacing;
+          dims.lastBottomSpacing = dims.bottomSpacing;
+        }
+      }, {
+        key: 'isSidebarFitsViewport',
+        value: function isSidebarFitsViewport() {
+          var dims = this.dimensions;
+          var offset = this.scrollDirection === 'down' ? dims.lastBottomSpacing : dims.lastTopSpacing;
+          return this.dimensions.sidebarHeight + offset < this.dimensions.viewportHeight;
+        }
+      }, {
+        key: 'observeScrollDir',
+        value: function observeScrollDir() {
+          var dims = this.dimensions;
+          if (dims.lastViewportTop === dims.viewportTop) return;
+
+          var furthest = 'down' === this.direction ? Math.min : Math.max;
+
+          // If the browser is scrolling not in the same direction.
+          if (dims.viewportTop === furthest(dims.viewportTop, dims.lastViewportTop)) this.direction = 'down' === this.direction ? 'up' : 'down';
+        }
+      }, {
+        key: 'getAffixType',
+        value: function getAffixType() {
+          this._calcDimensionsWithScroll();
+          var dims = this.dimensions;
+          var colliderTop = dims.viewportTop + dims.topSpacing;
+          var affixType = this.affixedType;
+
+          if (colliderTop <= dims.containerTop || dims.containerHeight <= dims.sidebarHeight) {
+            dims.translateY = 0;
+            affixType = 'STATIC';
+          } else {
+            affixType = 'up' === this.direction ? this._getAffixTypeScrollingUp() : this._getAffixTypeScrollingDown();
+          }
+
+          // Make sure the translate Y is not bigger than container height.
+          dims.translateY = Math.max(0, dims.translateY);
+          dims.translateY = Math.min(dims.containerHeight, dims.translateY);
+          dims.translateY = Math.round(dims.translateY);
+
+          dims.lastViewportTop = dims.viewportTop;
+          return affixType;
+        }
+      }, {
+        key: '_getAffixTypeScrollingDown',
+        value: function _getAffixTypeScrollingDown() {
+          var dims = this.dimensions;
+          var sidebarBottom = dims.sidebarHeight + dims.containerTop;
+          var colliderTop = dims.viewportTop + dims.topSpacing;
+          var colliderBottom = dims.viewportBottom - dims.bottomSpacing;
+          var affixType = this.affixedType;
+
+          if (this.isSidebarFitsViewport()) {
+            if (dims.sidebarHeight + colliderTop >= dims.containerBottom) {
+              dims.translateY = dims.containerBottom - sidebarBottom;
+              affixType = 'CONTAINER-BOTTOM';
+            } else if (colliderTop >= dims.containerTop) {
+              dims.translateY = colliderTop - dims.containerTop;
+              affixType = 'VIEWPORT-TOP';
+            }
+          } else {
+            if (dims.containerBottom <= colliderBottom) {
+              dims.translateY = dims.containerBottom - sidebarBottom;
+              affixType = 'CONTAINER-BOTTOM';
+            } else if (sidebarBottom + dims.translateY <= colliderBottom) {
+              dims.translateY = colliderBottom - sidebarBottom;
+              affixType = 'VIEWPORT-BOTTOM';
+            } else if (dims.containerTop + dims.translateY <= colliderTop && 0 !== dims.translateY && dims.maxTranslateY !== dims.translateY) {
+              affixType = 'VIEWPORT-UNBOTTOM';
+            }
+          }
+
+          return affixType;
+        }
+      }, {
+        key: '_getAffixTypeScrollingUp',
+        value: function _getAffixTypeScrollingUp() {
+          var dims = this.dimensions;
+          var sidebarBottom = dims.sidebarHeight + dims.containerTop;
+          var colliderTop = dims.viewportTop + dims.topSpacing;
+          var colliderBottom = dims.viewportBottom - dims.bottomSpacing;
+          var affixType = this.affixedType;
+
+          if (colliderTop <= dims.translateY + dims.containerTop) {
+            dims.translateY = colliderTop - dims.containerTop;
+            affixType = 'VIEWPORT-TOP';
+          } else if (dims.containerBottom <= colliderBottom) {
+            dims.translateY = dims.containerBottom - sidebarBottom;
+            affixType = 'CONTAINER-BOTTOM';
+          } else if (!this.isSidebarFitsViewport()) {
+
+            if (dims.containerTop <= colliderTop && 0 !== dims.translateY && dims.maxTranslateY !== dims.translateY) {
+              affixType = 'VIEWPORT-UNBOTTOM';
+            }
+          }
+
+          return affixType;
+        }
+      }, {
+        key: '_getStyle',
+        value: function _getStyle(affixType) {
+          if ('undefined' === typeof affixType) return;
+
+          var style = { inner: {}, outer: {} };
+          var dims = this.dimensions;
+
+          switch (affixType) {
+            case 'VIEWPORT-TOP':
+              style.inner = { position: 'fixed', top: dims.topSpacing,
+                left: dims.sidebarLeft - dims.viewportLeft, width: dims.sidebarWidth };
+              break;
+            case 'VIEWPORT-BOTTOM':
+              style.inner = { position: 'fixed', top: 'auto', left: dims.sidebarLeft,
+                bottom: dims.bottomSpacing, width: dims.sidebarWidth };
+              break;
+            case 'CONTAINER-BOTTOM':
+            case 'VIEWPORT-UNBOTTOM':
+              var translate = this._getTranslate(0, dims.translateY + 'px');
+
+              if (translate) style.inner = { transform: translate };else style.inner = { position: 'absolute', top: dims.translateY, width: dims.sidebarWidth };
+              break;
+          }
+
+          switch (affixType) {
+            case 'VIEWPORT-TOP':
+            case 'VIEWPORT-BOTTOM':
+            case 'VIEWPORT-UNBOTTOM':
+            case 'CONTAINER-BOTTOM':
+              style.outer = { height: dims.sidebarHeight, position: 'relative' };
+              break;
+          }
+
+          style.outer = StickySidebar.extend({ height: '', position: '' }, style.outer);
+          style.inner = StickySidebar.extend({ position: 'relative', top: '', left: '',
+            bottom: '', width: '', transform: '' }, style.inner);
+
+          return style;
+        }
+      }, {
+        key: 'stickyPosition',
+        value: function stickyPosition(force) {
+          if (this._breakpoint) return;
+
+          force = this._reStyle || force || false;
+
+          var offsetTop = this.options.topSpacing;
+          var offsetBottom = this.options.bottomSpacing;
+
+          var affixType = this.getAffixType();
+          var style = this._getStyle(affixType);
+
+          if ((this.affixedType != affixType || force) && affixType) {
+            var affixEvent = 'affix.' + affixType.toLowerCase().replace('viewport-', '') + EVENT_KEY;
+            StickySidebar.eventTrigger(this.sidebar, affixEvent);
+
+            if ('STATIC' === affixType) StickySidebar.removeClass(this.sidebar, this.options.stickyClass);else StickySidebar.addClass(this.sidebar, this.options.stickyClass);
+
+            for (var key in style.outer) {
+              var unit = 'number' === typeof style.outer[key] ? 'px' : '';
+              this.sidebar.style[key] = style.outer[key] + unit;
+            }
+
+            for (var _key in style.inner) {
+              var _unit = 'number' === typeof style.inner[_key] ? 'px' : '';
+              this.sidebarInner.style[_key] = style.inner[_key] + _unit;
+            }
+
+            var affixedEvent = 'affixed.' + affixType.toLowerCase().replace('viewport-', '') + EVENT_KEY;
+            StickySidebar.eventTrigger(this.sidebar, affixedEvent);
+          } else {
+            if (this._initialized) this.sidebarInner.style.left = style.inner.left;
+          }
+
+          this.affixedType = affixType;
+        }
+      }, {
+        key: '_widthBreakpoint',
+        value: function _widthBreakpoint() {
+
+          if (window.innerWidth <= this.options.minWidth) {
+            this._breakpoint = true;
+            this.affixedType = 'STATIC';
+
+            this.sidebar.removeAttribute('style');
+            StickySidebar.removeClass(this.sidebar, this.options.stickyClass);
+            this.sidebarInner.removeAttribute('style');
+          } else {
+            this._breakpoint = false;
+          }
+        }
+      }, {
+        key: 'updateSticky',
+        value: function updateSticky() {
+          var _this3 = this;
+
+          var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+          if (this._running) return;
+          this._running = true;
+
+          (function (eventType) {
+            requestAnimationFrame(function () {
+              switch (eventType) {
+                // When browser is scrolling and re-calculate just dimensions
+                // within scroll. 
+                case 'scroll':
+                  _this3._calcDimensionsWithScroll();
+                  _this3.observeScrollDir();
+                  _this3.stickyPosition();
+                  break;
+
+                // When browser is resizing or there's no event, observe width
+                // breakpoint and re-calculate dimensions.
+                case 'resize':
+                default:
+                  _this3._widthBreakpoint();
+                  _this3.calcDimensions();
+                  _this3.stickyPosition(true);
+                  break;
+              }
+              _this3._running = false;
+            });
+          })(event.type);
+        }
+      }, {
+        key: '_setSupportFeatures',
+        value: function _setSupportFeatures() {
+          var support = this.support;
+
+          support.transform = StickySidebar.supportTransform();
+          support.transform3d = StickySidebar.supportTransform(true);
+        }
+      }, {
+        key: '_getTranslate',
+        value: function _getTranslate() {
+          var y = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+          var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+          var z = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+
+          if (this.support.transform3d) return 'translate3d(' + y + ', ' + x + ', ' + z + ')';else if (this.support.translate) return 'translate(' + y + ', ' + x + ')';else return false;
+        }
+      }, {
+        key: 'destroy',
+        value: function destroy() {
+          window.removeEventListener('resize', this, { capture: false });
+          window.removeEventListener('scroll', this, { capture: false });
+
+          this.sidebar.classList.remove(this.options.stickyClass);
+          this.sidebar.style.minHeight = '';
+
+          this.sidebar.removeEventListener('update' + EVENT_KEY, this);
+
+          var styleReset = { inner: {}, outer: {} };
+
+          styleReset.inner = { position: '', top: '', left: '', bottom: '', width: '', transform: '' };
+          styleReset.outer = { height: '', position: '' };
+
+          for (var key in styleReset.outer) {
+            this.sidebar.style[key] = styleReset.outer[key];
+          }for (var _key2 in styleReset.inner) {
+            this.sidebarInner.style[_key2] = styleReset.inner[_key2];
+          }if (this.options.resizeSensor && 'undefined' !== typeof ResizeSensor) {
+            ResizeSensor.detach(this.sidebarInner, this.handleEvent);
+            ResizeSensor.detach(this.container, this.handleEvent);
+          }
+        }
+      }], [{
+        key: 'supportTransform',
+        value: function supportTransform(transform3d) {
+          var result = false,
+              property = transform3d ? 'perspective' : 'transform',
+              upper = property.charAt(0).toUpperCase() + property.slice(1),
+              prefixes = ['Webkit', 'Moz', 'O', 'ms'],
+              support = document.createElement('support'),
+              style = support.style;
+
+          (property + ' ' + prefixes.join(upper + ' ') + upper).split(' ').forEach(function (property, i) {
+            if (style[property] !== undefined) {
+              result = property;
+              return false;
+            }
+          });
+          return result;
+        }
+      }, {
+        key: 'eventTrigger',
+        value: function eventTrigger(element, eventName, data) {
+          try {
+            var event = new CustomEvent(eventName, { detail: data });
+          } catch (e) {
+            var event = document.createEvent('CustomEvent');
+            event.initCustomEvent(eventName, true, true, data);
+          }
+          element.dispatchEvent(event);
+        }
+      }, {
+        key: 'extend',
+        value: function extend(defaults, options) {
+          var results = {};
+          for (var key in defaults) {
+            if ('undefined' !== typeof options[key]) results[key] = options[key];else results[key] = defaults[key];
+          }
+          return results;
+        }
+      }, {
+        key: 'offsetRelative',
+        value: function offsetRelative(element) {
+          var result = { left: 0, top: 0 };
+
+          do {
+            var offsetTop = element.offsetTop;
+            var offsetLeft = element.offsetLeft;
+
+            if (!isNaN(offsetTop)) result.top += offsetTop;
+
+            if (!isNaN(offsetLeft)) result.left += offsetLeft;
+
+            element = 'BODY' === element.tagName ? element.parentElement : element.offsetParent;
+          } while (element);
+          return result;
+        }
+      }, {
+        key: 'addClass',
+        value: function addClass(element, className) {
+          if (!StickySidebar.hasClass(element, className)) {
+            if (element.classList) element.classList.add(className);else element.className += ' ' + className;
+          }
+        }
+      }, {
+        key: 'removeClass',
+        value: function removeClass(element, className) {
+          if (StickySidebar.hasClass(element, className)) {
+            if (element.classList) element.classList.remove(className);else element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
+        }
+      }, {
+        key: 'hasClass',
+        value: function hasClass(element, className) {
+          if (element.classList) return element.classList.contains(className);else return new RegExp('(^| )' + className + '( |$)', 'gi').test(element.className);
+        }
+      }, {
+        key: 'defaults',
+        get: function () {
+          return DEFAULTS;
+        }
+      }]);
+
+      return StickySidebar;
+    }();
+
+    return StickySidebar;
+  }();
+
+  exports.default = StickySidebar;
+
+
+  // Global
+  // -------------------------
+  window.StickySidebar = StickySidebar;
 });
+});
+
+unwrapExports(stickySidebar);
+
+var jquery_stickySidebar = createCommonjsModule(function (module, exports) {
+(function (global, factory) {
+  if (typeof undefined === "function" && undefined.amd) {
+    undefined(['./sticky-sidebar'], factory);
+  } else {
+    factory(stickySidebar);
+  }
+})(commonjsGlobal, function (_stickySidebar) {
+  var _stickySidebar2 = _interopRequireDefault(_stickySidebar);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  (function () {
+    if ('undefined' === typeof window) return;
+
+    var plugin = window.$ || window.jQuery || window.Zepto;
+    var DATA_NAMESPACE = 'stickySidebar';
+
+    // Make sure the site has jquery or zepto plugin.
+    if (plugin) {
+      var _jQueryPlugin = function (config) {
+        return this.each(function () {
+          var $this = plugin(this),
+              data = plugin(this).data(DATA_NAMESPACE);
+
+          if (!data) {
+            data = new _stickySidebar2.default(this, typeof config == 'object' && config);
+            $this.data(DATA_NAMESPACE, data);
+          }
+
+          if ('string' === typeof config) {
+            if (data[config] === undefined && ['destroy', 'updateSticky'].indexOf(config) === -1) throw new Error('No method named "' + config + '"');
+
+            data[config]();
+          }
+        });
+      };
+
+      plugin.fn.stickySidebar = _jQueryPlugin;
+      plugin.fn.stickySidebar.Constructor = _stickySidebar2.default;
+
+      var old = plugin.fn.stickySidebar;
+
+      /**
+       * Sticky Sidebar No Conflict.
+       */
+      plugin.fn.stickySidebar.noConflict = function () {
+        plugin.fn.stickySidebar = old;
+        return this;
+      };
+    }
+  })();
+});
+});
+
+var jquery_stickySidebar$1 = unwrapExports(jquery_stickySidebar);
+
+return jquery_stickySidebar$1;
+
+})));
 
 //# sourceMappingURL=jquery.sticky-sidebar.js.map
 

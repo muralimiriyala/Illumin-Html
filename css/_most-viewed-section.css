@@ -6,7 +6,7 @@
 .most-viewed-text{padding-top: 25px; font-size: 24px; line-height: 32px; letter-spacing: -0.02rem;}
 .most-viewed-text a{color: var(--black);}
 .most-viewed-text a:hover{color: var(--illumin-blue);}
-.most-viewed-list .most-viewed-text h2{font-family: 'Graphik-Regular';}
+.most-viewed-list .most-viewed-text h2{font-family: "Inter", sans-serif;}
 .most-viewed-lt .most-viewed-small{gap: 9px; margin-bottom: 17px;}
 .most-viewed-small{gap: 8px; margin-bottom: 10px;}
 .most-viewed-category{gap: 8px; flex: 0 0 auto; width: fit-content; margin-bottom: 0; font-size: 16px; line-height: 20px; }
@@ -14,22 +14,23 @@
 .most-viewed-icon{flex: 0 0 16px; align-items: flex-start; display: flex; flex-direction: column; max-width: 16px;}
 .most-viewed-icon img{width: 100%;}
 .viewed-icon-text{width: fit-content; font-size: 16px; line-height: 20px;}
-.viewed-icon-text span{ font-family: 'Graphik-Bold', sans-serif;}
+.viewed-icon-text span{ font-weight: 700px;}
 .viewed-icon-text a{color: var(--black);}
 .viewed-icon-text a:hover{color: var(--illumin-blue);}
 .most-viewed-post-image{width: 100%;}
-.blog-date{color: rgba(0 , 0, 0, .5); position: relative; font-size: 16px; line-height: 20px; font-family: 'Graphik-Bold', sans-serif; padding-left: 9px;}
+.blog-date{color: rgba(0 , 0, 0, .5); position: relative; font-size: 16px; line-height: 20px; font-weight: 700px; padding-left: 9px;}
 .blog-date::before{content: ""; position: absolute; top: 0; left: 0; width: 1px; height: 100%; background: var(--sky);}
 
 .blog-category{margin: 0; gap: 8px;}
-.blog-category-main{gap: 8px; padding: 14px 16px 13px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black); align-items: center;}
-.blog-category-main:hover{color: var(--illumin-blue);}
+.blog-category-main{gap: 8px; padding: 14px 16px 13px; line-height: normal; border-radius: 16px; background: var(--Pale-Parma-Violet); color: var(--black); align-items: center;}
+.blog-category-main:hover{color: var(--Dark-parma-violet);}
 .blog-category-list{margin: 0;}
 .blog-category-list::before{display: none;}
 .blog-category-list.all-blog-list .blog-category-main{flex-direction: row-reverse; padding: 14px 13px 13px 16px;}
 .blog-category-thumb{width: 20px; height: 20px;}
 .blog-category-icon{position: relative; top: -1px;}
-.blog-category-text{font-size: 16px; line-height: 20px;}
+.blog-category-text{font-size: 16px; line-height: 20px; }
+.blog-category-text strong{font-weight: 900;}
 
 .no-most-viewed .most-viewed-lt, .no-most-viewed .most-viewed-rt{flex: 1;}
 .no-most-viewed-list .most-viewed-list{flex: 1;}
@@ -40,7 +41,7 @@
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
     .most-viewed-head { max-width: 379px; transform: translateY(188px); margin-top: -188px; padding-bottom: 14px; width: 100%; }
-    .most-viewed-title h2{letter-spacing: -0.02em; font-family: 'Graphik-Regular', sans-serif; }
+    .most-viewed-title h2{letter-spacing: -0.02em; font-family: "Inter", sans-serif; }
 }
 @media only screen and (min-width: 1024px){
     .most-viewed-section .container{max-width: 1280px;}
@@ -72,7 +73,7 @@
     .most-viewed-rt{gap: 40px; flex: 100%;}
     .most-viewed-row{gap: 40px;}
     .most-viewed-list{flex: 0 0 calc(50% - 20px);} 
-    .most-viewed-title h2{font-family: 'Graphik-Regular', sans-serif;}
+    .most-viewed-title h2{font-family: "Inter", sans-serif;}
     .most-viewed-list.slick-slide{margin: 0 10px; width: 354px;}
     .most-viewed-head, .most-viewed-text{padding-top: 25px; font-size: 24px; line-height: 28px;}
     .most-viewed-head h2{font-size: 24px; line-height: 32px;}
@@ -93,7 +94,7 @@
     .most-viewed-list{flex: 100%;}
     .viewed-head {margin-bottom: 50px; padding: 0 20px;}
     .viewed-head h2{font-size: 32px; line-height: 40px;}
-    .most-viewed-title h2:not(.sub-title){font-size: 24px; line-height: 32px; font-family: 'Graphik-Regular', sans-serif;}
+    .most-viewed-title h2:not(.sub-title){font-size: 24px; line-height: 32px; font-family: "Inter", sans-serif;}
     .most-viewed-list.slick-slide{margin: 0 10px; width: 295px;}
     .most-viewed-head, .most-viewed-text{padding-top: 25px; font-size: 24px; line-height: 28px;}
     .most-viewed-list.slick-current .most-viewed-head, .most-viewed-list.slick-current .most-viewed-text{opacity: 1;}

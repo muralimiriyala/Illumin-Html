@@ -13,7 +13,7 @@
 }
 .measurable-list{z-index: 1;}
 .measurable-bg{bottom: 0; left: 55px; position: absolute; z-index: -1;}
-span.measurable-number{display: block; font-size: 56px; line-height: 56px;  font-family: 'Graphik-Bold', sans-serif; background: var(--Gradient-Vertical, linear-gradient(180deg, #8200F0 0%, #342FE7 100%)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+span.measurable-number{display: block; font-size: 56px; line-height: 56px;  font-weight: 700px; background: var(--Gradient-Vertical, linear-gradient(180deg, #8200F0 0%, #342FE7 100%)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 .measurable-text-inner > p {font-style: italic; font-size: 16px; line-height: 24px;}
 .measurable-text-wrap{gap: 8px;}
 .measurable-text h4{margin-bottom: 0;}

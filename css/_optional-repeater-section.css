@@ -1,9 +1,10 @@
 body.page-template-flex-default .optional-repeater-section{z-index: 1; position: relative;}
-.optional-repeater-text span.optional-text{margin-bottom: 10px;}
+.optional-repeater-text span.optional-text{margin-bottom: 10px; color: var(--Mid-parma-violet);}
 .optional-diamond{right: -270px; top: 50%; transform: translateY(-50%); width: 624px; height: 624px; position: absolute; z-index: -1; background-image: url('./images/diamond.svg'); background-repeat: no-repeat; background-size: contain;}
 .optional-circle {left: -275px; top: 50%; transform: translateY(-50%); width: 624px; height: 624px; background-image: linear-gradient(-53.19deg, rgba(50, 7, 255, 0) 11.87%, #3207FF 41.6%, #8200F0 73.73%); border-radius: 50%; position: absolute; z-index: -1; } 
 .optional-circle-bg{width: calc(100% - 40px); height: calc(100% - 40px); top: 20px; left: 20px; border-radius: 50%; position: absolute; background-color: var(--white);}
 
+.optional-repeater-list:not(.reverse){background: var(--Pale-Parma-Violet);}
 .optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -270px; right: auto;}
 .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -275px; left: auto;}
 
@@ -18,7 +19,7 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
-    .optional-repeater-text h2{margin-bottom: 23px;}
+    .optional-repeater-text h2{margin-bottom: 23px; color: var(--Dark-parma-violet); font-weight: 700;}
     
     body.page-template-company-careers .optional-repeater-main{padding-bottom: 92px;}
 }

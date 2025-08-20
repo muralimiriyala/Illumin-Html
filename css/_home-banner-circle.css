@@ -1,8 +1,8 @@
 
 .home-banner-section{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
-.home-banner-text{font-size: 20px; line-height: 28px; color: var(--white);}
-.home-banner-text h1{color: var(--white);}
-.home-banner-text h1 > span{color: var(--sun);}
+.home-banner-text{font-size: 20px; line-height: 28px; color: var(--Dark-parma-violet);}
+.home-banner-text h1{color: var(--white); font-family: "Aleo", serif;}
+/* .home-banner-text h1 > span{color: var(--sun);} */
 .watermark-line{width: 100vw; height: 16px; background: var(--sun);}
 .home-banner-image{z-index: 1;}
 
@@ -18,7 +18,7 @@
     .home-banner-wrap{padding-top: 168px;}
     .home-banner-main{gap: 80px;}
     .home-banner-text{flex: 0 0 674px; padding: 105px 0 185px;}
-    .home-banner-text h1{font-size: 88px; line-height: 88px; margin-bottom: 32px;}
+    .home-banner-text h1{font-size: 90px; line-height: 88px; margin-bottom: 32px; font-weight: 700;}
     .home-banner-image{flex: 0 0 calc(100% - 754px); display: flex; justify-content: center;}
     .home-banner-thumb{width: 396px;}
     .watermark-circle{position: absolute; top: -32px; left: 43px; width: 432px;}

@@ -4,12 +4,12 @@
 .insights-subscribe-heading{gap: 8px;}
 .insights-subscribe-thumb{flex: 0 0 36px; max-width: 36px;}
 .insights-subscribe-text{flex: 1;}
-.text-xl{font-size: 28px; line-height: 32px; margin-bottom: 0; color: var(--sky); font-family: 'Graphik-Bold', sans-serif;}
+.text-xl{font-size: 28px; line-height: 32px; margin-bottom: 0; color: var(--sky); font-weight: 700px;}
 .insights-subscribe-form{flex: 100%;}
 .insights-subscribe-sub-head{gap: 8px; align-items: flex-start;}
 .insights-subscribe-mail-icon{flex: 0 0 36px;}
 .insights-subscribe-title{flex: 0 0 calc(100% - 44px);}
-span.insights-subscribe-title{font-size: 28px; line-height: normal; display: block; font-family: 'Graphik-Bold', sans-serif; color: var(--sky);}
+span.insights-subscribe-title{font-size: 28px; line-height: normal; display: block; font-weight: 700px; color: var(--sky);}
 .insights-subscribe-form form.hs-form-private{display: flex; gap: 14px; margin: 0;}
 .insights-subscribe-form form.hs-form-private .hs_email > label{display: none;}
 

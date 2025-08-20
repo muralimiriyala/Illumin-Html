@@ -15,7 +15,7 @@
 .subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-moz-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
 .subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-moz-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
 .subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-ms-input-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]){padding: 12px 20px; height: 48px; font-size: 16px; line-height: 24px; font-family: 'Graphik-Regular', sans-serif;  border-radius: 16px; border: 2px solid rgba(81, 41, 255, .10); background: var(--tint-bg-blue);}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]){padding: 12px 20px; height: 48px; font-size: 16px; line-height: 24px; font-family: "Inter", sans-serif;  border-radius: 16px; border: 2px solid rgba(81, 41, 255, .10); background: var(--tint-bg-blue);}
 .subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):focus{background-color: var(--tint-bg-blue) !important;}
 .subscribe-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 13px 16px 11px; font-size: 16px; line-height: 20px; background: var(--purple-color);}
 .subscribe-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: var(--purple-color);}
@@ -35,16 +35,22 @@
     }
 }
 
+.hs-form-field input[type="email"], .hs-input:not([type="file"]) {
+    border-radius: 16px;
+  border: 2px solid rgba(81, 41, 255, 0.10);
+  background: var(--Pale-Parma-Violet);
+}
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
-    .subscribe-text h3{font-size: 40px; line-height: 48px; margin-bottom: 4px;}
+    .subscribe-text h3{font-size: 40px; line-height: 48px; margin-bottom: 4px; font-weight: 700;}
     body.single-post .subscribe-wrap{padding-top: 35px;}
 }
 @media only screen and (min-width: 1024px){
-    .subscribe-main{gap: 64px;}
-    .subscribe-text{flex: 0 0 485px;}
-    .subscribe-icon{flex: 0 0 86px;}
+    .subscribe-main{gap: 48px;}
+    .subscribe-text{flex: 0 0 656px;}
+    /* .subscribe-icon{flex: 0 0 86px;} */
     .subscribe-angle{width: 87px; height: 132px;}
     .subscribe-form{flex: 1;}
 }
@@ -57,7 +63,7 @@
     .subscribe-main{gap: 32px;}
     .subscribe-text{flex: 0 0 268px;}
     .subscribe-text h3{font-size: 28px; line-height: 32px;}
-    .subscribe-icon{flex: 0 0 87px;}
+    /* .subscribe-icon{flex: 0 0 87px;} */
     .subscribe-angle{width: 86px; height: 132px;}
     .subscribe-form{width: calc( 100% - 419px);}
 }
