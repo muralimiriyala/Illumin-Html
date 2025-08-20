@@ -3,53 +3,47 @@ document.addEventListener('DOMContentLoaded', () => {
   let watermarkCss = `visibility: visible; opacity: 1`;
   if (watermark) {
     watermark.style = watermarkCss;
-  const svgElement = watermark.querySelector('svg');
-  const circle = svgElement.querySelector('circle');
-  const radius = circle.getAttribute('r');
-  const circumference = 2 * Math.PI * radius;
+    const svgElement = watermark.querySelector('svg');
+    const circle = svgElement.querySelector('circle');
+    const radius = circle.getAttribute('r');
+    const circumference = 2 * Math.PI * radius;
 
-<<<<<<< HEAD
-    // Set initial stroke properties for anim ation
     circle.style.strokeDasharray = circumference;
     circle.style.strokeDashoffset = circumference;
-=======
-  circle.style.strokeDasharray = circumference;
-  circle.style.strokeDashoffset = circumference;
->>>>>>> 65709bc88df3db49bee0e97eeaf7ab164ed35218
 
-  let start = null;
-  const duration = 3000; 
-  function animate(timestamp) {
-    if (!start) start = timestamp;
-    const elapsed = timestamp - start;
+    let start = null;
+    const duration = 3000;
+    function animate(timestamp) {
+      if (!start) start = timestamp;
+      const elapsed = timestamp - start;
 
-    const progress = Math.min(elapsed / duration, 1);
+      const progress = Math.min(elapsed / duration, 1);
 
-    circle.style.strokeDashoffset = circumference * (1 - progress);
+      circle.style.strokeDashoffset = circumference * (1 - progress);
 
-    if (elapsed < duration) {
-      requestAnimationFrame(animate);
-    } else {
-      start = null;
-      setTimeout(startLineAnimation, 100);
+      if (elapsed < duration) {
+        requestAnimationFrame(animate);
+      } else {
+        start = null;
+        setTimeout(startLineAnimation, 100);
+      }
+    }
+
+    requestAnimationFrame(animate);
+    var watermarkLine = document.querySelector('.watermark-circle-line');
+    watermarkLine.style.width = '0';
+    function startLineAnimation() {
+      let lineStart = null;
+      const circleLine = (timestamp) => {
+        if (!lineStart) lineStart = timestamp;
+        const elapsed = timestamp - lineStart;
+        const progress = Math.min(elapsed / duration, 1);
+        watermarkLine.style.width = `${100 * progress}vw`;
+        if (progress < 1) {
+          requestAnimationFrame(circleLine);
+        }
+      };
+      requestAnimationFrame(circleLine);
     }
   }
-
-  requestAnimationFrame(animate);
-  var watermarkLine = document.querySelector('.watermark-circle-line');
-  watermarkLine.style.width = '0';
-  function startLineAnimation() {
-    let lineStart = null;
-    const circleLine = (timestamp) => {
-      if (!lineStart) lineStart = timestamp;
-      const elapsed = timestamp - lineStart;
-      const progress = Math.min(elapsed / duration, 1);
-      watermarkLine.style.width = `${100 * progress}vw`;
-      if (progress < 1) {
-        requestAnimationFrame(circleLine);
-      }
-    };
-    requestAnimationFrame(circleLine);
-  }
-}
 });
