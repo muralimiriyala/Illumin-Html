@@ -9,6 +9,8 @@ a{color: var(--illumin-blue); text-decoration: none; transition: all 0.5s ease;}
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--black);}
+body{background-color: red;}
+
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 8px; color: var(--black); letter-spacing: normal; text-transform: none; font-family: 'Graphik-Bold', sans-serif;}
 h1 {font-size: 58px; line-height: 64px; margin-bottom: 20px;}
 h2 {font-size: 40px; line-height: 48px; margin-bottom: 12px;}
