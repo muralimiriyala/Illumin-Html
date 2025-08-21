@@ -12,8 +12,8 @@ body.page-id-16128 .default-content-main{padding: 0;}
 .default-content-title::after{ bottom: -22px; left: -1px; width: 100%; height: 160px; content: ""; background-image: url('./images/union-shape.svg'); background-repeat: no-repeat; background-position: left bottom; background-size: contain; position: absolute; z-index: -1; }
 .default-content-title h2{font-size: 48px; line-height: 56px;letter-spacing: -0.02em; font-family: "Inter", sans-serif;}
 
-.icons-block-section{background-color: var(--tin-color); overflow: hidden;}
-.core-text h5{margin-bottom: 7px; color: var(--illumin-blue);}
+.icons-block-section{background-color: var(--Pale-Parma-Violet); overflow: hidden;}
+.core-text h5{margin-bottom: 7px; color: var(--Dark-parma-violet);}
 .core-list{gap: 24px; margin-bottom: 24px;}
 .core-list:last-child{margin-bottom: 0;}
 .core-icon{flex: 0 0 49px;}
@@ -27,10 +27,11 @@ body.page-id-16128 .default-content-main{padding: 0;}
 .default-content-slider .slick-arrow:not(button.slick-arrow)::after { right: 17px; width: 15px; height: 15px; border-bottom-width: 6px; border-right-width: 6px; }
 .default-content-slider .slick-arrow.slick-prev:not(button.slick-prev)::after { left: 17px; }
 .icons-block-text h2{margin-bottom: 20px;}
+.icons-block-text span.optional-text{color: var(--Dark-parma-violet);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
-    .default-content-main h2:not(.default-content-title h2){padding-top: 24px; font-size: 30px; line-height: 38px;}
+    .default-content-main h2:not(.default-content-title h2){padding-top: 24px; font-size: 32px; line-height: 40px;}
     .default-content-main h3{padding-top: 22px; font-size: 24px; line-height: 32px;}
     .default-content-main h4{padding-top: 15px; font-size: 20px; line-height: 28px;}
     .default-content-title {max-width: 379px; transform: translateY(136px); margin-top: -136px; padding-bottom: 4px;}

@@ -9,7 +9,7 @@ a{color: var(--Dark-parma-violet); text-decoration: none; transition: all 0.5s e
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--black);}
-h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 8px; color: var(--black); letter-spacing: normal; text-transform: none; font-weight: 700px;}
+h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 8px; color: var(--black); letter-spacing: normal; text-transform: none; font-weight: 700;}
 h1 {font-size: 58px; line-height: 64px; margin-bottom: 20px;}
 h2 {font-size: 40px; line-height: 48px; margin-bottom: 12px;}
 h3 {font-size: 32px; line-height: 40px; margin-bottom: 10px;}
@@ -107,7 +107,7 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 .button.btn-sun{background: var(--sun); color: var(--black);}
 
 /* Background color */
-.tint-bg{background-color: var(--tint-bg-blue);}
+.tint-bg{background-color: var(--Pale-Parma-Violet); }
 
 /* Placeholder text color -- selectors need to be separate to work. */ 
 ::-webkit-input-placeholder {color: var(--black-50); font-family: "Inter", sans-serif;}
@@ -154,7 +154,7 @@ span.optional-text{margin-bottom: 20px; color: var(--illumin-blue); font-size: 2
 span.optional-text.sky-blue{color: var(--sky-blue);}
 span.optional-text.purple-color{color: var(--purple-color);}
 span.optional-text.sm{font-size: 1rem; line-height: 20px; margin-bottom: 0;}
-.text-link{padding-right: 13px; color: var(--black); display: inline-block; font-size: 16px; line-height: 20px; font-weight: 700px; position: relative;}
+.text-link{padding-right: 13px; color: var(--black); display: inline-block; font-size: 16px; line-height: 20px; font-weight: 700; position: relative;}
 .text-link:hover{color: var(--illumin-blue);}
 .text-link::after{top: -1px; right: -8px; width: 20px; height: 20px; content: ""; background: url('./images/right-arrow-new.svg') no-repeat; background-size: contain; background-position: center right; display: block; position: absolute; transition: all 0.5s ease;} 
 .text-link:hover::after { right: 0; opacity: 0; }

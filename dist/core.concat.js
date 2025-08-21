@@ -540,10 +540,11 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: true,
     adaptiveHeight: true,
+
     prevArrow:
-      '<span class="slick-arrow slick-prev flex flex-center"><svg width="16" height="25" viewBox="0 0 16 25" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.40804 12.4375L15.8027 4.04281L12.1974 0.4375L0.197429 12.4375L12.1974 24.4375L15.8027 20.8322L7.40804 12.4375Z" fill="url(#paint0_linear_2666_14828)"/> <defs> <linearGradient id="paint0_linear_2666_14828" x1="15.8027" y1="12.4375" x2="0.197428" y2="12.4375" gradientUnits="userSpaceOnUse"> <stop stop-color="#342FE7"/> <stop offset="1" stop-color="#8200F0"/> </linearGradient> </defs> </svg></span>',
+      '<span class="slick-arrow slick-prev flex flex-center"> <svg width="16" height="25" viewBox="0 0 16 25" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.40804 12.4377L15.8027 4.04305L12.1974 0.437744L0.197429 12.4377L12.1974 24.4377L15.8027 20.8324L7.40804 12.4377Z" fill="url(#paint0_linear_3054_2207)"/> <defs>  <linearGradient id="paint0_linear_3054_2207" x1="15.8027" y1="12.4377" x2="0.197428" y2="12.4377" gradientUnits="userSpaceOnUse"> <stop stop-color="#3A186A"/> <stop offset="1" stop-color="#897AE9"/> </linearGradient> </defs></svg> </span>',
     nextArrow:
-      '<span class="slick-arrow slick-next flex flex-center"><svg  width="16" height="25" viewBox="0 0 16 25" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8.59196 12.4375L0.197266 4.04281L3.80257 0.4375L15.8026 12.4375L3.80257 24.4375L0.197266 20.8322L8.59196 12.4375Z" fill="url(#paint0_linear_2666_14826)"/> <defs> <linearGradient id="paint0_linear_2666_14826" x1="0.197266" y1="12.4375" x2="15.8026" y2="12.4375" gradientUnits="userSpaceOnUse"> <stop stop-color="#342FE7"/> <stop offset="1" stop-color="#8200F0"/> </linearGradient> </defs> </svg></span>',
+      '<span class="slick-arrow slick-next flex flex-center"> <svg width="16" height="25" viewBox="0 0 16 25" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8.59196 12.4377L0.197266 4.04305L3.80257 0.437744L15.8026 12.4377L3.80257 24.4377L0.197266 20.8324L8.59196 12.4377Z" fill="url(#paint0_linear_3054_2214)"/> <defs> <linearGradient id="paint0_linear_3054_2214" x1="0.197266" y1="12.4377" x2="15.8026" y2="12.4377" gradientUnits="userSpaceOnUse"> <stop stop-color="#3A186A"/> <stop offset="1" stop-color="#897AE9"/> </linearGradient> </defs></svg> </span>',
     appendDots: $platformAppend,
     appendArrows: $platformAppend,
     responsive: [

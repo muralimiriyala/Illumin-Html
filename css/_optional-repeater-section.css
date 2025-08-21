@@ -4,7 +4,10 @@ body.page-template-flex-default .optional-repeater-section{z-index: 1; position:
 .optional-circle {left: -275px; top: 50%; transform: translateY(-50%); width: 624px; height: 624px; background-image: linear-gradient(-53.19deg, rgba(50, 7, 255, 0) 11.87%, #3207FF 41.6%, #8200F0 73.73%); border-radius: 50%; position: absolute; z-index: -1; } 
 .optional-circle-bg{width: calc(100% - 40px); height: calc(100% - 40px); top: 20px; left: 20px; border-radius: 50%; position: absolute; background-color: var(--white);}
 
-.optional-repeater-list:not(.reverse){background: var(--Pale-Parma-Violet);}
+.optional-repeater-list:not(.reverse){position: relative;}
+.optional-repeater-list:not(.reverse)::before{content: ""; position: absolute; width: 1000%; height: 100%; top: 0; left: -100%; background: var(--Pale-Parma-Violet);}
+
+
 .optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -270px; right: auto;}
 .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -275px; left: auto;}
 
@@ -26,10 +29,14 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
 @media only screen and (min-width: 1024px){
     body.page-template-landing-page .optional-repeater-section, body.page-template-investor-info .optional-repeater-section, body.page-template-product .optional-repeater-section, body.page-template-stock-performance .optional-repeater-section{z-index: 1; position: relative;}
     .optional-repeater-section .container{max-width: 1280px;}
-    .optional-repeater-main{padding: 80px 0;}
+    /* .optional-repeater-main{padding: 80px 0;} */
     body.single-case-study .optional-repeater-main{padding-top: 40px;}
-    .optional-repeater-list{gap: 80px; margin-bottom: 80px;}
-    .optional-repeater-list:last-child{ margin-bottom: 0;}
+    .optional-repeater-list{gap: 80px; padding: 80px 0;}
+    .optional-repeater-list:first-child{padding-top: 40px;}
+    .optional-repeater-list:last-child{padding-bottom: 40px;}
+    body.page-template-product .optional-repeater-list{gap: 80px; padding: 40px 0;}
+    body.page-template-product .optional-repeater-list:first-child{padding-top: 80px;}
+    body.page-template-product .optional-repeater-list:last-child{padding-bottom: 80px;}
     .optional-repeater-text{flex: 1; font-size: 18px; line-height: 26px;}
     .optional-repeater-image{flex: 1;}
     .optional-repeater-list.reverse{flex-direction: row-reverse;}
@@ -44,8 +51,10 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
     .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -255px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-    .optional-repeater-main { padding: 48px 0 0; }
-    .optional-repeater-list{padding-bottom: 80px; display: block;}
+    /* .optional-repeater-main { padding: 48px 0 0; } */
+    .optional-repeater-list{padding: 40px 0; display: block;}
+    .optional-repeater-list:first-child{padding-top: 48px;}
+    .optional-repeater-list:last-child{padding-bottom: 48px;}
     .optional-repeater-image{margin-bottom: 55px;}
     .optional-diamond { right: -292px; }
     .optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -292px;}
@@ -53,7 +62,7 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
     .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -200px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .optional-repeater-main{ padding: 48px 0;}
+    /* .optional-repeater-main{ padding: 48px 0;} */
     body.page-template-product .optional-repeater-main{padding-bottom: 48px;}
     body.single-case-study .optional-repeater-main{padding: 24px 0 48px;}
     body.page-template-stock-performance .optional-repeater-main{padding-bottom: 48px;}
@@ -62,8 +71,9 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
     .optional-circle {left: -138px; width: 303px; height: 303px; }
     .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -138px;}
     .optional-circle-bg {width: calc(100% - 24px); height: calc(100% - 24px); top: 12px; left: 12px; border-radius: 50%; position: absolute; background-color: var(--white); } 
-    .optional-repeater-list{display: block; margin-bottom: 48px;}
-    .optional-repeater-list:last-child{margin-bottom: 0;}
+    .optional-repeater-list{display: block; padding: 24px 0;}
+    .optional-repeater-list:first-child{padding-top: 48px;}
+    .optional-repeater-list:last-child{padding-bottom: 48px;}
     .optional-repeater-image{margin-bottom: 32px;}
     body.page-template-investor-info .optional-repeater-image{margin-bottom: 47px;}
     .optional-repeater-text{font-size: 18px; line-height: 26px;}

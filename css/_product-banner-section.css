@@ -1,6 +1,7 @@
 
-.product-banner-section{background: linear-gradient(180deg, rgba(229, 242, 253, 0.00) 80%, #E5F2FD 100%), #FFF;}
-.product-banner-text span.optional-text{font-weight: 700; text-transform: uppercase;}
+.product-banner-section{background: linear-gradient(180deg, #FFF 80%, #F5EDFD 100%), #FFF;}
+.product-banner-text span.optional-text{font-weight: 700; text-transform: capitalize; color: var(--Mid-parma-violet);}
+.product-banner-text h1{font-size: 80px; line-height: 80px; margin-bottom: 32px; font-family: "Aleo", serif;}
 .no-banner-image .product-banner-text{flex: 1;}
 .no-banner-image{justify-content: center;}
 

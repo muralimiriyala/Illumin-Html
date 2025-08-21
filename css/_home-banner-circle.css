@@ -1,5 +1,6 @@
 
-.home-banner-section{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);}
+/* .home-banner-section{background: linear-gradient(90deg, #342FE7 0%, #8200F0 100%);} */
+.home-banner-section{background: url("./images/home-banner-bg@2x.jpg"); background-repeat: no-repeat; background-size: cover;}
 .home-banner-text{font-size: 20px; line-height: 28px; color: var(--Dark-parma-violet);}
 .home-banner-text h1{color: var(--white); font-family: "Aleo", serif;}
 /* .home-banner-text h1 > span{color: var(--sun);} */
@@ -28,7 +29,7 @@
 @media screen and (max-width: 1339px) and (min-width: 1024px) {
     .home-banner-main{gap: 40px;}
     .home-banner-text{flex: 0 0 45.7%;}
-    .home-banner-image{flex: 0 0 calc(100% - 50%);}
+    .home-banner-image{flex: 0 0 396px;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -45,7 +46,7 @@
     .no-banner-image .home-banner-text{padding-bottom: 100px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .home-banner-section{background: var(--Gradient-Horizontal, linear-gradient(90deg, #342FE7 0%, #8200F0 100%));}
+    /* .home-banner-section{background: var(--Gradient-Horizontal, linear-gradient(90deg, #342FE7 0%, #8200F0 100%));} */
     .home-banner-wrap{padding-top: 90px;}
     .home-banner-text{text-align: center; font-size: 18px; line-height: 26px; width: 100%; margin-bottom: 56px;}
     .home-banner-text h1{font-size: 48px; line-height: 48px; margin-bottom: 16px;} 

@@ -1,12 +1,14 @@
 
-.default-banner-section{background: linear-gradient(180deg,rgba(229,242,253,0) 80%,#e5f2fd 100%),#fff; overflow: hidden;}
+/* .default-banner-section{background: linear-gradient(180deg,rgba(229,242,253,0) 80%,#e5f2fd 100%),#fff; overflow: hidden;} */
+.default-banner-section{background: linear-gradient(180deg, #FFF 80%, #F5EDFD 100%), #3A186A; overflow: hidden;}
 body.page-id-298 .default-banner-section{background: transparent;}
 /* body.page-id-16128 .default-banner-section,  */
 .default-banner-main{position: relative; z-index: 1;}
 .hero-images{background-repeat: no-repeat; background-size: contain; background-position: center;}
 /* .default-banner-bg{ opacity: 0.5; position: absolute; z-index: -1; box-shadow: 0px 0px 128px rgba(151, 71, 255, 0.3); background-color: var(--white); border-radius: 50%;} */
 .default-banner-bg{display: none;}
-.default-banner-text span.optional-text{margin-bottom: 12px; font-weight: 700px; text-transform: uppercase;}
+.default-banner-text h1{font-family: "Aleo", serif;}
+.default-banner-text span.optional-text{margin-bottom: 12px; font-weight: 700; text-transform: capitalize; color: var(--Mid-parma-violet);}
 .default-banner-text .button{margin-top: 16px;}
 body.page-template-company-overview .default-banner-bg{display: none;}
 
@@ -26,6 +28,8 @@ body.page-template-company-overview .default-banner-bg{display: none;}
     body.page-id-1854 .default-banner-bg{top: -42px;}
     .hero-images{min-height: 624px;}
     body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 15px;}
+
+    .default-banner-text h1{font-family: "Aleo", serif; font-size: 80px; line-height: 80px; margin-bottom: 32px;}
 }
 @media only screen and (min-width: 1440px){
     .default-banner-main{padding-left: 64px;}

@@ -4,7 +4,7 @@ body.home .trusted-by-section{z-index: 1;}
 .trusted-by-section::before{width: 100%; height: calc(100% - 72px); top: 72px; left: 0; position: absolute; background: var(--white); content: ""; z-index: -1;}
 
 .trusted-by-main{background-color: var(--Pale-Parma-Violet); backdrop-filter: blur(6px);}
-body.page-template-product-channel .trusted-by-main, body.page-template-product .trusted-by-main, body.page-template-company-overview .trusted-by-main{background-color: var(--tint-bg-blue);}
+body.page-template-product-channel .trusted-by-main, body.page-template-company-overview .trusted-by-main{background-color: var(--tint-bg-blue);}
 body.page-template-product-channel .trusted-by-section::before, body.page-template-product .trusted-by-section::before{background: var(--white);}
 body.page-template-company-overview .trusted-by-section::before{background: var(--white);}
 span.trusted-optional{font-size: 20px; line-height: 24px;color: var(--Dark-parma-violet); font-weight: 700;}
