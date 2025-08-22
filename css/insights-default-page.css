@@ -15,12 +15,12 @@ span.category_date::before{width: 1px; height: 18px; top: 0; left: 0; content: "
 .insights-def-pos{margin-top: auto;}
 .insights-def-avatar{gap: 16px;}
 .insights-def-thumb{width: 96px;}
-.insights-def-thumb img{border-radius: 80px; border: 8px solid var(--tint-bg-blue);}
-.insights-def-text{flex: 1; font-size: 20px; line-height: 24px; font-weight: 700px;}
-.insights-def-text span{display: block; color: var(--illumin-blue); font-size: 1rem; line-height: 1.5; font-family: "Inter", sans-serif;}
+.insights-def-thumb img{border-radius: 80px; border: 8px solid var(--Pale-Parma-Violet);}
+.insights-def-text{flex: 1; font-size: 20px; line-height: 24px; font-weight: 700;}
+.insights-def-text span{display: block; color: var(--Mid-parma-violet); font-size: 1rem; line-height: 1.5; font-family: "Inter", sans-serif;}
 .insights-avatar-dots{width: 80px; height: 80px; top: 0; right: 32px; opacity: 0.15; background-image: url('images/pattern-circle-md.svg'); background-repeat: no-repeat; background-position: center left; background-size: cover; border-radius: 50%; position: absolute; z-index: -1;}
 
-.insights-default-article > p:nth-child(1) span{font-size: 24px; line-height: 32px; color: var(--illumin-blue);}
+.insights-default-article > p:nth-child(1) span{font-size: 24px; line-height: 32px; color: var(--Mid-parma-violet);}
 .table_of_content{padding:0; margin-bottom: 32px;}
 hr.blue{margin: 0 0 20px; background-color: var(--illumin-blue); height: 2px;}
 hr.half{width: 64px;}
@@ -32,8 +32,8 @@ hr.half{width: 64px;}
 .table_of_content #ez-toc-container ul{margin: 0; overflow: inherit;}
 .table_of_content #ez-toc-container ul li{overflow: inherit; margin-bottom: 8px;}
 .table_of_content #ez-toc-container ul li::before{display: none;}
-.table_of_content #ez-toc-container ul li a{color: var(--sky); text-decoration: none; background: var(--tint-bg-blue); display: block; padding: 9px 12px 8px; border-radius: 8px; font-size: 16px; line-height: 20px; font-weight: 500;}
-.table_of_content #ez-toc-container ul li a:hover{color: var(--white); background: var(--sky);}
+.table_of_content #ez-toc-container ul li a{color: var(--Dark-parma-violet); text-decoration: none; background: var(--Pale-Parma-Violet); display: block; padding: 9px 12px 8px; border-radius: 8px; font-size: 16px; line-height: 20px; font-weight: 500;}
+.table_of_content #ez-toc-container ul li a:hover{color: var(--white); background: var(--Dark-parma-violet);}
 .table_of_content #ez-toc-container ul li a::before{display: none;}
 .table_of_content #ez-toc-container ul ul{margin-left: 35px; margin-top: 10px;}
 .table_of_content #ez-toc-container ul ul li a::before{left: -35px; top: 2px;}

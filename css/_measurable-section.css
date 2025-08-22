@@ -1,6 +1,6 @@
 
-.measurable-section{background-color: var(--tint-bg-blue); overflow: hidden;}
-.measurable-bar{ width: 4px; height: auto; border-radius: 2px; background: linear-gradient(180deg, #3207FF 0%, #8200F0 100%); opacity: 0.75; border-radius: 8px 8px 0px 0px; display: block; transition: all 0.5s ease-in-out; animation: measurableUp 0.75s ease;}
+.measurable-section{overflow: hidden;}
+.measurable-bar{ width: 4px; height: auto; border-radius: 2px; background: var(--Gradient-Vertical); opacity: 0.75; border-radius: 8px 8px 0px 0px; display: block; transition: all 0.5s ease-in-out; animation: measurableUp 0.75s ease;}
 @keyframes measurableUp{
     0% {
         transform: translate3d(0, 100%, 0);
@@ -13,10 +13,11 @@
 }
 .measurable-list{z-index: 1;}
 .measurable-bg{bottom: 0; left: 55px; position: absolute; z-index: -1;}
-span.measurable-number{display: block; font-size: 56px; line-height: 56px;  font-weight: 700px; background: var(--Gradient-Vertical, linear-gradient(180deg, #8200F0 0%, #342FE7 100%)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+span.measurable-number{display: block; font-size: 56px; line-height: 56px;  font-weight: 700; background: var(--Gradient-Vertical); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 .measurable-text-inner > p {font-style: italic; font-size: 16px; line-height: 24px;}
 .measurable-text-wrap{gap: 8px;}
-.measurable-text h4{margin-bottom: 0;}
+.measurable-text h4{margin-bottom: 0; font-weight: 500;}
+.measurable-title span.optional-text{color: var(--Mid-parma-violet);}
 
 
 /*-- media css starts here --*/

@@ -20,6 +20,9 @@ body.page-template-investor-info .optional-circle{filter: grayscale(100%);  -web
 
 body.page-id-19189 .optional-repeater-main{padding-top: 0;}
 
+.optional-repeater-text ul:last-child{margin-bottom: 0;}
+.optional-repeater-text ul > li:last-child{margin-bottom: 0;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
     .optional-repeater-text h2{margin-bottom: 23px; color: var(--Dark-parma-violet); font-weight: 700;}
@@ -32,11 +35,11 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
     /* .optional-repeater-main{padding: 80px 0;} */
     body.single-case-study .optional-repeater-main{padding-top: 40px;}
     .optional-repeater-list{gap: 80px; padding: 80px 0;}
-    .optional-repeater-list:first-child{padding-top: 40px;}
-    .optional-repeater-list:last-child{padding-bottom: 40px;}
-    body.page-template-product .optional-repeater-list{gap: 80px; padding: 40px 0;}
+    /* .optional-repeater-list:first-child{padding-top: 40px;}
+    .optional-repeater-list:last-child{padding-bottom: 40px;} */
+    /* body.page-template-product .optional-repeater-list{gap: 80px; padding: 40px 0;}
     body.page-template-product .optional-repeater-list:first-child{padding-top: 80px;}
-    body.page-template-product .optional-repeater-list:last-child{padding-bottom: 80px;}
+    body.page-template-product .optional-repeater-list:last-child{padding-bottom: 80px;} */
     .optional-repeater-text{flex: 1; font-size: 18px; line-height: 26px;}
     .optional-repeater-image{flex: 1;}
     .optional-repeater-list.reverse{flex-direction: row-reverse;}
@@ -53,8 +56,8 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     /* .optional-repeater-main { padding: 48px 0 0; } */
     .optional-repeater-list{padding: 40px 0; display: block;}
-    .optional-repeater-list:first-child{padding-top: 48px;}
-    .optional-repeater-list:last-child{padding-bottom: 48px;}
+    /* .optional-repeater-list:first-child{padding-top: 48px;}
+    .optional-repeater-list:last-child{padding-bottom: 48px;} */
     .optional-repeater-image{margin-bottom: 55px;}
     .optional-diamond { right: -292px; }
     .optional-repeater-list:not(.reverse):nth-child(odd) .optional-diamond{left: -292px;}
@@ -63,17 +66,17 @@ body.page-id-19189 .optional-repeater-main{padding-top: 0;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     /* .optional-repeater-main{ padding: 48px 0;} */
-    body.page-template-product .optional-repeater-main{padding-bottom: 48px;}
-    body.single-case-study .optional-repeater-main{padding: 24px 0 48px;}
-    body.page-template-stock-performance .optional-repeater-main{padding-bottom: 48px;}
+    /* body.page-template-product .optional-repeater-main{padding-bottom: 48px;} */
+    /* body.single-case-study .optional-repeater-main{padding: 24px 0 48px;} */
+    /* body.page-template-stock-performance .optional-repeater-main{padding-bottom: 48px;} */
     .optional-diamond {right: -150px; transform: translateY(-50%); width: 303px; height: 303px; background-image: url('./images/diamond-mobile.svg');} 
     .optional-repeater-list:nth-child(odd) .optional-diamond{left: -150px; }
     .optional-circle {left: -138px; width: 303px; height: 303px; }
     .optional-repeater-list.reverse:nth-child(even) .optional-circle{right: -138px;}
     .optional-circle-bg {width: calc(100% - 24px); height: calc(100% - 24px); top: 12px; left: 12px; border-radius: 50%; position: absolute; background-color: var(--white); } 
     .optional-repeater-list{display: block; padding: 24px 0;}
-    .optional-repeater-list:first-child{padding-top: 48px;}
-    .optional-repeater-list:last-child{padding-bottom: 48px;}
+    /* .optional-repeater-list:first-child{padding-top: 48px;}
+    .optional-repeater-list:last-child{padding-bottom: 48px;} */
     .optional-repeater-image{margin-bottom: 32px;}
     body.page-template-investor-info .optional-repeater-image{margin-bottom: 47px;}
     .optional-repeater-text{font-size: 18px; line-height: 26px;}

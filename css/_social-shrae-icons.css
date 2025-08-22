@@ -24,7 +24,8 @@ span.share{color: var(--black); font-size: 20px; line-height: 24px;}
 .social-share-icons .at-share-btn-elements a.at-svc-compact span.at-icon-wrapper::after{content: "\f1e0"; font-family: "Font Awesome 6 Sharp";}
 .social-share-icons .at-share-btn-elements a.at-svc-mailto span.at-icon-wrapper{font-weight: 900; font-family: "Font Awesome 6 Pro";}
 .social-share-icons .at-share-btn-elements a.at-svc-mailto span.at-icon-wrapper::after{content: "\f0e0"; }
-.social-share-icons #st-1.st-animated .st-btn:hover{opacity: 1 !important; top: -4px !important; background-color: var(--purple-color) !important; color: var(--white) !important;}
+.social-share-icons #st-1.st-animated .st-btn {background-color: var(--Pale-Parma-Violet) !important; color: var(--Dark-parma-violet) !important;}
+.social-share-icons #st-1.st-animated .st-btn:hover{opacity: 1 !important; top: -4px !important; background-color: var(--Dark-parma-violet) !important; color: var(--white) !important;}
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1023px) and (min-width: 200px){

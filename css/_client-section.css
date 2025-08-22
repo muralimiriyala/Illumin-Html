@@ -1,8 +1,8 @@
 
-.client-bg{background: var(--tint-bg-blue); top: 48px; height: calc(100% - 48px);}
-.client-category-filter{padding: 24px; background: var(--white); border-radius: 24px; box-shadow: 0px 0px 80px 0px rgba(0, 125, 235, 0.20);}
+.client-bg{background: var(--Dark-parma-violet); top: 48px; height: calc(100% - 48px);}
+.client-category-filter{padding: 24px; background: var(--Pale-Parma-Violet); border-radius: 24px; }
 ul.client-category{margin: 0; gap: 12px;}
-.client-category-main{gap: 8px; padding: 14px 16px; line-height: normal; border-radius: 16px; background: var(--tint-bg-blue); color: var(--black);}
+.client-category-main{gap: 8px; padding: 14px 16px; line-height: normal; border-radius: 16px; background: var(--white); color: var(--black);}
 .client-category-main:hover{color: var(--illumin-blue);}
 .active.client-category-main{color: var(--illumin-blue);}
 .client-category-list{margin: 0; width: fit-content;}
@@ -17,10 +17,10 @@ ul.client-category{margin: 0; gap: 12px;}
 .more-category .client-category-text{top: -2px; position: relative;}
 .client-category-icon{position: relative;}
 body.archive .client-category-icon{top: -2px;}
-.client-category-text{font-size: 16px; line-height: 20px; font-weight: 700px;}
+.client-category-text{font-size: 16px; line-height: 20px; font-weight: 900;}
 
-.client-category-search > input{padding: 16px 40px 16px 16px; font-size: 16px; line-height: 16px; background: var(--tint-bg-blue); border: 2px solid rgba(81, 41, 255, 0.10); border-radius: 12px; height: 48px;}
-.client-category-search ::placeholder{color: var(--black); font-family: 'Graphik-Medium';}
+.client-category-search > input { padding: 16px 40px 16px 16px; font-size: 16px; line-height: 16px; background: var(--white); border: 2px solid var(--white); border-radius: 12px; height: 48px; font-weight: 500; font-family: "Inter", sans-serif;}
+.client-category-search ::placeholder{color: var(--black); font-weight: 500;}
 .client-search-btn{width: 16px; height: 16px; font-size: 1rem; line-height: 1.5; padding: 0; right: 16px; top: 16px; color: var(--sky); background: none; position: absolute; transition-duration: .75s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transition-property: opacity,visibility,color; transition-delay: 0s; } 
 .client-search-btn:hover{color: var(--sky-blue);}
 .client-search-btn input{width: 100%; height: 100%; padding: 0; font-size: 0; border: none; position: absolute;}

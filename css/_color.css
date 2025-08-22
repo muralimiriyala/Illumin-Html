@@ -33,4 +33,5 @@
     --Mid-parma-violet: #897AE9;
 
     --Gradient-Horizontal: linear-gradient(90deg, #3A186A 0%, #897AE9 100%);
+    --Gradient-Vertical: linear-gradient(180deg, #897AE9 0%, #3A186A 100%);
 }

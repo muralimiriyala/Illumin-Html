@@ -15,7 +15,7 @@
 .most-viewed-icon img{width: 100%;}
 .viewed-icon-text{width: fit-content; font-size: 16px; line-height: 20px;}
 .viewed-icon-text strong{ font-weight: 900;}
-.viewed-icon-text a{color: var(--black);}
+.viewed-icon-text a{color: var(--black); font-weight: 900;}
 .viewed-icon-text a:hover{color: var(--illumin-blue);}
 .most-viewed-post-image{width: 100%;}
 .blog-date{color: rgba(0 , 0, 0, .5); position: relative; font-size: 16px; line-height: 20px; font-weight: 900; padding-left: 9px; }
@@ -23,7 +23,7 @@
 
 .blog-category{margin: 0; gap: 8px;}
 .blog-category-main{gap: 8px; padding: 14px 16px 13px; line-height: normal; border-radius: 16px; background: var(--Pale-Parma-Violet); color: var(--black); align-items: center;}
-.blog-category-main:hover{color: var(--Dark-parma-violet);}
+.blog-category-main:hover{color: var(--illumin-blue);}
 .blog-category-list{margin: 0;}
 .blog-category-list::before{display: none;}
 .blog-category-list.all-blog-list .blog-category-main{flex-direction: row-reverse; padding: 14px 13px 13px 16px;}
