@@ -4,7 +4,7 @@
 .insights-title-icon{flex: 0 0 16px; align-items: center; display: flex; position: relative; max-width: 16px;}
 .insights-title-icon img{width: 100%;}
 .insights-categories-text{flex: 0 0 calc(100% - 24.32px); gap: 16.64px;}
-.insights-categories span{padding-top: 1px; font-weight: 700px;}
+.insights-categories span{padding-top: 1px; font-weight: 700;}
 
 .insights-post-head{z-index: 1;}
 
@@ -12,7 +12,7 @@
 .insights-post-text p a{color: var(--black); font-weight: 400;}
 .insights-post-text p a:hover{color: var(--illumin-blue);}
 .insights-category{gap: 9px; margin-bottom: 17px;}
-.insights-post-small{gap: 8px; flex: 0 0 auto; width: fit-content; margin-bottom: 0; font-size: 16px; line-height: 20px;}
+.insights-post-small{gap: 8px; flex: 0 0 auto; width: fit-content; font-size: 16px; line-height: 20px;}
 .insights-post-icon{flex: 0 0 16px; align-items: center; display: flex; max-width: 16px;}
 .insights-post-icon img{width: 100%;}
 .insights-icon-text{flex: 0 0 calc(100% - 24px); font-size: 16px; line-height: 20px;}

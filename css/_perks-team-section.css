@@ -4,7 +4,7 @@
 
 .perks-team-main{padding: 80px 0 128px;}
 .perks-team-title h2{font-size: 32px; line-height: 40px;}
-.perks-team-list h3{color: var(--sky-blue);}
+.perks-team-list h3{color: var(--Dark-parma-violet); }
 .perks-team-icon img{width: 100%;}
 
 /*-- media css starts here --*/

@@ -2,24 +2,24 @@
 .contact-list{margin-bottom: 24px; background-color: var(--light-purple); border-radius: 16px;}
 .contact-list:last-child{margin-bottom: 0;}
 .contact-list.active{box-shadow: 0px 12px 24px rgba(151, 173, 200, 0.5);}
-.contact-title{padding: 24px 40px 24px 20px; background-color: var(--tin-color); border-radius: 16px; font-size: 24px; line-height: 28px; cursor: pointer; font-family: 'Graphik-Bold',sans-serif; position: relative;}
+.contact-title{padding: 24px 40px 24px 20px; background-color: var(--Pale-Parma-Violet); border-radius: 16px; font-size: 24px; line-height: 28px; cursor: pointer; position: relative;}
 .contact-title.open{background-color: var(--light-purple); color: var(--black);}
-.contact-title::after{right: 20px; top: 28px; transform: rotate(90deg); width: 34px; height: 18px; position: absolute; transition: all 0.5s ease; background-image: url('images/down-arrow.svg'); background-repeat: no-repeat; background-size: cover; content: "";}
+.contact-title::after{right: 20px; top: 28px; transform: rotate(0deg); width: 14px; height: 18px; position: absolute; transition: all 0.5s ease; background-image: url('images/right-arrow-new.svg'); background-repeat: no-repeat; background-size: cover; content: "";}
 .contact-title.open::after{transform: rotate(0deg);}
 .contact-address{display: none; padding: 4px 20px 24px; font-size: 18px; line-height: 26px;}
 .contact-location{margin-bottom: 24px;}
 .contact-location:last-child{margin-bottom: 0;}
-.contact-loc{gap: 8px; margin-bottom: 8px; font-size: 20px; line-height: 24px; color: var(--illumin-blue);}
+.contact-loc{gap: 8px; margin-bottom: 8px; font-size: 20px; line-height: 24px; color: var(--Mid-parma-violet);}
 .contact-loc img{flex: 0 0 20px;}
-.contact-address hr{width: 100%; height: 2px; margin: 0 0 24px; background-color: var(--illumin-blue);}
+.contact-address hr{width: 100%; height: 2px; margin: 0 0 24px; background-color: var(--Mid-parma-violet);}
 .contact-address p{margin-bottom: 8px;}
 .contact-address a{color: var(--black); font-weight: 700px;}
 .contact-address a:hover{color: var(--illumin-blue);}
 
-.contact-form{padding: 32px; background: #FFFFFF; box-shadow: 0px 0px 128px rgba(0, 125, 235, 0.2); }
+.contact-form{padding: 32px; background: #FFFFFF; box-shadow: 0 0 128px var(--Pale-Parma-Violet); }
 .contact-form legend.frm_screen_reader{display: none;}
 
-.contact-text span.optional-text{font-weight: 700px; text-transform: uppercase;}
+.contact-text span.optional-text{font-weight: 700; text-transform: uppercase; color: var(--Mid-parma-violet);}
 
 
 /*-- media css starts here --*/

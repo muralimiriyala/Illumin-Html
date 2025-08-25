@@ -1,9 +1,9 @@
 
-.join-team-section.bg{background-color: var(--tin-color);}
+.join-team-section.bg{background-color: var(--Pale-Parma-Violet);}
 
 .join-team-main{padding: 80px 0 128px;}
 .join-team-title h2{font-size: 32px; line-height: 40px;}
-.join-team-list h3{color: var(--sky-blue);}
+.join-team-list h3{color: var(--Dark-parma-violet);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){

@@ -11,10 +11,10 @@
 .subscribe-form{position: relative;}
 .subscribe-form .frm_fields_container{display: block;}
 .subscribe-form .frm_forms .frm_form_fields .frm_form_field{margin: 0 0 11px 0;}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-webkit-input-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-moz-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-moz-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
-.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-ms-input-placeholder{color: var(--black-25); font-family: 'Graphik-Regular'}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-webkit-input-placeholder{color: var(--black-25); font-family: "Inter", sans-serif;}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-moz-placeholder{color: var(--black-25); font-family: "Inter", sans-serif;}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"])::-moz-placeholder{color: var(--black-25); font-family: "Inter", sans-serif;}
+.subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):-ms-input-placeholder{color: var(--black-25); font-family: "Inter", sans-serif;}
 .subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]){padding: 12px 20px; height: 48px; font-size: 16px; line-height: 24px; font-family: "Inter", sans-serif;  border-radius: 16px; border: 2px solid rgba(81, 41, 255, .10); background: var(--tint-bg-blue);}
 .subscribe-form .frm_fields_container .frm_form_field input:not([type="checkbox"]):focus{background-color: var(--tint-bg-blue) !important;}
 .subscribe-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 13px 16px 11px; font-size: 16px; line-height: 20px; background: var(--purple-color);}
