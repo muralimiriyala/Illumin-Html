@@ -14,7 +14,7 @@
  ul.footer-links > li > ul > li:before{display: none;}
  ul.footer-links > li > ul > li{margin-bottom: 6px;}
  ul.footer-links > li > ul > li:last-child{margin-bottom: 0;}
- ul.footer-links > li > ul > li a{font-weight: 900;}
+ ul.footer-links > li > ul > li a{font-weight: 700;}
 
 .footer-btns{gap: 40px;}
 .footer-btns .button{flex: 0 0 191px;}

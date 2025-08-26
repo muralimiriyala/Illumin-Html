@@ -49,6 +49,7 @@ ul.platform-nav li.slick-current::after{height: 6px;}
     .platform-append-arrows span.slick-arrow svg{width: 13px;}
     ul.platform-nav{position: relative; flex-wrap: nowrap;}
     ul.platform-nav::before{content: ""; position: absolute; width: 100px; height: 100%; top: 0; right: 0; background: linear-gradient(90deg, transparent 0%, var(--white) 50%); z-index: 1; }
+    .tint-bg ul.platform-nav::before{background: linear-gradient(90deg,transparent 0,var(--Pale-Parma-Violet) 50%); }
 }
 @media screen and (max-width: 767px)  and (min-width: 200px) {
     .platform-main{padding: 40px 0;}
@@ -63,6 +64,6 @@ ul.platform-nav li.slick-current::after{height: 6px;}
     .platform-append-arrows span.slick-arrow.slick-next{order: 3;}
     .platform-append-arrows span.slick-arrow > i{font-size: 24px;}
     .platform-append-arrows ul.slick-dots{order: 2; position: static; width: fit-content;}
-    .platform-append-arrows ul.slick-dots li button{background: var(--white);}
-    .platform-append-arrows ul.slick-dots li.slick-active button{background: var(--sky);}
+    /* .platform-append-arrows ul.slick-dots li button{background: var(--white);}
+    .platform-append-arrows ul.slick-dots li.slick-active button{background: var(--sky);} */
 }

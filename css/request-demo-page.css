@@ -3,9 +3,9 @@
 .request-demo-logo a{width: 100%; display: block;}
 .request-demo-logo a img{width: 100%;}
 .request-demo-text{font-size: 20px; line-height: 28px;}
-.request-demo-text h1{color: var(--illumin-blue);}
+.request-demo-text h1{color: var(--Dark-parma-violet);}
 .request-demo-desc p:not(:last-child){margin-bottom: 19px;}
-.request-demo-form{padding: 40px; background-color: var(--white); box-shadow: 0px 0px 128px rgba(0, 125, 235, 0.2);}
+.request-demo-form{padding: 40px; background-color: var(--white); box-shadow: 0 0 128px var(--Pale-Parma-Violet);}
 
 
 /*-- media css starts here --*/

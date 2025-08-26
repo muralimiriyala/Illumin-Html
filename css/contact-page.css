@@ -4,8 +4,8 @@
 .contact-list.active{box-shadow: 0px 12px 24px rgba(151, 173, 200, 0.5);}
 .contact-title{padding: 24px 40px 24px 20px; background-color: var(--Pale-Parma-Violet); border-radius: 16px; font-size: 24px; line-height: 28px; cursor: pointer; position: relative;}
 .contact-title.open{background-color: var(--light-purple); color: var(--black);}
-.contact-title::after{right: 20px; top: 28px; transform: rotate(0deg); width: 14px; height: 18px; position: absolute; transition: all 0.5s ease; background-image: url('images/right-arrow-new.svg'); background-repeat: no-repeat; background-size: cover; content: "";}
-.contact-title.open::after{transform: rotate(0deg);}
+.contact-title::after{right: 20px; top: 28px; transform: rotate(0deg); width: 14px; height: 18px; position: absolute; transition: all 0.5s ease; background-image: url('images/right-arrow-new.svg'); background-repeat: no-repeat; background-size: contain; content: "";}
+.contact-title.open::after{transform: rotate(90deg);}
 .contact-address{display: none; padding: 4px 20px 24px; font-size: 18px; line-height: 26px;}
 .contact-location{margin-bottom: 24px;}
 .contact-location:last-child{margin-bottom: 0;}

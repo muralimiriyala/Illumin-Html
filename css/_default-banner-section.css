@@ -1,6 +1,6 @@
 
 /* .default-banner-section{background: linear-gradient(180deg,rgba(229,242,253,0) 80%,#e5f2fd 100%),#fff; overflow: hidden;} */
-.default-banner-section{background: linear-gradient(180deg, #FFF 80%, #F5EDFD 100%), #3A186A; overflow: hidden;}
+.default-banner-section{background: linear-gradient(180deg,#fff 80%,#eadafb 100%),#3a186a; overflow: hidden;}
 body.page-id-298 .default-banner-section{background: transparent;}
 /* body.page-id-16128 .default-banner-section,  */
 .default-banner-main{position: relative; z-index: 1;}
@@ -27,12 +27,12 @@ body.page-template-company-overview .default-banner-bg{display: none;}
     .default-banner-bg{ width: 621px; height: 621px; top: 53px; left: 2px; }
     body.page-id-1854 .default-banner-bg{top: -42px;}
     .hero-images{min-height: 624px;}
-    body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 15px;}
+    /* body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 15px;} */
 
     .default-banner-text h1{font-family: "Aleo", serif; font-size: 80px; line-height: 80px; margin-bottom: 32px;}
 }
 @media only screen and (min-width: 1440px){
-    .default-banner-main{padding-left: 64px;}
+    /* .default-banner-main{padding-left: 64px;} */
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .default-banner-main { gap: 60px; }
@@ -50,7 +50,7 @@ body.page-template-company-overview .default-banner-bg{display: none;}
     .default-banner-bg{ width: 521px; height: 521px; top: 53px; left: 2px; }
     body.page-id-1854 .default-banner-bg{top: -29px;}
     .hero-images{min-height: 524px;}
-    body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 18px;}
+    /* body.page-template-company-overview .default-banner-desc h1{font-size: 48px; line-height: 56px; margin-bottom: 18px;} */
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .default-banner-main{display: block; padding: 39px 0 40px;}
