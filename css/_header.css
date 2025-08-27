@@ -121,7 +121,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     .white-header ul.main_menu > li.button{background: var(--Gradient-Horizontal); font-size: 16px; line-height: 20px; border-radius: 12px; padding: 8px 14px 8px 12px; font-weight: 700;}
     .white-header ul.main_menu > li.button > a{ color: var(--white);}
 
-    .white-header .nav-btns a.sign_in{padding: 8px 12px 8px 12px; background: var(--Dark-parma-violet); border-radius: 12px; color: var(--white); display: flex; align-items: center; gap: 7px; font-size: 16px; line-height: 20px; font-weight: 900;}
+    .white-header:not(.fixed_header) .nav-btns a.sign_in{padding: 8px 12px 8px 12px; background: var(--Dark-parma-violet); border-radius: 12px; color: var(--white); display: flex; align-items: center; gap: 7px; font-size: 16px; line-height: 20px; font-weight: 900;}
     .white-header .nav-btns a.sign_in::after { display: none;}
     .white-header:not(.fixed_header) .nav-btns a.sign_in:hover{color: var(--sun);}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
@@ -239,7 +239,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     ul.langauage-btns > li > a{font-size: 14px; line-height: 18px;}
 
     .white-header:not(.fixed_header) ul.nav-links{gap: 0 17px;}
-    ul.nav-links li a{font-weight: 700px;}
+    ul.nav-links li a{font-weight: 700;}
 
     .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li.nav-link-yellow{background: var(--Gradient-Horizontal); font-size: 16px; line-height: 20px; border-radius: 16px; padding: 9px 17px 8px; font-weight: 700px; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(.05px,.05px,0) scale(1);}
     .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li.nav-link-yellow:hover{transform: perspective(1px) translateZ(0) scale(.95);}

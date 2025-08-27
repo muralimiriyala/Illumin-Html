@@ -43,6 +43,7 @@
     .recruiting-counter.slick-slider .slick-arrow{right: 58px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .recruiting-main{padding: 40px 0;}
     .recruiting-head{margin-bottom: 66px;}
     .recruiting-title h2{font-size: 40px; line-height: 48px;}
     .recruiting-counter{margin-left: 34px;}

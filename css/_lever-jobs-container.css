@@ -1,11 +1,11 @@
-#lever-jobs-container h3.lever-department-title{margin-bottom: 24px; color: var(--illumin-blue); font-size: 28px; line-height: 32px;}
+#lever-jobs-container h3.lever-department-title{margin-bottom: 24px; color: var(--Dark-parma-violet); font-size: 28px; line-height: 32px;}
 #lever-jobs-container ul.lever-team{margin: 0;}
 #lever-jobs-container ul.lever-team > li::before{display: none;}
 #lever-jobs-container ul.lever-team > li > ul{margin: 0;}
 #lever-jobs-container ul.lever-team > li > ul > li::before{display: none;}
 #lever-jobs-container ul.lever-team > li > ul > li{ background-color: var(--white); border-radius: 16px; margin-bottom: 20px; }
 #lever-jobs-container ul.lever-team > li > ul > li > a{margin-bottom: 0; color: var(--black); font-size: 20px; line-height: 24px; font-weight: 700px; text-decoration: none;}
-#lever-jobs-container ul.lever-team > li > ul > li > a:hover{color: var(--illumin-blue);}
+#lever-jobs-container ul.lever-team > li > ul > li > a:hover{color: var(--Dark-parma-violet);}
 #lever-jobs-container ul.lever-team > li > ul > li .lever-job-tag{flex: 0 0 30%; font-size: 18px; line-height: 26px; color: var(--black); font-family: "Inter", sans-serif; }
 #lever-jobs-container .lever-team-title{display: none;}
 

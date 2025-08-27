@@ -41,12 +41,12 @@ ul.scroll_links li a:hover::after{opacity: 0; right: 10px;}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .company-careers-main{padding: 64px 0 24px; display: block;}
     .company-careers-text{margin-bottom: 40px;}
-    .scroll_links_mobile{ background-color: transparent; cursor: pointer; font-size: 16px; line-height: 20px; border: 1px solid #8200F0; display: block; }
+    .scroll_links_mobile{ background-color: transparent; cursor: pointer; font-size: 16px; line-height: 20px; border: 1px solid var(--Mid-parma-violet); display: block; }
     .scroll_links_mobile.active{background-color: var(--white); border-radius: 12px 12px 0 0;}
     .scroll_links_btn{padding: 16px 20px 16px 16px; display: block; width: 100%;}
-    .scroll_links_btn span{right: 16px; top: 50%; transform: translateY(-50%); color: var(--illumin-blue); display: block; position: absolute;}
+    .scroll_links_btn span{right: 16px; top: 50%; transform: translateY(-50%); color: var(--Mid-parma-violet); display: block; position: absolute;}
     .scroll_links_btn.active span::before{content: "\f0d8";}
-    ul.scroll_links{margin: 0; padding: 10px 20px 20px; width: calc(100% + 2px); top: 100%; left: -1px; border-radius: 0 0 12px 12px; border: 1px solid #8200f0; background-color: var(--white); position: absolute; border-top: 0; display: none; z-index: 2;}
+    ul.scroll_links{margin: 0; padding: 10px 20px 20px; width: calc(100% + 2px); top: 100%; left: -1px; border-radius: 0 0 12px 12px; border: 1px solid var(--Mid-parma-violet); background-color: var(--white); position: absolute; border-top: 0; display: none; z-index: 2;}
     ul.scroll_links li:last-child{margin-bottom: 0;}
     .company-careers-pos{padding: 8px 20px 12px 12px; gap: 20px; align-items: center;}
     .company-careers-title{font-size: 14px; line-height: 20px; display: block; flex: 0 0 calc(100% - 40px);} 

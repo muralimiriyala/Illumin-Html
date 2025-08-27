@@ -1,7 +1,7 @@
 
 .join-team-section.bg{background-color: var(--Pale-Parma-Violet);}
 
-.join-team-main{padding: 80px 0 128px;}
+.join-team-main{padding: 80px 0 80px;}
 .join-team-title h2{font-size: 32px; line-height: 40px;}
 .join-team-list h3{color: var(--Dark-parma-violet);}
 
@@ -21,8 +21,9 @@
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
 
 }
-@media only screen and (max-width: 1023px) and (min-width: 200px){
-
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .join-team-lists{gap: 40px;}
+   body.page-template-company-careers .join-team-main { padding-bottom: 0;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.page-template-company-careers .join-team-main{padding: 64px 0 64px;}

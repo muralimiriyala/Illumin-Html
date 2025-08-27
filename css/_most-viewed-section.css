@@ -4,7 +4,7 @@
 .most-categories span{padding-top: 1px;}
 
 .most-viewed-text{padding-top: 25px; font-size: 24px; line-height: 32px; letter-spacing: -0.02rem;}
-.most-viewed-text a{color: var(--black);}
+.most-viewed-text a{color: var(--black); font-weight: 400;}
 .most-viewed-text a:hover{color: var(--illumin-blue);}
 .most-viewed-list .most-viewed-text h2{font-family: "Inter", sans-serif; font-weight: 300;}
 .most-viewed-lt .most-viewed-small{gap: 9px; margin-bottom: 17px;}
