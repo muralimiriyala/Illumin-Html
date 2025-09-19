@@ -15,17 +15,17 @@ span.share{color: var(--black); font-size: 20px; line-height: 24px; font-weight:
 .social-share-icons .at-share-btn-elements a.at-icon-wrapper {padding: 0; margin: 0; width: auto; height: auto; font-size: 24px; line-height: normal; border-radius: 0 !important; background-color: transparent !important; color: var(--white); position: relative; display: block; }
 .social-share-icons .at-share-btn-elements a.at-icon-wrapper:hover{background: transparent !important; color: var(--sky-blue) !important;}
 .social-share-icons .at-share-btn-elements a.at-icon-wrapper span.at-label{display: none;}
-.social-share-icons .at-share-btn-elements a.at-icon-wrapper span.at-icon-wrapper {width: 100% !important; height: 100% !important; line-height: inherit !important; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; float: none; font-family: "Font Awesome 6 Brands"; font-weight: 400; letter-spacing: 0; margin: 0 auto;}
-.social-share-icons .at-share-btn-elements a.at-svc-email span.at-icon-wrapper{font-weight: 900; font-family: "Font Awesome 6 Pro";}
+.social-share-icons .at-share-btn-elements a.at-icon-wrapper span.at-icon-wrapper {width: 100% !important; height: 100% !important; line-height: inherit !important; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; float: none;  font-weight: 400; letter-spacing: 0; margin: 0 auto;}
+.social-share-icons .at-share-btn-elements a.at-svc-email span.at-icon-wrapper{font-weight: 900; }
 .social-share-icons .at-share-btn-elements a.at-svc-facebook span.at-icon-wrapper::after {content: "\f39e"; } 
 .social-share-icons .at-share-btn-elements a.at-svc-twitter span.at-icon-wrapper::after {content: "\f099"; } 
 .social-share-icons .at-share-btn-elements a.at-svc-linkedin span.at-icon-wrapper::after{content: "\f0e1"; }
 .social-share-icons .at-share-btn-elements a.at-svc-email span.at-icon-wrapper::after{content: "\f0e0"; }
-.social-share-icons .at-share-btn-elements a.at-svc-compact span.at-icon-wrapper::after{content: "\f1e0"; font-family: "Font Awesome 6 Sharp";}
-.social-share-icons .at-share-btn-elements a.at-svc-mailto span.at-icon-wrapper{font-weight: 900; font-family: "Font Awesome 6 Pro";}
+.social-share-icons .at-share-btn-elements a.at-svc-compact span.at-icon-wrapper::after{content: "\f1e0"; }
+.social-share-icons .at-share-btn-elements a.at-svc-mailto span.at-icon-wrapper{font-weight: 900; }
 .social-share-icons .at-share-btn-elements a.at-svc-mailto span.at-icon-wrapper::after{content: "\f0e0"; }
 .social-share-icons #st-1.st-animated .st-btn {background-color: var(--Pale-Parma-Violet) !important; color: var(--Dark-parma-violet) !important;}
-.social-share-icons #st-1.st-animated .st-btn:hover{opacity: 1 !important; top: -4px !important; background-color: var(--Dark-parma-violet) !important; color: var(--white) !important;}
+.social-share-icons #st-1.st-animated .st-btn:hover{opacity: 1 !important; top: -4px !important; background-color: var(--Pale-Parma-Violet) !important; color: var(--white) !important;}
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1023px) and (min-width: 200px){

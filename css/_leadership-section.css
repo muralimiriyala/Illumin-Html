@@ -13,8 +13,9 @@
 .leadership-role p{margin-bottom: 0; color: var(--Dark-parma-violet);}
 
 /* .leadership_arrow{width: 26px; height: 26px; right: 0; top: 11px; background-image: url('images/up-arrow-blue.svg'); background-repeat: no-repeat; background-size: contain; background-position: center; display: block; position: absolute; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0s; cursor: pointer;} */
-.leadership_arrow{right: 0; top: 11px;  display: block; position: absolute; transition-duration: 1s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0s; cursor: pointer; font-size: 26px;}
+.leadership_arrow{right: 0; top: 11px; width: 25px; height: 25px; display: block; position: absolute; transition-duration: 1s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); transition-property: all; transition-delay: 0s; cursor: pointer; font-size: 26px;}
 .leadership_arrow i{background: var(--Gradient-Horizontal); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;}
+.leadership_arrow::before{right: 0; content: ""; width: 25px; height: 25px; background-image: url("./images/arrow-down-long-new.svg"); background-size: contain; background-repeat: no-repeat; position: absolute; transform: rotate(180deg);}
 .leadership-desc{display: none; margin-top: 24px;}
 .linkedin_connect{font-size: 14px; line-height: 20px;}
 .linkedin_connect a{gap: 8px; color: var(--black);}

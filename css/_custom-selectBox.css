@@ -4,8 +4,9 @@ body .selectBox-dropdown{padding: 14px 40px 14px 16px; font-size: 1rem; line-hei
 body .selectBox-dropdown span.selectBox-label{white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
 body .selectBox-dropdown span.selectBox-label a{color: inherit;}
 body .selectBox-dropdown.selectBox-menuShowing{border-radius: 12px 12px 0 0;}
-body .selectBox-dropdown .selectBox-arrow::after{right: 15px; top: 50%; transform: translateY(-50%); font-size: 1rem; content: "\f0d7"; color: var(--Mid-parma-violet); font-weight: normal; font-family: "Font Awesome 6 pro"; position: absolute; }
-body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow::after{content: "\f0d8";}
+body .selectBox-dropdown .selectBox-arrow::after{right: 15px; top: 50%; transform: translateY(-50%); content: ""; width: 30px; height: 30px; background-image: url("./images/angle-down-new.svg"); background-size: contain; background-repeat: no-repeat; font-size: 1rem; position: absolute; transition: all .5s ease;}
+/* body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow::after{content: "\f0d8";} */
+body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow::after{transform: translateY(-50%) rotate(-180deg);}
 ul.selectBox-dropdown-menu{margin: 0; padding: 10px 0 0; top: 100%; left: 0; max-height: 213px; min-height: 1em; min-width: 213px; overflow: auto; display: block; border-radius: 0; background-color: var(--white); position: absolute; z-index: 99999; border: solid 1px var(--Mid-parma-violet); border-radius: 0 0 12px 12px;}
 ul.selectBox-dropdown-menu li:first-child{display: none;}
 body.page-template-stock-performance ul.selectBox-dropdown-menu li:first-child{display: block;}
