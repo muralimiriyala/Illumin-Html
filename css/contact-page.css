@@ -19,7 +19,7 @@
 .contact-form{padding: 32px; background: #FFFFFF; box-shadow: 0 0 128px var(--Pale-Parma-Violet); }
 .contact-form legend.frm_screen_reader{display: none;}
 
-.contact-text span.optional-text{font-weight: 700; text-transform: uppercase; color: var(--Mid-parma-violet);}
+.contact-text span.optional-text{font-weight: 700; color: var(--Mid-parma-violet);}
 
 
 /*-- media css starts here --*/
