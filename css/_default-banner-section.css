@@ -8,7 +8,7 @@ body.page-id-298 .default-banner-section{background: transparent;}
 /* .default-banner-bg{ opacity: 0.5; position: absolute; z-index: -1; box-shadow: 0px 0px 128px rgba(151, 71, 255, 0.3); background-color: var(--white); border-radius: 50%;} */
 .default-banner-bg{display: none;}
 .default-banner-text h1{font-family: "Aleo", serif;}
-.default-banner-text span.optional-text{margin-bottom: 12px; font-weight: 700; text-transform: capitalize; color: var(--Mid-parma-violet);}
+.default-banner-text span.optional-text{margin-bottom: 12px; font-weight: 700; color: var(--Mid-parma-violet);}
 .default-banner-text .button{margin-top: 16px;}
 body.page-template-company-overview .default-banner-bg{display: none;}
 

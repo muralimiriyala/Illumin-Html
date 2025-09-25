@@ -79,7 +79,7 @@ ul.policies-links li a.active::after, ul.policies-links li a:hover::after{opacit
     .investor-banner-text{margin-bottom: 38px;}
     .investor-banner-text span.optional-text{margin-bottom: 23px;}
     .investor-banner-text h1{font-size: 40px; line-height: 48px; margin-bottom: 21px;}
-    .investor-banner-dots{opacity: 0.15; margin-top: 40px;}
+    .investor-banner-dots{opacity: 0.15; margin-top: 40px; display: none;}
     .corporate-doc-main{display: block;}
     .corporate-doc-text{margin-bottom: 40px;}
     ul.policies-links{flex-wrap: nowrap; overflow-x: auto;}

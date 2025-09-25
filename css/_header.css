@@ -92,7 +92,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     .insight-nav-item .product-menu-image figure.object-fit{text-align: right;}
 
     .product-menu-text{flex: 1; max-width: 296px; font-size: 18px; line-height: 26px; font-weight: 300; color: var(--black);}
-    .product-menu-text span{margin-bottom: 16px; display: block; font-size: 24px; line-height: 28px; color: var(--sky-blue);}
+    .product-menu-text span{margin-bottom: 16px; display: block; font-size: 24px; line-height: 28px; color: var(--Mid-parma-violet);}
     .product-menu-text .text-link{font-weight: 900;}
     
     .site-main-cover{padding-top: 104px;}
@@ -123,9 +123,9 @@ ul.nav-links li a:hover{color: var(--sky);}
 
     .white-header:not(.fixed_header) .nav-btns a.sign_in{padding: 8px 12px 8px 12px; background: var(--Dark-parma-violet); border-radius: 12px; color: var(--white); display: flex; align-items: center; gap: 7px; font-size: 16px; line-height: 20px; font-weight: 900;}
     .white-header .nav-btns a.sign_in::after { display: none;}
-    .white-header:not(.fixed_header) .nav-btns a.sign_in:hover{color: var(--sun);}
+    .white-header:not(.fixed_header) .nav-btns a.sign_in:hover{color: var(--Mid-parma-violet);}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
-    .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--sun);}
+    .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--Mid-parma-violet);}
 
     .white-header:not(.fixed_header) .logo-white{display: block;}
     .white-header.fixed_header .logo-white{display: none;}
@@ -222,6 +222,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     .white-header.fixed_header .logo-white{display: none;}
     .white-header.fixed_header .logo-black{display: block;}
     .white-header:not(.fixed_header) ul.langauage-btns > li > a{color: var(--white);}
+    /* .white-header:not(.fixed_header) ul.langauage-btns > li > a:hover{color: var(--Mid-parma-violet);} */
     .white-header:not(.fixed_header) .toogle-btn{background: var(--white);}
     .white-header:not(.fixed_header) .toogle-btn span,
     .white-header:not(.fixed_header) .toogle-btn span::before,
@@ -247,8 +248,7 @@ ul.nav-links li a:hover{color: var(--sky);}
     .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign{padding: 8px 12px 8px 12px; background: var(--Dark-parma-violet); border-radius: 12px; color: var(--white); display: flex; align-items: center; gap: 7px; font-size: 16px; line-height: 20px; font-weight: 900; }
     /* .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign::after{width: 13px; height: 19px; content: ""; display: block; background-image: url('images/right-pointer@2x.png'); background-size: contain; background-repeat: no-repeat; position: absolute; top: 8px; right: 9px; transition: all .5s ease;} */
     /* .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign:hover::after{right: 12px; opacity: 1; transform: none;} */
-    .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign:hover{color: var(--sun);}
-
+    .white-header:not(.fixed_header) .nav-links-ipad ul.nav-links > li > a.nav-link-sign:hover{color: var(--Mid-parma-violet);}
     .white-header:not(.fixed_header) ul.nav-links li::before{display: none;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){

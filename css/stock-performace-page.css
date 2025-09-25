@@ -51,7 +51,7 @@ ul.financial-qlinks li a.active::after{height: 4px; background-image: var(--Grad
 .tradingview-widget-container { height: 500px; }
 .tradingview-widget-container iframe{min-height: 450px;}
 
-.stock-banner-text span.optional-text{font-weight: 700; text-transform: uppercase; color: var(--Mid-parma-violet);}
+.stock-banner-text span.optional-text{font-weight: 700; color: var(--Mid-parma-violet);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -124,7 +124,7 @@ ul.financial-qlinks li a.active::after{height: 4px; background-image: var(--Grad
     .stock-banner-main{display: block; padding: 47px 0 0;}
     .stock-banner-text{margin-bottom: 38px;}
     .stock-banner-text h1{font-size: 40px; line-height: 48px; margin-bottom: 21px;}
-    .stock-banner-dots{opacity: 0.15; margin-top: 40px;}
+    .stock-banner-dots{opacity: 0.15; margin-top: 40px; display: none;}
 
     .stock-graph-wrap{padding: 64px 0 38px;}
 
