@@ -1,6 +1,6 @@
 
 .single-slick-arrow{cursor: pointer;}
-.single-testimonial-slide{padding: 84px 0; background: var(--sky); position: relative;}
+.single-testimonial-slide{padding: 84px 0; background: var(--Dark-parma-violet); position: relative;}
 .single-testimonial-text p{color: var(--white); line-height: 48px; margin-bottom: 24px; font-size: 32px; font-weight: 700;}
 .single-testimonial-text p > span{border-bottom: 6px solid var(--Mid-parma-violet); display: inline-block; line-height: 28px;}
 .single-testimonial-author{gap: 16px;}
